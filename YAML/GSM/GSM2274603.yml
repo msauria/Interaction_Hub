@@ -1,0 +1,82 @@
+Accession: GSM2274603
+Channel:
+  Characteristics:
+  - C57BL/6
+  - "Na\xEFve"
+  - wild type
+  Extract-Protocol: "On day 8 post-infection (p.i.), CD45.2+CD8+KLRG1+ IL-7Ra\u2013\
+    \ cells were sort-purified as terminally differentiated effector CD8+ T cells.\
+    \ On \u2265 day 60 p.i., CD45.2+CD8+CD62L+ cells were purified as central memory\
+    \ CD8+ T cells. From the lymph nodes of uninfected P14 TCR-Tg mice, CD62L+CD44lo-med\
+    \ CD8+ cells were isolated as na\xEFve CD8+ T cells. The cell sorting was performed\
+    \ on on FACSAria (BD Biosciences).\nFive million CD62L+CD44lo na\xEFve CD8 T cells\
+    \ were sort-purified from WT mice and crosslinked with 1% formaldehyde for 10\
+    \ min at room temperature. The nuclei were then permeabilized and DNA digested\
+    \ with 100 units of MboI restriction enzyme. The ends of restriction fragments\
+    \ were labeled using biotinylated nucleotides followed by ligation. After reversal\
+    \ of crosslinks, the ligated DNA was purified and sheared to 300-500 bps in length.\
+    \ The ligation junctions were pulled down with streptavidin beads and sequenced"
+  Growth-Protocol: "Naive CD45.2+ P14 TCR-Tg CD8+ T cells were isolated from the lymph\
+    \ nodes and adoptively transferred into CD45.1+ na\xEFve recipient mice at 10,000\
+    \ cells per mouse. One day later, the recipient mice were i.p. infected with 2\xD7\
+    105 PFU of LCMV-Armstrong."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: CD8 T cell
+  Treatment-Protocol: C57BL/6 and B6.SJL mice were from the Jackson Laboratory. All
+    mouse experiments were performed under protocols approved by the Institutional
+    Animal Use and Care Committee of the University of Iowa.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Basecalls performed using Illumina Casava version 1.8
+
+  Reads were mapped to mouse genome (mm9) using Bowtie2. Only uniquely mapped reads
+  with fewer than 2 mismatches were used for downstream analyses.
+
+  Contact matrices are built and ICE normalization are performed using HiC-Pro_v2.7
+  pipeline.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: The files include all valid interactions
+  detected by Hi-C. Each line of the txt files provides the chr, start, end of the
+  two interaction fragments.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05570526
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2018145
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4026106
+    cluster_name: public
+    id: '2915438'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '62289348408'
+    total_spots: '247179954'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX201/SRX2018145
+  iid: SRX2018145
+Series: GSE85515
+Status:
+  Last-Update-Date: '2016-10-01'
+  Release-Date: '2016-10-01'
+  Submission-Date: '2016-08-11'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2274nnn/GSM2274603/GSM2274603_CD8_Rep2.validPairs.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX201/SRX2018145
+Title: CD8_Rep2
+Type: SRA
+iid: GSM2274603

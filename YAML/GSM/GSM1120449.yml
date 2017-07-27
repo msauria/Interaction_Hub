@@ -1,0 +1,122 @@
+Accession: GSM1120449
+Channel:
+  Characteristics:
+  - swarmer cells (0 min after synchronization)
+  - wild type
+  - BglII
+  - CB15
+  Extract-Protocol: 'Hi-C experiments were performed using either BglII or NcoI according
+    to previous publications (Umbarger MA. 2012. Chromosome conformation capture assays
+    in bacteria. PMID: 22776362 and Lieberman-Aiden, E. et al., 2009. Comprehensive
+    mapping of long-range interactions reveals folding principles of the human genome.
+    PMID: 19815776).
+
+    Standard library construction for Illumina Hiseq2000 sequencing platform'
+  Growth-Protocol: 'Caulobacter crescentus were grown as described previously in Skerker
+    et al., 2005 (PMID: 16176121). When appropriate, media were supplemented with
+    antibiotics at the following concentrations (liquid/solid media) [ug/ml]): chloramphenicol
+    (1/2), kanamycin (5/25), oxytetracycline (1/2), spectinomycin (25/100). Synchronizations
+    were performed on mid-exponential phase cells using Percoll (GE Healthcare) and
+    density gradient centrifugation as described previously in Jones et al., 2001
+    (PMID: 11283290). After synchronization, swarmer cells were released into PYE
+    for 0, 10, 30, 60, 75 or 150 minutes before fixing with formadehyde for chromosome
+    conformation capture and Hi-C analysis. For antibiotic treatments, swarmer cells
+    were incubated with 25 ug/mL or 50 ug/mL novobiocin (final concentration) or 25
+    ug/ml rifampicin (final concentration) for 30 minutes before fixing with formadehyde.'
+  Molecule: genomic DNA
+  Organism: Caulobacter crescentus CB15
+  Source: Caulobacter crecentus CB15N
+  Treatment-Protocol: 'Swarmer cells were isolated by density gradient method according
+    to Jones et al., 2001 (PMID: 11283290). Swarmer cells were released into PYE containing
+    50 ug/ml Novobiocin and were incubated for 30 min before fixation by 1% formadehyde.'
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C-Seq
+
+  Paired-end sequencing reads were mapped independently to the genome of Caulobacter
+  crescentus CB15N (NCBI Reference Sequence: NC_011916.1) using Bowtie 2.1.0 and an
+  algorithm which iteratively increases truncation length to maximize yield of valid
+  Hi-C interactions (Imakaev et al., 2012. PMID: 22941365). Only read pairs with both
+  reads that were uniquely aligned to the genome were considered for subsequent steps.
+
+  The Caulobacter CB15N genome was then divided into restriction fragments (700 BglII
+  fragments and 2025 NcoI fragments). Each read of a read pair was sorted into its
+  corresponding restriction fragment. Read pairs were classified as valid Hi-C products,
+  non-ligation, or self-ligation products; only valid Hi-C products were considered
+  below.
+
+  To create interaction matrices, the Caulobacter genome was first divided into 405
+  10-kb bins. We then assigned valid Hi-C products to the bins as follows. Recall
+  that each valid Hi-C product involves the ligation of two restriction fragments.
+  If both restriction fragments are contained entirely within bins (e.g. suppose fragment
+  1 is contained within bin A and fragment 2 is contained within bin B), we incremented
+  the count of interactions between bins A and B by one. If one of the restriction
+  fragments spanned two bins (e.g. suppose fragment 1 is contained within bin A but
+  fragment 2 spans bins B and C) then we incremented the count of interactions between
+  bin A and B by an amount proportional to the fraction of fragment 2 that overlaps
+  bin B (and similarly for the count of interactions between A and C). Thus, each
+  read contributes a count of one to the interaction map, but it can be split between
+  bins. This means of assigning reads to bins was necessary to analyze data at a high
+  10-kb resolution. Interactions of a bin with itself, and with neighboring bins were
+  discarded, as in Imakaev et al., 2012. For the presentation of the matrices, three
+  discarded diagonals were later given the maximal cut-off value of 0.035.
+
+  Raw Hi-C contact maps can be biased due to the uneven distribution of restriction
+  enzyme sites and, to a lesser extent, differences in GC content and the mappability
+  of individual reads. We therefore normalized raw contact maps using an iterative
+  normalization procedure, implemented using the hiclib library for Python (https://bitbucket.org/mirnylab/hiclib).
+  Essentially, we converted the number of interactions, or read counts, into Hi-C
+  scores by applying the following equation and iteratively repeating it for the resulting
+  contact map after each cycle: mij =mij * (total reads) / (total reads in bin i *
+  total reads in bin j). Iterative procedure was repeated until the maximum relative
+  error of the total number of Hi-C scores in a bin was less than 1e-5. Resulting
+  matrices were normalized so that Hi-C scores for each row and column sum to 1. Subsequent
+  analysis and visualization was done using Python and R scripts.
+
+  Genome_build: NC_011916.1
+
+  Supplementary_files_format_and_content: Files ending with .txt: tab-delimited text
+  files of Hi-C contact maps/matrices before and after normalization by iterative
+  correction. Files ending with .RPKPM.txt: tab-delimited text file of reads per kilobases
+  per million mapped reads of genomic DNA for synchronous population of Caulobacter
+  at 0, 10, 30, 45, 60 and 75 min after synchronization.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: BglII
+Platform-Ref:
+  ref: GPL17001
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX263926
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02029067
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR824847
+    cluster_name: public
+    id: '369825'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1493657962'
+    total_spots: '18215341'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX263/SRX263926
+  iid: SRX263926
+Series: GSE45966
+Status:
+  Last-Update-Date: '2014-04-07'
+  Release-Date: '2013-10-30'
+  Submission-Date: '2013-04-10'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX263/SRX263926
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1120nnn/GSM1120449/GSM1120449_Laublab_BglII_HiC_NA1000_swarmer_cell_Novobiocin_50ug_per_ml_30min_overlap_after_normalization.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1120nnn/GSM1120449/GSM1120449_Laublab_BglII_HiC_NA1000_swarmer_cell_Novobiocin_50ug_per_ml_30min_overlap_before_normalization.txt.gz
+Title: Laublab_BglII_HiC_NA1000_swarmer_cell_Novobiocin_50ug_per_ml_30min
+Type: SRA
+iid: GSM1120449

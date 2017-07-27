@@ -1,0 +1,109 @@
+Accession: GSM2110089
+Channel:
+  Characteristics: N/A
+  Extract-Protocol: "2-4 million cells were fixed for 10 minutes by resuspending the\
+    \ cell pellet in 5 ml full culture medium supplemented with 1% formaldehyde (Sigma).\
+    \ The reaction was quenched by addition of 2 M glycine to a final concentration\
+    \ of 125 mM and incubation for 5 minutes on ice. Cells were pelleted by centrifugation,\
+    \ washed by resuspension in 1 ml of PBS and pelleted again. Then the cells were\
+    \ resuspended in 1.5 ml of lysis buffer and incubated on ice for at least 15 minutes.\
+    \ Cells were pelleted by centrifugation at 2,500g for 5 minutes, resuspended in\
+    \ 100 \u03BCl of 1\xD7NEBuffer 3 and pelleted again. The pellet was resuspended\
+    \ in 100 \u03BCl of 0.3% SDS in 1\xD7NEBuffer 3 and incubated at 37\xB0C for 1\
+    \ hour. Then the suspension was diluted with 330\_\u03BCl of 1\xD7 NEBuffer 3\
+    \ and 53 \u03BCl of 20% Triton X-100 (Sigma), and incubated at 37\xB0C for 1 hour\
+    \ to quench SDS. The cells were pelleted by centrifugation at 3,000g for 5 minutes,\
+    \ resuspended in 250 \u03BCl of 1\xD7 DpnII buffer (NEB). 20 \u03BCl were taken\
+    \ as a chromatin integrity control, then 600 U DpnII enzyme (NEB) were added,\
+    \ and the chromatin was digested overnight at 37\xB0C with rotation. In the morning\
+    \ 200 more units of DpnII were added and the cells were incubated for additional\
+    \ 2 hours. DpnII was inactivated by incubation at 65\xB0C for 20 minutes. 20 \u03BC\
+    l was taken as a digestion control. Nuclei were pelleted by centrifugation at\
+    \ 3,000g for 5 minutes, resuspended in 100 \u03BCl of 1\xD7 T4 DNA ligase buffer\
+    \ (Thermo Scientific) and pelleted again. The pellet was resuspended in 500 \u03BC\
+    l of 1\xD7 T4 DNA ligase buffer, and 50 U T4 DNA ligase (Thermo Scientific) were\
+    \ added. The sample was mixed by inversion and incubated with rotation for 4 hours\
+    \ at 16\xB0C and then for 30 minutes at room temperature. Then the nuclei were\
+    \ pelleted by centrifugation at 3,000g for 5 minutes and resuspended in 120 \u03BC\
+    l of sterile PBS. 20 \u03BCl were taken as a ligation control. The rest of the\
+    \ sample was stained with Hoechst, single G1 nuclei were sorted using excitation\
+    \ wavelength 375 nm and forward and side scatter by FACS (FACSAriaIII machine,\
+    \ BD Biosciences) into wells of 12 PCR strips containing 3 \u03BCl sample buffer\
+    \ from illustra GenomiPhi v2 DNA amplification kit (GE Healthcare), then they\
+    \ were covered by 5 \u03BCl of mineral oil, incubated at 65\xB0C overnight and\
+    \ amplified according to a protocol from Kumar et al, 2008. The amplification\
+    \ was considered positive if the sample contained \u22651\_\u03BCg DNA, and these\
+    \ samples were submitted for library preparation and sequencing\nThe library preparation\
+    \ was done by the VBCF NGS unit (vbcf.ac.at) following the standard DNA sample\
+    \  preparation protocol for Solexa platforms (NEB reagents)."
+  Growth-Protocol: "K562 (a gift from Alexander Stark lab) cells were cultured in\
+    \ RPMI-1640 medium supplemented with 10% FBS, 2 mM L-Glutamine and Pen/Strep (100\
+    \ U/ml and 100 \u03BCg/ml)."
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: chronic myelogenous leukemia cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Base calling was performed by VBCF NGS unit
+
+  Mapping: iterative mapping (see Imakaev et al, 2012) using bowtie2 with increased
+  stringency parameters: --score-min -L 0.6,0.2--very-  sensitive
+
+  Read filtering: if two reads map to the same strands, and each side of the read
+  is within 500 bp of any side of the other read, we retained only one copy of the
+  read.
+
+  Additional filtering: we separated the genome into 500 bp bins. If any two bins
+  were interacting more than once, only one interaction was counted. Since each region
+  is only present in the single cell up to 4 times (in oocytes), we eliminated all
+  500 bp bins that form more than 8 unique interactions with other bins.
+
+  Filtered reads were then binned at different resolutions (we provide files at 200Kb
+  resolution) using read start as a read position. No normalization was applied to
+  the data.
+
+  Genome_build: mm9 or hg19
+
+  Supplementary_files_format_and_content: List of all interactions at single contact,
+  40Kb or 200 Kb resolution'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04622174
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1685432
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3344156
+    cluster_name: public
+    id: '2415815'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4315352750'
+    total_spots: '17261411'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685432
+  iid: SRX1685432
+Series: GSE80006
+Status:
+  Last-Update-Date: '2017-03-24'
+  Release-Date: '2017-03-23'
+  Submission-Date: '2016-04-07'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685432
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2110nnn/GSM2110089/GSM2110089_194_K562_SetA-200kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2110nnn/GSM2110089/GSM2110089_194_K562_SetA-40kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2110nnn/GSM2110089/GSM2110089_194_K562_SetA-reads.csv.gz
+Title: 227_K562-A
+Type: SRA
+iid: GSM2110089

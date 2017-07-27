@@ -1,0 +1,166 @@
+Accession: GSM1267202
+Channel:
+  Characteristics: H1 Neuronal Progenitor cells
+  Extract-Protocol: Sequencing libraries were constructed according to previous publication
+    (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions reveals
+    folding principles of the human genome. Science 326, 289-93 (2009).).
+  Growth-Protocol: Growth and differentiation of H1 hESCs was performed as previously
+    described in Xie et al., 2013, Cell 153 (1134-1148)
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: H1 Neuronal Progenitor cells
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: Hi-C\nfastq:  Illumina's HiSeq Control Software\n\
+  For Hi-C read alignment, we aligned Hi-C reads to the hg18 (human) genome. We masked\
+  \ any bases in the genome that were genotyped as SNPs in the H1 genome. These bases\
+  \ were masked to \u201CN\u201D in order to reduce reference bias mapping artifacts.\
+  \ Hi-C reads were aligned iteratively as single end reads using Novoalign. Specifically,\
+  \ for iterative alignment, we first aligned the entire sequencing read to either\
+  \ the mouse or human genome. Unmapped reads are then trimmed by 5 base pairs and\
+  \ realigned. This process is repeated until the read successfully aligns to the\
+  \ genome or until the trimmed read is less than 25 base pairs long.  After iterative\
+  \ mapping was finished, read pairs were re-constructed from single reads using an\
+  \ in house pipeline.  Unmapped reads were filtered out and PCR duplicate reads were\
+  \ removed.  Final alignment files were then processed using the GATK pipeline, specifically\
+  \ using Indel Realignment and Variant Recalibration.  A similar pipeline was used\
+  \ for alignment of the other high-throughput sequencing datasets without the iterative\
+  \ alignment step.\nHaplotypes were generated from the final aligned bam file after\
+  \ merging the two biological replicats using the HapCUT algorithm.  The details\
+  \ of HapCUT are described previously (Bansal and Bafna, Bioinformatics 24, i153-159,\
+  \ 2008).\nGenome_build: hg18\nSupplementary_files_format_and_content: Reads are\
+  \ listed in bed format with one line for each sequencing read.  The reads have been\
+  \ split by haplotype into the \"A\" and \"B\" (alternatively, \"p1\" and \"p2\"\
+  ) alleles according to which haplotype the bases within each sequencing read correspond.\
+  \  For paired end Hi-C data, each line lists a single read, and paired infomration\
+  \ can be obtained from the read names.  The original fastq files for data other\
+  \ than the Hi-C and CTCF ChIP-seq are available in the GSE16256 dataset.\nSupplementary_files_format_and_content:\
+  \ The processed haplotypes for the H1 genome (\"H1_haps.vcf\") are available in\
+  \ VCF format."
+Description: 'NP_R1_T1_read1.fastq.gz
+
+  NP_R1_T1_read2.fastq.gz
+
+  NP_R1_T2_read1.fastq.gz
+
+  NP_R1_T2_read2.fastq.gz
+
+  NP_R1_T3_read1.fastq.gz
+
+  NP_R1_T3_read2.fastq.gz
+
+  NP_R1_T4_read1.fastq.gz
+
+  NP_R1_T4_read2.fastq.gz
+
+  NP_R1_T5_read1.fastq.gz
+
+  NP_R1_T5_read2.fastq.gz
+
+  NP_R1_T6_read1.fastq.gz
+
+  NP_R1_T6_read2.fastq.gz
+
+  NP_R1_T7_read1.fastq.gz
+
+  NP_R1_T7_read2.fastq.gz
+
+  NP_R1_T8_read1.fastq.gz
+
+  NP_R1_T8_read2.fastq.gz'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02404679
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX378277
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1030745
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4747141800'
+    total_spots: '65932525'
+  - acc: SRR1030746
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5251308984'
+    total_spots: '72934847'
+  - acc: SRR1030747
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5208484896'
+    total_spots: '72340068'
+  - acc: SRR1030748
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5135375016'
+    total_spots: '71324653'
+  - acc: SRR1030749
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9406596500'
+    total_spots: '94065965'
+  - acc: SRR1030750
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9322346400'
+    total_spots: '93223464'
+  - acc: SRR1030751
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '23622552200'
+    total_spots: '236225522'
+  - acc: SRR1030752
+    cluster_name: public
+    id: '540188'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '19663311024'
+    total_spots: '273101542'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX378/SRX378277
+  iid: SRX378277
+Series: GSE52457
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2015-02-18'
+  Submission-Date: '2013-11-18'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX378/SRX378277
+Title: Hi-C, H1 Neuronal Progenitor cells, replicate one
+Type: SRA
+iid: GSM1267202

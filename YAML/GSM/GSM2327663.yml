@@ -1,0 +1,133 @@
+Accession: GSM2327663
+Channel:
+  Characteristics:
+  - W303-1a
+  - cdc20-td + scc1-73 TRP1
+  Extract-Protocol: "Hi-C was performed as described in (JM Belton et.al., The Conformation\
+    \ of Yeast Chromosome III Is Mating Type Dependent and Controlled by the Recombination\
+    \ Enhancer, Cell Reports, 13(9):1855-67, (2015)) with the variation that cells\
+    \ were fixed at 37 \xB0C.\nHi-C: The yeast culture was crosslinked with 37% formaldehyde\
+    \ to a final concentration of 3% in the culture media for 20 min at 37\u02DAC.\
+    \ The crosslinking was quenched by adding 2X the volume of formaldehyde used of\
+    \ 2.5M Glycine to the culture and incubated culture for 5 min at 25\u02DAC. Cells\
+    \ were lyses by grinding in a cold mortar and pestle. The chromatin was solubilized\
+    \ by adding 1% w/v SDS and Incubating at 65\u02DAC water bath for 10 min. Excess\
+    \ SDS was quenched using 10% v/v Triton X-100. The chromatin was digested with\
+    \ HindIII at 37\u02DAC overnight in a water bath. Digested ends were filled in\
+    \ with biotin-14-dCTP with Klenow at 37\u02DAC for 2 hr in a water bath. The klenow\
+    \ was inactivated by Incubating in a 65\u02DAC water bath for 20 min. Crosslinked\
+    \ and digested fragments were ligated together in a dilute reaction inorder to\
+    \ favor intra-molecular ligation in a 16\u02DAC water bath for 8 hr. Crosslinkes\
+    \ were reversed by incubating the ligation mixture with proteinase K in a 65\u02DA\
+    C water bath. Ligation products were purified with phenol (pH 8.0):chloroform\
+    \ and precipitated with sodium acetate pH 5.2 and ethanol. The precipitated DNA\
+    \ was resuspended in 1X TE and then the DNA was re-extracted with phenol (pH 8.0):chloroform\
+    \ and precipitated with sodium acetate pH 5.2 and ethanol. The DNA pellet was\
+    \ dried thoroughly and excess salt was washed out of the solution using an amicon\
+    \ 30kDa spin column using 1X TE. Then the sample was concentrated using a 30kDa\
+    \ amicon column. RNA was degrade using DNase free RNase A at 37\u02DAC for 1 hr.\
+    \ The Hi-C library was quantified on a 0.8% agarose gel in 0.5X TBE by comparing\
+    \ it to known concentration standards. The Hi-C efficiency was accessed by first\
+    \ PCR amplifing a neighboring interaction in the Hi-C library. This amplicon was\
+    \ split and the aliquots were digested with either HindIII, NheI, or HindIII and\
+    \ NheI at 37\u02DAC overnight. The digested products were quantified on a gel\
+    \ and the percent Hi-C efficiency was calculated as the percent digested with\
+    \ NheI divided by the percent digested in the NheI and HindIII combined reaction.\
+    \ Biotin was removed from un-ligated ends using T4 DNA polymerase at 20\u02DA\
+    C for 4hrs and then at 75\u02DAC for 20 min to inactivate the enzyme. The DNA\
+    \ was sheared to 50-700bp using the Covaris S2 sonicator. The DNA ends were repaired\
+    \ using T4 DNA Polymerase, T4 Polynucleotide Kinase, and Klenow fragment of DNA\
+    \ Polymerase I at 20\u02DAC for 30 min. The DNA was purified with one Qiagen MinElute\
+    \ Column. A dATP was added to the 3\u2019 end of the molecules by using Klenow\
+    \ Fragment (exo-) at 37\u02DAC for 30 min and then at 65\u02DAC for 20 min to\
+    \ inactivate the enzyme.\nHi-C library construction was performed as described\
+    \ in (JM Belton et.al., The Conformation of Yeast Chromosome III Is Mating Type\
+    \ Dependent and Controlled by the Recombination Enhancer, Cell Reports, 13(9):1855-67,\
+    \ (2015)). The end repaired and A-tailed library was fractionated to 100-300bp\
+    \ using 0.9x and then 1.1x ampure XP extractions. For each 1.0 ng of biotinylated\
+    \ ligation products, 1.0 \xB5l of Dynabeads MyOne Strepavidin C1 beads were used\
+    \ to enrich the library. Illumina PE adapters were ligated to the library using\
+    \ NEB Quick Ligase at room temperature for 15 min. The library was amplified using\
+    \ Illumina primers PE1.0 and PE2.0 for as few cycles as possible. Cycle number\
+    \ was determined by a titration experiment that revealed which cycle would produce\
+    \ enough library for sequencing but didn\u2019t produce higher molecular weight\
+    \ artifacts. The library was purified once more with 1.8x Ampure XP to remove\
+    \ primers and primer dimers. The final library was quantified on a bioanalyzer.\
+    \ The libraries were sequenced on either the GAII or HiSeq platforms"
+  Growth-Protocol: "Yeast cells were grown in YP + 2% Glucose at 25 \xB0C, transferred\
+    \ to YP + 2% Raffinose (YPR) and grown over night to log phase."
+  Molecule: genomic DNA
+  Organism: Saccharomyces cerevisiae
+  Source: Hi-C, cohesin mutant arrested in metaphase, biological replicate 2
+  Treatment-Protocol: "Cells were arrested in G1 with 10 \u03BCg/ml alpha factor until\
+    \ 90% of cells were unbudded (120 min). The cells were washed three times with\
+    \ YPR and released in YPR. After 30 min 10 \u03BCg/ml of nocodazole was added\
+    \ and budding was checked after 1h. After cells entered G2 (60-70 min after release),\
+    \ Galactose at 2% final concentration and 15 min later Doxycycline at 50\u03BC\
+    g/ml final concentration were added. 30 min after addition of Galactose, the temperature\
+    \ was shifted to 37 \xB0C. Cells were grown at 37 \xB0C for 1h. Then cells were\
+    \ washed three times in YPR + Galactose + Doxycycline and released in the same\
+    \ media. Cells were collected after 30 min for the cdc20 metaphase. For cdc45-td\
+    \  cells, as above except alpha factor arrested samples incubated at 37\xB0C and\
+    \ 2% galactose added before releasing into the cellcycle in the same media at\
+    \ 37\xB0C. Sample were then collected after 100 minutes for Hi-C analysis."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Mapping and filtering contacts: We mapped sequenced read pairs to W303 yeast genome
+  using Bowtie 2.1.0 and the previously described method of iterative mapping (Imakaev,
+  M. et al. Iterative correction of Hi-C data reveals hallmarks of chromosome organization.
+  Nat. Methods 9, 999-1003, doi:10.1038/nmeth.2148 (2012)). To generate contact lists,
+  we assigned each mapped side to a HindIII fragment and removed the contacts with
+  both sides assigned to the same HindIII fragment, reads with one unmapped side as
+  well as PCR duplicates, i.e. identical contact pairs.
+
+  Aggregating and normalizing contact maps: To generate Hi-C contact maps, we aggregated
+  filtered contact lists into 10kb genomic bins. We removed the contacts within the
+  first two diagonals of the maps as they are contaminated by uninformative Hi-C artifacts,
+  unligated and self-ligated DNA fragments. Finally, we iteratively corrected the
+  resulting maps to equalize genomic coverage.
+
+  Genome_build: w303
+
+  Supplementary_files_format_and_content: matrices.tar.gz - files contain sparse tables
+  with Hi-C contact maps at 10kb resolution.'
+Description: MH-R2
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13821
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05819060
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2188241
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4292766
+    cluster_name: public
+    id: '3183467'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '16689003300'
+    total_spots: '166890033'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX218/SRX2188241
+  iid: SRX2188241
+Series: GSE87311
+Status:
+  Last-Update-Date: '2017-03-22'
+  Release-Date: '2017-03-22'
+  Submission-Date: '2016-09-23'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX218/SRX2188241
+Title: MH-R2
+Type: SRA
+iid: GSM2327663

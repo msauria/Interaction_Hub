@@ -1,0 +1,152 @@
+Contributor:
+- Address:
+    City: Bloomington
+    Country: USA
+    Line: 1001 E 3rd St
+    State: IN
+    Zip-Code: '47405'
+  Department: Biology
+  Email: xindan@indiana.edu
+  Laboratory: JH225
+  Organization: Indiana University at Bloomington
+  Person:
+    First: Xindan
+    Last: Wang
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: David
+    Last: Rudner
+    Middle: Z
+  iid: contrib3
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL20121
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Bacillus subtilis PY79
+  Status:
+    Last-Update-Date: '2017-01-09'
+    Release-Date: '2015-04-29'
+    Submission-Date: '2015-04-29'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Bacillus subtilis PY79)
+  iid: GPL20121
+- Accession: GPL20691
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Bacillus subtilis PY79
+  Status:
+    Last-Update-Date: '2015-07-14'
+    Release-Date: '2015-07-14'
+    Submission-Date: '2015-07-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Bacillus subtilis PY79)
+  iid: GPL20691
+Series:
+  Accession: GSE85612
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  Overall-Design: Hi-C experiments were performed on wild type and mutant cells of
+    Bacillus subtilis PY79 growing in rich media. ChIP-seq experiments were performed
+    on cells growing in the same condition as in Hi-C experiments.
+  Pubmed-ID: '28154080'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA338948
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP082154
+    type: SRA
+  Sample-Ref:
+  - name: 01_Wang_HiC_BWX3352_0IPTG
+    ref: GSM2279740
+  - name: 02_Wang_HiC_BWX3352_1mMIPTG_15m
+    ref: GSM2279741
+  - name: 03_Wang_HiC_BWX3352_1mMIPTG_20m
+    ref: GSM2279742
+  - name: 04_Wang_HiC_BWX3352_1mMIPTG_25m
+    ref: GSM2279743
+  - name: 05_Wang_HiC_BWX3352_1mMIPTG_30m
+    ref: GSM2279744
+  - name: 06_Wang_HiC_BWX3352_1mMIPTG_35m
+    ref: GSM2279745
+  - name: 07_Wang_HiC_BWX3352_1mMIPTG_45m
+    ref: GSM2279746
+  - name: 08_Wang_HiC_BWX3377
+    ref: GSM2279747
+  - name: 09_Wang_HiC_BWX3270
+    ref: GSM2279748
+  - name: 10_Wang_HiC_BWX3381
+    ref: GSM2279749
+  - name: 11_Wang_HiC_BWX3383
+    ref: GSM2279750
+  - name: 15_Wang_HiC_BWX3268
+    ref: GSM2279754
+  - name: 16_Wang_HiC_BWX3403
+    ref: GSM2279755
+  - name: 17_Wang_HiC_BWX3403_10m_rif
+    ref: GSM2279756
+  - name: 18_Wang_HiC_BWX3403_30m_rif
+    ref: GSM2279757
+  - name: 20_Wang_HiC_BWX3352_1mMIPTG_20m_15m
+    ref: GSM2279758
+  - name: 21_Wang_HiC_BWX3352_1mMIPTG_20m_15mrif
+    ref: GSM2279759
+  - name: 22_Wang_HiC_BWX3596_0IPTG
+    ref: GSM2279760
+  - name: 23_Wang_HiC_BWX3596_1mMIPTG_15min
+    ref: GSM2279761
+  - name: 24_Wang_HiC_BWX3596_1mMIPTG_20min
+    ref: GSM2279762
+  - name: 25_Wang_HiC_BWX3596_1mMIPTG_25min
+    ref: GSM2279763
+  - name: 26_Wang_HiC_BWX3596_1mMIPTG_30min
+    ref: GSM2279764
+  - name: 27_Wang_HiC_BWX3596_1mMIPTG_35min
+    ref: GSM2279765
+  - name: 19_Wang_HiC_BWX3352_1mMIPTG_20m_0m
+    ref: GSM2450607
+  Status:
+    Last-Update-Date: '2017-03-07'
+    Release-Date: '2017-02-03'
+    Submission-Date: '2016-08-15'
+    database: GEO
+  Summary: Structural maintenance of chromosomes (SMC) complexes play critical roles
+    in chromosome dynamics in virtually all organisms but how they function remains
+    poorly understood. In Bacillus subtilis, SMC condensin complexes are topologically
+    loaded at centromeric sites adjacent to the replication origin. Here we provide
+    evidence that these ring-shaped assemblies tether the left and right chromosome
+    arms together while traveling from the origin to the terminus (>2 Mb) at rates
+    >50kb/min. Condensin movement scales linearly with time arguing for an active
+    transport mechanism. These data support a model in which SMC complexes function
+    by processively enlarging DNA loops. Loop formation followed by processive enlargement
+    provides a mechanism for how condensin complexes compact and resolve sister chromatids
+    in mitosis and how cohesin generates topologically associating domains (TADs)
+    during interphase.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP082/SRP082154
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE85612/GSE85612_RAW.tar
+  Title: Bacillus subtilis SMC complexes juxtapose chromosome arms as they travel  from
+    origin to terminus
+  Type:
+  - Other
+  - Genome binding/occupancy profiling by high throughput sequencing
+  iid: GSE85612
+id: '200085612'

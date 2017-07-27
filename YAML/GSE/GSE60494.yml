@@ -1,0 +1,109 @@
+Contributor:
+- Address:
+    City: Stockholm
+    Country: Sweden
+    Line: "Nobels v\xE4g 3"
+    Zip-Code: '17177'
+  Department: Cell and Molecular Biology
+  Email: ilgar.abdullayev@licr.ki.se
+  Laboratory: Rickard Sandberg's group (rickard.sandberg@ki.se)
+  Organization: Karolinska Institutet
+  Person:
+    First: Ilgar
+    Last: Abdullayev
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Daniel
+    Last: "Ramsk\xF6ld"
+  iid: contrib3
+- Person:
+    First: Pelin
+    Last: Sahlen
+  iid: contrib4
+- Person:
+    First: Rickard
+    Last: Sandberg
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE60494
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  Overall-Design: HiCap was designed by combining Hi-C with with sequence capture
+    (for all promoters) and carried out in mouse embryonic stem cells (mESC)
+  Pubmed-ID: '26313521'
+  Relation:
+  - target: GSE60495
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA258410
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP045580
+    type: SRA
+  Sample-Ref:
+  - name: HiCap_replicate1_mESC
+    ref: GSM1481232
+  - name: HiCap_replicate2_mESC
+    ref: GSM1481233
+  - name: CaptureC_replicate1_mESC
+    ref: GSM1481234
+  - name: CaptureC_replicate2_mESC
+    ref: GSM1481235
+  - name: HiC_replicate1_mESC
+    ref: GSM1826742
+  - name: HiC_replicate2_mESC
+    ref: GSM1826743
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2015-07-06'
+    Submission-Date: '2014-08-18'
+    database: GEO
+  Summary: Although the locations of promoters and enhancers have been identified
+    in several cell types, we have yet limited information on their connectivity.
+    We developed HiCap, which combines Hi-C with promoter sequence capture, to enable
+    genome-wide identification of regulatory interactions with single-enhancer resolution.
+    HiCap analyses of mouse embryonic stem cells (mESC) identified promoter-enhancer
+    interactions predictive of gene expression change upon perturbation, opening up
+    for genomic analyses of long-range gene regulation.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP045/SRP045580
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE60494/GSE60494_HiC_promoter-enhancer.gff.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE60494/GSE60494_HiCap_Promoter-Enhancer_Interactions.gff.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE60494/GSE60494_HiCap_rep1_promoter-enhancer.gff.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE60494/GSE60494_HiCap_rep2_promoter-enhancer.gff.gz
+  Title: Genome-wide mapping of promoter-enhancer interactions with HiCap [HiCap]
+  Type: Other
+  iid: GSE60494
+id: '200060494'

@@ -1,0 +1,160 @@
+Accession: GSM2046418
+Channel:
+  Characteristics:
+  - ATCC CRL-2522
+  - '10'
+  - 2D
+  Extract-Protocol: "The methods for Hi-C library construction were adopted from (Belton\
+    \ JM, McCord RP, Gibcus JH, Naumova N, Zhan Y, Dekker J. Hi-C: a comprehensive\
+    \ technique to capture the conformation of genomes. Methods 2012). For each Hi-C\
+    \ library, ~20*106 cells were resuspended in 1 mL ice-cold lysis buffer (10 mM\
+    \ Tris-HCl, 10 mM NaCl, 0.2% Igpel, 10 mL protease inhibitor cocktail) and incubated\
+    \ on ice for 15 min. Cells were homogenized on ice. Cells were collected by spinning\
+    \ for 5 minutes at 2,000 xg, then washed twice in 500 mL of ice cold 1x NEB buffer\
+    \ 2. Cells were distributed between 4 centrifuge tubes. Chromatins in each tube\
+    \ were digested with 400u of restriction enzyme HindIII in 1x NEB buffer 2 at\
+    \ 37 C overnight on a spin wheel. After HindIII digestion, restriction site overhanging\
+    \ ends were filled and labeled with biotin with DNA polymerase I large (Klenow)\
+    \ fragments in a reaction containing dATP, dGTP, dTTP, and biotin-14-dCTP in each\
+    \ of the 4 Hind III digestion tube. DNA fragments labeled biotin-14-dCTP from\
+    \ each of the 4 tubes were ligated at 16 C for 4 hours in an 8.23 mL reaction\
+    \ containing 1x ligation buffer, 1% Triton X-100, 1 mg/ml Bovine serum albumin\
+    \ (BSA),10 mM ATP, and 50u T4 DNA ligase . Reverse cross-linking started with\
+    \ 50 ml of 10 mg/ml proteinase K added to each tube and incubated at 65 C for\
+    \ 4 hours. Then, another 50 ml of proteinase K were added to each tube and continued\
+    \ incubating at 65 C overnight. Next, DNA was extracted with saturated phenolchloroform\
+    \ (1:1) and desalted by using AMICON! Ultra Centrifugal Filter with 1 x TE buffer.\
+    \ The final volume of desalted DNA was adjusted to 100 mL in 1 x TE buffer. Removal\
+    \ of Biotin from un-ligated ends was carried out in 8 individual reactions each\
+    \ of 50 mL containing 5 mg of Hi-C 405 DNA, 1 mg/ml BSA,1X NEB buffer 2, 25 nM\
+    \ dATP, 25 nM dGTP, and 15u T4 DNA polymerase at 20 C for 4 hours. The Hi-C DNA\
+    \ was then pooled in a single tube, purified with single phenol extraction, and\
+    \ precipitated by ethanol. The DNA was re-dissolved in 105 ml of water, and transferred\
+    \ to a microTUBE AFA tube.\nDNA fragmentation was performed in a Sonicator. The\
+    \ DNA fragments of 200 \u2013 400 bp were recovered with Agencourt AMPure XP mixture.\
+    \ DNA fragment ends were repaired in a 70 mL reaction containing 1X ligation buffer,\
+    \ 0.25 mM of dNTP mixture, 7.5 u of T4 DNA polymerase, 25u of T4 polynucleotide\
+    \ kinase, 2.5u of DNA polymerase I large fragment at 20 C for 30 min. The reaction\
+    \ was purified with a MinElute column. The DNA was eluted in 32 mL of elusion\
+    \ buffer for A-tailing, which was performed in a 50 mL reaction containing 5 mg\
+    \ DNA, 1X NEB buffer 2, 0.2 mM dATP, 15u Klenow fragment. The reaction was incubated\
+    \ at 37 C for 30 min, then at 65 C for 20 min. For Streptavidin pull-down, the\
+    \ biotinylated Hi-C products were mixed with MyOne C1 streptavidin bead solution.\
+    \ Non-specifically binding DNA was removed by washing with 1X binding buffer (5\
+    \ mM Tris-HCl (pH8.0), 0.5 mM EDTA, and 435 1 M NaCl, then with 1X T4 Ligation\
+    \ buffer). The DNA-bound beads were resuspended in 38.75 ml of 1 X ligation buffer\
+    \ for adapter ligation. Illumina adapter ligation was performed in a 50 mL reaction\
+    \ by adding to the DNA-bound beads suspension of 1X T4 ligation buffer, 90 pM\
+    \ of Illumina paired end adapter, 3u of T4 DNA ligase. The reaction was incubated\
+    \ at room temperature for 2 hours. The beads were reclaimed, and the supernatant\
+    \ discarded. The beads were washed twice in Tween Wash Buffer (5 mM Tris-HCl pH8.0,\
+    \ 0.5 mM EDTA, 1 M NaCl, 0.05% Tween 20), once in 1X binding buffer (5 mM Tris-HCl\
+    \ (pH8.0), 0.5 mM EDTA, and 1 M NaCl, and twice in 1 X NEB buffer 2. After the\
+    \ last wash, the beads were resuspended in 20 ml of 1X NEB buffer 2. The Hi-C\
+    \ DNA sample was amplified by 15 PCR cycles for Illumina HiSeq sequencing. Each\
+    \ PCR reaction in 25 ml, 1.5 ml of Bead-bound Hi-C DNA, 0.35 ml of PE primer 1.0,\
+    \ 0.35 ml of PE primer 2.0, 0.2 ml of 25 mM dNTP, 2.5 ml of 10X PfuUltra buffer,\
+    \ 19.6 ml of H2O, and 0.5 ml of PfuUltra Fusion DNA polymerase. The PCR cycling\
+    \ parameters were 98 C for 30 seconds, followed by 15 cycles at 98 C for 10 seconds,\
+    \ 65 C for 30 seconds, and 72 C for 30 seconds, and a final extension at 72 C\
+    \ for 7 minutes. PCR products pooled from the supernatant of multiple reactions\
+    \ were subjected to AMpure XP beads purification to remove primer dimers. Each\
+    \ Hi-C library that passed the QC procedure was then sequenced in a single lane\
+    \ of a flow cell on a HiSeq 2000 sequencer to generate paired-end sequence reads\
+    \ at 100 bases per end read."
+  Growth-Protocol: "Human foreskin fibroblasts from a normal karyotyped male individual\
+    \ (Cat # CRL-2522, ATCC) were propagated in growth medium, composed of MEM medium\
+    \ (cat # 11095\u2013098, Life Technologies), 10% fetal bovine serum (FBS, cat\
+    \ # 10082\u2013147), 1 X non-essential amino acids (NEAA, cat # 11140\u2013050,\
+    \ Life Technologies), and 1 X antibiotic/antimycotic (cat # 15240\u2013062, Life\
+    \ Technologies).\L"
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: fibroblast
+  Treatment-Protocol: "Fibroblasts were synchronized to G0/G1\Lwith serum-free MEM\
+    \ supplemented with 1X NEAA and 1X Antibiotic/antimycomic for 48 hours. Synchronized\
+    \ cells were dissociated with 0.25% trypsin to suspend for replating. For 2D monolayer\
+    \ cultures, 4*106 cells were plated in each 150 mm dish. For 3D cultures, 0.5*106\
+    \ cells were plated in each well of a 96-well PERFECTA3D Hanging Drop Plate (3D\
+    \ Biomatrix). All cultures were incubated for 48 hours in growth medium at 37\
+    \ C with 5% CO2. Approximately 20*106 cells grown in 2D were cross linked with\
+    \ 1% formaldehyde in serum free-medium for 15 min at room temperature, and then\
+    \ quenched with glycine to a final concentration of 0.128 M. Spheroids were harvested\
+    \ in serum-free medium, and crosslinked with 2% formaldehyde for 30 min at room\
+    \ temperature. The cross linking reaction was quenched with the glycine to a final\
+    \ concentration of 0.128 M. Cross linked cells were flash frozen in liquid nitrogen\
+    \ then stored at 80 C until the construction of Hi-C libraries."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: 4C-Seq\nPaired-end reads were mapped to HG19 using\
+  \ Bowtie2, with default parameter settings and the \u201C\u2013very-sensitive- local\u201D\
+  \ preset option.\nHOMER (http:// homer.salk.edu/homer/interactions/) was used to\
+  \ develop the contact matrix with \u201CmakeTagDirectory\u201D with the \u2013tbp\
+  \ 1setting, and with \u201CanalyzeHi-C\u201D with the \u201C-raw\u201D and \u201C\
+  -res 1000000\u201D settings to produce the raw contact matrix at 1 MB resolution\
+  \ or and \u201C-res 1000000\u201D for the 100 kb contact matrix.\nGenome_build:\
+  \ hg19\nSupplementary_files_format_and_content: each text file has a raw Hi-C matrix\
+  \ at 100 kb resolution for the indicated sample."
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04440791
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1548039
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3125955
+    cluster_name: public
+    id: '2192190'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7272000000'
+    total_spots: '36000000'
+  - acc: SRR3125956
+    cluster_name: public
+    id: '2192190'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7272000000'
+    total_spots: '36000000'
+  - acc: SRR3125957
+    cluster_name: public
+    id: '2192190'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7272000000'
+    total_spots: '36000000'
+  - acc: SRR3125958
+    cluster_name: public
+    id: '2192190'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4905900674'
+    total_spots: '24286637'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX154/SRX1548039
+  iid: SRX1548039
+Series: GSE77237
+Status:
+  Last-Update-Date: '2016-01-28'
+  Release-Date: '2016-01-26'
+  Submission-Date: '2016-01-26'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX154/SRX1548039
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2046nnn/GSM2046418/GSM2046418_Fib_2D2.txt.gz
+Title: 2D rep 2
+Type: SRA
+iid: GSM2046418

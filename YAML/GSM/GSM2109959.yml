@@ -1,0 +1,107 @@
+Accession: GSM2109959
+Channel:
+  Characteristics: C57BL/6J
+  Extract-Protocol: "Nuclei were fixed in separate drops of M2 (not containing BSA)\
+    \ with 2% formaldehyde for 15 minutes. Nuclei were washed through drops of complete\
+    \ M2. For zygote experiments without pronuclear extraction, zygotes were treated\
+    \ identically to oocytes. Here nuclei were separated into individual wells after\
+    \ SDS treatment and kept separate in the subsequent steps of the protocol. After\
+    \ fixation, zygotes or single isolated pronuclei were incubated in 9 \u03BCl of\
+    \ lysis buffer for at least 15 minutes on ice. Similarly zygotes or pronuclei\
+    \ were incubated in 9 \u03BCl of 1\xD7 NEB3 buffer supplemented with 0.6% SDS\
+    \ for 2 hours at 37\xB0 with shaking in humidified atmosphere. Then nuclei were\
+    \ incubated in 1\xD7 DpnII buffer (NEB) with 1\xD7 BSA and  5 U DpnII (NEB). After\
+    \ overnight incubation in a humidified incubator at 37\xB0 the DNA ends were ligated\
+    \ in 9 \u03BCl of 1\xD7 T4 DNA ligase buffer containing 5 U T4 DNA ligase (Thermo\
+    \ Scientific) and they were incubated at 16\xB0C for 4.5 hours with 50 rpm rotation,\
+    \ and then were kept for 30 min at room temperature. DNA from each nucleus was\
+    \ amplified using illustra GenomiPhi v2 DNA amplification kit (GE Healthcare)\
+    \ or illustra Single Cell GenomiPhi DNA amplification kit according to manufacturer's\
+    \ recommendations, but both protocols were modified to include a decrosslinking\
+    \ step of an overnight (14-16 hours) incubation at 65\xB0C. After the whole-genome\
+    \ amplification procedure, the DNA was purified. 1 \u03BCg (or all available amount,\
+    \ if the yield was lower) of DNA was diluted to 500 \u03BCl with sonication buffer\
+    \ (50 mM Tris-HCl pH 8.0, 10 mM EDTA, 0.1% SDS) and was sonicated using Branson\
+    \ Sonifier 150 for 20 seconds with power setting 3. The sonicated DNA was purified\
+    \ and then submitted for library preparation and sequencing.\nThe library preparation\
+    \ was done by the VBCF NGS unit (vbcf.ac.at) following the standard DNA sample\
+    \  preparation protocol for Solexa platforms (NEB reagents)."
+  Growth-Protocol: "3-4-week-old C57BL/6J females were superovulated by intraperitoneal\
+    \ injection of PMSG (pregnant mare's serum gonadotropin; 5 IU, Folligon, Intervet)\
+    \ followed by hCG (human chorionic gonadotropin; 5 IU, Chorulon, Intervet) injection\
+    \ 48 hours later. Natural matings to C57BL/6J males were set up overnight. Zygotes\
+    \ were released from the ampullae and treated with hyaluronidase (Sigma) to remove\
+    \ surrounding cumulus cells. For isolation of maternal and paternal nuclei, zygotes\
+    \ were pre-incubated in culture medium supplemented with 5 \u03BCg/ml cytochalasin\
+    \ B (Sigma) and 1 \u03BCM nocodazole (Sigma) for 15 minutes. The zona pellucida\
+    \ of the zygotes was opened and nuclei were extracted one by one. The maternal\
+    \ and paternal origin of the nuclei was determined taking size of the nuclei and\
+    \ position in relation to second polar body into account."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: zygote
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Base calling was performed by VBCF NGS unit
+
+  Mapping: iterative mapping (see Imakaev et al, 2012) using bowtie2 with increased
+  stringency parameters: --score-min -L 0.6,0.2--very-  sensitive
+
+  Read filtering: if two reads map to the same strands, and each side of the read
+  is within 500 bp of any side of the other read, we retained only one copy of the
+  read.
+
+  Additional filtering: we separated the genome into 500 bp bins. If any two bins
+  were interacting more than once, only one interaction was counted. Since each region
+  is only present in the single cell up to 4 times (in oocytes), we eliminated all
+  500 bp bins that form more than 8 unique interactions with other bins.
+
+  Filtered reads were then binned at different resolutions (we provide files at 200Kb
+  resolution) using read start as a read position. No normalization was applied to
+  the data.
+
+  Genome_build: mm9 or hg19
+
+  Supplementary_files_format_and_content: List of all interactions at single contact,
+  40Kb or 200 Kb resolution'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04622290
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1685310
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3344030
+    cluster_name: public
+    id: '2415693'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6218100500'
+    total_spots: '24872402'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685310
+  iid: SRX1685310
+Series: GSE80006
+Status:
+  Last-Update-Date: '2017-03-24'
+  Release-Date: '2017-03-23'
+  Submission-Date: '2016-04-07'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685310
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2109nnn/GSM2109959/GSM2109959_72_pronucleus-female-200kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2109nnn/GSM2109959/GSM2109959_72_pronucleus-female-40kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2109nnn/GSM2109959/GSM2109959_72_pronucleus-female-reads.csv.gz
+Title: 76_pronucleus_female
+Type: SRA
+iid: GSM2109959

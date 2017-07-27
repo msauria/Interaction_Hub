@@ -1,0 +1,76 @@
+Accession: GSM2133772
+Channel:
+  Characteristics:
+  - Kc167
+  - Drosophila Embryonic Cell Line
+  Extract-Protocol: "Cells were crosslinked with 1% formaldehyde for 10 min at room\
+    \ temperature and quenched with glycine. Nuclear lysates were digested with DpnII\
+    \ or Hinf1 and  fragment ends were filled with biotinylated nucleotides prior\
+    \ to ligatation. Ligated fragments were reverse crosslinked, purified, and sonicated\
+    \ prior to generation of Illumina libraries.\nLibraries were constructed using\
+    \ the standard protocol. Genomic fragments were end repaired (NEBNext End Repair\
+    \ Module), A-tailed by adding  adenosine to  the 3\u2019 ends of fragment using\
+    \ Klenow fragment (3\u2019 to 5\u2019 exo minus, New England Biolabs), and adaptors\
+    \ were ligated at room temperature for 1 hr with T4 DNA ligase (New England Biolabs).\
+    \ Libraries were amplified with Illumina primers using the KAPA SYBR FAST qPCR\
+    \ Master Mix."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: Kc167_Hinfl
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Raw HiC data from this submission and the four normal temperature HiC biological
+  replicates digested with DpnII from GSE63515 (GSM1551441, GSM1551442, GSM1551443,
+  GSM1551444) were combined and processed through the Juicer pipeline (Rao et al.
+  2014. Cell. 159:1665-80) to generate the .hic file.
+
+  To identify the significant genomic interactions, the .hic file was further processed
+  through ICE and Fit-Hi-C (Imakaev, et al. 2012. Nature. 9:999-1003; Ay et al. 2014.
+  Genome Research. 24:999-1011)
+
+  Genome_build: dm6
+
+  Supplementary_files_format_and_content: The .hic file contains the HiC contact matrix.
+  The Fithic .txt file contains the genomic coordinates of the interactions anchors
+  in columns 1-3 and 4-6. The p value and q value for each interaction are reported
+  in column 7 and 8, respectively.'
+Description: HiC Library digested with HinfI
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HinfI
+Platform-Ref:
+  ref: GPL13304
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04903890
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1728722
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3452739
+    cluster_name: public
+    id: '2473271'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '171819604044'
+    total_spots: '1684505922'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX172/SRX1728722
+  iid: SRX1728722
+Series: GSE80701
+Status:
+  Last-Update-Date: '2016-11-16'
+  Release-Date: '2016-11-16'
+  Submission-Date: '2016-04-26'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX172/SRX1728722
+Title: HinfI_HiC
+Type: SRA
+iid: GSM2133772

@@ -1,0 +1,95 @@
+Accession: GSM1424560
+Channel:
+  Characteristics:
+  - midbrain-like neurons
+  - HindIII
+  Extract-Protocol: Hi-C libraries were generated as previously published (Lieberman-Aiden
+    et al, 2009), with modifications to increase DNA yield. See associated publication
+    for details.
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Mouse Neuron cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  The paired end Hi-C reads were mapped and filtered with the hiclib pipeline (Imakaev
+  et al., 2012, Downloaded November 2013) using default parameters. Data was binned
+  at 50kb or 100kb, depending on the application.
+
+  Hi-C matrices were corrected using Iterative Correction (Imakaev et al., 2012) and
+  further processed with custom code to generate normalized heatmaps (See associated
+  publication for details).
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: Processed data files are tab-delimited text
+  files that contain raw or normalized interaction scores between genomic loci for
+  a given chromosome. The coordinates of each loci are marked in the first row and
+  first column of the table.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02900464
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX644424
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1504848
+    cluster_name: public
+    id: '900866'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '12345887200'
+    total_spots: '61729436'
+  - acc: SRR1504847
+    cluster_name: public
+    id: '900866'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '24733832800'
+    total_spots: '123669164'
+  - acc: SRR1504850
+    cluster_name: public
+    id: '900866'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '48059281000'
+    total_spots: '240296405'
+  - acc: SRR1504849
+    cluster_name: public
+    id: '900866'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '11978348800'
+    total_spots: '59891744'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX644/SRX644424
+  iid: SRX644424
+Series: GSE59027
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2015-12-30'
+  Submission-Date: '2014-07-02'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1424nnn/GSM1424560/GSM1424560_Normalized_Heatmaps.100kb.Neuron.HindIII.tar.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1424nnn/GSM1424560/GSM1424560_Raw_Heatmaps.100kb.Neuron.HindIII.tar.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX644/SRX644424
+Title: Hi-C Neuron-HindIII
+Type: SRA
+iid: GSM1424560

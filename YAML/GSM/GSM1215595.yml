@@ -1,0 +1,132 @@
+Accession: GSM1215595
+Channel:
+  Characteristics: 18 hpi; early trophozoite stage
+  Extract-Protocol: "P. falciparum cultures were crosslinked for 25 minutes at 37C\
+    \ in 1.25% formaldehyde. The reaction was quenched for 15 min at 37C, followed\
+    \ by extensive washes to remove cellular debris. We then applied an adapted Hi-C\
+    \ method referred to as tethered conformation capture. Briefly, proteins were\
+    \ first biotinylated and the DNA was digested using the restriction enzyme MboI.\
+    \ Fragments were captured on streptavidin-coated beads, ligated under dilute conditions\
+    \ and subsequently sequenced using the Illumina HiSeq 2000 platform, generating\
+    \ 50 bp paired-end reads.\nLibraries were generated using the NEBNext ChIP-Seq\
+    \ Library Preparation kit (NEB) according to the manufacturer\u2019s instructions,\
+    \ with the following modifications for the high AT-content of the P. falciparum\
+    \ genome: libraries were amplified for a total of 11 PCR cycles (3 cycles of [15s\
+    \ at 98\xB0C, 30s at 55\xB0C, 30s at 62\xB0C] followed by 8 cycles of [15s at\
+    \ 98\xB0C, 30s at 63\xB0C, 30s at 72\xB0C])."
+  Growth-Protocol: P. falciparum strain 3D7 was maintained in human O+ erythrocytes
+    in 5% haematocrit according to a previously described protocol (Trager et al.,
+    Science 1976).
+  Molecule: genomic DNA
+  Organism: Plasmodium falciparum 3D7
+  Source: Erythrocytic cycle
+  Treatment-Protocol: Cultures were synchronized twice at ring stage with 5% D-sorbitol
+    treatments performed eight hours apart. Parasites were harvested 48 hours after
+    the first sorbitol treatment (0h; ring stage), and then 18 hours (early trophozoite
+    stage) and 36 hours (late schizont stage) thereafter. The developmental stage
+    of the parasites was verified by microscopy using Giemsa-stained blood smears
+    prior to harvesting.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'All raw paired-end reads were trimmed to 40 bp and each end was
+  mapped separately to whole human genome (hg19) using BWA v0.5.9 with default parameters
+  allowing an edit distance of at most 3 in order to filter the human DNA contamination
+  in samples. All pairs with at least one of the ends mapped to the human genome (without
+  checking quality or uniqueness) were eliminated from further consideration. Remaining
+  paired-end reads were used for further analysis of Plasmodium genome architecture
+  (trimmedAndFiltered files).
+
+  Each end of the paired-end reads in trimmedAndFiltered fastq files was mapped separately
+  to Plasmodium falciparum 3D7 (PlasmoDB v9.0) genome using BWA v0.5.9 with default
+  parameters. The alignment results were post-processed further to extract the reads
+  that mapped (i) uniquely to one location in the reference genome, (ii) with an alignment
+  quality score of at least 30 (which corresponds to a 1 in 1000 chance that the mapping
+  is incorrect), and (iii) with an edit distance of at most 2. The paired-end reads
+  with both ends mapping to the Plasmodium genome were kept for further analysis.
+  Potential PCR duplicates (i.e., pairs of read-pairs with identical genomic coordinates)
+  were identified and only one copy of each such group of reads were retained.
+
+  Each paired-end read was assigned to a pair of restriction enzyme fragments (restriction
+  enzyme used is MboI with cut site |GATC) that are listed by their start coordinates
+  in MboI-cutSites.txt file. The mapping coordinates of the reads were used to identify
+  the nearest MboI restriction site to do the assignment of read pairs to restriction
+  fragment pairs. At this native resolution of one restriction fragment (1RE) the
+  number of times each fragment pair is linked were calculated as the number of observed
+  paired-end reads that link the two fragments. These numbers were listed in rawContactCounts-1RE
+  files for each of the three crosslinked as well as the not crosslinked control library.
+
+  For 3D modeling and other downstream analysis the Plasmodium genome was partitioned
+  into non-overlapping 10 kb windows and each restriction fragment was assigned to
+  the 10 kb window that covers the majority of the bases in that fragment. For each
+  pair of such 10 kb windows, the contact count was calculated as the total number
+  of times a pair of restriction fragments, one from each 10 kb window, were linked
+  by a paired-end read. These numbers were listed in rawContactCounts-10kb files for
+  each of the three crosslinked as well as the not crosslinked control library.
+
+  The 10 kb aggregated raw contact count matrices were normalized in two steps. First,
+  all 10 kb windows were ranked by their percentage of intrachromosomal interactions
+  with zero counts, and the top 2% of this list were filtered out from further analysis
+  removing regions of low mappability. Second, an iterative correction and eigenvector
+  decomposition (ICE) method (Imakaev et al, Nature Methods 2012) was applied which
+  attempts to eliminate systematic biases in Hi-C data. This method generates normalized
+  contact counts from each raw contact count which are listed for as normalizedContactCounts-10kb
+  files for the three crosslinked libraries. Control library was not subjected to
+  normalization.
+
+  Genome_build: Plasmodium falciparum 3D7 (PlasmoDB v9.0)
+
+  Supplementary_files_format_and_content: trimmedAndFiltered are in fastq format.
+  Other files are text files that contain fields listed in their header lines.'
+Description: Sample 4
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL17634
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02334611
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX339590
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR957167
+    cluster_name: public
+    id: '477359'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '352212980'
+    total_spots: '3594010'
+  - acc: SRR957168
+    cluster_name: public
+    id: '477359'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '256237562'
+    total_spots: '2614669'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX339/SRX339590
+  iid: SRX339590
+Series: GSE50199
+Status:
+  Last-Update-Date: '2014-01-06'
+  Release-Date: '2014-01-06'
+  Submission-Date: '2013-08-26'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1215nnn/GSM1215595/GSM1215595_rawContactCounts-10kb-TROPHOZOITES-NL.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1215nnn/GSM1215595/GSM1215595_rawContactCounts-1RE-TROPHOZOITES-NL.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1215nnn/GSM1215595/GSM1215595_trimmedAndFiltered-TROPHOZOITES-NL-GTCA-L1_1.fastq.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1215nnn/GSM1215595/GSM1215595_trimmedAndFiltered-TROPHOZOITES-NL-GTCA-L1_2.fastq.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1215nnn/GSM1215595/GSM1215595_trimmedAndFiltered-TROPHOZOITES-NL-TATC-L1_1.fastq.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1215nnn/GSM1215595/GSM1215595_trimmedAndFiltered-TROPHOZOITES-NL-TATC-L1_2.fastq.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX339/SRX339590
+Title: P.falciparum_3D7_18h_HiSeq_non-crosslinked_control
+Type: SRA
+iid: GSM1215595

@@ -1,0 +1,203 @@
+Contributor:
+- Address:
+    City: Indianapolis
+    Country: USA
+    Line: 410 West 10th Street HITS 5003 lab
+    State: IN
+    Zip-Code: '46202'
+  Department: Department of Medical and Molecular Genetics, Center for Computational
+    Biology and Bioinformatics
+  Laboratory: Lang Li lab
+  Organization: Indiana School of Medicine, Indiana University
+  Person:
+    First: Lang
+    Last: Li
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Raphael
+    Last: Mourad
+  iid: contrib3
+- Person:
+    First: Liran
+    Last: Juan
+  iid: contrib4
+- Person:
+    First: Pei-Yin
+    Last: Hsu
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL10999
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2010-09-29'
+    Submission-Date: '2010-09-29'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina Genome Analyzer IIx (Homo sapiens)
+  iid: GPL10999
+Series:
+  Accession: GSE51687
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  Overall-Design: '5 time points: before E2 (0h) and after E2 (0.5h, 1h, 4h and 24h).
+    For each time point, there are two lanes per sample and two biological replicate
+    samples.
+
+    Please note that a processed data file corresponds to the merging of 2 replicates,
+    and  that there are 2 lanes per replicates (4 files in total per processed data
+    file).
+
+
+    Information about data merging is provided in the title of the sample. For instance
+    :
+
+    0h_replicate_1_lane 1
+
+    0h_replicate_1_lane 2
+
+    0h_replicate_2_lane_1
+
+    0h_replicate_2_lane_2
+
+    are merged to generate the processed data hic_0h-all-1M.IC.csv.gz.
+
+
+    Several bin sizes are provided for the same processed data:
+
+    hic_0h-all-1M.IC.csv.gz
+
+    hic_0h-all-2M.IC.csv.gz
+
+    hic_0h-all-4M.IC.csv.gz
+
+    hic_0h-all-500k.IC.csv.gz
+
+    are the same processed data, but with different bin sizes.'
+  Pubmed-ID: '25470140'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA224561
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP031901
+    type: SRA
+  Sample-Ref:
+  - name: 0h_replicate_1_lane 1
+    ref: GSM1250485
+  - name: 0h_replicate_1_lane 2
+    ref: GSM1250486
+  - name: 0h_replicate_2_lane_1
+    ref: GSM1250487
+  - name: 0h_replicate_2_lane_2
+    ref: GSM1250488
+  - name: 0.5h_replicate_1_lane_1
+    ref: GSM1250489
+  - name: 0.5h_replicate_1_lane_2
+    ref: GSM1250490
+  - name: 0.5h_replicate_2_lane_1
+    ref: GSM1250491
+  - name: 0.5h_replicate_2_lane_2
+    ref: GSM1250492
+  - name: 1h_replicate_1_lane_1
+    ref: GSM1250493
+  - name: 1h_replicate_1_lane_2
+    ref: GSM1250494
+  - name: 1h_replicate_2_lane_1
+    ref: GSM1250495
+  - name: 1h_replicate_2_lane_2
+    ref: GSM1250496
+  - name: 4h_replicate_1_lane_1
+    ref: GSM1250497
+  - name: 4h_replicate_1_lane_2
+    ref: GSM1250498
+  - name: 4h_replicate_2_lane_1
+    ref: GSM1250499
+  - name: 4h_replicate_2_lane_2
+    ref: GSM1250500
+  - name: 24h_replicate_1_lane_1
+    ref: GSM1250501
+  - name: 24h_replicate_1_lane_2
+    ref: GSM1250502
+  - name: 24h_replicate_2_lane_1
+    ref: GSM1250503
+  - name: 24h_replicate_2_lane_2
+    ref: GSM1250504
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2013-10-25'
+    Submission-Date: '2013-10-24'
+    database: GEO
+  Summary: 'In the cell nucleus, each chromosome is confined to a chromosome territory.
+    This spatial organization of chromosomes plays a crucial role in gene regulation
+    and genome stability.   Recently an additional level of organization has been
+    discovered at the chromosome scale: the spatial segregation into open and closed
+    chromatin to form two genome-wide compartments. Although considerable progress
+    has been made in our knowledge of chromatin organization, a fundamental issue
+    remains the understanding of its dynamic, especially in cancer.   To address this
+    issue, we performed genome-wide mapping of intra- and interchromosomal interactions
+    (Hi-C) over the time after estrogen (E2) stimulation of breast cancer cells. To
+    biologically interpret these interactions, we integrated with estrogen receptor
+    alpha (ER alpha) binding events, gene expression and multiple epigenetic marks.
+    We show that E2 induces a global reorganization of genome. More specifically,
+    gene-rich chromosomes as well as areas of open and highly transcribed chromatins
+    are moved spatially closer, thus enabling genes to share transcriptional machinery
+    and regulatory elements. At a lower scale, differentially interacting loci are
+    enriched for cancer proliferation and E2 related genes. We also observe that these
+    differentially interacting loci are correlated with higher ER alpha binding events
+    and gene expression.'
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeIndex_1M.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeIndex_2M.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeIndex_4M.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeIndex_500k.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeStarts_1M.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeStarts_2M.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeStarts_4M.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_chromosomeStarts_500k.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_genomeIdxToLabel.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0.5h-all-1M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0.5h-all-2M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0.5h-all-4M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0.5h-all-500k.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0h-all-1M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0h-all-2M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0h-all-4M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_0h-all-500k.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_1h-all-1M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_1h-all-2M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_1h-all-4M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_1h-all-500k.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_24h-all-1M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_24h-all-2M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_24h-all-4M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_24h-all-500k.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_4h-all-1M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_4h-all-2M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_4h-all-4M.IC.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE51687/GSE51687_hic_4h-all-500k.IC.csv.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP031/SRP031901
+  Title: Estrogen induces global reorganization of chromatin structure in human breast
+    cancer cells
+  Type: Other
+  iid: GSE51687
+id: '200051687'

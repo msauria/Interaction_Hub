@@ -1,0 +1,145 @@
+Contributor:
+- Address:
+    City: Boston
+    Country: USA
+    Line: 185 Cambridge St
+    State: MA
+    Zip-Code: '02114'
+  Department: Molecular Biology
+  Email: jfroberg@fas.harvard.edu
+  Laboratory: Jeannie Lee lab
+  Organization: HHMI, Massachusetts General Hospital, Harvard Medical School
+  Person:
+    First: John
+    Last: Froberg
+    Middle: Edward
+  Phone: '8479770174'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: J
+    Last: Froberg
+    Middle: E
+  iid: contrib3
+- Person:
+    First: C
+    Last: Wei
+    Middle: Y
+  iid: contrib4
+- Person:
+    First: B
+    Last: Kesner
+  iid: contrib5
+- Person:
+    First: J
+    Last: Lee
+    Middle: T
+  iid: contrib6
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL16417
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2012-12-20'
+    Submission-Date: '2012-12-20'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Mus musculus)
+  iid: GPL16417
+Series:
+  Accession: GSE67516
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  Overall-Design: RNA-seq in 3 control and 10 knockdown cell lines. ChIP-seq for CTCF,
+    Rad21 and Smc1a in wild-type fibroblasts and Xist-deletion fibroblasts. Hi-C in
+    wild-type and Xist-deletion fibroblasts.
+  Pubmed-ID: '26089354'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA280120
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP056800
+    type: SRA
+  Sample-Ref:
+  - name: wild type Hi-C
+    ref: GSM1648486
+  - name: Xist deletion Hi-C
+    ref: GSM1648487
+  - name: wild type Hi-C, replicate 2
+    ref: GSM1696042
+  - name: Xist deletion Hi-C, replicate 2
+    ref: GSM1696043
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2015-06-19'
+    Submission-Date: '2015-04-01'
+    database: GEO
+  Summary: The inactive X chromosome (Xi) serves as a model to understand gene silencing
+    on a global scale. Here, we perform identification of direct RNA interacting proteins?
+    (iDRiP) to isolate a comprehensive protein interactome for Xist, an RNA required
+    for Xi silencing. We discover multiple classes of interactors, including cohesins,
+    condensins, topoisomerases, RNA helicases, chromatin remodelers and modifiers,
+    which synergistically repress Xi transcription. Inhibiting two or three interactors
+    destabilizes silencing. While Xist attracts some interactors, it repels architectural
+    factors. Xist evicts cohesins from the Xi and directs an Xi-specific chromosome
+    conformation. Upon deleting Xist, the Xi acquires the cohesin-binding and chromosomal
+    architecture of the active X. Our study unveils many layers of Xi repression and
+    demonstrates a central role for RNA in the topological organization of mammalian
+    chromosomes. The RNA-seq data sets generated in this study provide a resource
+    for examining the effects of knockdowns of various Xist-interacting proteins on
+    gene expression. The ChIP-seq data sets provide a comprehensive set of data examining
+    CTCF and cohesion binding the X-chromosome, and the effects of deleting Xist on
+    CTCF and cohesion binding. The Hi-C data is an allele-specific contact map of
+    the X-chromosome higher-order chromatin structure in mouse.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP056/SRP056800
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_CTCF_peak_calls.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_Diff_expression.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_RAD21_peak_calls.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_RNA_seq_rep1_diffExp_analysis.xls.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_SMC1A_peak_calls.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_WT_HiC_merged.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE67516/GSE67516_Xidel_HiC_merged.tar.gz
+  Title: A comprehensive Xist interactome reveals cohesin repulsion and an RNA-directed
+    chromosome conformation
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE67516
+id: '200067516'

@@ -1,0 +1,122 @@
+Contributor:
+- Address:
+    City: Barcelona
+    Country: Spain
+    Line: Dr. Aiguader 88
+    Zip-Code: 08003
+  Department: EMBL-CRG Systems Biology Unit
+  Email: andre.faure@crg.eu
+  Organization: Centre for Genomic Regulation (CRG)
+  Person:
+    First: Andre
+    Last: Faure
+    Middle: J
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ernest
+    Last: Laue
+    Middle: D
+  iid: contrib3
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL16417
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2012-12-20'
+    Submission-Date: '2012-12-20'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Mus musculus)
+  iid: GPL16417
+- Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+Series:
+  Accession: GSE80280
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+    position: '1'
+    ref: contrib3
+  Overall-Design: ChIP-seq, RNA-seq and nuclear RNA-seq in haploid and diploid mouse
+    embryonic stem cells
+  Pubmed-ID: '28289288'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA318485
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP073306
+    type: SRA
+  Sample-Ref:
+  - name: Population Hi-C (haploid)
+    ref: GSM2123564
+  - name: Single cell Hi-C cell 1
+    ref: GSM2219497
+  - name: Single cell Hi-C cell 2
+    ref: GSM2219498
+  - name: Single cell Hi-C cell 3
+    ref: GSM2219499
+  - name: Single cell Hi-C cell 4
+    ref: GSM2219500
+  - name: Single cell Hi-C cell 5
+    ref: GSM2219501
+  - name: Single cell Hi-C cell 6
+    ref: GSM2219502
+  - name: Single cell Hi-C cell 7
+    ref: GSM2219503
+  - name: Single cell Hi-C cell 8
+    ref: GSM2219504
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2017-03-07'
+    Submission-Date: '2016-04-14'
+    database: GEO
+  Summary: The folding of genomic DNA from the beads-on-a-string like structure of
+    nucleosomes into higher order assemblies is thought to be critically linked to
+    nuclear processes, but it is unclear to what degree it is a cause or consequence
+    of function. We have calculated the first 3D structural models of entire mammalian
+    genomes using data from a new chromosome conformation capture protocol that allows
+    us to first image and then process single cells. This has allowed us to study
+    the folding of chromosomes down to a sub-100 kb scale. We show that the structures
+    of individual topological-associated domains, chromosomes, and the way they pack
+    together, varies very substantially from cell-to-cell. However, in all cells we
+    find a consistent large-scale organization of compartments, with active enhancers
+    and promoters clustering near inter-chromosomal interfaces, suggesting that nuclear
+    processes such as transcription may drive chromosome and genome folding.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80280/GSE80280_Chd4_ESC_peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80280/GSE80280_Mbd3_ESC_peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80280/GSE80280_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80280/GSE80280_corr_Expression_Chd4.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP073/SRP073306
+  Title: 3D structures of individual mammalian genomes reveal principles of nuclear
+    organization
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE80280
+id: '200080280'

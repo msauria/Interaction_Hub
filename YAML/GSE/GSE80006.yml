@@ -1,0 +1,731 @@
+Contributor:
+- Address:
+    City: Edinburgh
+    Country: United Kingdom
+    Line: Crewe Road, Western General Hospital
+    Postal-Code: EH4 2GH
+  Department: IGMM, HGU
+  Email: flyamer@gmail.com
+  Laboratory: Bickmore
+  Organization: University of Edinburgh
+  Person:
+    First: Ilya
+    Last: Flyamer
+    Middle: M.
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ilya
+    Last: Flyamer
+    Middle: M
+  iid: contrib3
+- Person:
+    First: Johanna
+    Last: Gassler
+  iid: contrib4
+- Person:
+    First: Maxim
+    Last: Imakaev
+  iid: contrib5
+- Person:
+    First: Hugo
+    Last: Brandao
+    Middle: B
+  iid: contrib6
+- Person:
+    First: Sergey
+    Last: Ulianov
+    Middle: V
+  iid: contrib7
+- Person:
+    First: Nezar
+    Last: Abdennur
+  iid: contrib8
+- Person:
+    First: Sergey
+    Last: Razin
+    Middle: V
+  iid: contrib9
+- Person:
+    First: Leonid
+    Last: Mirny
+  iid: contrib10
+- Person:
+    First: Kikue
+    Last: Tachibana-Konwalski
+  iid: contrib11
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+- Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+Series:
+  Accession: GSE80006
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  Overall-Design: We generated 98 HiC libraries from single oocytes (includes comparison
+    of NSN and SN oocytes + two different experimental conditions), 82 libraries from
+    nuclei of zygotes (comparison of maternal vs paternal nuclei + 2 experimental
+    conditions), 2 libraries of bulk K562 cells compared to 34 libraries of single
+    K562 cells and 2 libraries of bulk MEL cells (with 2 different fixation conditions).
+  Pubmed-ID: '28355183'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA317616
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP072973
+    type: SRA
+  Sample-Ref:
+  - name: K562_bulkB
+    ref: GSM2109886
+  - name: K562_bulkA
+    ref: GSM2109887
+  - name: 1_oocyte_NSN
+    ref: GSM2109888
+  - name: 4_oocyte_NSN
+    ref: GSM2109889
+  - name: 2_oocyte_SN-Hoechst
+    ref: GSM2109890
+  - name: 6_oocyte_SN-Hoechst
+    ref: GSM2109891
+  - name: 5_oocyte_NSN
+    ref: GSM2109892
+  - name: 3_oocyte_SN
+    ref: GSM2109893
+  - name: 9_oocyte_SN-Hoechst
+    ref: GSM2109894
+  - name: 7_oocyte_Intermediate
+    ref: GSM2109895
+  - name: 8_oocyte_SN
+    ref: GSM2109896
+  - name: 13_oocyte_SN
+    ref: GSM2109897
+  - name: 11_oocyte_SN-Hoechst
+    ref: GSM2109898
+  - name: 10_oocyte_NSN
+    ref: GSM2109899
+  - name: 12_oocyte_NSN
+    ref: GSM2109900
+  - name: 15_oocyte_NSN
+    ref: GSM2109901
+  - name: 14_oocyte_SN
+    ref: GSM2109902
+  - name: 16_oocyte_SN-Hoechst
+    ref: GSM2109903
+  - name: 18_oocyte_SN-Hoechst
+    ref: GSM2109904
+  - name: 17_oocyte_NSN
+    ref: GSM2109905
+  - name: 19_oocyte_SN-Hoechst
+    ref: GSM2109906
+  - name: 21_oocyte_SN-Hoechst
+    ref: GSM2109907
+  - name: 20_oocyte_SN
+    ref: GSM2109908
+  - name: 23_oocyte_SN-Hoechst
+    ref: GSM2109909
+  - name: 22_oocyte_SN-Hoechst
+    ref: GSM2109910
+  - name: 24_pronucleus_w-o-inh-undef sex
+    ref: GSM2109911
+  - name: 26_oocyte_NSN-Hoechst
+    ref: GSM2109912
+  - name: 25_oocyte_NSN
+    ref: GSM2109913
+  - name: 28_oocyte_SN-Hoechst
+    ref: GSM2109914
+  - name: 27_oocyte_SN
+    ref: GSM2109915
+  - name: 29_oocyte_SN
+    ref: GSM2109916
+  - name: 31_oocyte_SN
+    ref: GSM2109917
+  - name: 30_oocyte_NSN
+    ref: GSM2109918
+  - name: 33_oocyte_SN-Hoechst
+    ref: GSM2109919
+  - name: 32_oocyte_NSN
+    ref: GSM2109920
+  - name: 35_oocyte_SN
+    ref: GSM2109921
+  - name: 38_pronucleus_w-o-inh-undef sex
+    ref: GSM2109922
+  - name: 34_oocyte_SN-Hoechst
+    ref: GSM2109923
+  - name: 36_pronucleus_w-o-inh-both
+    ref: GSM2109924
+  - name: 39_oocyte_SN
+    ref: GSM2109925
+  - name: 37_oocyte_SN
+    ref: GSM2109926
+  - name: 45_pronucleus_w-o-inh-undef sex
+    ref: GSM2109927
+  - name: 42_oocyte_SN-Hoechst
+    ref: GSM2109928
+  - name: 49_oocyte_SN-Hoechst
+    ref: GSM2109929
+  - name: 43_oocyte_Intermediate
+    ref: GSM2109930
+  - name: 50_oocyte_Intermediate-Hoechst
+    ref: GSM2109931
+  - name: 41_oocyte_NSN
+    ref: GSM2109932
+  - name: 40_oocyte_NSN
+    ref: GSM2109933
+  - name: 44_oocyte_NSN
+    ref: GSM2109934
+  - name: 47_oocyte_NSN
+    ref: GSM2109935
+  - name: 51_oocyte_SN
+    ref: GSM2109936
+  - name: 46_oocyte_SN
+    ref: GSM2109937
+  - name: 48_oocyte_NSN
+    ref: GSM2109938
+  - name: 62_oocyte_NSN
+    ref: GSM2109939
+  - name: 52_oocyte_SN-Hoechst
+    ref: GSM2109940
+  - name: 53_pronucleus_w-o-inh-both
+    ref: GSM2109941
+  - name: 55_oocyte_NSN
+    ref: GSM2109942
+  - name: 59_oocyte_NSN
+    ref: GSM2109943
+  - name: 57_oocyte_Intermediate-Hoechst
+    ref: GSM2109944
+  - name: 60_pronucleus_female
+    ref: GSM2109945
+  - name: 64_pronucleus_female
+    ref: GSM2109946
+  - name: 67_pronucleus_female
+    ref: GSM2109947
+  - name: 70_pronucleus_w-o-inh-undef sex
+    ref: GSM2109948
+  - name: 66_pronucleus_female
+    ref: GSM2109949
+  - name: 65_oocyte_NSN
+    ref: GSM2109950
+  - name: 77_pronucleus_w-o-inh-male
+    ref: GSM2109951
+  - name: 69_pronucleus_w-o-inh-female
+    ref: GSM2109952
+  - name: 68_oocyte_SN
+    ref: GSM2109953
+  - name: 73_pronucleus_female
+    ref: GSM2109954
+  - name: 75_pronucleus_w-o-inh-male
+    ref: GSM2109955
+  - name: 71_pronucleus_female
+    ref: GSM2109956
+  - name: 80_pronucleus_w-o-inh-male
+    ref: GSM2109957
+  - name: 78_pronucleus_w-o-inh-female
+    ref: GSM2109958
+  - name: 76_pronucleus_female
+    ref: GSM2109959
+  - name: 82_oocyte_SN
+    ref: GSM2109961
+  - name: 81_pronucleus_female
+    ref: GSM2109962
+  - name: 84_oocyte_Intermediate-Hoechst
+    ref: GSM2109964
+  - name: 91_pronucleus_female
+    ref: GSM2109969
+  - name: 83_oocyte_SN
+    ref: GSM2109971
+  - name: 54_K562-B
+    ref: GSM2109974
+  - name: 88_oocyte_SN-Hoechst
+    ref: GSM2109975
+  - name: 87_pronucleus_w-o-inh-male
+    ref: GSM2109976
+  - name: 86_oocyte_NSN-Hoechst
+    ref: GSM2109977
+  - name: 90_pronucleus_w-o-inh-male
+    ref: GSM2109978
+  - name: 95_pronucleus_female
+    ref: GSM2109979
+  - name: 94_pronucleus_female
+    ref: GSM2109980
+  - name: 98_pronucleus_w-o-inh-male
+    ref: GSM2109981
+  - name: 92_pronucleus_female
+    ref: GSM2109982
+  - name: 99_oocyte_SN
+    ref: GSM2109983
+  - name: 100_pronucleus_male
+    ref: GSM2109984
+  - name: 58_K562-B
+    ref: GSM2109985
+  - name: 101_oocyte_SN
+    ref: GSM2109986
+  - name: 103_pronucleus_w-o-inh-undef sex
+    ref: GSM2109987
+  - name: 105_pronucleus_male
+    ref: GSM2109988
+  - name: 104_pronucleus_female
+    ref: GSM2109989
+  - name: 72_K562-B
+    ref: GSM2109990
+  - name: 107_pronucleus_w-o-inh-both
+    ref: GSM2109991
+  - name: 106_oocyte_SN-Hoechst
+    ref: GSM2109992
+  - name: 79_K562-B
+    ref: GSM2109993
+  - name: 109_pronucleus_female
+    ref: GSM2109994
+  - name: 118_pronucleus_male
+    ref: GSM2109996
+  - name: 114_oocyte_SN
+    ref: GSM2109997
+  - name: 115_pronucleus_female
+    ref: GSM2109998
+  - name: 119_pronucleus_w-o-inh-female
+    ref: GSM2109999
+  - name: 117_pronucleus_female
+    ref: GSM2110000
+  - name: 121_pronucleus_male
+    ref: GSM2110001
+  - name: 102_K562-B
+    ref: GSM2110002
+  - name: 122_oocyte_SN
+    ref: GSM2110003
+  - name: 127_pronucleus_male
+    ref: GSM2110005
+  - name: 125_oocyte_SN
+    ref: GSM2110006
+  - name: 124_oocyte_SN-Hoechst
+    ref: GSM2110007
+  - name: 130_oocyte_SN
+    ref: GSM2110010
+  - name: 129_pronucleus_female
+    ref: GSM2110011
+  - name: 133_pronucleus_w-o-inh-male
+    ref: GSM2110012
+  - name: 132_oocyte_SN
+    ref: GSM2110013
+  - name: 135_oocyte_SN-Hoechst
+    ref: GSM2110014
+  - name: 134_oocyte_NSN
+    ref: GSM2110015
+  - name: 136_pronucleus_w-o-inh-female
+    ref: GSM2110016
+  - name: 110_K562-B
+    ref: GSM2110017
+  - name: 141_K562-B
+    ref: GSM2110018
+  - name: 144_oocyte_SN
+    ref: GSM2110019
+  - name: 142_pronucleus_female
+    ref: GSM2110020
+  - name: 143_oocyte_SN-Hoechst
+    ref: GSM2110021
+  - name: 147_pronucleus_male
+    ref: GSM2110022
+  - name: 148_pronucleus_female
+    ref: GSM2110023
+  - name: 149_pronucleus_w-o-inh-both
+    ref: GSM2110024
+  - name: 150_oocyte_SN
+    ref: GSM2110025
+  - name: 123_K562-B
+    ref: GSM2110026
+  - name: 151_pronucleus_female
+    ref: GSM2110027
+  - name: 153_oocyte_NSN
+    ref: GSM2110028
+  - name: 152_oocyte_NSN
+    ref: GSM2110029
+  - name: 155_oocyte_NSN
+    ref: GSM2110030
+  - name: 156_K562-A
+    ref: GSM2110031
+  - name: 154_pronucleus_male
+    ref: GSM2110032
+  - name: 159_oocyte_NSN
+    ref: GSM2110033
+  - name: 161_oocyte_SN
+    ref: GSM2110034
+  - name: 162_oocyte_SN-Hoechst
+    ref: GSM2110035
+  - name: 163_oocyte_SN
+    ref: GSM2110036
+  - name: 165_oocyte_SN
+    ref: GSM2110037
+  - name: 168_oocyte_NSN
+    ref: GSM2110038
+  - name: 167_oocyte_SN
+    ref: GSM2110039
+  - name: 169_pronucleus_female
+    ref: GSM2110040
+  - name: 170_oocyte_SN
+    ref: GSM2110041
+  - name: 173_oocyte_SN
+    ref: GSM2110043
+  - name: 172_oocyte_SN
+    ref: GSM2110045
+  - name: 174_oocyte_SN
+    ref: GSM2110046
+  - name: 175_oocyte_SN
+    ref: GSM2110047
+  - name: 177_oocyte_SN
+    ref: GSM2110048
+  - name: 178_pronucleus_w-o-inh-undef sex
+    ref: GSM2110049
+  - name: 183_pronucleus_w-o-inh-undef sex
+    ref: GSM2110050
+  - name: 180_oocyte_NSN
+    ref: GSM2110051
+  - name: 181_oocyte_SN
+    ref: GSM2110052
+  - name: 185_oocyte_SN
+    ref: GSM2110053
+  - name: 182_oocyte_NSN
+    ref: GSM2110054
+  - name: 184_pronucleus_w-o-inh-male
+    ref: GSM2110055
+  - name: 187_pronucleus_female
+    ref: GSM2110056
+  - name: 189_oocyte_NSN
+    ref: GSM2110057
+  - name: 190_pronucleus_female
+    ref: GSM2110058
+  - name: 191_oocyte_SN
+    ref: GSM2110059
+  - name: 195_pronucleus_male
+    ref: GSM2110060
+  - name: 194_oocyte_SN
+    ref: GSM2110061
+  - name: 196_pronucleus_w-o-inh-undef sex
+    ref: GSM2110062
+  - name: 199_pronucleus_w-o-inh-male
+    ref: GSM2110063
+  - name: 200_pronucleus_w-o-inh-undef sex
+    ref: GSM2110064
+  - name: 198_pronucleus_female
+    ref: GSM2110065
+  - name: 202_pronucleus_w-o-inh-undef sex
+    ref: GSM2110066
+  - name: 203_pronucleus_male
+    ref: GSM2110067
+  - name: 205_pronucleus_female
+    ref: GSM2110068
+  - name: 204_pronucleus_w-o-inh-male
+    ref: GSM2110070
+  - name: 207_pronucleus_w-o-inh-female
+    ref: GSM2110071
+  - name: 206_pronucleus_male
+    ref: GSM2110072
+  - name: 208_pronucleus_w-o-inh-undef sex
+    ref: GSM2110073
+  - name: 209_pronucleus_male
+    ref: GSM2110074
+  - name: 210_pronucleus_female
+    ref: GSM2110075
+  - name: 215_K562-A
+    ref: GSM2110076
+  - name: 212_pronucleus_w-o-inh-male
+    ref: GSM2110077
+  - name: 214_pronucleus_w-o-inh-female
+    ref: GSM2110078
+  - name: 211_pronucleus_w-o-inh-undef sex
+    ref: GSM2110079
+  - name: 213_pronucleus_female
+    ref: GSM2110080
+  - name: 216_pronucleus_female
+    ref: GSM2110081
+  - name: 217_K562-B
+    ref: GSM2110082
+  - name: 220_K562-B
+    ref: GSM2110084
+  - name: 221_K562-A
+    ref: GSM2110085
+  - name: 222_K562-B
+    ref: GSM2110086
+  - name: 225_K562-A
+    ref: GSM2110087
+  - name: 218_oocyte_NSN
+    ref: GSM2110088
+  - name: 227_K562-A
+    ref: GSM2110089
+  - name: 223_K562-B
+    ref: GSM2110090
+  - name: 219_oocyte_SN
+    ref: GSM2110091
+  - name: 230_K562-A
+    ref: GSM2110092
+  - name: 228_K562-B
+    ref: GSM2110093
+  - name: 239_K562-A
+    ref: GSM2110094
+  - name: 231_K562-A
+    ref: GSM2110095
+  - name: 237_K562-A
+    ref: GSM2110096
+  - name: 224_K562-B
+    ref: GSM2110097
+  - name: 226_K562-B
+    ref: GSM2110098
+  - name: 236_K562-A
+    ref: GSM2110100
+  - name: 234_K562-A
+    ref: GSM2110101
+  - name: 233_K562-A
+    ref: GSM2110102
+  - name: 229_K562-A
+    ref: GSM2110103
+  - name: 235_K562-A
+    ref: GSM2110104
+  - name: 241_K562-A
+    ref: GSM2110105
+  - name: 238_K562-A
+    ref: GSM2110106
+  - name: 240_K562-A
+    ref: GSM2110107
+  - name: 232_K562-A
+    ref: GSM2110108
+  - name: 242_K562-A
+    ref: GSM2110109
+  - name: MEL cells 1% 10 min fixation
+    ref: GSM2110110
+  - name: MEL cells 2% 15 min fixation
+    ref: GSM2110111
+  - name: 111_pronucleus_female
+    ref: GSM2367786
+  - name: 128_pronucleus_female
+    ref: GSM2367787
+  - name: 112_pronucleus_female
+    ref: GSM2367788
+  - name: 139_pronucleus_male
+    ref: GSM2367789
+  - name: 108_pronucleus_male
+    ref: GSM2367790
+  - name: 126_pronucleus_male
+    ref: GSM2367791
+  - name: 97_pronucleus_male
+    ref: GSM2367792
+  - name: 96_pronucleus_male
+    ref: GSM2367793
+  - name: 113_pronucleus_male
+    ref: GSM2367794
+  - name: 89_pronucleus_male
+    ref: GSM2367795
+  - name: 85_pronucleus_male
+    ref: GSM2367796
+  - name: 137_pronucleus_male
+    ref: GSM2367797
+  - name: 158_pronucleus_male
+    ref: GSM2367798
+  - name: 74_pronucleus_male
+    ref: GSM2367799
+  - name: 116_pronucleus_male
+    ref: GSM2367800
+  - name: 63_pronucleus_male
+    ref: GSM2367801
+  - name: 193_oocyte_NSN-Hoechst
+    ref: GSM2367802
+  - name: 160_oocyte_NSN-Hoechst
+    ref: GSM2367803
+  - name: 140_oocyte_NSN-Hoechst
+    ref: GSM2367804
+  - name: 93_oocyte_NSN-Hoechst
+    ref: GSM2367805
+  - name: 120_oocyte_Intermediate-Hoechst
+    ref: GSM2367806
+  - name: 138_oocyte_NSN-Hoechst
+    ref: GSM2367807
+  - name: 131_oocyte_NSN-Hoechst
+    ref: GSM2367808
+  - name: 166_oocyte_SN-Hoechst
+    ref: GSM2367809
+  - name: 192_oocyte_SN-Hoechst
+    ref: GSM2367810
+  - name: 197_oocyte_SN-Hoechst
+    ref: GSM2367811
+  - name: 61_oocyte_SN-Hoechst
+    ref: GSM2367812
+  - name: 145_oocyte_NSN-Hoechst
+    ref: GSM2367813
+  - name: 146_oocyte_NSN-Hoechst
+    ref: GSM2367814
+  - name: 176_oocyte_NSN-Hoechst
+    ref: GSM2367815
+  - name: 186_oocyte_NSN-Hoechst
+    ref: GSM2367816
+  - name: 188_oocyte_NSN-Hoechst
+    ref: GSM2367817
+  - name: 171_oocyte_NSN-Hoechst
+    ref: GSM2367818
+  - name: 179_oocyte_NSN-Hoechst
+    ref: GSM2367819
+  - name: 157_oocyte_SN-Hoechst
+    ref: GSM2367820
+  - name: 164_oocyte_SN-Hoechst
+    ref: GSM2367821
+  - name: 56_oocyte_SN-Hoechst
+    ref: GSM2367822
+  - name: 201_oocyte_SN-Hoechst
+    ref: GSM2367823
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2017-03-23'
+    Submission-Date: '2016-04-07'
+    database: GEO
+  Summary: Chromatin is reorganized and reprogrammed after fertilization to produce
+    a totipotent zygote with the potential to generate a new organism. In mammals,
+    the maternal genome inherited through the oocyte and the paternal genome provided
+    by sperm coexist as separate haploid nuclei in interphase of the first cell cycle.
+    How these two epigenetically distinct genomes are spatially organized remains
+    poorly understood. Existing chromosome conformation capture-based methods are
+    inapplicable to oocytes and zygotes due to paucity of material. To study the three-dimensional
+    organization of chromatin in rare cell types, we developed a simplified single-cell
+    Hi-C (sscHi-C) protocol that provides 100-fold more contacts per cell than a previous
+    method. Using sscHi-C, we show that chromatin architecture is uniquely reorganized
+    during the oocyte-to-zygote transition. We found that major features of chromosome
+    organization, compartments, domains and loops are all present in individual cells,
+    with noticeable cell-to-cell variation and differences between male and female
+    nuclei in zygotes. Compartments detected in male nuclei are notably absent from
+    female nuclei, indicating these are the first mammalian interphase nuclei lacking
+    this higher-order structure. While compartments in single cells closely resemble
+    compartments from the cell population, TADs manifest themselves as contact domains
+    (CDs) that differ from cell to cell, nevertheless averaging into TADs in pooled
+    data. Finally, scaling of contact probability with genomic separations suggests
+    that chromosome conformations in oocyte and zygote nuclei are fundamentally different
+    and each are distinct from the global organization of chromosomes in other interphase
+    cells. We conclude that chromatin organization of zygote nuclei is unique and
+    can serve as the chromatin "ground state" of a totipotent cell.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP072/SRP072973
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_Intermediate-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_Intermediate-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_Intermediate-Hoechst-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_Intermediate-Hoechst-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_Intermediate-Hoechst-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_Intermediate-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-A-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-A-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-A-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-B-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-B-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-B-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-bulk-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-bulk-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-bulk-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_K562-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_NSN-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_NSN-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_NSN-Hoechst-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_NSN-Hoechst-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_NSN-Hoechst-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_NSN-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_SN-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_SN-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_SN-Hoechst-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_SN-Hoechst-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_SN-Hoechst-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_SN-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_oocyte-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_oocyte-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_oocyte-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-female-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-female-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-female-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-male-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-male-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-male-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-both-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-both-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-both-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-female-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-female-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-female-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-male-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-male-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-male-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-undef_sex-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-undef_sex-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronuc-w-o-inh-undef_sex-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-female-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-female-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-female-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-male-200kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-male-40kb.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-male-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_pronucleus-reads.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_readme.txt
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80006/GSE80006_statistics.csv.gz
+  Title: Single-cell Hi-C reveals unique chromatin reorganization at oocyte-to-zygote
+    transition
+  Type: Other
+  iid: GSE80006
+id: '200080006'

@@ -1,0 +1,93 @@
+Accession: GSM2262338
+Channel:
+  Characteristics:
+  - BY4741
+  - YPD
+  - 3% Formaldehyde for 10 min
+  - 3mM EGS for 40min
+  Extract-Protocol: 'DNA was purified by PCI extraction and ethanol precipitation,
+    treated with RNase A, and ~250-350 bp DNA was gel-purified following 3% agarose
+    gel electrophoresis.
+
+    Purified DNA was treated with End-it, subject to A-tailing with Exo- Klenow, and
+    ligated to Illumina adaptors. Adaptor-ligated DNA was then purified with streptavidin
+    beads to isolate ligated Micro-C products away from undigested dinucleosomal DNA.
+    Streptavidin beads were then subject to ~10-13 cycles of PCR using Illumina paired-end
+    primers.
+
+    Amplified library was purified and subject to Illumina Nextseq 500 paired end
+    sequencing with 40 x 40 bp reads.'
+  Growth-Protocol: The 100mL yeast cultures were grown to midlog phase ~OD 0.55 in
+    indicated media at 30 C.
+  Molecule: genomic DNA
+  Organism: Saccharomyces cerevisiae
+  Source: Yeast
+  Treatment-Protocol: '1) Protocol for formaldehyde only: Yeast cells were fixed with
+    3% formaldehyde for 15 min and quenched with 125 mM glycine for 5 min. Cells were
+    pelleted, spheroplasted with Zymolyase, and treated with a level of MNase yielding
+    >95% mononucleosomes. 2) Protocol for long crosslinking: Yeast cells were fixed
+    with 3% formaldehyde for 10 min, and quenched with 125 mM glycine for 5 min. Cells
+    were pelleted and spheroplasted with Zymolyase. The spheroplasts were washed by
+    PBS, subjected to long-crosslinker fixation for 40min, and quenched with 250 mM
+    glycine for 5 min. Cells were pelleted again, washed with PBS, and treated with
+    a level of MNase yielding >95% mononucleosomes. After stopping MNase, chromatin
+    pellet and supernatant was dephosphorylated using rSAP separately. Crosslinked
+    chromatin was subject to T4 DNA polymerase / T4 PNK enzyme mix solution to generate
+    blunt ends. Chromatin was diluted into 2.5 mL and treated with T4 DNA ligase.
+    Ligated products were treated with 100U of exonuclease III for 5 min to eliminate
+    biotinylated ends of unligated DNA. Proteinase K was then added and incubated
+    at 65 C overnight.'
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Micro-C XL
+
+  OLB 1.9/CASAVA_v1.8.2 were used for base calling
+
+  Barcoded libraries were demultiplexed by Novobarcode.
+
+  Paired reads were mapped to reference genome separately by Bowtie2
+
+  Parse SAM files and remove duplicate reads.
+
+  Mate unique paired mates and generate contact matrix.
+
+  Genome_build: S288C (sacCer3) or S. pombe 972h- (ASM294v2)
+
+  Supplementary_files_format_and_content: Interaction_density.xlsx'
+Instrument-Model:
+  Predefined: Illumina NextSeq 500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MNase
+Platform-Ref:
+  ref: GPL19756
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05513381
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2000995
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4000680
+    cluster_name: public
+    id: '2876949'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '12278875609'
+    total_spots: '153498491'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX200/SRX2000995
+  iid: SRX2000995
+Series: GSE85220
+Status:
+  Last-Update-Date: '2016-09-13'
+  Release-Date: '2016-09-13'
+  Submission-Date: '2016-08-04'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX200/SRX2000995
+Title: EGS_sup-2
+Type: SRA
+iid: GSM2262338

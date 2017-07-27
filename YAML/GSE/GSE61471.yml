@@ -1,0 +1,157 @@
+Contributor:
+- Address:
+    City: Taipei
+    Country: Taiwan
+    Line: NO.64, Sec. 2, ZhiNan Rd., Wenshan District
+    Zip-Code: '11605'
+  Department: Department of Computer Science
+  Email: chang.jiaming@gmail.com
+  Organization: National Chengchi University
+  Person:
+    First: Jia-Ming
+    Last: Chang
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Bernd
+    Last: Schuettengruber
+  iid: contrib3
+- Person:
+    First: Noa
+    Last: Elkayam
+    Middle: O
+  iid: contrib4
+- Person:
+    First: Tom
+    Last: Sexton
+  iid: contrib5
+- Person:
+    First: Marianne
+    Last: Entrevan
+  iid: contrib6
+- Person:
+    First: Shani
+    Last: Stern
+  iid: contrib7
+- Person:
+    First: Aubin
+    Last: Thomas
+  iid: contrib8
+- Person:
+    First: Eitan
+    Last: Yaffe
+  iid: contrib9
+- Person:
+    First: Hugues
+    Last: Parrinello
+  iid: contrib10
+- Person:
+    First: Amos
+    Last: Tanay
+  iid: contrib11
+- Person:
+    First: Giacomo
+    Last: Cavalli
+  iid: contrib12
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13304
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2011-03-21'
+    Submission-Date: '2011-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Drosophila melanogaster)
+  iid: GPL13304
+Series:
+  Accession: GSE61471
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  Overall-Design: HiC experiments in wild type drosophila embryos
+  Pubmed-ID: '25284790'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA261249
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP047189
+    type: SRA
+  Sample-Ref:
+  - name: WT rep1
+    ref: GSM1505557
+  - name: WT rep2
+    ref: GSM1505558
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2014-10-20'
+    Submission-Date: '2014-09-16'
+    database: GEO
+  Summary: We report the evolutionary behaviour of Polycomb group proteins, their
+    recruitment factors and their underlying sequences by performing ChIP-seq analysis
+    in 4-5 different Drosophila species (GSE60428) and HiC analysis in Drosophila
+    melanogaster. We demonstrate an extremely high conservation of Polycomb repressive
+    domains across Drosophila species We validate few cases of  PRE divergence that
+    shows that cis-driven PRE evolution is a rare event. We further show that PHO
+    recruitment to Polycomb domains is evolutionarily robust to motif changes and
+    that PRC1 stabilizes binding of its key recruiter
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP047/SRP047189
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_50_200_top5.domains.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_1000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_10000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_10000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_16000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_16000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_160000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_160000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_20000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_20000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_2500.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_2500.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_32000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_32000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_40000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_40000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_5000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_5000.n_contact.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_8000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_80000.bins.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE61471/GSE61471_nm_none_80000.n_contact.txt.gz
+  Title: Cooperativity, specificity and evolutionary stability of Polycomb targeting
+    in Drosophila
+  Type: Other
+  iid: GSE61471
+id: '200061471'

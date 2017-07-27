@@ -1,0 +1,270 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import subprocess
+import glob
+import time
+
+import yaml
+import numpy
+
+
+class Base(object):
+
+    def __getitem__(self, key):
+        """Dictionary-like lookup."""
+        if key in self.__dict__:
+            return self.__dict__[key]
+        else:
+            return None
+
+    def __setitem__(self, key, value):
+        """Dictionary-like value setting."""
+        self.__dict__[key] = value
+        return None
+
+    def keys(self):
+        """Dictionary-like return of keys."""
+        return self.__dict__.keys()
+
+
+class Job(Base):
+
+    def __init__(self, tmpdir='./', outputdir='./', parent=None, **kwargs):
+        self.parent = None
+        self.cpu = 1
+        self.disk = 0
+        self.mem = 1.0
+        self.yaml = None
+        self.script = None
+        self.name = 'job'
+        self.prereqs = []
+        self.inputs = []
+        self.outputs = []
+        self.id = numpy.random.rand()
+        self.tmpdir = tmpdir
+        self.outputdir = outputdir
+        for key, value in kwargs.iteritems():
+            if key == 'prereqs':
+                for j in value:
+                    self.prereqs.append(Job(parent=self, tmpdir=self.tmpdir, outputdir=self.outputdir, **j))
+            else:
+                self[key] = value
+        self.status = 'waiting'
+        for j in self.prereqs:
+            if j.status == 'error':
+                for f in self.inputs:
+                    if not os.path.exists(f):
+                        self.status = 'error'
+        if self.status != 'error':
+            if self.satisfied():
+                self.status = 'done'
+            else:
+                self.status = 'waiting'
+
+    def satisfied(self):
+        value = True
+        for j in self.prereqs:
+            if j.status != 'done':
+                value = False
+        if value:
+            for fname in self.outputs:
+                if not os.path.exists(fname):
+                    value = False
+        return value
+
+    def get_waiting(self):
+        waiting = {}
+        if self.status == 'waiting':
+            inputs = True
+            for i in self.inputs:
+                if not os.path.exists(i):
+                    inputs = False
+            if inputs:
+                waiting[self.id] = self
+            else:
+                for j in self.prereqs:
+                    if j.status != 'done':
+                        waiting.update(j.get_waiting())
+        return waiting
+
+    def get_waiting2(self):
+        waiting = {}
+        ready = True
+        for j in self.prereqs:
+            if j.status != 'done':
+                ready = False
+                waiting.update(j.get_waiting())
+        if ready and self.status == 'waiting':
+            inputs = True
+            for i in self.inputs:
+                if not os.path.exists(i):
+                    inputs = False
+            if inputs:
+                waiting[self.id] = self
+        return waiting
+
+    def waiting_count(self):
+        waiting = int(self.status == 'waiting')
+        for j in self.prereqs:
+            if j.status != 'done':
+                waiting += j.waiting_count()
+        return waiting
+
+    def find_score(self, cpu, mem, disk):
+        if self.status != 'waiting':
+            self.score = numpy.inf
+            return self.score
+        if self.cpu > cpu:
+            self.score = numpy.inf
+        else:
+            self.score = (cpu - self.cpu) / float(cpu)
+        if self.mem > mem:
+            self.score = numpy.inf
+        else:
+            self.score += (mem - self.mem) / float(mem)
+        if self.disk > disk:
+            self.score = numpy.inf
+        else:
+            if self.disk > 0:
+                self.score += (disk - self.disk) / float(disk)
+        return self.score
+
+    def submit(self, available_cpu, available_disk):
+        if self.cpu > 1:
+            self.cpu = min(self.cpu * 2 - 1, available_cpu - available_disk)
+            self.yaml['threads'] = self.cpu
+        print >> sys.stderr, ("Submitting %s\n") % (self.id),
+        output = open("%s/%s.yml" % (self.tmpdir, self.id), 'w')
+        output.write(yaml.dump(self.yaml))
+        output.close()
+        self.process = subprocess.Popen(['cwl-runner', self.script, "%s/%s.yml" % (self.tmpdir, self.id)],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+    def finish_run(self):
+        if self.satisfied():
+            self.status = 'done'
+            print >> sys.stderr, ("%s Finished\n") % (self.id),
+            subprocess.Popen(['rm', '%s/%s.yml' % (self.tmpdir, self.id)])
+        else:
+            print >> sys.stderr, ("%s Errored\n") % (self.id),
+            self.propogate_error()
+        output = open('%s/%s.log' % (self.outputdir, self.id), 'w')
+        output.write(self.process.communicate()[1])
+        output.close()
+
+    def propogate_error(self):
+        self.status = 'error'
+        if self.parent is not None:
+            self.parent.propogate_error()
+
+    def print_status(self, indent=''):
+        status = "%s%s\t%s\n" % (indent, self.id, self.status)
+        for j in self.prereqs:
+            status += j.print_status(indent="%s  " % indent)
+        return status
+
+
+class Manager(Base):
+
+    def __init__(self, tmpdir='./', outputdir='./'):
+        self.total_cpu = 111
+        self.total_disk = 5
+        self.total_mem = 1400.0
+        self.workflows = []
+        self.queue = {}
+        self.running = []
+        self.completed = []
+        self.errored = []
+        self.tmpdir = tmpdir
+        self.outputdir = outputdir
+
+    def add_job(self, fname):
+        job = Job(tmpdir=self.tmpdir, outputdir=self.outputdir, **yaml.load(open(fname)))
+        if job.status == 'done':
+            self.completed.append(job)
+        elif job.waiting_count() > 0:
+            self.workflows.append(job)
+        else:
+            self.errored.append(job)
+
+    def populate_queue(self):
+        self.unused_disk = self.total_disk
+        self.unused_cpu = self.total_cpu
+        self.unused_mem = self.total_mem
+        for j in self.running:
+            self.unused_disk -= j.disk
+            self.unused_cpu -= j.cpu
+            self.unused_mem -= j.mem
+        self.queue = {}
+        for i in range(len(self.workflows))[::-1]:
+            waiting = self.workflows[i].get_waiting()
+            if len(waiting) == 0:
+                if self.workflows[i].status == 'done':
+                    self.completed.append(self.workflows.pop(i))
+                elif self.workflows[i].status == 'error' and self.workflows[i].total_error():
+                    self.errored.append(self.workflows.pop(i))
+            else:
+                self.queue.update(waiting)
+
+    def submit_job(self):
+        minscore = numpy.inf
+        best_id = None
+        for ID, j in self.queue.iteritems():
+            if j.find_score(self.unused_cpu, self.unused_mem, self.unused_disk) < minscore:
+                minscore = j.score
+                best_id = ID
+        if best_id is not None:
+            self.queue[best_id].status = 'running'
+            self.running.append(self.queue[best_id])
+            self.queue[best_id].submit(self.unused_cpu, self.unused_disk)
+            self.unused_cpu -= self.queue[best_id].cpu
+            self.unused_mem -= self.queue[best_id].mem
+            self.unused_disk -= self.queue[best_id].disk
+            return True
+        else:
+            return False
+
+    def job_completion(self):
+        completed = False
+        for i in range(len(self.running))[::-1]:
+            self.running[i].process.poll()
+            if self.running[i].process.returncode is not None:
+                completed = True
+                self.running[i].finish_run()
+                del self.running[i]
+        return completed
+
+    def write_log(self):
+        output = open("%s/workflows.log" % self.outputdir, 'w')
+        print >> output, "Completed"
+        for w in self.completed:
+            print >> output, w.id
+        print >> output, "Errored"
+        for w in self.errored:
+            print >> output, w.id
+        output.close()
+
+
+def main():
+    pattern = sys.argv[1]
+    workflow_fnames = glob.glob(pattern)
+    manager = Manager(tmpdir='/localscratch/msauria', outputdir='/project/hic_database/Data/Processed')
+    for fname in workflow_fnames:
+        manager.add_job(fname)
+    manager.populate_queue()
+    #for j in manager.workflows:
+    #    print j.print_status()
+    while len(manager.queue) > 0 or len(manager.workflows) > 0:
+        while manager.submit_job():
+            continue
+        print >> sys.stderr, ("CPU: %i\tMEM: %f\tDISK: %i\n") % (manager.unused_cpu, manager.unused_mem, manager.unused_disk),
+        while not manager.job_completion():
+            time.sleep(10)
+        manager.populate_queue()
+    manager.write_log()
+
+
+if __name__ == "__main__":
+    main()

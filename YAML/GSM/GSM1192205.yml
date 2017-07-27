@@ -1,0 +1,90 @@
+Accession: GSM1192205
+Channel:
+  Characteristics:
+  - neural stem cells
+  - deleted--mutant
+  Extract-Protocol: 'Cells were treated with accutase and immediately fixed with 1%
+    formaldehyde before proceeding with Hi-C protocol.The PE library preparations
+    for the HiC were also done according to illuminas PE kit procedure.
+
+    Ligated material was sonicated, enriched for biotinylated ligation junctions and
+    PE sequencing adapters were added according to Illumina standard protocols'
+  Growth-Protocol: Cells were grown in serum-free media containing EGF+FGF (for NSCs)
+    or BMP+FGF (for ASTs) and Laminin
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: neural stem cells
+  Treatment-Protocol: To delete Rad21, cells were grown in OHT for 48hr (for NSCs)
+    or AdCre for 96hr (for ASTs)
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Read alignment was done by using Bowtie v1.0.0 with the parameters
+  as "-n 3 -a -m 1 --best --strata".
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: The tab-delimited text file summaries alignment
+  results for all samples.'
+Instrument-Model:
+  Predefined: Illumina Genome Analyzer II
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL9250
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02260382
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX326540
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR941279
+    cluster_name: public
+    id: '455322'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3953409100'
+    total_spots: '39534091'
+  - acc: SRR941280
+    cluster_name: public
+    id: '455322'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4005899600'
+    total_spots: '40058996'
+  - acc: SRR941281
+    cluster_name: public
+    id: '455322'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4015639700'
+    total_spots: '40156397'
+  - acc: SRR941282
+    cluster_name: public
+    id: '455322'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4005851800'
+    total_spots: '40058518'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX326/SRX326540
+  iid: SRX326540
+Series: GSE49017
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-12-11'
+  Submission-Date: '2013-07-18'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX326/SRX326540
+Title: HadjurLab-HiC-mNSC-Rad21-deleted, replicate 2
+Type: SRA
+iid: GSM1192205

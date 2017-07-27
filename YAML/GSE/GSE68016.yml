@@ -1,0 +1,301 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 364 Plantation Street, LRB
+    State: MA
+    Zip-Code: '01605'
+  Department: Biochemistry and Molecular Pharmacology
+  Email: Oliver.Rando@umassmed.edu
+  Laboratory: Rando Lab
+  Organization: University of Massachusetts Medical School
+  Person:
+    First: Oliver
+    Last: Rando
+  Phone: '5088568879'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Oliver
+    Last: Rando
+    Middle: J
+  iid: contrib3
+- Person:
+    First: Tsung-Han
+    Last: Hsieh
+    Middle: S
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13821
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae
+  Status:
+    Last-Update-Date: '2016-09-23'
+    Release-Date: '2011-07-05'
+    Submission-Date: '2011-07-05'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Saccharomyces cerevisiae)
+  iid: GPL13821
+- Accession: GPL19756
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae
+  Status:
+    Last-Update-Date: '2016-08-23'
+    Release-Date: '2015-02-09'
+    Submission-Date: '2015-02-09'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces cerevisiae)
+  iid: GPL19756
+Series:
+  Accession: GSE68016
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: 'Chromatin is fragmented by Mnase, subsequenct nucleosomal end repair,
+    and a modified two-step method for purfiying ligation products. Using Illumina
+    paired-end sequencing maps Micro-C library and generates nucleosome resolution
+    contact maps.
+
+
+    The readme.txt file contains additional description of how each processed data
+    file was generated.'
+  Pubmed-ID: '26119342'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA281500
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP057391
+    type: SRA
+  Sample-Ref:
+  - name: BY4741_rep1
+    ref: GSM1661107
+  - name: BY4741_rep2
+    ref: GSM1661108
+  - name: BY4741_rep3-1
+    ref: GSM1661109
+  - name: BY4741_rep3-2
+    ref: GSM1661110
+  - name: BY4741_rep5
+    ref: GSM1661111
+  - name: BY4741_rep6
+    ref: GSM1661112
+  - name: BY4741_rep6-2
+    ref: GSM1661113
+  - name: BY4741_rep7
+    ref: GSM1661114
+  - name: BY4741_rep8
+    ref: GSM1661115
+  - name: BY4741_rep9
+    ref: GSM1661116
+  - name: BY4741_rep9-2
+    ref: GSM1661117
+  - name: BY4741_rep10
+    ref: GSM1661118
+  - name: BY4741_rep11
+    ref: GSM1661119
+  - name: BY4741_rep12
+    ref: GSM1661120
+  - name: BY4741_rep13
+    ref: GSM1661121
+  - name: BY4741_rep14
+    ref: GSM1661122
+  - name: BY4741_rep15
+    ref: GSM1661123
+  - name: BY4741_rep16
+    ref: GSM1661124
+  - name: BY4741_rep17
+    ref: GSM1661125
+  - name: BY4741_rep18
+    ref: GSM1661126
+  - name: BY4741-32C
+    ref: GSM1661127
+  - name: BY4741-No_crosslinking
+    ref: GSM1661128
+  - name: BY4741-No_ligation
+    ref: GSM1661129
+  - name: Diamide_rep1
+    ref: GSM1661130
+  - name: Diamide_rep1-2
+    ref: GSM1661131
+  - name: Diamide_rep2
+    ref: GSM1661132
+  - name: Thiolutin_rep1
+    ref: GSM1661133
+  - name: Thiolutin_rep2
+    ref: GSM1661134
+  - name: W303_rep1
+    ref: GSM1661135
+  - name: W303_rep1-2
+    ref: GSM1661136
+  - name: H4-WT
+    ref: GSM1661137
+  - name: H4d4-14_rep1
+    ref: GSM1661138
+  - name: H4d4-14_rep1-2
+    ref: GSM1661139
+  - name: H4d4-14_rep2
+    ref: GSM1661140
+  - name: H4d4-14_rep2-2
+    ref: GSM1661141
+  - name: H4K16Q_rep1
+    ref: GSM1661142
+  - name: H4K16Q_rep1-2
+    ref: GSM1661143
+  - name: H4Q93E
+    ref: GSM1661144
+  - name: H4R23A_rep1
+    ref: GSM1661145
+  - name: H4R23A_rep1-2
+    ref: GSM1661146
+  - name: H4R23A_rep2
+    ref: GSM1661147
+  - name: H4R23A_rep2-2
+    ref: GSM1661148
+  - name: med1d_rep1
+    ref: GSM1661149
+  - name: med1d_rep1-2
+    ref: GSM1661150
+  - name: med1d_rep2
+    ref: GSM1661151
+  - name: med1d_rep2-2
+    ref: GSM1661152
+  - name: med1d_rep3
+    ref: GSM1661153
+  - name: rnh201d_rep1
+    ref: GSM1661154
+  - name: rnh201d_rep2
+    ref: GSM1661155
+  - name: rpd3d_rep1
+    ref: GSM1661156
+  - name: rpd3d_rep1-2
+    ref: GSM1661157
+  - name: rpd3d_rep2
+    ref: GSM1661158
+  - name: rtt109d_rep1
+    ref: GSM1661159
+  - name: rtt109d_rep1-2
+    ref: GSM1661160
+  - name: rtt109d_rep2
+    ref: GSM1661161
+  - name: rtt109d_rep2-2
+    ref: GSM1661162
+  - name: rtt109d_rep3
+    ref: GSM1661163
+  - name: ssu72-2_rep1
+    ref: GSM1661164
+  - name: ssu72-2_rep1-2
+    ref: GSM1661165
+  - name: ssu72-2_rep2
+    ref: GSM1661166
+  - name: ssu72-2_rep2-2
+    ref: GSM1661167
+  - name: ssu72-2_rep3
+    ref: GSM1661168
+  - name: top1d_rep1
+    ref: GSM1661169
+  - name: top1d_rep2
+    ref: GSM1661170
+  - name: BY4741-37C_rep1
+    ref: GSM1661171
+  - name: BY4741-37C_rep2
+    ref: GSM1661172
+  - name: BY4741-37C_rep3
+    ref: GSM1661173
+  - name: rgr1-100-37C_rep1
+    ref: GSM1661174
+  - name: rgr1-100-37C_rep2
+    ref: GSM1661175
+  - name: rsc8-21-37C_rep1
+    ref: GSM1661176
+  - name: rsc8-21-37C_rep2
+    ref: GSM1661177
+  - name: scc2-4-37C_rep1
+    ref: GSM1661178
+  - name: scc2-4-37C_rep2
+    ref: GSM1661179
+  - name: sth1-2-37C_rep1
+    ref: GSM1661180
+  - name: sth1-2-37C_rep2
+    ref: GSM1661181
+  - name: Mnase-0.25X_Dimer
+    ref: GSM1661182
+  - name: Mnase-0.5X_Dimer
+    ref: GSM1661183
+  - name: Mnase-0.75X_Dimer
+    ref: GSM1661184
+  - name: Mnase-1X_Dimer
+    ref: GSM1661185
+  - name: Mnase-0.25X_Monomer
+    ref: GSM1661186
+  - name: Mnase-0.5X_Monomer
+    ref: GSM1661187
+  - name: Mnase-0.75X_Monomer
+    ref: GSM1661188
+  - name: Mnase-1X_Monomer
+    ref: GSM1661189
+  - name: Mnase-0.25X_Tri-Tetra
+    ref: GSM1661190
+  - name: Mnase-0.5X_Tri-Tetra
+    ref: GSM1661191
+  - name: Mnase-0.75X_Tri-Tetra
+    ref: GSM1661192
+  - name: Mnase-1X_Tri-Tetra
+    ref: GSM1661193
+  - name: Mnase-0.25X_Small
+    ref: GSM1661194
+  - name: Mnase-0.5X_Small
+    ref: GSM1661195
+  - name: Mnase-0.75X_Small
+    ref: GSM1661196
+  - name: Mnase-1X_Small
+    ref: GSM1661197
+  Status:
+    Last-Update-Date: '2016-09-23'
+    Release-Date: '2015-06-25'
+    Submission-Date: '2015-04-17'
+    database: GEO
+  Summary: "We describe a Hi-C based method, Micro-C, in which micrococcal nuclease\
+    \ is used instead of restriction enzymes to fragment chromatin, enabling nucleosome\
+    \ resolution chromosome folding maps. Analysis of Micro-C maps for budding yeast\
+    \ reveals abundant self-associating domains similar to those reported in other\
+    \ species, but not previously observed in yeast. These structures, far shorted\
+    \ than topologically-associating domains in mammals, typically encompass one to\
+    \ five genes in yeast. Strong boundaries between self-associating domains occur\
+    \ at promoters of highly transcribed genes, and regions of rapid histone turnover\
+    \ that are typically bound by the RSC chromatin-remodeling complex. Investigation\
+    \ of chromosome folding in mutants confirms roles for RSC, \u201Cgene looping\u201D\
+    \ factor Ssu72, Mediator, H3K56 acetyltransferase Rtt109, and N-terminal tail\
+    \ of H4 in folding of the yeast genome. This approach provides detailed structural\
+    \ maps of a eukaryotic genome and our findings provide insights into the machinery\
+    \ underlying chromosome compaction."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68016/GSE68016_Boundary_calls_for_wild-type_yeast.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68016/GSE68016_Gene_compaction_scores_for_all_datasets_with_multiple_replicates.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68016/GSE68016_Gene_compaction_scores_for_temperature-sensitive_dataset.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68016/GSE68016_Micro-C_interactions_vs._distance_for_MNase_titrations.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68016/GSE68016_Micro-C_interactions_vs._distance_for_all_datasets.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68016/GSE68016_NDR-spanning_reads_for_all_replicates.xlsx
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP057/SRP057391
+  Title: Mapping nucleosome resolution chromosome folding in yeast by Micro-C
+  Type: Other
+  iid: GSE68016
+id: '200068016'

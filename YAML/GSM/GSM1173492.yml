@@ -1,0 +1,83 @@
+Accession: GSM1173492
+Channel:
+  Characteristics:
+  - C57BL/6
+  - Spleen
+  - Bgl II
+  - T-helper cells (Th1)
+  Extract-Protocol: 'Single cells treated according to the modified Hi-C protocol
+    were isolated in PBS and incubated at 65 degrees C for overnight.
+
+    The biotin-labelled DNA from each cell was bound to Dynabeads M-280 streptavidin
+    magnetic beads (Life Technologies), digested with Alu I (New England Biolabs),
+    A-tailed with Klenow Fragment (3''->5'' exo-) (New England Biolabs) and dATP,
+    ligated with customised Illumina adapter with T4 DNA ligase (New England Biolabs),
+    then the library was amplified by PCR with library amplification primers, and
+    size-selected between 300 and 700 bp on an agarose gel.'
+  Growth-Protocol: "CD4+ Th1 cells were prepared from spleens of male C57BL/6 mice\
+    \ by stimulating the single cell suspension from spleen with 1 \xB5g/ml anti-CD3\
+    \ (eBioscience) for 3 days in RPMI1640 medium with L-glutamine and 5% fetal calf\
+    \ serum, purified using magnetic beads coated with anti-CD4 (Miltenyi Biotec),\
+    \ and further expanded in the presence of 20 ng/ml IL-2 (Sigma)."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: T-helper cells (Th1)
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Paired-end reads of each multiplexed lane were paired-up and separated\
+  \ to single cell datasets based on the 3 bp unique identification tags prefixing\
+  \ each read. Read-pairs of each single cell were then processed independently. We\
+  \ mapped read ends separately to the Mus musculus genome (assembly mm9) using the\
+  \ Maq program with standard parameters and retained pairs of reads with unique hits\
+  \ of high quality (q \u2265 30) at both ends. The first RE1 (Bgl II or Dpn II) restriction\
+  \ site downstream of the read was identified and used as the fragment-end (fend)\
+  \ associated with the read. We retained read-pairs that reflect informative ligation\
+  \ events and with both ends mapped near the first RE2 (Alu I) site upstream of RE1\
+  \ site. We discarded fend-pairs that were covered only once and used the list of\
+  \ unique fend-pairs, ignoring the coverage of each pair. Fend-pairs with problematic\
+  \ fragments (without a RE2 site or with a non-uniquely mapped start) were discarded.\
+  \ Samples that confidently originated from single cell, with substantial number\
+  \ of fend-pairs and with low noise levels were selected for the analysis.\nTh1_bgl_pool.txt\
+  \ - Pool of 60 single-cell Hi-C samples\nGenome_build: mm9\nSupplementary_files_format_and_content:\
+  \ Tab-delimited text files include the list of unique fend-pairs of the sample (pair\
+  \ of genomic coordinates)"
+Description: ensemble Hi-C
+Instrument-Model:
+  Predefined: Illumina HiSeq 1000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: BglII
+Platform-Ref:
+  ref: GPL15103
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02213057
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX314798
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR921525
+    cluster_name: public
+    id: '439932'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '37910547758'
+    total_spots: '187675979'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX314/SRX314798
+  iid: SRX314798
+Series: GSE48262
+Status:
+  Last-Update-Date: '2013-09-26'
+  Release-Date: '2013-09-26'
+  Submission-Date: '2013-06-25'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1173nnn/GSM1173492/GSM1173492_Th1_ensemble.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX314/SRX314798
+Title: Th1 ensemble Hi-C
+Type: SRA
+iid: GSM1173492

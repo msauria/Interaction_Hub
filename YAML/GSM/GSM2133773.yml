@@ -1,0 +1,79 @@
+Accession: GSM2133773
+Channel:
+  Characteristics:
+  - Kc167
+  - Drosophila Embryonic Cell Line
+  Extract-Protocol: "Cells were crosslinked with 1% formaldehyde for 10 min at room\
+    \ temperature.  Crosslinking was quenched with glycine and nuclear lysates were\
+    \ incubated with HindIII or DpnII. Fragment ends were filled with biotinylated\
+    \ nucleotides, ligated. After reversion of crosslinks, DNA was purified, sonicated\
+    \ and used to make Illumina libraries\nTo generate sequencing libraries, ChIP\
+    \ DNA was prepared for adaptor ligation by end repair (\u2018End-It DNA End Repair\
+    \ Kit\u2019\_ - Epicentre Cat# ER0720) and addition of \u2018A\u2019 base to 3\u2019\
+    \ ends (Klenow 3\u2019-5\u2019 exo- NEB Cat# M0212S). Illumina adaptors (Illumina\
+    \ Cat# PE-102-1001) were titrated according to prepared DNA ChIP sample concentration,\
+    \ and ligated with T4 ligase (NEB Cat# M0202S). Ligated ChIP samples were PCR\
+    \ amplified using Illumina primers\_ and Phusion DNA polymerase (NEB Cat# F-530L)\
+    \ and size selected for 200-300bp by gel extraction."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: Kc167 _DpnII
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Raw HiC data from this submission and the four normal temperature HiC biological
+  replicates digested with DpnII from GSE63515 (GSM1551441, GSM1551442, GSM1551443,
+  GSM1551444) were combined and processed through the Juicer pipeline (Rao et al.
+  2014. Cell. 159:1665-80) to generate the .hic file.
+
+  To identify the significant genomic interactions, the .hic file was further processed
+  through ICE and Fit-Hi-C (Imakaev, et al. 2012. Nature. 9:999-1003; Ay et al. 2014.
+  Genome Research. 24:999-1011)
+
+  Genome_build: dm6
+
+  Supplementary_files_format_and_content: The .hic file contains the HiC contact matrix.
+  The Fithic .txt file contains the genomic coordinates of the interactions anchors
+  in columns 1-3 and 4-6. The p value and q value for each interaction are reported
+  in column 7 and 8, respectively.'
+Description: HiC Library digested with DpnII
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL13304
+Relation:
+- target: GSM1551441
+  type: Reanalysis of
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04903891
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1728723
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3452740
+    cluster_name: public
+    id: '2473272'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7596891252'
+    total_spots: '74479326'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX172/SRX1728723
+  iid: SRX1728723
+Series: GSE80701
+Status:
+  Last-Update-Date: '2016-11-16'
+  Release-Date: '2016-11-16'
+  Submission-Date: '2016-04-26'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX172/SRX1728723
+Title: Hi-C_NT5_Rep1_re-analyzed
+Type: SRA
+iid: GSM2133773

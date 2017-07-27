@@ -1,0 +1,111 @@
+Accession: GSM1055801
+Channel:
+  Characteristics:
+  - no treat
+  - Hi-C
+  - 'no'
+  - HindIII
+  Extract-Protocol: 'Hi-C experiments were conducted in biological replicates using
+    HindIII according to previous publication (Lieberman-Aiden, E. et al. Comprehensive
+    mapping of long-range interactions reveals folding principles of the human genome.
+    Science 326, 289-93 (2009).).  ChIP-seq protocol can be found from http://bioinformatics-renlab.ucsd.edu/RenLabLibraryProtocolV1.pdf.
+    GRO-seq experiments were performed according to previous publication (Wang, D.
+    et al. Reprogramming transcription by distinct classes of enhancers functionally
+    defined by eRNA. Nature 474, 390-4 (2011).).
+
+    Libraries were prepared according to Illumina''s instruction or cited literatures.'
+  Growth-Protocol: 'IMR90 cells were grown as described in: Hawkins, R.D. et al. Distinct
+    epigenomic landscapes of pluripotent and lineage-committed human cells. Cell Stem
+    Cell 6, 479-91'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: fetal lung fibroblast
+  Treatment-Protocol: "Untreated or IMR90 cells treated with TNF-\u03B1 (R&D Systems,\
+    \ 10 ng/mL, 1 hr) or flavopiridol (Sigma, 1 \u03BCM for 1 hr for ChIP-seq experiments,\
+    \ and 1 \u03BCM for 2 hr for Hi-C experiments) were used."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'The paired-end Hi-C reads were mapped to human genome hg18 using
+  BOWTIE. Only first 36 bases were used for mapping when reads is longer. The two
+  reads were mapped independently and then merged into pairs using in-house script.
+  Duplicated read pairs from the same biological library were removed.
+
+  For GRO-seq, the first round of mapping used the first 36 bases; the unmapped reads
+  were then mapped in two additional iterations using first 30 or 25 bases.
+
+  For ChIP-Seq, first 36 bases of each read were used for mapping.
+
+  Genome_build: NCBI36
+
+  Supplementary_files_format_and_content: Mapped non-redundant reads for GRO-seq and
+  ChIP-seq are in BED format. Mapped non-redundant read pairs for Hi-C are in txt
+  format.'
+Description: Part of raw data for this sample has been previously published with accession
+  code GSM892307. The processed data file is generated from all raw data
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: GSE85977
+  type: Reanalyzed by
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX212173
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN01832311
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR639030
+    cluster_name: public
+    id: '288316'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '18111823800'
+    total_spots: '181118238'
+  - acc: SRR639031
+    cluster_name: public
+    id: '288316'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6302187432'
+    total_spots: '87530381'
+  - acc: SRR639032
+    cluster_name: public
+    id: '288316'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6223509936'
+    total_spots: '86437638'
+  - acc: SRR639033
+    cluster_name: public
+    id: '288316'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6131230056'
+    total_spots: '85155973'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX212/SRX212173
+  iid: SRX212173
+Series: GSE43070
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-10-20'
+  Submission-Date: '2012-12-20'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1055nnn/GSM1055801/GSM1055801_HiC.IMR90.rep2.nodup.summary.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX212/SRX212173
+Title: Hi-C IMR90 replicate 2
+Type: SRA
+iid: GSM1055801

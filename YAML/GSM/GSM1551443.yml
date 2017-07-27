@@ -1,0 +1,72 @@
+Accession: GSM1551443
+Channel:
+  Characteristics: Kc167 Drosophila Embryonic Cell line
+  Extract-Protocol: "Cells were crosslinked with 1% formaldehyde for 10 min at room\
+    \ temperature.  Crosslinking was quenched with glycine and nuclear lysates were\
+    \ incubated with HindIII or DpnII. Fragment ends were filled with biotinylated\
+    \ nucleotides, ligated. After reverssion of crosslinks, DNA was purified, sonicated\
+    \ and used to make Illumina libraries\nTo generate sequencing libraries, ChIP\
+    \ DNA was prepared for adaptor ligation by end repair (\u2018End-It DNA End Repair\
+    \ Kit\u2019\_ - Epicentre Cat# ER0720) and addition of \u2018A\u2019 base to 3\u2019\
+    \ ends (Klenow 3\u2019-5\u2019 exo- NEB Cat# M0212S). Illumina adaptors (Illumina\
+    \ Cat# PE-102-1001) were titrated according to prepared DNA ChIP sample concentration,\
+    \ and ligated with T4 ligase (NEB Cat# M0202S). Ligated ChIP samples were PCR\
+    \ amplified using Illumina primers\_ and Phusion DNA polymerase (NEB Cat# F-530L)\
+    \ and size selected for 200-300bp by gel extraction."
+  Growth-Protocol: Kc cells were maintained in HyClone CCM3 Serum-free media.
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: Kc167
+  Treatment-Protocol: For triptolide and flavopiridol samples, cells were treated
+    with 10 mM triptolide or 1 mM flavopiridol for 3 h
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: Hi-C\nHi-C reads were aligned using Bowtie 0.12.7\
+  \ with default parameters and \u201C-m 1\u201D\nPCR duplicate reads were removed\n\
+  GC content, mappability, and fragment length effects were normalized as described\
+  \  in Hou et al., Molecular Cell 48, 471-484 (2012).\nGenome_build: dm3\nSupplementary_files_format_and_content:\
+  \ Hi-C processed files are in a modified bed format. Each row lists the chromosome\
+  \ and the start and end coordinates of two interacting bins as well as the normalized\
+  \ interaction frequency between these two bins"
+Description: Hi-C library made using DpnII and cells grown at 25 C
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL13304
+Relation:
+- target: GSM2133775
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03203233
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX764890
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1658527
+    cluster_name: public
+    id: '1104625'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '18263414400'
+    total_spots: '182634144'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX764/SRX764890
+  iid: SRX764890
+Series: GSE63515
+Status:
+  Last-Update-Date: '2016-04-26'
+  Release-Date: '2015-02-23'
+  Submission-Date: '2014-11-20'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX764/SRX764890
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1551nnn/GSM1551443/GSM1551443_Hi-C_NT_53.txt.gz
+Title: Hi-C_NT_53_Rep3
+Type: SRA
+iid: GSM1551443

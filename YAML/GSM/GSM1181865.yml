@@ -1,0 +1,111 @@
+Accession: GSM1181865
+Channel:
+  Characteristics: F123 mouse ES cell line
+  Extract-Protocol: 'Hi-C experiments were conducted using HindIII according to previous
+    publication (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions
+    reveals folding principles of the human genome. Science 326, 289-93 (2009).).
+
+    Sequencing libraries were constructed according to previous publication (Lieberman-Aiden,
+    E. et al. Comprehensive mapping of long-range interactions reveals folding principles
+    of the human genome. Science 326, 289-93 (2009).).'
+  Growth-Protocol: 'F123 cells were grown in KnockOut Serum Replacement containing
+    mouse ES cell media: DMEM 85%, 15% KnockOut Serum Replacement (Invitrogen), penicillin/streptomycin,
+    1X Non-essential amino acids (Gibco), 1X GlutaMax, 1000U/mL LIF (Millipore), 0.4mM
+    b-mercaptoethanol. F123 mouse ES cells were initially cultured on 0.1% Gelatin-coated
+    plates with mitomycin-C treated mouse embryonic fibroblasts (Millipore). Cells
+    were passaged twice on 0.1% gelatin-coated feeder free plates before harvesting.
+
+    see samples section'
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: F123 mouse embyronic stem cells
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "fastq:  Illumina's HiSeq Control Software\nFor Hi-C read alignment,\
+  \ we aligned Hi-C reads to the mm9 (mouse) or the hg18 (human) genome. In each case,\
+  \ we masked any bases in the genome that were genotyped as SNPs in either Mus musculus\
+  \ castaneus or S129/SvJae (for mouse) or GM12878 (for humans). These bases were\
+  \ masked to \u201CN\u201D in order to reduce reference bias mapping artifacts. Hi-C\
+  \ reads were aligned iteratively as single end reads using Novoalign. Specifically,\
+  \ for iterative alignment, we first aligned the entire sequencing read to either\
+  \ the mouse or human genome. Unmapped reads are then trimmed by 5 base pairs and\
+  \ realigned. This process is repeated until the read successfully aligns to the\
+  \ genome or until the trimmed read is less than 25 base pairs long.  After iterative\
+  \ mapping was finished, read pairs were re-constructed from single reads using an\
+  \ in house pipeline.  Unmapped reads were filtered out and PCR duplicate reads were\
+  \ removed.  Final alignment files were then processed using the GATK pipeline, specifically\
+  \ using Indel Realignment and Variant Recalibration\nHaplotypes were generated from\
+  \ the final aligned bam file after merging the two biological replicats using the\
+  \ HapCUT algorithm.  The details of HapCUT are described previously (Bansal and\
+  \ Bafna, Bioinformatics 24, i153-159, 2008).\nGenome_build: mm9\nGenome_build: hg18\n\
+  Supplementary_files_format_and_content: The castx129_variants.vcf and GM12878_depristoeal.vcf\
+  \ are VCF format files of the variants used for input into the haplotyping algorithm.\
+  \  Both of these files are derived from publicly available datasets. WIth regards\
+  \ to the \"publicly available datasets\", the castx129_variants.vcf file is derived\
+  \ from data downloaded from the ENA (ERP000042) and the SRA (SRX037820).  The GM12878_depristoeal.vcf\
+  \ is downloaded from the 1000 genomes project.\nSupplementary_files_format_and_content:\
+  \ The F123.haps and GM12878_seed.haps are modified bed format files.  In this files,\
+  \ the first column is the chromosome, and the second column is the location of the\
+  \ variant.  The third and fourth column are the phased variants in the \"A\" and\
+  \ \"B\" haplotypes.  The choice of \"A\" and \"B\" is arbitrary, and it should be\
+  \ noted that the \"A\" haplotype from one chromosome is not necessarily derived\
+  \ from the same parent as the \"A\" haplotype from a different chromosome.\nSupplementary_files_format_and_content:\
+  \ The GM12878_lcp.vcf file is a VCF format file from after local conditional phasing\
+  \ of variants in the seed haplotype"
+Description: 'castx129_variants.vcf
+
+  F123.haps'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02228118
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX318774
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR927079
+    cluster_name: public
+    id: '444362'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '30053716050'
+    total_spots: '200358107'
+  - acc: SRR927080
+    cluster_name: public
+    id: '444362'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '28728011850'
+    total_spots: '191520079'
+  - acc: SRR927081
+    cluster_name: public
+    id: '444362'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '28657663950'
+    total_spots: '191051093'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX318/SRX318774
+  iid: SRX318774
+Series: GSE48592
+Status:
+  Last-Update-Date: '2013-11-03'
+  Release-Date: '2013-11-03'
+  Submission-Date: '2013-07-08'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX318/SRX318774
+Title: Hi-C, F123 mouse ES cells, replicate one
+Type: SRA
+iid: GSM1181865

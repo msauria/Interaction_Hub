@@ -1,0 +1,87 @@
+Accession: GSM1424556
+Channel:
+  Characteristics:
+  - embryonic stem cells
+  - HindIII
+  Extract-Protocol: Hi-C libraries were generated as previously published (Lieberman-Aiden
+    et al, 2009), with modifications to increase DNA yield. See associated publication
+    for details.
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Mouse 46C ES cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  The paired end Hi-C reads were mapped and filtered with the hiclib pipeline (Imakaev
+  et al., 2012, Downloaded November 2013) using default parameters. Data was binned
+  at 50kb or 100kb, depending on the application.
+
+  Hi-C matrices were corrected using Iterative Correction (Imakaev et al., 2012) and
+  further processed with custom code to generate normalized heatmaps (See associated
+  publication for details).
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: Processed data files are tab-delimited text
+  files that contain raw or normalized interaction scores between genomic loci for
+  a given chromosome. The coordinates of each loci are marked in the first row and
+  first column of the table.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02900460
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX644420
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1504836
+    cluster_name: public
+    id: '900862'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '10553314800'
+    total_spots: '52766574'
+  - acc: SRR1504837
+    cluster_name: public
+    id: '900862'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '10382558400'
+    total_spots: '51912792'
+  - acc: SRR1504838
+    cluster_name: public
+    id: '900862'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '37724981800'
+    total_spots: '188624909'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX644/SRX644420
+  iid: SRX644420
+Series: GSE59027
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2015-12-30'
+  Submission-Date: '2014-07-02'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1424nnn/GSM1424556/GSM1424556_Normalized_Heatmaps.100kb.ESC.HindIII.tar.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1424nnn/GSM1424556/GSM1424556_Raw_Heatmaps.100kb.ESC.HindIII.tar.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX644/SRX644420
+Title: Hi-C ESC-HindIII
+Type: SRA
+iid: GSM1424556

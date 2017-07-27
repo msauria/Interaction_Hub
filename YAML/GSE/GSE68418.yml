@@ -1,0 +1,192 @@
+Contributor:
+- Address:
+    City: Bloomington
+    Country: USA
+    Line: 1001 E 3rd St
+    State: IN
+    Zip-Code: '47405'
+  Department: Biology
+  Email: xindan@indiana.edu
+  Laboratory: JH225
+  Organization: Indiana University at Bloomington
+  Person:
+    First: Xindan
+    Last: Wang
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: X
+    Last: Wang
+  iid: contrib3
+- Person:
+    First: D
+    Last: Rudner
+    Middle: Z
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL20121
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Bacillus subtilis PY79
+  Status:
+    Last-Update-Date: '2017-01-09'
+    Release-Date: '2015-04-29'
+    Submission-Date: '2015-04-29'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Bacillus subtilis PY79)
+  iid: GPL20121
+- Accession: GPL20691
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Bacillus subtilis PY79
+  Status:
+    Last-Update-Date: '2015-07-14'
+    Release-Date: '2015-07-14'
+    Submission-Date: '2015-07-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Bacillus subtilis PY79)
+  iid: GPL20691
+Series:
+  Accession: GSE68418
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: Hi-C experiments were performed on wild type and mutant cells of
+    Bacillus subtilis PY79 growing in rich or poor media. ChIP-seq experiments were
+    performed on two strains of Bacillus subtilis PY79 growing in the same condition
+    as in Hi-C experiments.
+  Pubmed-ID: '26253537'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA282683
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP057816
+    type: SRA
+  Sample-Ref:
+  - name: 01_Rudnerlab_HindIII_HiC_PY79
+    ref: GSM1671399
+  - name: 02_Rudnerlab_HindIII_HiC_PY79_rep1
+    ref: GSM1671400
+  - name: 03_Rudnerlab_HindIII_HiC_BDR1873
+    ref: GSM1671401
+  - name: 04_Rudnerlab_HindIII_HiC_BDR1873_rep1
+    ref: GSM1671402
+  - name: 05_Rudnerlab_HindIII_HiC_PY79_S7sorb37C
+    ref: GSM1671403
+  - name: 06_Rudnerlab_HindIII_HiC_BDR1873_S7sorb37C
+    ref: GSM1671404
+  - name: 07_Rudnerlab_HindIII_HiC_BWX2876
+    ref: GSM1671405
+  - name: 08_Rudnerlab_HindIII_HiC_BDR2292
+    ref: GSM1671406
+  - name: 09_Rudnerlab_HindIII_HiC_BWX3196
+    ref: GSM1671407
+  - name: 10_Rudnerlab_HindIII_HiC_BDR2707
+    ref: GSM1671408
+  - name: 11_Rudnerlab_HindIII_HiC_BWX3208
+    ref: GSM1671409
+  - name: 12_Rudnerlab_HindIII_HiC_BWX3209
+    ref: GSM1671410
+  - name: 13_Rudnerlab_HindIII_HiC_BWX3151_30C
+    ref: GSM1671411
+  - name: 14_Rudnerlab_HindIII_HiC_BWX3151_42C10m
+    ref: GSM1671412
+  - name: 15_Rudnerlab_HindIII_HiC_BWX3151_42C20m
+    ref: GSM1671413
+  - name: 16_Rudnerlab_HindIII_HiC_BWX3151_42C40m
+    ref: GSM1671414
+  - name: 17_Rudnerlab_HindIII_HiC_BWX2080_42C20m
+    ref: GSM1671415
+  - name: 18_Rudnerlab_HindIII_HiC_BWX3266_spo30C190m
+    ref: GSM1671416
+  - name: 19_Rudnerlab_HindIII_HiC_BWX3266_spo30C170m42C20m
+    ref: GSM1671417
+  - name: 20_Rudnerlab_HindIII_HiC_BWX3266_spo30C150m42C40m
+    ref: GSM1671418
+  - name: 21_Rudnerlab_HindIII_HiC_PY79_S7sorb22C
+    ref: GSM1671419
+  - name: 22_Rudnerlab_HindIII_HiC_BDR2298_S7sorb22C
+    ref: GSM1671420
+  - name: 23_Rudnerlab_HindIII_HiC_BDR2996
+    ref: GSM1671421
+  - name: 24_Rudnerlab_HindIII_HiC_BDR2985
+    ref: GSM1671422
+  - name: 25_Rudnerlab_HindIII_HiC_BNS1657
+    ref: GSM1671423
+  - name: 26_Rudnerlab_HindIII_HiC_BWX2761
+    ref: GSM1671424
+  - name: 27_Rudnerlab_HindIII_HiC_BDR3007
+    ref: GSM1671425
+  - name: 28_Rudnerlab_HindIII_HiC_BWX3172
+    ref: GSM1671426
+  - name: 29_Rudnerlab_HindIII_HiC_BWX3221
+    ref: GSM1671427
+  - name: 30_Rudnerlab_HindIII_HiC_BWX3231
+    ref: GSM1671428
+  - name: 31_Rudnerlab_HindIII_HiC_BNS1733_30C
+    ref: GSM1671429
+  - name: 32_Rudnerlab_HindIII_HiC_BNS1733_42C45m
+    ref: GSM1671430
+  - name: 33_Rudnerlab_HindIII_HiC_BNS1733_42C120m
+    ref: GSM1671431
+  - name: 34_Rudnerlab_HindIII_HiC_BDR1050_spo37C150m
+    ref: GSM1671432
+  - name: 35_Rudnerlab_HindIII_HiC_BWX3091_spo37C150m
+    ref: GSM1671433
+  - name: 36_Rudnerlab_HindIII_HiC_BWX3304_30C
+    ref: GSM1821865
+  - name: 37_Rudnerlab_HindIII_HiC_BWX3304_42C20min
+    ref: GSM1821866
+  - name: 38_Rudnerlab_HindIII_HiC_BWX3359_30C
+    ref: GSM1821867
+  - name: 39_Rudnerlab_HindIII_HiC_BWX3359_42C40min
+    ref: GSM1821868
+  Status:
+    Last-Update-Date: '2017-01-09'
+    Release-Date: '2015-08-12'
+    Submission-Date: '2015-04-29'
+    database: GEO
+  Summary: SMC condensin complexes play a central role in compacting and resolving
+    replicated chromosomes in virtually all organisms yet how they accomplish this
+    remains elusive. In Bacillus subtilis, condensin is loaded at centromeric parS
+    sites, where it encircles DNA and individualizes newly replicated origins. Using
+    chromosome conformation capture and cytological assays, we show that condensin
+    recruitment to origin-proximal parS sites is required for the juxtaposition of
+    the two chromosome arms. Recruitment to ectopic parS sites promotes alignment
+    of large tracks of DNA flanking these sites. Importantly, insertion of parS sites
+    on opposing arms indicates that these ?zip-up? interactions only occur between
+    adjacent DNA segments. Collectively, our data suggest that condensin resolves
+    replicated origins by promoting the juxtaposition of DNA flanking parS sites drawing
+    sister origins in on themselves and away from each other. These results are consistent
+    with a model in which condensin encircles the DNA flanking its loading site and
+    then slides down, tethering the two arms together. Lengthwise condensation via
+    loop-extrusion could provide a generalizable mechanism by which condensin acts
+    dynamically to individualize origins in B. subtilis and, when loaded along eukaryotic
+    chromosomes, to resolve them during mitosis.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE68418/GSE68418_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP057/SRP057816
+  Title: Condensin promotes the juxtaposition of DNA flanking its loading site in
+    Bacillus subtilis
+  Type:
+  - Other
+  - Genome binding/occupancy profiling by high throughput sequencing
+  iid: GSE68418
+id: '200068418'

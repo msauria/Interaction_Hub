@@ -1,0 +1,76 @@
+Accession: GSM2599094
+Channel:
+  Characteristics:
+  - breast
+  - basal, pre-metastatic
+  - hyperplastic
+  - n/a
+  Extract-Protocol: 'Total RNA was isolated from Trizol using Direct-zol RNA mini-prep
+    kit (Zymo Research #R2050) with DNaseI digestion.
+
+    DNA libraries were prepared for sequencing using standard Illumina TruSeq ChIP
+    kit (Illumina #IP-202-1012)
+
+    Barcoded libraries (Illumina TruSeq) were then loaded onto an Illumina HiSeq 1500
+    and paired-end 100-base (PE100) sequencing was performed at the Advanced Genome
+    Technologies Core Massively Parallel Sequencing Facility at UVM.'
+  Growth-Protocol: 'MCF10A and MCF10AT1 cells were grown in DMEM: F12 (Hyclone-SH30271),
+    5% (v/v) horse serum (Gibco #16050) + 10ug/ml human insulin (Sigma I-1882)+ 20ng/ml
+    recombinant hEGF (Peprotech AF-100-15) + 100ng/ml Cholera toxin (Sigma C-8052)
+    + 0.5 ug/ml Hydrocortisone (Sigma H-0888) Pen/Strep (Life Technologies) and Glutamine
+    (Life Technologies). MCF10CA1a cells were grown in DMEM: F12 (Hyclone-SH30271)
+    + 5% (v/v) horse serum (Gibco #16050) +Pen/Strep (Life Technologies)and Glutamine
+    (Life Technologies)  .'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: mammary gland/breast epithelial cell
+  Treatment-Protocol: 'Cells were seeded at 1x106 cells per 100 mm dish and grown
+    to 80-90% confluence. Cells were washed twice with phosphate buffered saline (PBS),
+    fixed with 1% methanol free formaldehyde, and pellets stored at -80C. Hi-C was
+    performed as previously published (belton, 2012, PMCID: PMC3874846).'
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Fastq conversion and demultiplexing were done using bcl2fastq (Illumina,\
+  \ v1.8.4)\nReads were aligned to canonical hg38 chromosomes using HiC-Pro 2.8.1\
+  \ calling bowtie2 2.1.0 with HiC-Pro\u2019s default options.\nThe merged allValidPairs\
+  \ files were converted to .hic for JuiceBox using HiC-Pro's hicpro2juicebox.sh script\
+  \ (juicer tools 0.7.5, adapted to set 40kb resolution chr6 only).\nGenome_build:\
+  \ hg38\nSupplementary_files_format_and_content: .matrix files are 40kb resolution\
+  \ iced matrix files from HiC-Pro.\nSupplementary_files_format_and_content: HiCPro_40000_matrix_coordinates.bed\
+  \ is a bed formatted file to convert indexes of iced matrices to genomic coordinates.\n\
+  Supplementary_files_format_and_content: .hic files are 40kb resolution interaction\
+  \ files of chr6 for input to JuiceBox."
+Description: 'MCF10AT1_pooled_40000_iced.matrix.gz
+
+  HiCPro_40000_matrix_coordinates.bed
+
+  MCF10AT1_pooled.allValidPairs.hic'
+Instrument-Model:
+  Predefined: Illumina HiSeq 1500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: Hi-C
+Partition: DNase
+Platform-Ref:
+  ref: GPL18460
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN06891214
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2783848
+  type: SRA
+SRA:
+  SRR: []
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX278/SRX2783848
+  iid: SRX2783848
+Series: GSE98552
+Status:
+  Last-Update-Date: '2017-05-23'
+  Release-Date: '2017-05-23'
+  Submission-Date: '2017-05-04'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX278/SRX2783848
+Title: MCF10AT1 Hi-C REP 2
+Type: SRA
+iid: GSM2599094

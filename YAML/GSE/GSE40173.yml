@@ -1,0 +1,158 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Dr. MC 0640
+    State: California
+    Zip-Code: 92093-0640
+  Department: Medicine
+  Email: cbenner@ucsd.edu
+  Organization: University of California, San Diego (UCSD)
+  Person:
+    First: Christopher
+    Last: Benner
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Yin
+    Last: Lin
+    Middle: C
+  iid: contrib3
+- Person:
+    First: Robert
+    Last: Mansson
+  iid: contrib4
+- Person:
+    First: Sven
+    Last: Heinz
+  iid: contrib5
+- Person:
+    First: Kazuko
+    Last: Miyazaki
+  iid: contrib6
+- Person:
+    First: Masaki
+    Last: Miyazaki
+  iid: contrib7
+- Person:
+    First: Vivek
+    Last: Chandra
+  iid: contrib8
+- Person:
+    First: Claudia
+    Last: Bossen
+  iid: contrib9
+- Person:
+    First: Christopher
+    Last: Glass
+    Middle: K
+  iid: contrib10
+- Person:
+    First: Cornelis
+    Last: Murre
+  iid: contrib11
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11002
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-03-31'
+    Release-Date: '2010-09-30'
+    Submission-Date: '2010-09-30'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina Genome Analyzer IIx (Mus musculus)
+  iid: GPL11002
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE40173
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib1
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  - position: '6'
+    ref: contrib7
+  - position: '7'
+    ref: contrib8
+  - position: '8'
+    ref: contrib9
+  - position: '9'
+    ref: contrib10
+  - position: '10'
+    ref: contrib11
+  Overall-Design: Performed Hi-C, GRO-seq, and ChIP-seq to pinpoint the underlying
+    molecular mechanisms that link transcriptional regulation to genomic structure
+    and architecture in lymphocyte development
+  Pubmed-ID: '23064439'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP014892
+    type: SRA
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA173552
+    type: BioProject
+  Sample-Ref:
+  - name: pre-proB, Hi-C EGS
+    ref: GSM987816
+  - name: pro-B, Hi-C FA
+    ref: GSM987817
+  - name: pro-B, Hi-C EGS
+    ref: GSM987818
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2012-10-09'
+    Submission-Date: '2012-08-16'
+    database: GEO
+  Summary: The genome is folded into domains that are located in either transcriptionally
+    inert or permissive compartments.  Here we used genome-wide strategies to characterize
+    domains during B cell development. Structured Interaction Matrix Analysis revealed
+    that CTCF occupancy was primarily associated with intra-domain interactions, whereas
+    p300, E2A, Pax5 and PU.1 were involved with intra- and inter-domain interactions
+    that are developmentally regulated.  We identified a spectrum of genes that switched
+    nuclear location during early B cell development. In progenitors the transcriptionally
+    inactive Ebf1 locus was sequestered at the nuclear lamina, thereby preserving
+    multipotency, however upon development into the pro-B cell stage Ebf1 and other
+    genes switched compartments to establish de novo intra- and inter-domain interactions
+    that were associated with B lineage specific transcription signatures.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE40173/GSE40173_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP014/SRP014892
+  Title: Global changes in the nuclear positioning of chromatin domains and genomic
+    interactions that orchestrate B cell fate
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Other
+  - Genome binding/occupancy profiling by high throughput sequencing
+  iid: GSE40173
+id: '200040173'

@@ -1,0 +1,179 @@
+Accession: GSM2053974
+Channel:
+  Characteristics:
+  - Embryonic stem cells
+  - 129S4/SvJae
+  - Male
+  - repA Xist mutant
+  - 48h dox induction
+  Extract-Protocol: "Hi-C:  Hi-C was performed as previously described (Lieberman-Aiden,\
+    \ E. et al. Comprehensive Mapping of Long-Range Interactions Reveals Folding Principles\
+    \ of the Human Genome. Science 326, 289\u2013293 (2009), Naumova, N. et al. Organization\
+    \ of the Mitotic Chromosome. Science 342, 948\u2013953 (2013), Belton JM et al.,\
+    \ 2012 Methods). Briefly, Cells were lysed and chromatin was digested with HindIII,\
+    \ then digested ends were filled in with biotinylated dCTP  and ligated.  After\
+    \ reversing the formaldehyde crosslinks by incubation at 65 C  with Proteinase\
+    \ K overnight, unligated biotinylated ends were removed by incubation with T4\
+    \ DNA polymerase.  RNA-Seq:  RNA-Seq was peformed as previously described (Gendrel,\
+    \ A.-V. et al. Developmental Dynamics and Disease Potential of Random Monoallelic\
+    \ Gene Expression. Dev. Cell 28, 366\u2013380 (2014).).\nHi-C:  Hi-C was performed\
+    \ as previously described (Lieberman-Aiden, E. et al. Comprehensive Mapping of\
+    \ Long-Range Interactions Reveals Folding Principles of the Human Genome. Science\
+    \ 326, 289\u2013293 (2009), Naumova, N. et al. Organization of the Mitotic Chromosome.\
+    \ Science 342, 948\u2013953 (2013)).  The ligation products were fragmented by\
+    \ Covaris sonication and then size selected by Ampure fractionation.  The DNA\
+    \ ends were prepared for Illumina sequencing adapter ligation by repairing the\
+    \ DNA ends and adding an \u2018A\u2019  to each end.  The biotinylated junctions\
+    \ were then pulled down using MyOne streptavidin beads. Illumina paired end adapters\
+    \ were ligated onto the DNA ends and then the fragments were PCR amplified.  \
+    \ Samples were sequenced on an Illumina HiSeq 2000 using either a PE50 or PE100\
+    \ bp read (reads were truncated to 50bp during mapping).  RNA-Seq:  RNA-Seq was\
+    \ peformed as previously described (Gendrel, A.-V. et al. Developmental Dynamics\
+    \ and Disease Potential of Random Monoallelic Gene Expression. Dev. Cell 28, 366\u2013\
+    380 (2014).)."
+  Growth-Protocol: "The hybrid mouse ES cell line F121.6 (129Sv-Cast/EiJ), a gift\
+    \ from Prof. Joost Gribnau, was grown on mitomycin C-inactivated MEFs in ES cell\
+    \ media containing 15% FBS (Gibco), 10-4M \xDF-mercaptoethanol (Sigma), 1000U/ml\
+    \ of leukaemia inhibitory factor (LIF, Chemicon)."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Embryonic stem cells (male), repA Xist mutant 48h dox induction
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: Hi-C\nHi-C was performed as previously described\
+  \ (Lieberman-Aiden et al., 2009 Science, Belton JM et al., 2012 Methods). Briefly,\
+  \ Cells were lysed and chromatin was digested with HindIII, then digested ends were\
+  \ filled in with biotinylated dCTP  and ligated.  After reversing the formaldehyde\
+  \ crosslinks by incubation at 65 C  with Proteinase K overnight, unligated biotinylated\
+  \ ends were removed by incubation with T4 DNA polymerase.  To obtain allele-specific\
+  \ Hi-C interaction maps in female ESCs (XacastXa129) and a derived clonal NPC line\
+  \ (XacastXi129) (Methods; Extended Data Figure 1) (20), we first constructed an\
+  \ allelic genome using the reference mm9 genome and all 19,722,473 SNPs. The allelic\
+  \ (Cast and 129) genomes were then combined to create a reference diploid genome\
+  \ (consisting of 44 chromosomes; 1-19 X,Y,M). All reads were aligned to the diploid\
+  \ genome (as described in ref. (31)), thus allowing for a competitive mapping strategy\
+  \ between the two alleles. All reads were trimmed to 50bp and then aligned using\
+  \ the novoCraft novoalign (v 3.02.00) software package. Reads were aligned using\
+  \ the following options (-r all 5 -R 30 -q 2 -n 50, minimumReadDistance=5). The\
+  \ best alignment was selected from the list of the top 5 alignments. The alignment\
+  \ was considered unique (allelic), if it\u2019s alignment score was = 5 from the\
+  \ 2nd best alignment score (alignment score taken from the ZQ tag). Reads that aligned\
+  \ uniquely to an allele were classified as allelic (either Cast or 129) whereas\
+  \ reads that aligned to both alleles equally (= 5 distance) were classified as ambiguous\
+  \ (AMB) (Extended Data Figure 1d). Uniquely aligned Hi-C interactions between loci\
+  \ located on the same chromosome were assigned to a specific parental chromosome\
+  \ in cis when at least one of the two reads contained a diagnostic SNP, and the\
+  \ other either contained a SNP from the same allele, or mapped to both alleles (32).\
+  \ We obtained the following paired-end read counts: For ESC (GUR.2d), a total of\
+  \ 401,684,614 interactions could be aligned, 372,272,389 of which were unique (after\
+  \ PCR duplicate filter), and 95,650,438 of which could be placed to either the Cast\
+  \ or 129 allele (25.69%). For NPC (GEI.72b), a total of 277,440,656 interactions\
+  \ could be aligned, 253,254,798 of which were unique (after PCR duplicate filter),\
+  \ and 82,323,031 of which could be placed to either the Cast or 129 allele (32.51%).\
+  \ For deltaFT NPC (D9B2/B129T3), a total of 229,331,123 interactions could be aligned,\
+  \ 222,941,525 of which were unique (after PCR duplicate filter), and 85,331,870\
+  \ of which could be placed to either the Cast or 129 allele (38.28%). The difference\
+  \ in percent of reads assignable to either allele is likely due to differences in\
+  \ the percent of cis interactions found in each sample (biological or technical\
+  \ variation). The 82-95 million read depth supported generation of allele-specific\
+  \ chromatin interaction maps at multiple resolutions (10 Mb, 2.5 Mb, 1 Mb, 500 kb,\
+  \ 250 kb, 100 kb, and 40 kb).\nIterative mapping and error filtering/iterative correction\
+  \ (IC) of the chromatin interaction data were performed as previously described\
+  \ (12,31)) . IC was performed on the diploid (44 chromosomes) (replicate pooled)\
+  \ genome-wide matrix for all resolutions\nHi-C for the mTXY (male) samples was performed\
+  \ as previously described 27,28. Reads originating from the mTXY (male) sample was\
+  \ aligned to the mm9 reference genome. Iterative mapping and error filtering/iterative\
+  \ correction (IC) of the chromatin interaction data were performed as previously\
+  \ described. IC was performed genome-wide (22 chromosomes) (replicate pooled) on\
+  \ the genome-wide matrix for all resolutions.  Biological replicates were highly\
+  \ correlated.  We pooled all biological replicates into a single Hi-C data set per\
+  \ sample and subsequently used the pooled data for all analyses.\nHi-C SNP density\
+  \ filter: To remove potential biases in the Hi-C data related to the density of\
+  \ SNPs in each bin, we calculated the number of SNPs residing in each genomic interval\
+  \ (bin) for all Hi-C bins across all bin sizes. We then calculated the median number\
+  \ of SNPs per bin, and produced a minimum required SNP density cutoff defined as\
+  \ the (median - 1.5 * IQR). Any bins with less SNP than the cutoff were removed\
+  \ from all analyses. The SNP density cutoffs used for each bin size were: 40 kb,\
+  \ 43 SNPs; 100 kb, 216 SNPs; 250 kb, 776.5 SNPs; 500kb, 1767.25 SNPs. The non SNP\
+  \ density filtered data was only used for visualization purposes (figure heatmaps).\
+  \ For all intensive purposes, we refer to IC Hi-C as data that has been IC\u2019\
+  d and run through the snp-density filter.\nCompartment analysis:  The presence and\
+  \ location of the A/B-compartments were calculated as previously described (14)\
+  \ (ref Crane Meyer 2015). Compartments were derived from the 250 kb IC Hi-C data\
+  \ for each chromosome separately using the CIS maps for each sample / allele (Fig\
+  \ 1). The code used to generate the compartments (PC1 from PCA analysis) will be\
+  \ publically available on github following publication (matrix2compartment.pl).\
+  \ Compartments were generated all default options except the (cis alpha) option,\
+  \ set to (-ca 0.005).\nInsulation and Boundary calculation:  TAD structure (insulation/boundaries)\
+  \ was defined via the insulation method as previously described with minor modifications\
+  \ (14). The code used to calculate the insulation score will be publically available\
+  \ on github following publication (matrix2insulation.pl). Insulation vectors were\
+  \ detected using the following options: (-is 480000 -ids 320000 -im iqrMean -nt\
+  \ 0 -ss 160000 -yb 1.5 -nt 0 -bmoe 0). The output of the insulation script is a\
+  \ vector of insulation scores, and a list of minima along the insulation vector\
+  \ (inferred as TAD boundaries). The TAD boundaries were not used in this study.\n\
+  RNA-Seq:  RNA-Seq data for the ESC (GUR.2d) and NPC (GEI.72b) was obtained from\
+  \ previously published work (20). RNA-Seq data for the mutant NPC (D9B2/B129T3)\
+  \ was obtained and processed as previously described (20).\nRNA-Seq \u2018Expressed/Escapee\u2019\
+  \ classification:  The allelic RPKM values were derived for each gene by splitting\
+  \ the RPKM value by the 129 ratio. 129 RPKM = (RPKM * 129 ratio); Cast RPKM = (RPKM\
+  \ * (1 - 129 ratio)); Any gene with an allelic RPKM value = 3 RPMK was classified\
+  \ as being expressed. Any gene expressed on the Xi was classified as being an escapee.\n\
+  Genome_build: mm9"
+Description: Hi-C__mTXY-deltaA-48hdox
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04455159
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1559370
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3142776
+    cluster_name: public
+    id: '2206759'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '18518121200'
+    total_spots: '185181212'
+  - acc: SRR3142777
+    cluster_name: public
+    id: '2206759'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '13292827500'
+    total_spots: '132928275'
+  - acc: SRR3142778
+    cluster_name: public
+    id: '2206759'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '20972511700'
+    total_spots: '209725117'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX155/SRX1559370
+  iid: SRX1559370
+Series: GSE72697
+Status:
+  Last-Update-Date: '2016-07-19'
+  Release-Date: '2016-07-18'
+  Submission-Date: '2016-02-03'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX155/SRX1559370
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2053nnn/GSM2053974/GSM2053974_matrix_cis_txt_mTXY-deltaA-48dox.tar.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2053nnn/GSM2053974/GSM2053974_matrix_genome-wide_hdf5_mTXY-deltaA-48hdox.tar.gz
+Title: mTXY-deltaA-48hdox
+Type: SRA
+iid: GSM2053974

@@ -1,0 +1,84 @@
+Accession: GSM892307
+Channel:
+  Characteristics:
+  - IMR90 fetal lung fibroblast cell line
+  - HindIII
+  Extract-Protocol: Hi-C experiment were conducted in biological replicates using
+    HindIII according to previous publication (Lieberman-Aiden, E. et al. Comprehensive
+    mapping of long-range interactions reveals folding principles of the human genome.
+    Science 326, 289-93 (2009).).
+  Growth-Protocol: 'mESC line J1 was maintained on mitomycin C-inactivated MEF feeder
+    layers in DME containing 15% fetal calf serum, leukemia inhibiting factor, penicillin/streptomycin,
+    L-glutamine and non-essential amino acids. All ES cells were passaged on 0.2 %
+    gelatin twice to deplete feeder cells before harvest for experiments. H1 and IMR90
+    cells were grown as described in: Hawkins, R.D. et al. Distinct epigenomic landscapes
+    of pluripotent and lineage-committed human cells. Cell Stem Cell 6, 479-91'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Human IMR90
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'fastq:  Illumina''s HiSeq Control Software
+
+  hic.summary.txt:The paired-end Hi-C reads were mapped to mouse genome build mm9
+  and human genome hg18 using an in-house pipeline based on BWA using default parameter.
+  BWA SAMPE was used to merged the pairs. Duplicated reads from the same biological
+  library were removed.
+
+  Genome Build:
+
+  IMR90_HindIII_HiC_replicate.nodup.hic.summary.txt: hg18'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX128222
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN00810007
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR442158
+    cluster_name: public
+    id: '146272'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6302187432'
+    total_spots: '87530381'
+  - acc: SRR442159
+    cluster_name: public
+    id: '146272'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6223509936'
+    total_spots: '86437638'
+  - acc: SRR442160
+    cluster_name: public
+    id: '146272'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6131230056'
+    total_spots: '85155973'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX128/SRX128222
+  iid: SRX128222
+Series: GSE35156
+Status:
+  Last-Update-Date: '2013-05-23'
+  Release-Date: '2012-04-10'
+  Submission-Date: '2012-03-09'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX128/SRX128222
+Title: RenLab-HiC-IMR90, replicate two
+Type: SRA
+iid: GSM892307

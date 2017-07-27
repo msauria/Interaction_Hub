@@ -1,0 +1,79 @@
+Accession: GSM1856417
+Channel:
+  Characteristics:
+  - E14
+  - none
+  Extract-Protocol: Libraries were prepared according to Illumina's instructions.
+  Growth-Protocol: All cell-culture was conducted in feeder-free condition.
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Embryonic stem cells
+  Treatment-Protocol: Serum mESCs were grown in DMEM containing 10% fetal calf serum
+    in presence of LIF, together called Serum medium.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Illumina Casava software 1.8.2  used for basecalling of Hiseq2000\
+  \ and NextSeq 500 data.\nLibrary strategy: ChIP-seq. The reads were aligned to build\
+  \ version mm9 of the mouse genome using bwa (version 0.7.12) with default parameters.\
+  \ Only uniquely mapped reads were kept for downstream analysis. Reads from PCR duplicates\
+  \ were also removed. MACS (version 2.0.10.20130306), was used to identify regions\
+  \ of ChIP-seq enrichment over background using parameters --nomodel --broad.\nLibrary\
+  \ strategy: RNA-seq. MMSEQ package was used to infer gene expression levels. Reads\
+  \ were mapped to mouse gene annotation (Ensemble release 67).\nLibrary strategy:\
+  \ Capture Hi-C. The two ends of paired-end reads were mapped to the reference mouse\
+  \ genome (mm9) separately, using BWA MEM (version 0.7.12) with default parameters.\
+  \ Reads were filtered based on mapping quality score (both ends mapQ \u2265 10)\
+  \ and PCR duplicates were removed. Reads were removed if the two ends are from the\
+  \ same DpnII fragment. CHICAGO CHi-C analysis package (http://regulatorygenomicsgroup.org/chicago)\
+  \ was used to call significant contacts. To increase quality, the whole genome was\
+  \ windowed into 5 DpnII site tiles. Virtual baits were created by merging adjacent\
+  \ target regions. Interactions were filtered based on interaction score and number\
+  \ of reads (score \u2265 5 and at least 5 reads).\nLibrary strategy: DNaseI-seq.\
+  \ The reads were aligned to build version mm9 of the mouse genome using bwa (version\
+  \ 0.7.12) with default parameters. Only uniquely mapped reads were kept for downstream\
+  \ analysis. Reads from PCR duplicates were also removed. MACS (version 2.0.10.20130306),\
+  \ was used to identify DNaseI hyper-sensitive sites using parameters --nomodel --broad.\n\
+  Library strategy: 4C-seq. The initial step in the 4C-seq analysis is the alignment\
+  \ of the sequencing reads to a reduced genome of sequences that flank HindIII sites\
+  \ (fragment ends). Repetitive fragment ends were excluded from subsequent analysis.\
+  \ The reduced genome was based on mouse genome mm9.\nGenome_build: mm9"
+Description: 'Hi-C PCR product. Digestion: DpnII'
+Instrument-Model:
+  Predefined: Illumina NextSeq 500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL19057
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03998795
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1158275
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2173744
+    cluster_name: public
+    id: '1683504'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '50260726950'
+    total_spots: '335071513'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX115/SRX1158275
+  iid: SRX1158275
+Series: GSE72164
+Status:
+  Last-Update-Date: '2015-12-07'
+  Release-Date: '2015-12-07'
+  Submission-Date: '2015-08-18'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1856nnn/GSM1856417/GSM1856417_7940_frag.rmdup.bedpe.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX115/SRX1158275
+Title: CHi-C_mESCs_serum_BR2
+Type: SRA
+iid: GSM1856417

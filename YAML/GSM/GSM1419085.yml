@@ -1,0 +1,126 @@
+Accession: GSM1419085
+Channel:
+  Characteristics: LeftVentricle
+  Extract-Protocol: 'Hi-C experiments were conducted using HindIII according to previous
+    publication (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions
+    reveals folding principles of the human genome. Science 326, 289-93 (2009).).
+
+    Sequencing libraries were constructed according to previous publication (Lieberman-Aiden,
+    E. et al. Comprehensive mapping of long-range interactions reveals folding principles
+    of the human genome. Science 326, 289-93 (2009).).'
+  Growth-Protocol: Tissues samples were obtained from deceased donors at the time
+    of organ procurement at the Barnes-Jewish Hospital (St. Louis, USA).  Samples
+    were flash frozen and pulverized prior to formaldehyde cross-linking.  Research
+    consent from family was obtained, and this study was approved by Mid-American
+    Transplant Services.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: LeftVentricle STL003
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "library strategy: HaploSeq\nfastq:  Illumina's HiSeq Control Software\n\
+  For Hi-C read alignment, we aligned Hi-C reads to the hg18 (human) genome. We masked\
+  \ any bases in the genome that were genotyped as SNPs in the individual genome.\
+  \ These bases were masked to \u201CN\u201D in order to reduce reference bias mapping\
+  \ artifacts. Hi-C reads were aligned as single end reads using Novoalign. After\
+  \ mapping was finished, read pairs were re-constructed from single reads using an\
+  \ in house pipeline.  Unmapped reads were filtered out and PCR duplicate reads were\
+  \ removed.\nHaplotypes were generated from the final aligned bam file using the\
+  \ HapCUT algorithm.  The details of HapCUT are described previously (Bansal and\
+  \ Bafna, Bioinformatics 24, i153-159, 2008).\nThe final processed haplotypes were\
+  \ generateds after removing local biases through following three steps. First the\
+  \ alignment biases were removed by aligning simulated reads spanning surrounding\
+  \ variants location. If there is more than 5% difference between alleles those variant\
+  \ loci were considered to subject an inherent mapping bias. Second, we removed alleles\
+  \ located in copy number variable regions and allelic biased copy number variable\
+  \ regions by comparing the coverage between two alleles based on WGS data. Any variants\
+  \ that had more coverage than three standard deviation above the mean of each haplotype\
+  \ were excluded. Any variants showing biased WGS coverage between two alleles were\
+  \ also excluded (binomial test p-value 0.05 after Benjamini correction). Lastly,\
+  \ we remove erroneously called as heterozygous variant during genotyping. We calculated\
+  \ the probability of each heterozygous variants were actually homozygous from the\
+  \ likelihood of observing the coverage on each allele from whole genome sequencing.\
+  \ Only heterozygous SNPs that had a FDR of less than 0.5% were included in downstream\
+  \ analysis.\nHaploSeq generates two haplotypes for each chromosome, one for the\
+  \ maternal allele and one for the paternal allele. One allele is named as P1 (parent1)\
+  \ and another allele is named as P2 (parent2) since we do not have information regarding\
+  \ the parent of origin in each donor genome. For the chr9 we can generate haplotypes\
+  \ in each chromosome arm. The haplotypes in chrX STL002 was independtly generated\
+  \ based on hg19 genome build.\nGenome_build: hg18\nSupplementary_files_format_and_content:\
+  \ The processed haplotypes for the individual genome (\"*_haps.vcf\") are available\
+  \ in VCF format."
+Description: Sample 3
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02898029
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX641266
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1501142
+    cluster_name: public
+    id: '897166'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '44177796400'
+    total_spots: '220888982'
+  - acc: SRR1501146
+    cluster_name: public
+    id: '897166'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '23072532600'
+    total_spots: '115362663'
+  - acc: SRR1501145
+    cluster_name: public
+    id: '897166'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '44373322600'
+    total_spots: '221866613'
+  - acc: SRR1501144
+    cluster_name: public
+    id: '897166'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '44421340000'
+    total_spots: '222106700'
+  - acc: SRR1501143
+    cluster_name: public
+    id: '897166'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '44718105600'
+    total_spots: '223590528'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX641/SRX641266
+  iid: SRX641266
+Series: GSE58752
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2015-02-18'
+  Submission-Date: '2014-06-24'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1419nnn/GSM1419085/GSM1419085_STL003_haps.vcf.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX641/SRX641266
+Title: Hi-C, LeftVentricle STL003, replicate one
+Type: SRA
+iid: GSM1419085

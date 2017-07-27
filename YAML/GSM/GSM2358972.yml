@@ -1,0 +1,482 @@
+Accession: GSM2358972
+Channel:
+  Characteristics:
+  - embryonic
+  - Kc167
+  Extract-Protocol: "Cross-linked chromatin was released by detergent lysis and Dounce\
+    \ homogenization.  Cross-linked proteins were then biotinylated at cysteine residues\
+    \ and the DNA digested with DpnII.  Digested chromatin was bound to streptavidin\
+    \ beads, thoroughly washed to remove uncross-linked DNA, DNA ends filled in with\
+    \ biotin-14-dATP, and free DNA ends ligated together.  DNA-protein cross-links\
+    \ were reversed, DNA purified, and biotinylated nucleotides marking unligated\
+    \ ends removed.\nDNA sheared to a size of approximately 500 bp.  DNA was end-repaired\
+    \ and adaptor-ligated by following \u201CNEBNext End Prep\u201D and \u201CAdaptor\
+    \ Ligation\u201D in the NEBNext Ultra II DNA Library Prep Kit for Illumina (New\
+    \ England Biolabs).  The biotinylated DNA was pulled down with streptavidin beads\
+    \ and PCR amplified by following \"PCR Amplification\" in the NEBNext Ultra II\
+    \ DNA Library Prep Kit for Illumina (New England Biolabs)."
+  Growth-Protocol: "Kc167 cells were obtained from the Drosophila Genomics Resource\
+    \ Center (Bloomington, IN).  Cells were grown in CCM3 media (HyClone) at 25\xB0\
+    \ C following Drosophila Genomics Resource Center protocols."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: Kc167 cultured cells
+  Treatment-Protocol: 1 billion Kc167 cells at a density of 4-6 x 10^6 cells/mL were
+    washed with 20 mL CMM3 media and then cross-linked with 1% EM-grade paraformaldehyde.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Reads were mapped to dm3/BDGP Release 5 of the Drosophila melanogaster
+  genome using BWA-MEM.
+
+  Reads were assigned to DpnII restriction fragments, duplicates removed, reads with
+  a MAPQ < 30 removed, and intra-fragment reads removed.
+
+  Genome was then divided into equally spaced bins.
+
+  To account for the uncertainty in the location of the position of the cross-link
+  within each restriction fragment,the read position was radnomized within the restriction
+  fragment each read mapped to and the resulting contact was assigned to its respective
+  genomic bin.
+
+  Hi-C contact maps were normalized by matrix balancing using the KR normalization
+  algorithm (Durand et al., 2016; Knight and Ruiz, 2012; Rao et al., 2014).
+
+  Biological replicates combined after filtering, intrafragment read positions randomized
+  as described above, and the combined contact map KR normalized.  All subsequent
+  analysis was performed on the combined, KR normalized contact map.
+
+  TADs were identified using the previously described Arrowhead algorithm (Durand
+  et al., 2016; Rao et al., 2014), with an additional post-processing step:  TADs
+  were identified at 5 kb, 2 kb, 1 kb, and 500 bp resolution using the Arrowhead algorithm,
+  merged into a single list sorted by decreasing corner score, and conflicts, defined
+  as the boundary of one TAD being located within another TAD, resolved by using the
+  greater corner score of any conflicting TADs.
+
+  Loops were annotated by visual identification of focal peaks of contact enrichment
+  using Juicebox (Durand et al., 2016).
+
+  All of the above steps were performed using the previously described Juicer pipeline
+  (Durand et al., 2016; Rao et al., 2014) and Juicebox visualization interface (Durand
+  et al., 2016).
+
+  Genome_build: dm3
+
+  Supplementary_files_format_and_content: *.hic file of Hi-C contacts in compressed
+  format.  Readable by open-source Juicebox software (http://aidenlab.org/juicebox/).
+
+  Supplementary_files_format_and_content: *_randomized.hic file of Hi-C contacts in
+  compressed format after read positions were randomized within the restriction fragment
+  to which each read was assigned.  Readable by open-source Juicebox software (http://aidenlab.org/juicebox/).
+
+  Supplementary_files_format_and_content: Kc167combined_TADs.txt file of TAD calls
+  from combined biological replicates in Juicebox format.  The column headers x1 x2
+  y1 y2 represent the boundaries of the TAD in genomic coordinates.
+
+  Supplementary_files_format_and_content: Kc167combined_loops.txt file of loop calls
+  from combined biological replicates in Juicebox format.  The column headers x1 x2
+  represent the position of the loop anchor closer to the start of the chromosome;
+  y1 y2 represent the position of the loop anchor closer to the end of the chromosome.'
+Description: 'Platforms: Illumina NextSeq 500, HiSeq X Ten
+
+  Platforms: Illumina NextSeq 500 (used to generate majority of raw files), HiSeq
+  X Ten'
+Instrument-Model:
+  Predefined: Illumina NextSeq 500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL19132
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05936437
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2266516
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4447993
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '717351040'
+    total_spots: '4219712'
+  - acc: SRR4447992
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '168458610'
+    total_spots: '990933'
+  - acc: SRR4447991
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1471470700'
+    total_spots: '8655710'
+  - acc: SRR4447990
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '722612710'
+    total_spots: '4250663'
+  - acc: SRR4447969
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1475779010'
+    total_spots: '8681053'
+  - acc: SRR4447994
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '595141440'
+    total_spots: '3500832'
+  - acc: SRR4447995
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '234220730'
+    total_spots: '1377769'
+  - acc: SRR4447996
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '529711160'
+    total_spots: '3115948'
+  - acc: SRR4447997
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '540225660'
+    total_spots: '3177798'
+  - acc: SRR4447989
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '170792540'
+    total_spots: '1004662'
+  - acc: SRR4447988
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '719249430'
+    total_spots: '4230879'
+  - acc: SRR4447987
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '150649410'
+    total_spots: '886173'
+  - acc: SRR4447986
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '716433720'
+    total_spots: '4214316'
+  - acc: SRR4447985
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '147768930'
+    total_spots: '869229'
+  - acc: SRR4447984
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4148008960'
+    total_spots: '25925056'
+  - acc: SRR4447983
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '228518420'
+    total_spots: '1344226'
+  - acc: SRR4447982
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4174772480'
+    total_spots: '26092328'
+  - acc: SRR4448010
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '456813120'
+    total_spots: '2687136'
+  - acc: SRR4447981
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4107012800'
+    total_spots: '25668830'
+  - acc: SRR4447980
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '536213150'
+    total_spots: '3154195'
+  - acc: SRR4447979
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4137547200'
+    total_spots: '25859670'
+  - acc: SRR4447978
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '45195183652'
+    total_spots: '149652926'
+  - acc: SRR4447977
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2762715840'
+    total_spots: '17266974'
+  - acc: SRR4447976
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2785466400'
+    total_spots: '17409165'
+  - acc: SRR4447975
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2716717120'
+    total_spots: '16979482'
+  - acc: SRR4447974
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2758132320'
+    total_spots: '17238327'
+  - acc: SRR4447973
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '623471090'
+    total_spots: '3667477'
+  - acc: SRR4447972
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '652042140'
+    total_spots: '3835542'
+  - acc: SRR4447971
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '230869180'
+    total_spots: '1358054'
+  - acc: SRR4447970
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '626589910'
+    total_spots: '3685823'
+  - acc: SRR4447999
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '868869320'
+    total_spots: '5110996'
+  - acc: SRR4448000
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '851472710'
+    total_spots: '5008663'
+  - acc: SRR4448001
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '876031590'
+    total_spots: '5153127'
+  - acc: SRR4448002
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '532311990'
+    total_spots: '3131247'
+  - acc: SRR4448003
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '847505930'
+    total_spots: '4985329'
+  - acc: SRR4448004
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '230622510'
+    total_spots: '1356603'
+  - acc: SRR4448005
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '30658013804'
+    total_spots: '101516602'
+  - acc: SRR4448006
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1382655220'
+    total_spots: '8133266'
+  - acc: SRR4448007
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '538777090'
+    total_spots: '3169277'
+  - acc: SRR4448008
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1370217850'
+    total_spots: '8060105'
+  - acc: SRR4448009
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '528764600'
+    total_spots: '3110380'
+  - acc: SRR4448011
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '430768950'
+    total_spots: '2533935'
+  - acc: SRR4448012
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '431769400'
+    total_spots: '2539820'
+  - acc: SRR4448013
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '434332660'
+    total_spots: '2554898'
+  - acc: SRR4448014
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '651714720'
+    total_spots: '3833616'
+  - acc: SRR4447998
+    cluster_name: public
+    id: '3322086'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '537747740'
+    total_spots: '3163222'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX226/SRX2266516
+  iid: SRX2266516
+Series: GSE89112
+Status:
+  Last-Update-Date: '2017-01-12'
+  Release-Date: '2017-01-11'
+  Submission-Date: '2016-10-24'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX226/SRX2266516
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2358nnn/GSM2358972/GSM2358972_Kc167replicate.hic.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2358nnn/GSM2358972/GSM2358972_Kc167replicate_randomized.hic.gz
+Title: Kc167_Hi-C_replicate
+Type: SRA
+iid: GSM2358972

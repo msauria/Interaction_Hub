@@ -1,0 +1,83 @@
+Accession: GSM1184324
+Channel:
+  Characteristics:
+  - CD4+ CD8+ Double Positive Thymocytes
+  - Rad21 KO
+  - C57BL\6 and 129 mixed
+  Extract-Protocol: 'Belton JM, McCord RP, Gibcus JH, Naumova N, Zhan Y, Dekker J.
+    Hi-C: A comprehensive technique to capture the conformation of genomes. Methods.
+    2012 Nov; 58(3):268-76.'
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: CD4+ CD8+ Double Positive Thymocytes
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'DEKKER ICE METHOD - all relevant HiC data (binned at 4 resolutions)
+  raw + iced data
+
+  UCSC GENOME BROWSER BED FILE - coordinates of all chip-seq peaks
+
+  Tab delmited file of all gene  expression values (count equivalents) across all
+  4 samples.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: peak bed (ChIP-seq), counts (RNA-Seq), and
+  HiC data'
+Instrument-Model:
+  Predefined: Illumina Genome Analyzer II
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL9250
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX320076
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02230620
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR931732
+    cluster_name: public
+    id: '447027'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3626218400'
+    total_spots: '18131092'
+  - acc: SRR931733
+    cluster_name: public
+    id: '447027'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '24431081800'
+    total_spots: '122155409'
+  - acc: SRR931734
+    cluster_name: public
+    id: '447027'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '25150554000'
+    total_spots: '125752770'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX320/SRX320076
+  iid: SRX320076
+Series: GSE48763
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-08-13'
+  Submission-Date: '2013-07-10'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1184nnn/GSM1184324/GSM1184324_HiCMYZ-Tcell-Rad21WT-R3.mm9.NA.tar.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX320/SRX320076
+Title: Hi-C Tcell Rad21WT R3
+Type: SRA
+iid: GSM1184324

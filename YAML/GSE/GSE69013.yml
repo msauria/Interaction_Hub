@@ -1,0 +1,136 @@
+Contributor:
+- Address:
+    City: Skolkovo
+    Country: Russia
+    Line: Novaya St., 100
+    Postal-Code: '143025'
+    State: Moscow region
+  Email: e.khrameeva@skoltech.ru
+  Organization: Skolkovo Institute of Science and Technology
+  Person:
+    First: Ekaterina
+    Last: Khrameeva
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ekaterina
+    Last: Khrameeva
+    Middle: E
+  iid: contrib3
+- Person:
+    First: Sergey
+    Last: Ulianov
+    Middle: V
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13304
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2011-03-21'
+    Submission-Date: '2011-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Drosophila melanogaster)
+  iid: GPL13304
+- Accession: GPL17275
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-03-31'
+    Release-Date: '2013-06-11'
+    Submission-Date: '2013-06-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Drosophila melanogaster)
+  iid: GPL17275
+Series:
+  Accession: GSE69013
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: Hi-C experiments, PolyA+ RNA profiling and mapping of chromosomal
+    rearrangements in four Drosophila melanogaster cell lines.
+  Pubmed-ID: '26518482'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA284291
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP058460
+    type: SRA
+  Sample-Ref:
+  - name: S2_HindIII Hi-C library_rep1
+    ref: GSM1690083
+  - name: S2_HindIII Hi-C library_rep2
+    ref: GSM1690084
+  - name: Kc167_HindIII Hi-C library_rep1
+    ref: GSM1690085
+  - name: Kc167_HindIII Hi-C library_rep2
+    ref: GSM1690086
+  - name: DmBG3-c2_HindIII Hi-C library_rep1
+    ref: GSM1690087
+  - name: DmBG3-c2_HindIII Hi-C library_rep2
+    ref: GSM1690088
+  - name: OSC_HindIII Hi-C library_rep1
+    ref: GSM1690089
+  - name: OSC_HindIII Hi-C library_rep2
+    ref: GSM1690090
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2015-10-26'
+    Submission-Date: '2015-05-18'
+    database: GEO
+  Summary: Recent advances enabled by Hi-C technique have unraveled principles of
+    chromosomal folding, which were since linked to many genomic processes. In particular,
+    Hi-C revealed that chromosomes of animals are organized into Topologically Associating
+    Domains (TADs), evolutionary conserved compact chromatin domains that influence
+    gene expression. However, mechanisms that underlie partitioning of the genome
+    into TADs remain poorly understood. To explore principals of TAD folding in Drosophila
+    melanogaster, we performed Hi-C and PolyA+ RNA-seq in four cell lines of various
+    origins (S2, Kc167, DmBG3-c2, and OSC). Contrary to previous studies, we find
+    that regions between TADs (i.e. the inter-TADs and TAD boundaries) in Drosophila
+    are only weakly enriched with the insulator protein dCTCF, while another insulator
+    protein Su(Hw) is preferentially present within TADs. However, Drosophila inter-TADs
+    harbor active chromatin and constitutively transcribed (housekeeping) genes. Accordingly,
+    we find that binding of insulator proteins dCTCF and Su(Hw) predict TAD boundaries
+    much worse than the active chromatin marks (in the minimal case, H3K4me3 and total
+    RNA) do. Moreover, inter-TADs correspond to decompacted interbands of polytene
+    chromosomes, whereas TADs mostly correspond to densely packed bands. Collectively,
+    our results suggest that TADs are condensed chromatin domains depleted in active
+    chromatin marks, separated by regions of active chromatin that cannot be organized
+    into compact structures, possibly due to high levels of histone acetylation. Finally,
+    we test this hypothesis by polymer simulations, and find that TAD partitioning
+    can be explained by different modes of inter-nucleosomal interactions for active
+    and inactive chromatin.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69013/GSE69013_BG3_merged_IC-heatmap-20K.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69013/GSE69013_KC_merged_IC-heatmap-20K.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69013/GSE69013_OSC_merged_IC-heatmap-20K.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69013/GSE69013_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69013/GSE69013_S2_merged_IC-heatmap-20K.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP058/SRP058460
+  Title: "Active chromatin and transcription play a key role in chromosome partitioning\
+    \ into topologi\u0441ally associating domains"
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Other
+  iid: GSE69013
+id: '200069013'

@@ -1,0 +1,72 @@
+Accession: GSM2176971
+Channel:
+  Characteristics: GM07017
+  Extract-Protocol: 'As descirbed in: Nagano, T., et al. Comparison of Hi-C results
+    using in-solution versus in-nucleus ligation. Genome biology 16, 175 (2015).'
+  Growth-Protocol: "The transformed mouse cell line was grown in Dulbecco's modified\
+    \ eagle medium (DMEM) with 10% fetal calf serum (FCS) and 1% Penicillin/Streptomycin\
+    \ supplemented with puromycin. Human lymphoblastoid cell lines (FY1199 and DD1618\
+    \ - European Collection of Cell Cultures (ECACC)) were grown in RPMI-1640 medium\
+    \ with 10% fetal calf serum (FCS) and 1% Penicillin/Streptomycin. Tumors were\
+    \ received from Prof. V. Peter Collins (Department of Pathology, Addenbrooke\u2019\
+    s Hospital, Cambridge, UK), with accompanying full ethical approval, as fresh\
+    \ frozen pieces consisting of between 75% and 90% tumor content, as determined\
+    \ by the pathologist. Approximately 160 mg of frozen tumor was finely chopped\
+    \ before being fixed and taken through the Hi-C protocol."
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Human cell line control
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Standard Illumina Sequencing Pipeline
+
+  Hi-C Processing: HiCUP (Wingett S, Ewels P, Furlan-Magaril M et al. HiCUP: pipeline
+  for mapping and processing Hi-C data (doi: 10.12688)
+
+  QDNAseq package with default parameters an 100kb bin size
+
+  Genome_build: Human: GRCh37;Mouse: NCBIM37
+
+  Supplementary_files_format_and_content: Hi-C interaction files lists interacting
+  restriction fragments'
+Instrument-Model:
+  Predefined: Illumina HiSeq 1000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: '?'
+Platform-Ref:
+  ref: GPL15433
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05173323
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1799564
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3586218
+    cluster_name: public
+    id: '2574933'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2518425696'
+    total_spots: '24690448'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX179/SRX1799564
+  iid: SRX1799564
+Series: GSE81879
+Status:
+  Last-Update-Date: '2017-05-23'
+  Release-Date: '2017-05-23'
+  Submission-Date: '2016-05-25'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2176nnn/GSM2176971/GSM2176971_GM07017_A019_R1_3.hicup.HiC_Interactions.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX179/SRX1799564
+Title: GM07017
+Type: SRA
+iid: GSM2176971

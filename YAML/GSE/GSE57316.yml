@@ -1,0 +1,124 @@
+Contributor:
+- Address:
+    City: Bethesda
+    Country: USA
+    Line: NCI bldg 37 Rm 6068 9000 Rockville Pike
+    State: MD
+    Zip-Code: '20892'
+  Department: LBMB
+  Email: grewals@mail.nih.gov
+  Laboratory: Shiv Grewal
+  Organization: NCI
+  Person:
+    First: Shiv
+    Last: Grewal
+  Phone: 301-594-6389
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Sameet
+    Last: Mehta
+  iid: contrib3
+- Person:
+    First: Mizuguchi
+    Last: Takeshi
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13988
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Schizosaccharomyces pombe
+  Status:
+    Last-Update-Date: '2016-06-02'
+    Release-Date: '2011-07-28'
+    Submission-Date: '2011-07-28'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Schizosaccharomyces pombe)
+  iid: GPL13988
+Series:
+  Accession: GSE57316
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  Overall-Design: Comparison of HiC contact maps under various conditions reveal fundamental
+    principles of genome organization
+  Pubmed-ID: '25307058'
+  Relation:
+  - target: GSE56849
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA246234
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP041682
+    type: SRA
+  Sample-Ref:
+  - name: 999a_HIC
+    ref: GSM1379427
+  - name: 999b_HIC
+    ref: GSM1379428
+  - name: G1-arrested_HIC
+    ref: GSM1379429
+  - name: rad21-K1_HIC
+    ref: GSM1379430
+  - name: clr4D_HIC
+    ref: GSM1379431
+  Status:
+    Last-Update-Date: '2016-06-02'
+    Release-Date: '2014-10-22'
+    Submission-Date: '2014-05-05'
+    database: GEO
+  Summary: "Eukaryotic genomes are folded into a hierarchy of three-dimensional structures\
+    \ that impact nuclear functions, including transcription, replication, and repair1-3.\
+    \ Studies in Drosophila and mammals have revealed megabase-sized topologically\
+    \ associated domains (TADs) within chromosomes, which in turn are spatially restricted\
+    \ within the nucleus4-8.  However, little is known about local physical constraints\
+    \ that drive higher-order folding of chromosomes. Here we performed Hi-C analysis\
+    \ of the fission yeast Schizosaccharomyces pombe to explore genome organization\
+    \ at high resolution. S. pombe comprises a small genome ideal for examining structural\
+    \ features of chromatin folding, and contains fundamental components present in\
+    \ higher eukaryotes. Large domains of heterochromatin coat centromeres and telomeres\
+    \ and recruit cohesin, a ring-like protein complex that binds sister chromatids\
+    \ and mediates long range looping of interphase chromosomes. Our analyses reveal\
+    \ a highly ordered chromosome organization, consistent with a Rabl configuration,\
+    \ which is dependent on constraints imposed at centromeres and telomeres. We find\
+    \ that local chromatin compaction and cohesin recruitment to centromeres mediated\
+    \ by heterochromatin is required for maintaining global genome territorial restraint.\
+    \ In addition to larger complex domains, we also observed locally interacting\
+    \ regions of chromatin ~50 kilobases long, which organize chromosome arms into\
+    \ structures referred to as \u201Cglobules\u201D. Globule boundaries are enriched\
+    \ in cohesin and convergent gene orientation. The role of cohesin in maintaining\
+    \ globule domains is independent of its role in sister chromatid cohesion, as\
+    \ globule domains are also a feature of G1 chromosome architecture. Defect in\
+    \ cohesin disrupts globule domains and results in an altered chromosome organization\
+    \ at larger scales, including the loss of chromosome territories. Disruption of\
+    \ globules also affects functional annotation of the genome, leading to impairment\
+    \ of borders between neighboring transcriptional units. Our analyses reveal key\
+    \ features of chromatin organization and folding and show that distinct mechanisms\
+    \ uniquely impact the hierarchy of genome organization to protect genome integrity\
+    \ and to coordinate nuclear functions."
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP041/SRP041682
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE57316/GSE57316_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE57316/GSE57316_readme.txt
+  Title: High resolution Hi-C analysis in S. pombe reveals fundamental elements of
+    genome architecture (NGS)
+  Type: Other
+  iid: GSE57316
+id: '200057316'

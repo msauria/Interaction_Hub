@@ -1,0 +1,138 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: USA
+    Line: 7 Cambridge Circle
+    State: MA
+    Zip-Code: 02139
+  Email: erezl@princeton.edu
+  Organization: Harvard/MIT/Broad
+  Person:
+    First: Erez
+    Last: Lieberman-Aiden
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Nynke
+    Last: Van Berkum
+  iid: contrib3
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL9052
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2015-06-26'
+    Release-Date: '2009-08-18'
+    Submission-Date: '2009-08-18'
+    database: GEO
+  Technology: other
+  Title: Illumina Genome Analyzer (Homo sapiens)
+  iid: GPL9052
+Series:
+  Accession: GSE18199
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  Overall-Design: Interaction maps in 2 different cell types.
+  Pubmed-ID:
+  - '19815776'
+  - '20461051'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP001261
+    type: SRA
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA119555
+    type: BioProject
+  Sample-Ref:
+  - name: Hi-C (HindIII,GM,1)
+    ref: GSM455133
+  - name: Hi-C (HindIII,GM,Biological Repeat)
+    ref: GSM455134
+  - name: Hi-C (HindIII,GM,2) 2
+    ref: GSM455135
+  - name: Hi-C (HindIII,GM,2) 3
+    ref: GSM455136
+  - name: Hi-C (NcoI,GM,1) 1
+    ref: GSM455137
+  - name: Hi-C (NcoI,GM,1) 2
+    ref: GSM455138
+  - name: Hi-C (HindIII,K562,1) 7
+    ref: GSM455139
+  - name: Hi-C (HindIII,K562,1) 8
+    ref: GSM455140
+  Status:
+    Last-Update-Date: '2015-06-26'
+    Release-Date: '2009-10-09'
+    Submission-Date: '2009-09-21'
+    database: GEO
+  Summary: 'We describe Hi-C, a method that probes the three-dimensional architecture
+    of whole genomes by coupling proximity-based ligation with massively parallel
+    sequencing. We constructed spatial proximity maps of the human genome with Hi-C
+    at a resolution of 1Mb. These maps confirm the presence of chromosome territories
+    and the spatial proximity of small, gene-rich chromosomes.  We identified an additional
+    level of genome organization that is characterized by the spatial segregation
+    of open and closed chromatin to form two genome-wide compartments.  At the megabase
+    scale, the chromatin conformation is consistent with a fractal globule, a knot-free
+    conformation that enables maximally dense packing while preserving the ability
+    to easily fold and unfold any genomic locus. The fractal globule is distinct from
+    the more commonly used globular equilibrium model. Our results demonstrate the
+    power of Hi-C to map the dynamic conformations of whole genomes.
+
+
+    The processed heatmap data, showing the number of read pairs corresponding to
+    particular locus pairs in the genome, are linked to the Series record below.
+
+
+    The processed eigenvector data used to generate the heatmaps are linked to the
+    Series record below.
+
+
+    Additional DNAseI and ChIP-Seq data tracks were used in the paper, and are available
+    at the UCSC browser (http://genome.ucsc.edu/)
+
+
+    DNAseI:
+
+    wgEncodeUwDnaseSeqRawSignalRep2K562
+
+    wgEncodeUwDnaseSeqRawSignalRep2Gm06990
+
+
+    ChIP-Seq:
+
+    wgEncodeBroadChipSeqSignalGm12878H3k36me3
+
+    wgEncodeBroadChipSeqSignalGm12878H3k27me3'
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_3D-FISH.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_Globules.zip.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_Peano_curves.zip.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_binned_heatmaps.zip.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_eigenvector_files.zip.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_python_code.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_readme_v4.txt
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE18199/GSE18199_supplemental_code.tar.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP001/SRP001261
+  Title: Comprehensive mapping of long-range interactions reveals folding principles
+    of the human genome.
+  Type:
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE18199
+id: '200018199'

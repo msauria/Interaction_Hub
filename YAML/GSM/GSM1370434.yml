@@ -1,0 +1,111 @@
+Accession: GSM1370434
+Channel:
+  Characteristics:
+  - K562 cells
+  - whole-genome
+  - '1'
+  Extract-Protocol: 'DNase Hi-C or targeted DNase Hi-C:  Cells are cross-linked with
+    formaldehyde; chromatin is then randomly fragmented by DNase I. The resulting
+    chromatin fragments are end-repaired and dA-tailed, then marked with a biotinylated
+    internal adaptor; and proximity ligation is carried out by burying the biotin-labeled
+    fragments inside solidified agarose gel to favor ligation events between the cross-linked
+    DNA fragments. The resulting DNA sample contains ligation products consisting
+    of chimeric DNA fragments that were originally in close spatial proximity in the
+    nucleus, marked with biotin at the junction. A whole-genome chromatin interaction
+    library is created by shearing the DNA and selecting the biotin-containing fragments
+    with streptavidin magnetic beads. After linear library amplification, a DNase
+    Hi-C library is generated and sequenced to identify whole-genome chromatin contacts.
+    For targeted DNase Hi-C, the chromatin contacts associated with a specific group
+    of loci of interest are then enriched by a bait library targeting the loci via
+    in-solution hybridization-based DNA capture. Finally, quantitation of the enriched
+    chromatin interactions is achieved through massively parallel deep sequencing.
+
+    DNase Hi-C or targeted DNase Hi-C'
+  Growth-Protocol: Two cell lines, namely, human embryonic stem cell H1 and human
+    erythromyeloblastoid leukemia cell K562, were grown under standard culture conditions
+    and harvested at log phase.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: DNase Hi-C experiment on K562 cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'First, we performed an exhaustive search and cleaning of the Illumina
+  primer and adaptor sequences in the 150 bp full-length reads and extracted the remaining
+  read fragments of various lengths from 25-80 bp.
+
+  We then mapped each end of these cleaned paired-end reads separately to the human
+  genome (GRCh37/hg19 assembly, obtained from the UCSC Genome Browser) using BWA/v0.5.9.
+  We only retained the reads that mapped uniquely, allowing at most 3 mismatches and
+  requiring mapping quality MAPQ >= 30.
+
+  To eliminate the bias due to the PCR duplication step, we removed redundant paired-end
+  reads. We define two reads as redundant if both ends of the reads are mapped to
+  identical locations in the genome.
+
+  For targeted DNase Hi-C data we performed an additional filtering step to keep only
+  the paired-end reads for which at least one end mapped to or within 150 bp from
+  one of the captured target regions.
+
+  Genome_build: GRCh37/hg19 assembly
+
+  Supplementary_files_format_and_content: txt files, containing uniquely mapped and
+  non-redundent read pairs. The files are tab-delimited. The columns are #1 read identifier,
+  #2 strand of the 1st end, #3 mapped chr of the 1st end, #4 mapped coordinate of
+  the 1st end, #5 sequence of 1st end, #6 strand of the 2nd end, #7 mapped chr of
+  the 2nd end, #8 mapped coordinate of the 2nd end, #9 sequence of 2nd end.'
+Description: 'library strategy: DNase Hi-C'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DNase
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02729294
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX520273
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1248179
+    cluster_name: public
+    id: '719920'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '14203457694'
+    total_spots: '70314147'
+  - acc: SRR1248177
+    cluster_name: public
+    id: '719920'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '35677231920'
+    total_spots: '176619960'
+  - acc: SRR1248178
+    cluster_name: public
+    id: '719920'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6824307602'
+    total_spots: '33783701'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX520/SRX520273
+  iid: SRX520273
+Series: GSE56869
+Status:
+  Last-Update-Date: '2014-11-01'
+  Release-Date: '2014-11-01'
+  Submission-Date: '2014-04-17'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1370nnn/GSM1370434/GSM1370434_DNaseHiC.WS.K562.combined.hg19.cleanedPairs.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX520/SRX520273
+Title: DNaseHiC-WG-K562
+Type: SRA
+iid: GSM1370434

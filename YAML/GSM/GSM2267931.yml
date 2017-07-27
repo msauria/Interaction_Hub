@@ -1,0 +1,157 @@
+Accession: GSM2267931
+Channel:
+  Characteristics: Kc cells
+  Extract-Protocol: "Cells from 6 plates were harvested into sterile 50 ml centrifuge\
+    \ tubes. The cells were collected by centrifugation at 1200 rpm for 5 min at 4\
+    \ \u25E6C.  The cells were re-suspended in 10 ml fresh medium and the cell concentration\
+    \ was determined using a haemocytometer. A cell concentration to 1 x10E8 was resuspended\
+    \ in 45 ml of fresh medium. The cells were then fixed by adding 1.25 ml 37% formaldehyde\
+    \ solution and incubating them with gentle shaking in a platform\Lshaker at room\
+    \ temperature for 10 min. The reaction was stopped by adding 2.5 ml 2.5M glycine\
+    \ and further incubation at room temperature for 5 min followed by 15 min on ice.\
+    \ The cross-linked cells were divided into 4 x 15 ml falcon tubes (~12.3 ml per\
+    \ tube). The cells were then collected at 1500 rpm for 10 min at 4 \u25E6C. The\
+    \ supernatant was discarded and the fixed cells were flash frozen in liquid nitrogen\
+    \ then stored at -80\u25E6C.  Restriction enzyme digestion: The cells were thawed\
+    \ on ice (~2.0 x10E7 cells) and 500 \u03BCl of lysis buffer (10 mM Tris-Cl, pH\
+    \ 8.0; 10 mM NaCl, 0.2% Igepal CA360) and 50 ul of protease inhibitor cocktail\
+    \ (Sigma) were added. Cells were lysed with 15 strokes of a Dounce homogeniser\
+    \ using the tight pestle (Pestle A). The cell suspension was transferred to a\
+    \ microcentrifuge tube and spun at 5000 rpm at room temperature for 5 min. The\
+    \ supernatant was discarded and the pellet washed twice with 0.5 ml of ice-cold\
+    \ 1.20x NEBuffer 3, 5000 rpm, 5 min, at room temperature. The pellet was then\
+    \ resuspended in 500 \u03BCl of ice-cold 1.20x NEBuffer 3 and add 7.5 ul of 20%\
+    \ SDS.  This was incubated at 37\u25E6C with shaking at 900 rpm for 1h. 50 \u03BC\
+    l of 20% Triton X-100 was added and further incubated at 37\u25E6C, 900 rpm for\
+    \ 1h. A 50 \u03BCl aliquot was taken and stored at -20 \xB0C to serve as undigested\
+    \ control. 45 \u03BCl of 1.20x NEBuffer 3 was then added to the remaining lysate.\
+    \ 400 U (8 \u03BCl) of 50U/\u03BCl Dpn II was then added and the digestion reaction\
+    \ was incubated at 37\u25E6C with shaking at 900 rpm overnight. Blunt ending fragments\
+    \ with Klenow enzyme: The restriction enzyme reaction was incubated at 65\xB0\
+    C for 20 min to inactive Dpn II. The inactivated reaction was dispensed into five\
+    \ 100\u03BCl aliquots in fresh microfuge tubes. Tube 1 was designated as a 3C\
+    \ control and Tubes 2-5 were used as Hi-C samples. To the Hi-C samples 0.35 \u03BC\
+    l each of 10 mM dCTP, dGTP and dTTP and 8.75 \xB5l of 0.4 mM biotin-14-dATP and\
+    \ 5 \xB5l of 5U/\xB5l Klenow enzyme (DNA Polymerase I, NEB M210S) was added and\
+    \ then incubated at 37\xB0C for 45 min.  Ligation: Two hundred ul of 10 mM Tris-HCl\
+    \ with 1%SDS to each blunt-ended reactions and the 3C control tube. This was then\
+    \ transferred to a fresh 50 ml tube containing 700 \xB5l 10x T4 DNA Ligase Buffer\
+    \ (NEB) and 5894 \xB5l molecular biology grade water. Then 106 ul 20% Triton X-100\
+    \ was added and the mixture Incubated for 1 h at 37 C with gentle shaking. After\
+    \ which 10000U ligase was added and then incubated for 18h at 16\u25E6C followed\
+    \ by 30 min at room temperature.   De-crosslinking and DNA purification: Thirty\
+    \ \u03BCl of 10 mg/ml PK (300 \u03BCg final) was added to the reaction and incubated\
+    \ at 65\u25E6C overnight. Then 10 \u03BCl of 30 mg/ml RNase A (SIGMA) was added\
+    \ and the reaction was incubated at 37\u25E6C for 45 min. Seven ml phenol-chloroform-isoamyl\
+    \ alcohol (PCI) was added and mixed vigorously by vortexing. The mixture was transferred\
+    \ to a 50 ml Phase Lock Gel (5 Prime, 2302860) and centrifuged at 2200 xg for\
+    \ 15 min at room termperature. The aqueous phase was transferred to a fresh 50\
+    \ ml tube and 7 ml of distilled water, 1.5 ml 3M NaAcetate pH 5.2, and 35 ml 100%\
+    \ ice-cold ethanol were added. The mixture was incubated at -80\u25E6C for 1 h\
+    \ then centrifuged at 2200 xg, 4\u25E6C, for 45 minutes. The pellet was washed\
+    \ with 10 ml 70% ethanol at 2200 xg at 4\xB0C for 15 min and the pellet dried\
+    \ at at room temperature for 10-15 min. The pellet was then re-suspended in 150\
+    \ \u03BCl of 10 mM Tris-HCl pH 8.0 and allowed to dissolve overnight at 4\xB0\
+    C. The purified DNA was then transferred to a microcentrifuge tube at stored at\
+    \ -20\xB0C.   Re-purification of DNA: A 150 \u03BCl volume of 10 mM Tris-HCl pH\
+    \ 8.0 was added to the dissolved pellet and 300 \u03BCl PCI was added to each\
+    \ tube. These were then mixed and centrifuged at 13,200 rpm for 5 min at room\
+    \ temperature in a Phase Lock tube. PCI purification was then repeated on the\
+    \ aqueous phase. After which the DNA was precipitated by adding 30 \xB5l 3M NaAcetate,\
+    \ pH 5.2 and 2.5 volumes of ice-cold 100% ethanol. The mixture was incubated at\
+    \ -80\u25E6C for at least 45 min then centrifuged for 20 min at 13000 rpm at 4\u25E6\
+    C. The pellet was washed with with 0.5 ml of ice-cold 70% and air-dried briefly.\
+    \  The pellet was then resuspended in 25 \u03BCl l TLE Buffer (10 mM Tris-Cl pH\
+    \ 8.0, 0.1 mM EDTA). The Hi-C DNA preparations were pooled into a single tube\
+    \ and the concentration measured using a Qubit photometer.  Removal of biotin\
+    \ from unligated ends and shearing of Hi-C DNA: For every 5 \u03BCg of Hi-C DNA\
+    \ preparation, the following were added: 1 \xB5l 10 mg/ml BSA, 10 \xB5l 10X NEBuffer\
+    \ 2, 1 \xB5l 10mM dGTP, 1.67 \xB5l (5U) T4 DNA polymerase and water to a total\
+    \ volume of 100 \xB5l. Incubate mixture at 12 \xB0C for 2 hr and stop reaction\
+    \ by adding 2 \xB5l 0.5 M EDTA pH 8.0. DNA was then purified by adding 1 vol of\
+    \ PCI and centrifuging the mixture at 13200 rpm for 5 min at room temperature\
+    \ in a Phase Lock tube. The DNA in the aqueous phase was precipitated by adding\
+    \ 10 \u03BCl 3M NaAcetate, pH 5.2 and 2.5 vol ice-cold 100% ethanol. The mixture\
+    \ was incubated at -80\u25E6C for at least 30 min then centrifuged for 20 min\
+    \ at 13000 rpm at 4\u25E6C. The pellet was washed with 0.5 ml of ice-cold 70%\
+    \ ethanol. And the pellet dissolved and pooled in a total volume of 100 \u03BC\
+    l of water. Hi-C DNA preparation was sheared at 4\xB0C for 20 min in 30 sec pulses\
+    \ at low setting using a Bioruptor sonicator (Diagenode).\nOne and a half ug sheared\
+    \ DNA was end repaired, poly-A tailed and adapter ligated using the TruSeq Kit\
+    \ (Illumina). The adapter ligated Hi-C library was run in a 1.5% agarose gel in\
+    \ 0.5X TBE at 50V for 2 h. The gel was stained with Sybr Gold and DNA fragments\
+    \ ~250 to 750 bp in size were cut out and purified using a Qiagen Gel Extraction\
+    \ Kit. The DNA was eluted with 50 \xB5l of TLE buffer and the final volume adjusted\
+    \ to 300 \xB5l with water. Biotin tagged size selected Hi-C DNA was purified using\
+    \ Dynabeads MyOne Streptavidin Beads (Invitrogen). One hundred fifty \xB5l of\
+    \ resuspended beads were prepared according to manufacturer\u2019s instructions.\
+    \ These were then re-suspended in 300 \xB5l 2x Binding Buffer (10 mM Tris-HCl\
+    \ pH 8.0, 1 mM EDTA, 2 M NaCl) and combined with 300 \u03BCl of repaired Hi-C\
+    \ DNA. The biotin-labelled Hi-C DNA was allowed to bind the streptavidin beads\
+    \ by incubating the mixture at room temperature for 15 min in a rotator. The beads\
+    \ were then washed in 400 \xB5l 1x binding buffer followed by a single wash with\
+    \ 100\xB5l 1x ligase buffer. The beads were then re-suspended in 50\xB5l 1x ligase\
+    \ buffer and submitted to the Eastern Sequencing and Informatics (EASIH) for library\
+    \ preparation and 76-bp paired-end sequencing on an Illumina GAIIx sequencer."
+  Growth-Protocol: "Kc cells were grown to 80-90% confluence in Schneider\u2019s Drosophila\
+    \ medium with 5%FBS and antibiotics (Pen-Strep) in 100 mm cell culture plates."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: HiC Kc cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'library strategy: HiC-seq
+
+  Paired end HiC reads were aligned against Drosophila genome BDGB release 5 with
+  HiCUP (v0.5.7) (http://www.bioinformatics.babraham.ac.uk/projects/hicup/). Mapping
+  and read filtering with HiCUP was performed using bowtie2 (v 2.2.6) and the default
+  HiCUP parameters.
+
+  Genome_build: dm3 (Drosophila genome BDGB release 5)
+
+  Supplementary_files_format_and_content: HiC interactions of both replicates were
+  combined and binned at 10kb resolution, which are provided in WT12_bin10kb_raw_interactions.txt.gz.
+  Interactions were then normalised uding GOTHiC (v1.6.0) R package, however as HiCUP
+  already filteres undigested fragments the filterdist was set to 0 and we set removeDiagonal
+  = FALSE in the internal binomialHiC function. The reported normalised interaction
+  counts in WT12_bin10kb_normalised_interactions.txt.gz are observed/expected counts.
+  HiC segements were identified on chr2L, chr2R, chr3L, chr3R, chr4 and chrX from
+  the normalised contact matrices using HiCseg (v1.1) R package , however 10% of the
+  lowest linear portion of log-likelihood segment borders were removed. The WT12_bin10kb_HiCseg.bed.gz
+  file contains the identified borders.
+
+  Supplementary_files_format_and_content: Kc_rep1rep2_bin10kb_raw_interactions.txt.gz;
+  extended bed file with 2 locations and raw counts in 7th column
+
+  Supplementary_files_format_and_content: Kc_rep1rep2_bin10kb_normalised_interactions.txt.gz;
+  extended bed file with 2 locations and normalised observed/expected counts in 7th
+  column'
+Instrument-Model:
+  Predefined: Illumina HiSeq 1000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: Dpn II
+Platform-Ref:
+  ref: GPL15334
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05560544
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2013472
+  type: SRA
+SRA:
+  SRR: []
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX201/SRX2013472
+  iid: SRX2013472
+Series: GSE85503
+Status:
+  Last-Update-Date: '2017-05-02'
+  Release-Date: '2017-05-02'
+  Submission-Date: '2016-08-11'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX201/SRX2013472
+Title: Kc_HiC-seq_rep2
+Type: SRA
+iid: GSM2267931

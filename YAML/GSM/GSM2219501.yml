@@ -1,0 +1,142 @@
+Accession: GSM2219501
+Channel:
+  Characteristics:
+  - haploid mESCs derived from strain 129/Ola
+  - none
+  Extract-Protocol: '5-10 million Haploid mouse ES cells were fixed for 5 min with
+    2 % formaldehyde in PBS and then the reaction was quenched for another 5 min in
+    0.125 M glycine. Nuclei were then extracted by incubating cells on ice for 30
+    min (inverting every 10 min) in 10 mM Tris pH 8.0, 10 mM NaCl, 0.2 % NP-40 (IGEPAL
+    CA-630) and protease inhibitor cocktail (Roche).
+
+    Single cell Hi-C libraries were prepared using Illumina''s Nextera XT sample kit
+    with the following modifications. Briefly, biotinylated junctions were captured
+    on streptavidin M-280 dynabeads and digested with AluI enzyme. Then tagmentaion
+    was carried out using 1:10 to 1:100 dilution of Amplicon Tagment Mix. After tagmentation
+    DNA was PCR amplified with Illumina primers for 9 + 15 cycles and library fragments
+    of ~300-700 bp (insert plus adaptor and PCR primer sequences) were isolated using
+    AMPure beads (Beckman). The purified DNA was captured on an Illumina flow cell
+    for cluster generation. Libraries were sequenced on the MiSeq following the manufacturer''s
+    protocols.'
+  Growth-Protocol: 'All mouse embryonic stem cells (mESCs) were cultured on 0.2 %
+    gelatin in 2i media (NDiff B27 base medium, Stem Cell Sciences Ltd, catalogue
+    no: SCS-SF-NB-02, supplemented with 1 uM PD0325901, 3 uM CHIR99021 and 20 ng/ml
+    LIF). Haploid mESCs were sorted every 4 passages to enrich for haploid cells as
+    previously described in Leeb M & Wutz A, Nature, 2011'
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: mESCs
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Single cell Hi-C
+
+  Basecalls performed using Phred quality score (Q score)
+
+  ChIP-seq reads were aligend to the GRCm38/mm10 mouse genome reference using Bowtie
+  2 v2.1.050 and filtered to retain reads with mapping quality >30.
+
+  ChIP-seq peaks were called using MACS2 v2.1.0.2015073157 with a minimum FDR cutoff
+  of 0.01 (-q 0.01), except for broad features (H3K27me3, H3K36me3 and H3K9me3) where
+  a cutoff of 0.05 was used (-q 0.05).
+
+  ChIP-seq peaks were filtered to remove those not corresponding to the canonical
+  chromosomes.
+
+  RNA-seq reads were aligned to the reference genome GRCm38/mm10, downloaded from
+  the Ensembl database ftp.ensembl.org using Gsnap version gmap-2014-12-17. Only uniquely
+  mapped reads were used for further analysis. Gene counts from SAM files were obtained
+  using htseq-count version 0.6.1 with mode intersection non-empty, -s reverse. The
+  gene annotation was extracted from Ensembl Gene Release 75. Differential gene expression
+  analysis was conducted using Bioconductor R (R-3.1.2) package DESeq2 version 1.6.3.
+  An adjusted p Value threshold of 0.05 was used to determine differential gene expression.
+  Expression values are FPKM (read number normalized across samples by DESeq size
+  factor and across genes by gene length) calculated using custom R-scripts.
+
+  Single cell Hi-C reads were initially processed using the NucProcessing software
+  package (available upon request). Processed reads were aligned to the GRCm38/mm10
+  mouse genome reference using Bowtie 2 and filtered to retain reads that formed a
+  valid Hi-C contact junction between two RE1 resriction sites. Output files were
+  further processed to perform extra, single-cell specific processing and cleanup.
+  These remove any pairs that represent only a single observation of a specific RE1-RE1
+  ligation junction after PCR amplification, while at least two separate, albeit sometimes
+  identical, molecules must be paired-end sequenced to confirm a ligation junction.
+  Next the sequence pairs were filtered to remove those with promiscuous ends: where
+  the RE1 fragment at either end was involved in more than one ligation event. Finally,
+  the redundancy in amplified RE1-RE1 ligation events was removed to create a single
+  list of paired RE1 fragment ends.
+
+  Genome_build: mm10
+
+  Supplementary_files_format_and_content: A summary table of results (.txt) from the
+  analysis of the RNA-seq samples includes expression estimates for all genes (Ensembl
+  Gene Release 75; GRCm38/mm10). Expression values are FPKM (read number normalized
+  across samples by DESeq size factor and across genes by gene length) calculated
+  using custom R-scripts.
+
+  Supplementary_files_format_and_content: bed files (.bed) are tab-delimited text
+  files containing chromosomal coordinates of all ChIP-seq peaks (chromosome name,
+  start, end).
+
+  Supplementary_files_format_and_content: Single cell Hi-C txt file (.txt) is a tab-separated
+  text format containing the Hi-C contacts. After the header line, each individual
+  contact is represented on a line consisting of chromosome_1 seq_pos_1 chromosome_2seq_pos_2
+
+  Supplementary_files_format_and_content: Single cell genome structure pdb file (.pdb)
+  is protein data bank format. Atom type N is used to indicate restrained particles.
+  Atom type C is used to represent unrestrained backbone particles. Residue number
+  corresponds to the particle and increases every 100 kb. Chain letter represents
+  the chromosome. The last column represents the particle sequence position.
+
+  Supplementary_files_format_and_content: HDF5 file (.hdf5) used to calculate distances
+  between genomic loci and depth in the single cell structures. The hierarchy format
+  is;name :: String -- the name of the NucFrame;bin_size :: Int -- the bin_size of
+  the nuc files;chrms :: ["X", "1", ..] -- all of the chromosomes that are present;bp_pos/chrm
+  :: [Int] -- The start bp index of each particle in each chrm;position/chrm :: [[[Float]]]
+  -- (model, bead_idx, xyz);expr_contacts/chrm/chrm :: [[Int]] -- (bp, bp), raw contact
+  count;dists/chrm/chrm :: [[Float]] -- (bead_idx, bead_idx), distanes between beads;depths/i/alpha
+  :: Float -- alpha value used to calculate depths;depths/i/chrm/ :: [Float] -- (bead_idx,
+  ), depth of point from surface i;alpha_shape/k/simplices :: [[Int]] -- (n_simplicies,
+  k), indices of k simplices;alpha_shape/k/ab :: [(a, b)] -- (n_simplicies, 2), a
+  and b values for k-simplices;surface_dist/alpha_val/tag :: optional tag for this
+  value of alpha;surface_dist/alpha_val/i/surface_size :: size of surface i for alpha'
+Instrument-Model:
+  Predefined: Illumina MiSeq
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL16417
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05323840
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1884203
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3727831
+    cluster_name: public
+    id: '2695279'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '226086862'
+    total_spots: '1592161'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX188/SRX1884203
+  iid: SRX1884203
+Series: GSE80280
+Status:
+  Last-Update-Date: '2017-03-07'
+  Release-Date: '2017-03-07'
+  Submission-Date: '2016-06-29'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX188/SRX1884203
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2219nnn/GSM2219501/GSM2219501_Cell-5.hdf5.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2219nnn/GSM2219501/GSM2219501_Cell_5_contact_pairs.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2219nnn/GSM2219501/GSM2219501_Cell_5_genome_structure.pdb.gz
+Title: Single cell Hi-C cell 5
+Type: SRA
+iid: GSM2219501

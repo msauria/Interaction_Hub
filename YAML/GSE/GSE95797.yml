@@ -1,0 +1,114 @@
+Contributor:
+- Address:
+    City: Houston
+    Country: USA
+    Line: 1 Baylor Plaza
+    State: TX
+    Zip-Code: '77030'
+  Email: Olga.Dudchenko@bcm.edu
+  Organization: Baylor College of Medicine
+  Person:
+    First: Olga
+    Last: Dudchenko
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Erez
+    Last: Aiden
+    Middle: L
+  iid: contrib3
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL22030
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Aedes aegypti
+  Status:
+    Last-Update-Date: '2016-06-17'
+    Release-Date: '2016-06-17'
+    Submission-Date: '2016-06-17'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Aedes aegypti)
+  iid: GPL22030
+- Accession: GPL22042
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Culex quinquefasciatus
+  Status:
+    Last-Update-Date: '2016-06-17'
+    Release-Date: '2016-06-17'
+    Submission-Date: '2016-06-17'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Culex quinquefasciatus)
+  iid: GPL22042
+Series:
+  Accession: GSE95797
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  Overall-Design: We use DNA proximity ligation (Hi-C) to create a genome assembly
+    with chromosome-length scaffolds for the mosquito Aedes aegypti, principal vector
+    of the Zika virus.
+  Pubmed-ID: '28336562'
+  Relation:
+  - target: GSM1551550
+    type: Reanalysis of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA378420
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP101512
+    type: SRA
+  Sample-Ref:
+  - name: HIC001
+    ref: GSM2526090
+  - name: HIC002
+    ref: GSM2526091
+  - name: HIC003
+    ref: GSM2526092
+  Status:
+    Last-Update-Date: '2017-03-28'
+    Release-Date: '2017-03-24'
+    Submission-Date: '2017-03-07'
+    database: GEO
+  Summary: The Zika outbreak, spread by the Aedes aegypti mosquito, highlights the
+    need to create high-quality assemblies of large genomes in a rapid and cost-effective
+    fashion. Here, we combine Hi-C data with existing draft assemblies to generate
+    chromosome-length scaffolds. We validate this method by assembling a human genome,
+    de novo, from short reads alone (67X coverage, Sample GSM1551550). We then combine
+    our method with draft sequences to create genome assemblies of the mosquito disease
+    vectors Aedes aegypti and Culex quinquefasciatus, each consisting of three scaffolds
+    corresponding to the three chromosomes in each species. These assemblies indicate
+    that virtually all genomic rearrangements among these species occur within, rather
+    than between, chromosome arms. The genome assembly procedure we describe is fast,
+    inexpensive, accurate, and can be applied to many species.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_AaegL2.mnd.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_AaegL4.fasta.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_CpipJ2.mnd.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_CpipJ3.fasta.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_Hs1.fasta.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_Hs1.mnd.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95797/GSE95797_Hs2-HiC.fasta.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP101/SRP101512
+  Title: De novo assembly of Aedes aegypti using Hi-C yields chromosome-length scaffolds
+  Type:
+  - Other
+  - Third-party reanalysis
+  iid: GSE95797
+id: '200095797'

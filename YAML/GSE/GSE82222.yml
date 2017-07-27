@@ -1,0 +1,200 @@
+Contributor:
+- Address:
+    City: Eugene
+    Country: USA
+    Line: 355 Streisinger Hall
+    State: OR
+    Zip-Code: '97403'
+  Department: Biology, Institute of Molecular Biology
+  Email: adklocko@gmail.com
+  Laboratory: Selker
+  Organization: University of Oregon
+  Person:
+    First: Andrew
+    Last: Klocko
+    Middle: David
+  Phone: 541-346-5197
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Andrew
+    Last: Klocko
+    Middle: D
+  iid: contrib3
+- Person:
+    First: Tereza
+    Last: Ormsby
+  iid: contrib4
+- Person:
+    First: Jonathan
+    Last: Galazka
+    Middle: M
+  iid: contrib5
+- Person:
+    First: Miki
+    Last: Uesaka
+  iid: contrib6
+- Person:
+    First: Neena
+    Last: Leggett
+  iid: contrib7
+- Person:
+    First: Shinji
+    Last: Honda
+  iid: contrib8
+- Person:
+    First: Michael
+    Last: Freitag
+  iid: contrib9
+- Person:
+    First: Eric
+    Last: Selker
+    Middle: U
+  iid: contrib10
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL20660
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Neurospora crassa
+  Status:
+    Last-Update-Date: '2016-06-03'
+    Release-Date: '2015-07-06'
+    Submission-Date: '2015-07-06'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Neurospora crassa)
+  iid: GPL20660
+- Accession: GPL20705
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Neurospora crassa
+  Status:
+    Last-Update-Date: '2016-06-03'
+    Release-Date: '2015-07-16'
+    Submission-Date: '2015-07-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Neurospora crassa)
+  iid: GPL20705
+Series:
+  Accession: GSE82222
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  Overall-Design: 'Hi-C: We analyzed a total of three strains of Neurospora crassa
+    by chromatin conformation capture followed by high throughput sequencing (Hi-C).  Each
+    strain has two replicates. Strains were grown from conidia ~4 hours, crosslinked,
+    and conidia were made into spheroplasts. Genomic DNA from spheroplasts was digested
+    with HindIII, ends were filled in with dNTPs (including biotin-conjugated dCTP),
+    blunt ends were ligated, crosslinks were reversed, DNA was soniciated, ligation
+    products were purified with streptavidin beads, and libraries were prepared for
+    sequencing. The datasets of wild type strain, NMF39 - deposited in GEO sebmission
+    GSE71024, serves as the reference for the mutants deficient in facultative heterochromatin
+    formation (N4718 delta set-7, N4721 delta npf, and N5542 delta set-7;delta dim-5).
+
+
+    ChIP-seq: We analyzed two strains of Neurospora crassa (control strain: WT N3752,
+    test strain delta npf N4721) by Chromatin Immunoprecipitation for the histone
+    mark H3K27me3. Strains were grown, crosslinked, lysed, the histone mark H3K27me3
+    was immunopurified, and associated DNA was sequenced).
+
+
+    RNA-seq: We analyzed a total of five strains (four different genetic backgrounds)
+    by poly-A+ mRNA-sequencing for gene expression changes by monitoring poly-adenylated
+    messenger RNA levels. A wild type strain (N3752) serves as the reference strain,
+    and the strains N4718 and N4730 (delta set-7), N4721 (delta npf), and N5916 (delta
+    set-7;delta dim-5) served as the test strains.
+
+
+    Please note that all python scripts (".py.txt" files) are provided as series supplementary
+    file.'
+  Pubmed-ID: '27856763'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA324378
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP076095
+    type: SRA
+  Sample-Ref:
+  - name: NMF39_WildType_HiC (reanalyzed)
+    ref: GSM2186732
+  - name: N4718_set7_HiC
+    ref: GSM2186733
+  - name: N4721_npf_HiC
+    ref: GSM2186734
+  - name: N5542_set7dim5_HiC
+    ref: GSM2186735
+  Status:
+    Last-Update-Date: '2017-01-26'
+    Release-Date: '2016-10-27'
+    Submission-Date: '2016-06-03'
+    database: GEO
+  Summary: "Facultative heterochromatin in the filamentous fungus Neurospora crassa\
+    \ is identified by the repressive histone mark H3K27me3 and is primarily subtelomeric,\
+    \ while constitutive heterochromatin, marked by the DIM-5-catalzyed H3K9me3, is\
+    \ found at centromeres, telomeres, and smaller dispersed regions. In strains lacking\
+    \ constitutive heterochromatin (e.g., \u0394dim-5), H3K27me2/3 relocalizes to\
+    \ the regions formerly marked by H3K9me3. H3K27me3 is catalyzed by the SET-7 histone\
+    \ methyltransferase subunit of the Polycomb Repressive Complex 2 (PRC2); another\
+    \ PRC2 member, Neurospora p55 (NPF) regulates subtelomeric H3K27me2/3. Despite\
+    \ the de-repression of >70 genes, a \u0394set-7 strain has no distinguishable\
+    \ phenotype. To investigate the facultative heterochromatin contribution to genome\
+    \ organization, we performed high-throughput \u201Cchromosome conformation capture\u201D\
+    \ (Hi-C) on mutants with impacted H3K27me2/3 deposition. A \u0394set-7 strain\
+    \ has decreased inter-/intra-subtelomeric contacts among others; this pattern\
+    \ is mirrored in a \u0394npf strain, which lacks subtelomeric H3K27me3. In a \u0394\
+    set-7 strain, telomere bundles were often uncoupled from the nuclear membrane\
+    \ and de-repressed genes were subtelomeric. The chromosome conformation of a \u0394\
+    set-7;\u0394dim-5 double mutant was similar to \u0394set-7, suggesting that facultative\
+    \ heterochromatin relocalization does not compensate for H3K9me3 loss and rescue\
+    \ the Neurospora genome organization in strains with defective constitutive heterochromatin."
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP076/SRP076095
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_Dataset_S1_4X-changed-genes_WT-v-set7.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_Dataset_S2_4X-changed-genes_WT-v-npf.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_Dataset_S3_4X-changed-genes_WT-v-set7dim5.xlsx
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_K9-K27_Quant.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_K9-K27only_Quant.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_count_links_K27marked.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_hicEigenvectorAnalysis.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_hicEigenvector_singleLG.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_hicPearsonCorrelationHeatmap.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_neurospora_crassa_or74a_12_genome_FIXED.fasta.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_neurospora_crassa_or74a_12_transcripts_FIXED.gtf.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_plotInterTelomeres.py.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE82222/GSE82222_plotIntraTelomeres.py.txt.gz
+  Title: Neurospora crassa genome organization requires subtelomeric facultative heterochromatin
+  Type:
+  - Other
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Expression profiling by high throughput sequencing
+  iid: GSE82222
+id: '200082222'

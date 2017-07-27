@@ -1,0 +1,82 @@
+Contributor:
+- Address:
+    City: Stanford
+    Country: USA
+    Line: 300 Pasteur Dr
+    State: CA
+    Zip-Code: 94305-5120
+  Email: encode-help@lists.stanford.edu
+  Organization: ENCODE DCC
+  Person:
+    First: ENCODE
+    Last: DCC
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL20301
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-04-25'
+    Release-Date: '2015-06-09'
+    Submission-Date: '2015-06-09'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 4000 (Homo sapiens)
+  iid: GPL20301
+Series:
+  Accession: GSE92811
+  Contact-Ref:
+    ref: contrib1
+  Overall-Design: https://www.encodeproject.org/ENCSR499RVD/
+  Sample-Ref:
+  - name: Hi-C from A549 (ENCLB729NDZ)
+    ref: GSM2437806
+  - name: Hi-C from A549 (ENCLB870JCZ)
+    ref: GSM2437807
+  - name: Hi-C from A549 (ENCLB995AFN)
+    ref: GSM2437808
+  - name: Hi-C from A549 (ENCLB981OUL)
+    ref: GSM2437809
+  - name: Hi-C from A549 (ENCLB310TDE)
+    ref: GSM2437810
+  - name: Hi-C from A549 (ENCLB591SFK)
+    ref: GSM2437811
+  - name: Hi-C from A549 (ENCLB023XYB)
+    ref: GSM2437812
+  - name: Hi-C from A549 (ENCLB195PDF)
+    ref: GSM2437813
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2017-01-10'
+    Submission-Date: '2016-12-22'
+    database: GEO
+  Summary: 'Hi-C on A549 cell line treated with 100 nM dexamethasone for 12 hours.
+
+
+    For data usage terms and conditions, please refer to http://www.genome.gov/27528022
+    and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf'
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_ENCFF219YOB_chromatin_interactions_GRCh38.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_ENCFF360VME_long_range_chromatin_interactions_GRCh38.tsv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_ENCFF604YDD_chromatin_interactions_GRCh38.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_ENCFF746AMV_chromatin_interactions_GRCh38.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_ENCFF845ZEB_chromatin_interactions_GRCh38.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_ENCFF881OVU_topologically_associated_domains_GRCh38.bedpe.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE92811/GSE92811_RAW.tar
+  Title: Hi-C from A549 (ENCSR499RVD)
+  Type: Other
+  iid: GSE92811
+id: '200092811'

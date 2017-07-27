@@ -1,0 +1,147 @@
+Contributor:
+- Address:
+    City: Cleveland
+    Country: USA
+    Line: 10900 Euclid Avenue
+    State: OH - OHIO
+    Zip-Code: '44106'
+  Email: fxj45@case.du
+  Laboratory: Fulai Jin
+  Organization: Case Western Reserve University
+  Person:
+    First: Fulai
+    Last: Jin
+  Phone: '2163681811'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Yan
+    Last: Li
+  iid: contrib3
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL10999
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2010-09-29'
+    Submission-Date: '2010-09-29'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina Genome Analyzer IIx (Homo sapiens)
+  iid: GPL10999
+- Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE43070
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  Overall-Design: "We performed Hi-C analysis using a human fibroblast cell line IMR90\
+    \ before and after NF-\u03BAB activation. In the meantime, we also performed ChIP-seq\
+    \ experiments to map the location of NF-\u03BAB p65 subunit, RNA polymerase II,\
+    \ p300, and several histone modifications (including H3K4me1, H3K4me3, H3K27ac\
+    \ and H3K36me3) in IMR90 cells before and after transient TNF-\u03B1 stimulation.\
+    \ Additionally, to monitor the dynamic transcription profiles, we also performed\
+    \ Global Run-On sequencing (GRO-seq)."
+  Pubmed-ID: '24141950'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA184350
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP017631
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C IMR90 replicate 1
+    ref: GSM1055800
+  - name: Hi-C IMR90 replicate 2
+    ref: GSM1055801
+  - name: "Hi-C IMR90_TNF-\u03B1 replicate 1"
+    ref: GSM1055802
+  - name: "Hi-C IMR90_TNF-\u03B1 replicate 2"
+    ref: GSM1055803
+  - name: Hi-C IMR90_Flavopiridol
+    ref: GSM1055804
+  - name: Hi-C H1 hESC
+    ref: GSM1055805
+  - name: Hi-C IMR90 replicate 3
+    ref: GSM1154021
+  - name: Hi-C IMR90 replicate 4
+    ref: GSM1154022
+  - name: Hi-C IMR90 replicate 5
+    ref: GSM1154023
+  - name: Hi-C IMR90 replicate 6
+    ref: GSM1154024
+  - name: "Hi-C IMR90+TNF-\u03B1 replicate 3"
+    ref: GSM1154025
+  - name: "Hi-C IMR90+TNF-\u03B1 replicate 4"
+    ref: GSM1154026
+  - name: "Hi-C IMR90+TNF-\u03B1 replicate 5"
+    ref: GSM1154027
+  - name: "Hi-C IMR90+TNF-\u03B1 replicate 6"
+    ref: GSM1154028
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-10-20'
+    Submission-Date: '2012-12-20'
+    database: GEO
+  Summary: "Millions of cis-regulatory sequences have recently been found in the human\
+    \ genome, but the function of most cis-elements are not yet clear, in part due\
+    \ to the difficulty in determining their regulatory targets, which are often located\
+    \ millions of base pairs away and separated by one or more unrelated genes. To\
+    \ address this problem, the Hi-C method has been developed to identify long-range\
+    \ looping interactions in a genome-wide, unbiased fashion.  However, current data\
+    \ analysis of Hi-C datasets cannot fully resolve regulatory interactions between\
+    \ enhancers and promoters due to the low resolution.  Here, we generated a high-depth\
+    \ Hi-C dataset and applied a new analysis method that offers improved resolution\
+    \ permitting genome-wide identification of nearly one million chromatin interactions.\
+    \  We demonstrated the use of Hi-C to identify target promoters of enhancers regulated\
+    \ by NF-\u03BAB signaling and signal-dependent dynamic chromatin interaction at\
+    \ these enhancers in human cells. Surprisingly, our results showed that most NF-\u03BA\
+    B binding sites are looped to their regulatory targets prior to activation of\
+    \ the signaling pathway, and appear to undergo little change during signaling.\
+    \ This observation suggests that the chromatin organization landscape, once established\
+    \ in a cell type, is rather stable and may influence the selection and activation\
+    \ of target genes by a transcription factor."
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP017/SRP017631
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE43070/GSE43070_RAW.tar
+  Title: Genome-wide Analysis of Chromatin Interactions in Human Cells
+  Type:
+  - Other
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  iid: GSE43070
+id: '200043070'

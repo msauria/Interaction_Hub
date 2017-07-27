@@ -1,0 +1,109 @@
+Accession: GSM1154022
+Channel:
+  Characteristics:
+  - no treat
+  - Hi-C
+  - 'no'
+  - HindIII
+  Extract-Protocol: 'Hi-C experiments were conducted in biological replicates using
+    HindIII according to previous publication (Lieberman-Aiden, E. et al. Comprehensive
+    mapping of long-range interactions reveals folding principles of the human genome.
+    Science 326, 289-93 (2009).).  ChIP-seq protocol can be found from http://bioinformatics-renlab.ucsd.edu/RenLabLibraryProtocolV1.pdf.
+    GRO-seq experiments were performed according to previous publication (Wang, D.
+    et al. Reprogramming transcription by distinct classes of enhancers functionally
+    defined by eRNA. Nature 474, 390-4 (2011).).
+
+    Libraries were prepared according to Illumina''s instruction or cited literatures.'
+  Growth-Protocol: "IMR90 cells were grown as described in (Hawkins, R.D. et al. Cell\
+    \ Stem Cell 6, 479-91). MCF7 cells (ATCC), LNCaP cells (ATCC), and Human primary\
+    \ HUVEC cells (Lonza) were cultured following manufacturer\u2019s instructions."
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: fetal lung fibroblast
+  Treatment-Protocol: "TNF-a (R&D Systems, 10 ng/mL, 1 hr) treatment were performed\
+    \ in IMR90 or HUVEC cells.  Flavopiridol (Sigma, 1 \u03BCM for 1 hr) and IFN-\u03B3\
+    \ (R&D, 50ng/mL for 2hrs) were performed in IMR90 cells. To find out primary TNF-\u03B1\
+    \ responsive genes, IMR90 cells were pre-treated with 5\xB5g/mL of cycloheximide\
+    \ (sigma) for 30mins before TNF-\u03B1 was added. Starvation and treatment of\
+    \ MCF7 cells with \u03B2-estradiol (Sigma, 100nM for 160min) were performed as\
+    \ described in previous literature (Hah, N. et al. Cell 145, 622-634, 2011); and\
+    \ LNCaP cells were starved and treated with 5\u03B1-dihydrotestosterone (DHT,\
+    \ 100nM, 4hr) as previously described(Wang, D. et al. Nature 474, 390-394, 2011)"
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'The paired-end Hi-C reads were mapped to human genome hg18 using
+  BOWTIE. Only first 36 bases were used for mapping when reads is longer. The two
+  reads were mapped independently and then merged into pairs using in-house script.
+  Duplicated read pairs from the same biological library were removed.
+
+  For GRO-seq, the first round of mapping used the first 36 bases; the unmapped reads
+  were then mapped in two additional iterations using first 30 or 25 bases.
+
+  For ChIP-Seq, first 36 bases of each read were used for mapping.
+
+  RNA-seq data were analyzed using TOPHAT and CUFFLINK packages.
+
+  Genome_build: hg18
+
+  Supplementary_files_format_and_content: Mapped non-redundant reads for RNA-seq,
+  GRO-seq and ChIP-seq are in BED format. Mapped non-redundant read pairs for Hi-C
+  are in txt format.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: GSE85977
+  type: Reanalyzed by
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02191452
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX294949
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR881993
+    cluster_name: public
+    id: '415955'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '17813383700'
+    total_spots: '178133837'
+  - acc: SRR881994
+    cluster_name: public
+    id: '415955'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '17690765400'
+    total_spots: '176907654'
+  - acc: SRR881995
+    cluster_name: public
+    id: '415955'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '17411621200'
+    total_spots: '174116212'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX294/SRX294949
+  iid: SRX294949
+Series: GSE43070
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-10-20'
+  Submission-Date: '2013-06-05'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX294/SRX294949
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1154nnn/GSM1154022/GSM1154022_HiC.IMR90.rep4.nodup.summary.txt.gz
+Title: Hi-C IMR90 replicate 4
+Type: SRA
+iid: GSM1154022

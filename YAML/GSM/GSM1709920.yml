@@ -1,0 +1,65 @@
+Accession: GSM1709920
+Channel:
+  Characteristics: KBM7
+  Extract-Protocol: Hi-C performed as previously described Nat. Methods 9, 999-1003,
+    doi:10.1038/nmeth.2148 (2012)).
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: KBM7-haploid-R1
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Iterative mapping and error correction of the chromatin interaction data were performed
+  as previously described (Imakaev, M. et al. Iterative correction of Hi-C data reveals
+  hallmarks of chromosome organization. Nat. Methods 9, 999-1003, doi:10.1038/nmeth.2148
+  (2012))
+
+  Genome_build: hg19'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03771619
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1058014
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2062030
+    cluster_name: public
+    id: '1535023'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '27577983400'
+    total_spots: '137889917'
+  - acc: SRR2062031
+    cluster_name: public
+    id: '1535023'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '27164790000'
+    total_spots: '135823950'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX105/SRX1058014
+  iid: SRX1058014
+Series: GSE69841
+Status:
+  Last-Update-Date: '2015-09-24'
+  Release-Date: '2015-09-24'
+  Submission-Date: '2015-06-12'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1709nnn/GSM1709920/GSM1709920_KBM7-haploid-R1_hg19_genome_C-100000-iced.matrix.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX105/SRX1058014
+Title: KBM7 cell line, haploid, biological replicate 1
+Type: SRA
+iid: GSM1709920

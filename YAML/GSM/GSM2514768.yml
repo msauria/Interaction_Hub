@@ -1,0 +1,172 @@
+Accession: GSM2514768
+Channel:
+  Characteristics:
+  - erythroid
+  - '129'
+  Extract-Protocol: "10 million uninduced G1E-ER4 cells (-GATA1), either unedited\
+    \ control cells or BRD2 KO clonal sublines, were fixed in 2% formaldehyde at room\
+    \ temperature for 10 minutes then quenched with 0.25M glycine for 5 minutes. Cells\
+    \ were washed with PBS, pelleted, resuspended in 1mL cold Cell Lysis Buffer (10mM\
+    \ Tris pH 8, 10mM NaCl, 0.2% NP-40/Igepal) and incubated on ice for 10 minutes.\
+    \ Nuclei were pelleted and washed once with 800ul of cold 1.2X NEB Buffer DpnII,\
+    \ pelleted and resuspended in 500ul 1.2X NEB Buffer DpnII. SDS was added to a\
+    \ final concentration of 0.3% and samples were incubated with shaking at 950rpm\
+    \ at 37C. 40ul of water was added to each sample, followed by 300U of DpnII (NEB\
+    \ R0543M), and samples were incubated overnight at 37C with shaking. An additional\
+    \ 300U of DpnII was added, and samples were incubated for 2 more hours at 37C,\
+    \ followed by incubation at 65C for 20 minutes. Nuclei were cooled on ice, pelleted\
+    \ and resuspended in 1X NEB Buffer2 with biotin-14-dATP, dCTP, dGTP, dTTP and\
+    \ DNA Polymerase I, Large (Klenow) Fragment (NEB M0210), and incubated at 37C\
+    \ with shaking for 1.5 hours. Fragments were ligated in a total volume of 1.2mL\
+    \ with T4 DNA Ligase (NEB) for 4 hours at 16C, then at room temperature for 30\
+    \ minutes. Proteinase K (20ul of 20mg/mL) and SDS (120ul of 10% SDS) were added\
+    \ and crosslinks were reversed overnight at 65C. An additional 10ul of proteinase\
+    \ K was added and samples were incubated at 55C for 2hrs. DNase-free RNaseA was\
+    \ added and samples were incubated at 37C for 30 minutes. DNA was purified by\
+    \ phenol chloroform extraction. To prepare the sequencing library, DNA was sonicated\
+    \ to 200-300bp fragments and purified using Ampure XP beads (Beckman Coulter).\
+    \ Ligation junctions were pulled down using streptavidin beads (50ul of Dynabeads\
+    \ MyOne Streptavidine C1 beads/10 million cells).\nLibraries were prepared using\
+    \ NEBNext DNA Library Prep Master Mix Set for Illumina (NEB E6040) as per manufacturer\u2019\
+    s instructions. Briefly, fragmented DNA was subjected to blunt end repair and\
+    \ dA tailing, followed by adaptor ligation. Following ligation, DNA was purified\
+    \ using AMPure XP beads (Beckman Coulter) and eluted in 15ul of water. Libraries\
+    \ were amplified for 6 cycles and PCR products were purified using AMPure XP beads\
+    \ (Beckman Coulter)."
+  Growth-Protocol: 'G1E-ER4 cells are a subline of the GATA1-null proerythroblast
+    cell line G1E (Weiss et al., 1997) in which GATA1-ER is stably expressed. G1E-ER4
+    cells can be induced to differentiate through the addition of estradiol to the
+    culture medium. Here we refer to the undifferentiated (i.e. -GATA1) state as "uninduced."
+    G1E-ER4 cells were grown in IMDM+15% FBS, penicillin/streptomycin, kit ligand,
+    monothioglycerol and Epoetin alpha in a standard tissue culture incubator at 37
+    degrees with 5% CO2 (as described in Weiss et al., 1997).
+
+    G1E-ER4 cells are a subline of the GATA1-null proerythroblast cell line G1E (Weiss
+    et al., 1997) in which GATA1-ER is stably expressed. G1E-ER4 cells can be induced
+    to differentiate through the addition of estradiol to the culture medium. Here
+    we refer to the undifferentiated (i.e. -GATA1) state as "uninduced." G1E-ER4 cells
+    were grown in IMDM+15% FBS, penicillin/streptomycin, kit ligand, monothioglycerol
+    and Epoetin alpha in a standard tissue culture incubator at 37 degrees with 5%
+    CO2 (as described in Weiss et al., 1997).'
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: G1E-ER4 cells
+  Treatment-Protocol: 'none (uninduced)
+
+    none (uninduced)'
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Paired-end reads were aligned independently to mm9 mouse genome\
+  \ using bowtie2 (global parameters: --very-sensitive \u2013L 30 \u2013score-min\
+  \ L,-0.6,-0.2 \u2013end-to-end --reorder;  local parameters:  --very-sensitive \u2013\
+  L 20 \u2013score-min L,-0.6,-0.2 \u2013end-to-end --reorder) through the HiC-Pro\
+  \ software (Servant et al., 2015). Unmapped reads, non-uniquely mapped reads, and\
+  \ PCR duplicates were filtered, and uniquely aligned reads were paired. Reads from\
+  \ the five sequencing runs (SR1-SR5) and two replicates (Rep1, Rep2) were pooled,\
+  \ then used to construct contact matrices at 10kb and 40kb resolution. Contact matrices\
+  \ were balanced using the iterative correction and eigenvector decomposition (ICED)\
+  \ technique (Imakaev et al., 2012). The lowest-interacting 10% of bins were removed\
+  \ prior to balancing to facilitate convergence. Interchromosomal contact matrices\
+  \ were quantile normalized, with any bin-bin pairs with ICED values lower than 0.01\
+  \ being excluded from the quantile normalization and downstream analysis.\nGenome_build:\
+  \ mm9\nThe processed data files (<resolution>_<condition>_<stage>_interchromosomal_contact_matrices.tar.gz)\
+  \ are gzipped tarballs containing the contact matrices at <resolution> (either 10kb\
+  \ or 40kb) for the pooled HiC libraries of <condition> (G1E-ER4_uninduced, C8_BRD2KO_G1E-ER4_uninduced,\
+  \ or D_BRD2KO_G1E-ER4_uninduced) at the <stage> (raw, iced, or qnormed) step of\
+  \ the data processing. The tarballs contain files <resolution>_<condition>_<stage>_<chromosome>.matrix,\
+  \ which contain the interchromosomal contact matrix for each chromosome. Each line\
+  \ of a .matrix file represents an interaction between two bins on that chromosome.\
+  \ The .matrix files are formatted as tab delimited files with three columns, which\
+  \ represent the start coordinate of the upstream bin, the start coordinate of the\
+  \ downstream bin, and the value of the interaction, respectively. The end coordinates\
+  \ of the bins can be determined by adding the matrix resolution (10000 or 40000)\
+  \ to the start coordinate. For example, the line \"10000<tab>40000<tab>10\" in a\
+  \ 10kb resolution matrix file for chr1 should be interpreted to mean that the bin\
+  \ chr1:10000-20000 interacts with the bin chr1:40000-50000 with quantitative value\
+  \ 10. Bin-bin pairs with zero reads, or values that have been filtered out during\
+  \ processing are not listed in the matrix files. Therefore not every possible bin-bin\
+  \ pair has a corresponding line in the matrix file. Such bin-bin pairs can be assumed\
+  \ to have zero reads (raw stage matrices) or to have been excluded by filtering\
+  \ during processing (iced and qnormed stage matrices)."
+Description: 'HiC
+
+  10kb_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+
+  10kb_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+
+  10kb_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+
+  40kb_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+
+  40kb_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+
+  40kb_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz'
+Instrument-Model:
+  Predefined: Illumina NextSeq 500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL19057
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN06468337
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2598398
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR5295873
+    cluster_name: public
+    id: '3760774'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '10471179900'
+    total_spots: '69807866'
+  - acc: SRR5295874
+    cluster_name: public
+    id: '3760774'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '11500641150'
+    total_spots: '76670941'
+  - acc: SRR5295875
+    cluster_name: public
+    id: '3760774'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7998183150'
+    total_spots: '53321221'
+  - acc: SRR5295876
+    cluster_name: public
+    id: '3760774'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9306473400'
+    total_spots: '62043156'
+  - acc: SRR5295877
+    cluster_name: public
+    id: '3760774'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7339211100'
+    total_spots: '48928074'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX259/SRX2598398
+  iid: SRX2598398
+Series: GSE95476
+Status:
+  Last-Update-Date: '2017-03-31'
+  Release-Date: '2017-03-31'
+  Submission-Date: '2017-02-28'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX259/SRX2598398
+Title: G1E-ER4 uninduced replicate 2 HiC
+Type: SRA
+iid: GSM2514768

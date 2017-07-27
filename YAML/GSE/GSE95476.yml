@@ -1,0 +1,127 @@
+Contributor:
+- Address:
+    City: Philadelphia
+    Country: USA
+    Line: 3615 Civic Center Blvd, ARC 315
+    State: PA
+    Zip-Code: '19104'
+  Department: Pediatrics/Hematology
+  Email: blobel@email.chop.edu
+  Organization: "University of Pennsylvania\tChildren's Hospital of Philadelphia"
+  Person:
+    First: Gerd
+    Last: Blobel
+    Middle: A
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Sarah
+    Last: Hsu
+    Middle: C
+  iid: contrib3
+- Person:
+    First: Thomas
+    Last: Gilgenast
+    Middle: G
+  iid: contrib4
+- Person:
+    First: Jennifer
+    Last: Phillips-Cremins
+    Middle: E
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL19057
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2014-08-07'
+    Submission-Date: '2014-08-07'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Mus musculus)
+  iid: GPL19057
+Series:
+  Accession: GSE95476
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib1
+  - position: '4'
+    ref: contrib5
+  Overall-Design: 'HiC in the G1E-ER4 cell line in the uninduced (-GATA1) condition,
+    comparing unedited control cells to two independent G1E-ER4-derived cell lines
+    in which BRD2 was depleted to undetectable levels using CRISPR/Cas9 (C8 = BRD2
+    KO cell line #1, D = BRD2 KO cell line #2).'
+  Relation:
+  - target: GSE95804
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA377236
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP100828
+    type: SRA
+  Sample-Ref:
+  - name: G1E-ER4 uninduced replicate 1 HiC
+    ref: GSM2514765
+  - name: C8_BRD2KO G1E-ER4 uninduced replicate 1 HiC
+    ref: GSM2514766
+  - name: D_BRD2KO G1E-ER4 uninduced replicate 1 HiC
+    ref: GSM2514767
+  - name: G1E-ER4 uninduced replicate 2 HiC
+    ref: GSM2514768
+  - name: C8_BRD2KO G1E-ER4 uninduced replicate 2 HiC
+    ref: GSM2514769
+  - name: D_BRD2KO G1E-ER4 uninduced replicate 2 HiC
+    ref: GSM2514770
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2017-03-31'
+    Submission-Date: '2017-02-28'
+    database: GEO
+  Summary: BET (bromodomain and extraterminal motif) proteins are pharmacologic targets
+    for the treatment of diverse diseases, yet the roles of individual BET family
+    members remain unclear. We find that BRD2 colocalizes with the architectural/insulator
+    protein CCCTC-binding factor (CTCF) genome-wide. To test a role for BRD2 in chromatin
+    architecture we performed HiC in uninduced G1E-ER4 cells (-GATA1), and compared
+    it to HiC in BRD2-depleted G1E-ER4 cells
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP100/SRP100828
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_C8_BRD2KO_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_C8_BRD2KO_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_C8_BRD2KO_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_D_BRD2KO_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_D_BRD2KO_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_D_BRD2KO_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_10kb_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_C8_BRD2KO_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_C8_BRD2KO_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_C8_BRD2KO_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_D_BRD2KO_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_D_BRD2KO_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_D_BRD2KO_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_G1E-ER4_uninduced_iced_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_G1E-ER4_uninduced_qnormed_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95476/GSE95476_40kb_G1E-ER4_uninduced_raw_interchromosomal_contact_matrices.tar.gz
+  Title: BRD2 cooperates with CTCF to enforce transcriptional and architectural boundaries
+  Type: Other
+  iid: GSE95476
+id: '200095476'

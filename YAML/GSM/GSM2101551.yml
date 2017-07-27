@@ -1,0 +1,80 @@
+Accession: GSM2101551
+Channel:
+  Characteristics:
+  - lymphoblastoid cell line
+  - 20-30
+  - YRI-NA19141
+  - MboI
+  Extract-Protocol: 'In situ Hi-C was performed as described in Rao et al (2014) [PMID:
+    25497547] using MboI to digest the chromatin. The Hi-C library was amplified directly
+    from the T1 beads with 9 cycles of PCR, using Illumina primers and protocol (Illumina,
+    2007). To capture promoter interactions, the Hi-C library was hybridyzed to 81,735
+    biotinylated 120 bp custom RNA probes (Custom Array) targeting the 4 nearest MboI
+    restriction fragment ends (restriction fragments longer than 200 bp) around human
+    RefSeq promoters in hg19. Twelve cycles of PCR were performed in the captured
+    library.'
+  Growth-Protocol: 'LCL''s were grown according to Battle et al (2015) [PMID: 25657249]'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: lymphoblastoid cell line
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'library strategy: HiC-seq
+
+  Basecalls performed with Illumina bcl2fastq2-v2.17.1.14 by the Functional Genomics
+  Facility at the University of Chicago
+
+  Read mates were independently aligned to hg19 with bowtie2-2.2.3 with --local --mm
+  --very-sensitive-local
+
+  Reads with MAPQ < 10 were filtered out
+
+  Reads were paired using a custom script
+
+  Cis interactions were called using HOMER with -res 2000 and -superRes 10000, -superRes
+  20000
+
+  Genome_build: hg19
+
+  Supplementary_files_format_and_content: interactions identified by HOMER'
+Description: interacting chromatin
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04590519
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1670108
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3313132
+    cluster_name: public
+    id: '2396002'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4054486400'
+    total_spots: '20272432'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX167/SRX1670108
+  iid: SRX1670108
+Series: GSE79718
+Status:
+  Last-Update-Date: '2016-04-30'
+  Release-Date: '2016-04-30'
+  Submission-Date: '2016-03-30'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2101nnn/GSM2101551/GSM2101551_interactions_res2000_superRes10000.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2101nnn/GSM2101551/GSM2101551_interactions_res2000_superRes20000.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX167/SRX1670108
+Title: capture in-situ Hi-C
+Type: SRA
+iid: GSM2101551

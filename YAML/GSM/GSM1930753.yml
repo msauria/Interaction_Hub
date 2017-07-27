@@ -1,0 +1,98 @@
+Accession: GSM1930753
+Channel:
+  Characteristics:
+  - MCF-10A
+  - Mammary epithelial cell line
+  Extract-Protocol: 'not provided
+
+    The Hi-C libraries were prepared as previously described (PMID:22652625).  Hi-C
+    was sequenced using PE150 reads'
+  Growth-Protocol: "MCF-10A cells were obtained from the Barbara Ann Karmanos Cancer\
+    \ Institute (Detroit, MI). The cells were maintained in monolayer in Dulbecco's\
+    \ modified Eagle's medium-F12 (DMEM/F12) (Invitrogen, 21041025) supplemented with\
+    \ 5% horse serum (Invitrogen, 16050122), 1% penicillin/streptomycin (Invitrogen,\
+    \ 15140122), 0.5 \u03BCg/ml hydrocortisone (Sigma, H-0888), 100 ng/ml cholera\
+    \ toxin (Sigma, C-8052), 10 \u03BCg/ml insulin (Sigma, I-1882), and 20 ng/ml recombinant\
+    \ human EGF (Peprotech, 100-15) as previously described (Debnath et al. 2003).\
+    \  MCF-7 cells were obtained from ATCC and were cultured in DMEM supplemented\
+    \ with 10% FBS and pen-strep."
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Mammary epithelial cell line
+  Treatment-Protocol: The doxocyline induction was performed by the addition of 0.05
+    microgram per mililiter DOX to the cells and incubating them for 3 to 4 days.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: HiC\nThe Hi-C data were mapped with Bowtie and\
+  \  binned at 6.5Mb, 1Mb, 250kb, 100kb and 40kb non-overlapping genomic intervals.\
+  \  Iterative mapping and correction of Hi-C data were performed as previously described\
+  \ (Imakaev et al. 2012).  Biological replicates showed high reproducibility (Pearson's\
+  \ correlation coefficient > 0.9 for 1Mb resolution data).  Similarly, the first\
+  \ eigenvector comparison of the replicates showed high reproducibility.  For the\
+  \ downstream analyses, sequences obtained from both biological replicates were pooled\
+  \ and ICE-corrected to serve as a combined dataset.\nFirst, the z-scores of the\
+  \ interaction matrices at 250kb resolution were generated as described previously\
+  \ (Lieberman, 2009).  Then, Pearson Correlation on the Z-score matrices was calculated.\
+  \  By performing principal component analysis (Lieberman-Aiden et al. 2009; Zhang\
+  \ et al. 2012), the first eigenvector typically represents the compartment profile(Lieberman-Aiden\
+  \ et al. 2009), where the positive and negative 1st eigenvalues represent different\
+  \ compartments.   Gene density for each compartment was calculated to call the \u201C\
+  A\u201D and \u201CB\u201D compartmentalization.\nTAD calling was performed as calculating\
+  \ the \u201Cinsulation\u201D score of each bin using the 40kb resolution combined\
+  \ Hi-C data (as previously described.  The mean of the interactions across each\
+  \ bin were calculated.  By sliding a 1Mb x 1Mb (25bins x 25bins) square along the\
+  \ diagonal of the interaction matrix for every chromosome, we obtained the \u201C\
+  insulation score\u201D of the interaction matrix.  Valleys in the insulation score\
+  \ indicated the depletion of Hi-C interactions occurring across a bin.  These 40kb\
+  \ valleys represent the TAD boundaries.  Based on the variation of boundaries between\
+  \ replicates, we chose to add a total of 160kb (80kb to each side) to the boundary\
+  \ to account for replicate variation.  The final boundaries span a 200kb region.\
+  \ All boundaries with a boundary strength < 0.15 were excluded as they were considered\
+  \ weak and non-reproducible.  The insulation plots for the biological replicates\
+  \ showed high reproducibility, suggesting the robustness of the method.  Similarly,\
+  \ the overlap of detected boundaries also showed high reproducibility between the\
+  \ biological replicates.  Therefore, we used the combined Hi-C replicates for the\
+  \ TAD analyses.\nWe modeled the overall Hi-C decay with distance using a modified\
+  \ LOWESS method (alpha = 1%, IQR filter), as described previously (Sanyal et al.\
+  \ 2012).  LOWESS calculates the weighted-average and weighted-standard deviation\
+  \ for every genomic distance and therefore normalizes for genomic distance signal\
+  \ bias.\ngenome build: hg19\nprocessed data files format and content: HiC: Interaction\
+  \ matrices at 2.5Mb, 1Mb, 250kb and 40kb resolution"
+Description: 'processed data file: shSCRAM_shBRG1_processed_HiC_files.tar.gz'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04244106
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1420575
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2927550
+    cluster_name: public
+    id: '2011808'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '25474668844'
+    total_spots: '126112222'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX142/SRX1420575
+  iid: SRX1420575
+Series: GSE74716
+Status:
+  Last-Update-Date: '2016-06-02'
+  Release-Date: '2016-06-02'
+  Submission-Date: '2015-11-05'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX142/SRX1420575
+Title: MCF-10A shBRG1 Hi-C Replicate1
+Type: SRA
+iid: GSM1930753

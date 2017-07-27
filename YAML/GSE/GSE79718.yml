@@ -1,0 +1,92 @@
+Contributor:
+- Address:
+    City: Chicago
+    Country: USA
+    Line: 920 E 58th st
+    State: IL
+    Zip-Code: '60615'
+  Department: Human Genetics
+  Organization: University of Chicago
+  Person:
+    First: Noboru
+    Last: Sakabe
+    Middle: Jo
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Marcelo
+    Last: Nobrega
+  iid: contrib3
+- Person:
+    First: Debora
+    Last: Sobreira
+  iid: contrib4
+- Person:
+    First: Lindsey
+    Last: Montefiori
+  iid: contrib5
+- Person:
+    First: Noboru
+    Last: Sakabe
+  iid: contrib6
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+Series:
+  Accession: GSE79718
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  Overall-Design: One sample of a human LCL was grown. In situ Hi-C was performed
+    and the sequencing library was captured using 120 RNA probes.
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA316846
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP072562
+    type: SRA
+  Sample-Ref:
+  - name: capture in-situ Hi-C
+    ref: GSM2101551
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-04-30'
+    Submission-Date: '2016-03-30'
+    database: GEO
+  Summary: We generated an interaction map using capture in situ Hi-C in human LCL
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79718/GSE79718_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP072/SRP072562
+  Title: Chromatin interaction map of promoters of a human lymphoblastoid cell line
+    using capture in situ Hi-C
+  Type: Other
+  iid: GSE79718
+id: '200079718'

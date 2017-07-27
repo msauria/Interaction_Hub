@@ -1,0 +1,177 @@
+Contributor:
+- Address:
+    City: London
+    Country: United Kingdom
+    Line: 72 Huntley street
+    Postal-Code: Wc1e6bt
+  Department: Cancer biology
+  Email: s.hadjur@ucl.ac.uk
+  Laboratory: Genome organization
+  Organization: Ucl
+  Person:
+    First: Suzana
+    Last: Hadjur
+  Phone: +44 7798957199
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Matteo
+    Last: Vietri Rudan
+  iid: contrib3
+- Person:
+    First: Christopher
+    Last: Barrington
+  iid: contrib4
+- Person:
+    First: Christina
+    Last: Ernst
+  iid: contrib5
+- Person:
+    First: Duncan
+    Last: Odom
+    Middle: T
+  iid: contrib6
+- Person:
+    First: Amos
+    Last: Tanay
+  iid: contrib7
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL14954
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Macaca mulatta
+  Status:
+    Last-Update-Date: '2017-02-08'
+    Release-Date: '2011-12-03'
+    Submission-Date: '2011-12-03'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Macaca mulatta)
+  iid: GPL14954
+- Accession: GPL16540
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Canis lupus familiaris
+  Status:
+    Last-Update-Date: '2016-10-11'
+    Release-Date: '2013-01-23'
+    Submission-Date: '2013-01-23'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Canis lupus familiaris)
+  iid: GPL16540
+- Accession: GPL18453
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Oryctolagus cuniculus
+  Status:
+    Last-Update-Date: '2014-03-21'
+    Release-Date: '2014-03-21'
+    Submission-Date: '2014-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Oryctolagus cuniculus)
+  iid: GPL18453
+Series:
+  Accession: GSE65126
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib1
+  Overall-Design: Hi-C and 4C-seq experiments were conducted in primary liver cells
+    obtained from mouse, rabbit, macaque and dog
+  Pubmed-ID: '25732821'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA273476
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP052783
+    type: SRA
+  Sample-Ref:
+  - name: HiC_mouse_liver, replicate 1
+    ref: GSM1587701
+  - name: HiC_mouse_liver, replicate 2
+    ref: GSM1587702
+  - name: HiC_rabbit_liver, replicate 1
+    ref: GSM1587703
+  - name: HiC_rabbit_liver, replicate 2
+    ref: GSM1587704
+  - name: HiC_macaque_liver, replicate 1
+    ref: GSM1587705
+  - name: HiC_macaque_liver, replicate 2
+    ref: GSM1587706
+  - name: HiC_dog_liver, replicate 1
+    ref: GSM1587707
+  - name: HiC_dog_liver, replicate 2
+    ref: GSM1587708
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2015-02-26'
+    Submission-Date: '2015-01-21'
+    database: GEO
+  Summary: "Topological domains are key architectural building blocks of chromosomes\
+    \ in complex genomes. Their functional importance and evolutionary dynamics are\
+    \ however not well defined.  Here we performed comparative Hi-C in liver cells\
+    \ from four mammalian species, and characterized the conservation and divergence\
+    \ of chromosomal contact insulation and the resulting domain architectures within\
+    \ distantly related genomes. We show that the modular organization of chromosomes\
+    \ is robustly conserved in syntenic regions. This overall conservation is compatible\
+    \ with conservation of the binding landscape of the insulator protein CTCF.  Specifically,\
+    \ conserved CTCF sites are co-localized with cohesin, enriched at strong topological\
+    \ domain borders and bind to DNA motifs with orientations that define the directionality\
+    \ of CTCF\u2019s long-range interactions. Interestingly, CTCF binding sites which\
+    \ are divergent between species are strongly correlated with divergence of internal\
+    \ domain structure. This divergence is likely driven by local CTCF binding sequence\
+    \ changes, demonstrating how genome evolution can be linked directly with a continuous\
+    \ flux of local chromosome conformation changes. Conversely, we provide evidence\
+    \ that large-scale domains are harder to break and that they are reorganized during\
+    \ genome evolution as intact modules."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE65126/GSE65126_HiC_dog_liver_merged_50000.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE65126/GSE65126_HiC_macaque_liver_merged_50000.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE65126/GSE65126_HiC_mouse_liver_merged_50000.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE65126/GSE65126_HiC_rabbit_liver_merged_50000.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE65126/GSE65126_HiCseq_Summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE65126/GSE65126_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP052/SRP052783
+  Title: Comparative Hi-C reveals that CTCF underlies evolution of chromosomal domain
+    architecture.
+  Type: Other
+  iid: GSE65126
+id: '200065126'

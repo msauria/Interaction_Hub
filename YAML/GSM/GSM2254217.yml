@@ -1,0 +1,68 @@
+Accession: GSM2254217
+Channel:
+  Characteristics: Contains K562, GM12878, Patski, and primary MEF cells
+  Extract-Protocol: 'Cells are lysed using 0.2% NP-40; 10 mM NaCl; 10 mM Tris pH 8.0
+    in ddH2O
+
+    Combinatorial single-cell Hi-C is carried out using a similar protocol to the
+    insitu Hi-C and in situ DNase protocols'
+  Growth-Protocol: Cells are grown under standard tissue culture conditions (10 -
+    15% FBS, 5% CO2, DMEM or RPMI media, and 1X Pen-Strep) as the Coriell culture
+    practices demand)
+  Molecule: genomic DNA
+  Organism:
+  - Homo sapiens
+  - Mus musculus
+  Source: Cultured Cell Lines
+  Treatment-Protocol: Cells are fixed using 2% (HeLa, HAP1, GM12878, K562, MEF) or
+    2.5% (Patski) formaldehyde.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C-seq
+
+  Reads were mapped to a combined Burrows-Wheeler reference of hg19 and mm10 using
+  bowtie2. They were then filtered using custom Python scripts to generate validPairs
+  files (see README file on series record).'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DNase
+Platform-Ref:
+  ref: GPL22245
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05449631
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1981064
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3956928
+    cluster_name: public
+    id: '2850386'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '10904496500'
+    total_spots: '21808993'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX198/SRX1981064
+  iid: SRX1981064
+Series: GSE84920
+Status:
+  Last-Update-Date: '2017-01-29'
+  Release-Date: '2017-01-28'
+  Submission-Date: '2016-07-27'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2254nnn/GSM2254217/GSM2254217_ML3.percentages.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2254nnn/GSM2254217/GSM2254217_ML3.validPairs.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2254nnn/GSM2254217/GSM2254217_ML3_R1.bed.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2254nnn/GSM2254217/GSM2254217_ML3_R2.bed.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2254nnn/GSM2254217/GSM2254217_ML3_assignments.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX198/SRX1981064
+Title: Combinatorial scHi-C Library ML3
+Type: SRA
+iid: GSM2254217

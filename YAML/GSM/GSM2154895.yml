@@ -1,0 +1,167 @@
+Accession: GSM2154895
+Channel:
+  Characteristics:
+  - 129S4/SvJae
+  - Embryonic Stem Cells
+  Extract-Protocol: "Cell pellets were incubated in 50 ml ice-cold lysis buffer (10\
+    \ mM Tris-HCl pH 8, 10 mM NaCl, 0.2% Igepal CA-630, protease inhibitor cocktail\
+    \ (Roche)) for 30 minutes on ice, followed by a centrifugation to pellet the cell\
+    \ nuclei (650 x g for 5 minutes). Nuclei were resuspended in 1.25 x NEBuffer 2,\
+    \ SDS was added (0.3% final concentration) and the nuclei were incubated at 37\u02DA\
+    C with agitation (950 rpm) for one hour. Triton X-100 was added at a final concentration\
+    \ of 1.7 % and the nuclei were incubated at 37\u02DAC with agitation (950 rpm)\
+    \ for one hour. Restriction digest was performed overnight at 37\u02DAC with agitation\
+    \ (950 rpm) with HindIII (NEB; 1500 units per 5 million cells). The restriction\
+    \ sites were then filled in with Klenow (NEB) using biotin-14-dATP (Life Technologies),\
+    \ dCTP, dGTP and dTTP (all at a final concentration of 30 \xB5M) for 60 minutes\
+    \ at 37\u02DAC. After addition of SDS (1.42 % final concentration) and incubation\
+    \ at 65\u02DAC with agitation (950 rpm) for 25 minutes, ligation was performed\
+    \ for four hours at 16\u02DAC (50 units T4 DNA ligase (Life Technologies) per\
+    \ 5 million cells starting material) in a total volume of 8.2 ml ligation buffer\
+    \ (50 mM Tris-HCl, 10 mM MgCl2, 1 mM ATP, 10 mM DTT, 100 \xB5g/ml BSA, 0.9 % Triton\
+    \ X-100) per 5 million cells starting material. Reverse crosslinking (65\u02DA\
+    C overnight in the presence of Proteinase K (Roche)) was followed by RNase A (Roche)\
+    \ treatment and two sequential phenol/chloroform extractions. The DNA was precipitated\
+    \ in the presence of sodium acetate 3 M pH 5.2 (1/10 volume) and ethanol (2.5\
+    \ x volumes) overnight at -20\u02DAC. After three consecutive washes with 70%\
+    \ ethanol, the DNA concentration was determined using Quant-iT Pico Green (Life\
+    \ Technologies). 40 \xB5g of Hi-C library DNA were incubated with T4 DNA polymerase\
+    \ (NEB) for 4 hours at 20\u02DAC to remove of biotin from non-ligated fragment\
+    \ ends, followed by phenol/chloroform purification and DNA precipitation overnight\
+    \ at -20\u02DAC, followed by a 70% ethanol wash.\nSonication was performed to\
+    \ obtain DNA fragments with a size peak around 400 bp (Covaris E220 settings:\
+    \ duty factor: 10%; peak incident power: 140W; cycles per burst: 200; time: 55\
+    \ seconds). The sonicated DNA was end-repaired (T4 DNA polymerase, T4 DNA polynucleotide\
+    \ kinase, Klenow (all NEB)) for 30 minutes at room temperature, followed by DNA\
+    \ purification (Qiagen PCR purification kit). dATP was added with Klenow exo-\
+    \ (NEB) for 30 minutes at 37\u02DAC, and the enzyme was heat-inactivated (20 minutes\
+    \ at 65\u02DAC). A double size selection using AMPure XP beads (Beckman Coulter)\
+    \ was performed: first, the ratio of AMPure XP beads solution volume to DNA sample\
+    \ volume was adjusted to 0.6:1. After incubation for 10 minutes at room temperature,\
+    \ the sample was transferred to a magnetic separator (DynaMag-2 magnet; Life Technologies),\
+    \ and the supernatant was transferred to a new eppendorf tube. The ratio of AMPure\
+    \ XP beads solution volume to DNA sample volume was then adjusted to 0.9:1 final.\
+    \ After incubation for 10 minutes at room temperature, the sample was transferred\
+    \ to a magnet (DynaMag-2 magnet; Life Technologies). Following two washes with\
+    \ 70% ethanol, the DNA was eluted in 100 \xB5l of TLE (10 mM Tris-HCl pH 8.0;\
+    \ 0.1 mM EDTA). Biotin-marked ligation products were isolated using MyOne Streptavidin\
+    \ C1 Dynabeads (Life Technologies) on a DynaMag-2 magnet (Life Technologies) in\
+    \ binding buffer (5 mM Tris pH8, 0.5 mM EDTA, 1 M NaCl) for 30 minutes at room\
+    \ temperature, followed by two washes in binding buffer, and one wash in ligation\
+    \ buffer (NEB). PE adapters (Illumina) were ligated onto Hi-C ligation products\
+    \ bound to streptavidin beads for 2 hours at room temperature (T4 DNA ligase NEB,\
+    \ in ligation buffer, slowly rotating). After washes in wash buffer (5 mM Tris,\
+    \ 0.5 mM EDTA, 1 M NaCl, 0.05% Tween-20) and binding buffer, the DNA-bound beads\
+    \ were resuspended in a final volume of 30 \xB5l NEBuffer 2. Bead-bound Hi-C DNA\
+    \ was amplified with 7 PCR amplification cycles using PE PCR 1.0 and PE PCR 2.0\
+    \ primers (Illumina). The concentration and size distribution of Hi-C library\
+    \ DNA after PCR amplification was determined by Bioanalyzer profiles (Agilent\
+    \ Technologies). To capture ligation products containing promoter sequences, 500\
+    \ ng of Hi-C library DNA was lyophilized using a vacuum concentrator (Savant SPD\
+    \ 2010) at 45\u02DAC. The DNA pellet was resuspended in 3.4 \xB5l H2O, and custom\
+    \ hybridization blockers (Agilent Technologies) were added to the Hi-C DNA. Hybridization\
+    \ buffers and the custom-made RNA capture bait system (Agilent Technologies: biotinylated\
+    \ RNAs targeting the HindIII restriction fragment ends of 22,225 mouse gene promoters,\
+    \ and of 21,841 human gene promoters, respectively) were prepared according to\
+    \ the manufacturer\u2019s instructions (SureSelect Target Enrichment, Agilent\
+    \ Technologies). The Hi-C library DNA was mixed with hybridization buffer, denatured\
+    \ for 5 minutes at 95\u02DAC, and then incubated with the capture bait system\
+    \ at 65\u02DAC. After 24 hours, biotin pulldown (MyOne Streptavidin T1 Dynabeads;\
+    \ Life Technologies) and washes were performed following the SureSelect Target\
+    \ enrichment protocol (Agilent Technologies). After the final wash, the beads\
+    \ were resuspended in 30 \xB5l NEBuffer 2, without prior DNA elution. A post-capture\
+    \ PCR (four amplification cycles using Illumina PE PCR 1.0 and PE PCR 2.0 primers)\
+    \ was performed and the Capture Hi-C libraries were paired-end sequenced (HiSeq\
+    \ 1000, Illumina)."
+  Growth-Protocol: GM12878 cell culture conditions  GM12878 cells were obtained from
+    the Coriell Cell Repositories and grown in suspension in RPMI-1640 medium supplemented
+    with 2 mM glutamine, 15% FBS and 1% penicillin-streptomycin under standard culture
+    conditions.    Mouse ESC culture conditions  J1 (129S4/SvJae) murine ESCs were
+    expanded on irradiated primary embryonic fibroblasts under standard pluripotent
+    conditions (15% FBS) on tissue culture plates coated with 0.1% gelatin. To harvest
+    the cells and remove contaminating feeder cells, ESCs were trypsinized and passaged
+    twice for 30 min each.
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Mouse Embryonic Stem Cells
+  Treatment-Protocol: "30 to 40 million cells were fixed in 2 % formaldehyde (Agar\
+    \ Scientific) for 10 minutes, and the reaction was quenched by the addition of\
+    \ ice-cold glycine (0.125 M final concentration). Cells were collected (centrifugation\
+    \ 400 x g for 10 minutes), washed with PBS, and collected again (400 x g for 10\
+    \ minutes). The supernatant was removed and the cell pellet was immediately frozen\
+    \ in liquid nitrogen and stored at -80\u02DAC."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: CHi-C
+
+  Standard Illumina base-calling pipeline.
+
+  HiCUP v0.5.3  (using Bowtie v1.1.0) mapped sequence reads to the relevant genome
+  assembly and removed common Hi-C artefacts.
+
+  Filtered reads-pairs so that at least one member of the pair mapped to a bait fragment.
+
+  CHiCAGO v1.0.0 identifies significant fragment-fragment CHi-C interactions
+
+  Genome_build: Mouse (mm9)Supplementary_files_format_and_content: Text files listing
+  statistically significant CHi-C interactions. For the SeqMonk format files, interacting
+  fragments are referenced on adjacent lines. The columns refer to: chromosome, start,
+  end, name, number of reads, interaction score. For the WashU Format files, interacting
+  fragments are referenced on the same line. The columns refer to: chromosome, start,
+  end, chromosome, start, end, interaction score.'
+Description: 'CHiC
+
+  processed data file: mESC_merge_final_seqmonk.txt.gz, mESC_merge_final_washU_text.txt.gz'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05004553
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1769401
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3535032
+    cluster_name: public
+    id: '2535976'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '27092024062'
+    total_spots: '134118931'
+  - acc: SRR3535034
+    cluster_name: public
+    id: '2535976'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '20420077884'
+    total_spots: '200196842'
+  - acc: SRR3535033
+    cluster_name: public
+    id: '2535976'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '47984426532'
+    total_spots: '237546666'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX176/SRX1769401
+  iid: SRX1769401
+Series: GSE81503
+Status:
+  Last-Update-Date: '2016-06-08'
+  Release-Date: '2016-05-18'
+  Submission-Date: '2016-05-17'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX176/SRX1769401
+Title: Mouse CHi-C Biological Replicate 2
+Type: SRA
+iid: GSM2154895

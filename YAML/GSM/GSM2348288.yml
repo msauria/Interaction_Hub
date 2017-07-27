@@ -1,0 +1,128 @@
+Accession: GSM2348288
+Channel:
+  Characteristics:
+  - v6.5
+  - Embryonic Stem Cells
+  - Embryonic
+  Extract-Protocol: "Between 25 to 50 x 10e7 cells were used to perform in-nucleus\
+    \ ligation 3C; biotin fill-in was omitted. Briefly, adherent cells (mES) were\
+    \ incubated in the presence of trypsin (Biological Industries 03-053-1) for 8-10\
+    \ minutes max at 37\xB0C and passed through a cell strainer after harvesting to\
+    \ ensure a single-cell suspension. Cells (including K562 from now on) were washed\
+    \ 1x with phosphate-buffered saline (PBS) and resuspended PBS/FBS 10% and cross-linked\
+    \ in formaldehyde final concentration of 2% for 5 minutes at room temperature.\
+    \ After quenching with 0.125 M glycine and wash with PBS, cells were incubated\
+    \ in permeabilization buffer (10 mM Tris\u2013HCl pH 8, 10 mM NaCl, 0.2 % NP-40\
+    \ alternative (CALBIOCHEM 492016), Protease Inhibitor Cocktail (P8340 Sigma))\
+    \ for 60 minutes at 4\xB0C while slowly mixing. Cells were split into 5 M cell\
+    \ aliquots and washed 2x with cold PBS. After the second wash, cell pellets were\
+    \ then flash frozen on liquid nitrogen. Pellets were resuspended on 175.5 \xB5\
+    l H2O and 24.5 \xB5l DpnII RE buffer 10x. After addition of 3 \xB5l of 20% SDS\
+    \ (final concentration of 0.3%), cells were incubated for 60 minutes at 37\xB0\
+    C while agitating (750 RPM). Triton X-100 20% was added to a final concentration\
+    \ of 1.8% and incubated for 60 min at 37\xB0C. Aliquots were then digested with\
+    \ 15 \xB5l HC DpnII (NEB 50,000 U/ml) ON. Cells were centrifuged for 5 minutes\
+    \ at 600 g and washed 1x with PBS. Incubation of pellets for 20 minutes at 65\xB0\
+    C was performed in order to heat-inactivate any DpnII residue. In-nucleus ligation\
+    \ was then performed incubating cells on ligation mix (415 \xB5l H2O, 5 \xB5l\
+    \ BSA (10mg/ml NEB) and 5 \xB5l T4 ligation enzyme NEB (2x106 U/ml)) ON at 16\xB0\
+    C.  Cross-link was reversed by incubating aliquots with 10 mg/ml proteinase K\
+    \ (Roche) at 65\xB0C ON followed by the addition of 15 \xB5l of RNase A (Roche)\
+    \ for 45 minutes at 37\xB0C. DNA was purified with AmpureXP SPRI beads 1x (Beckman\
+    \ Coulter; A63881) with two elution rounds of 100 \xB5l each with the aim of size\
+    \ selecting for the high molecular weight portion of the sample.\nHi-C: Bioruptor\
+    \ Microtubes (C30010015) to reach a DNA fragment size between 400-500 bp. The\
+    \ sonicated DNA  was then subjected to end-repair reaction (5 \xB5l 10x end-repair\
+    \ buffer + 2.5 \xB5l end-repair mix (NEB E6050L)) at 20 \xB0C for 30 minutes.\
+    \ The DNA was cleaned up with 2.2x SPRI beads and eluted in 38 \xB5l EB. A-tailing\
+    \ reaction was performed with 5 \xB5l NEB buffer 2, 4 \xB5l Klenow fragment -3\u2032\
+    -5\u2032 exo (NEB M0212M) and 10 \xB5l dATP 10 nM for 30 minutes at 37 \xB0C,\
+    \ cleaned up with 2.2 x SPRI beads and eluted in 30 \xB5l EB. DNA template was\
+    \ ligated with 5 \xB5l Illumina indexed adapters 0.75 \xB5M with 5 \xB5l T4 quick\
+    \ ligase (NEB M2200) and 40 \xB5l 10x ligase buffer for 15 minutes at 25 \xB0\
+    C. Ligated template was then cleaned up with 1.3x SPRI beads and eluted in 41\
+    \ \xB5l."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: v6.5 mESC
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Cwalks from PacBio reads were assembled using the cwalk pipeline
+  with default parameters although the shotgun assembly step was not necessary. Components
+  were directly transformed from fenchain files into cadj format
+
+  Hi-C reads were processed using the same Cwalk pipeline with the difference that
+  adj files can directly represent the pair-wise information of genome contacts.
+
+  reads were mapped using bowtie2 with --reorder --local for cwalks and HiC
+
+  Genome_build: hg19 and mm9
+
+  Supplementary_files_format_and_content: cadj.annot: tab separated text file with
+  adjacency information, linked to cwalks, annotated by the epigenomic features of
+  TADs who are visited by the cwalk; 38 fields  [chr1]: chromosome of side 1  [start1]:
+  chrosomal coordinate of side 1  [chr2]: chromosome of side 2  [start2]: chromosomal
+  coordinate of side 2  [comp]: component (cwalk) id  [amp_i]: phi29 amplification
+  well id  [fid1]: restriction fragment id of side 1  [fid2]: restriction fragment
+  id of side 2  [span1]: span of component 1  [span2]: span of component 2  [seq_batch]:
+  sequencing batch  [n]: number of hops  [trans_n]: number of trans interfaces  [cmer_doms.dist.x]:
+  distance to closest TAD for side 1  [cmer_doms.id.x]: id of domain hosting side
+  1  [cmer_doms.k4me3.x]: signal of k4me3 in domain side 1  [cmer_doms.size.x]: size
+  of domain side 1  [cmer_doms.tor.x]: time of replication for domain side 1  [cmer_doms.mode.x]:
+  classification of active or inactive for domain side 1  [cmer_doms.dist.y]: distance
+  to closest TAD for side 2  [cmer_doms.id.y]: id of domain hosting side 2  [cmer_doms.k4me3.y]:
+  signal of k4me3 in domain side 2  [cmer_doms.size.y]: size of domain side 2  [cmer_doms.tor.y]:
+  time of replication for domain side 2  [cmer_doms.mode.y]: classification of active
+  or inactive for domain side 2  [dom_n]: number of domains visited by cwalk  [tss_1]:
+  distance to the closest tss from side 1  [k4me3_1]: distance to the closest peak
+  of k4me3 from side 1   [k27me3_1]: distance to the closest peak of k27me3 from side
+  1  [actenh_1]: distance to the closest active enhancer from side 1  [ctcf_1]: distance
+  to the closest ctcf from side 1  [border_1]: distance to the closest domain border
+  for side 1  [tss_2]: distance to the closest tss from side 2  [k4me3_2]: distance
+  to the closest peak of k4me3 from side 2   [k27me3_2]: distance to the closest peak
+  of k27me3 from side 2  [actenh_2]: distance to the closest active enhancer from
+  side 2  [ctcf_2]: distance to the closest ctcf from side 2  [border_2]: distance
+  to the closest domain border for side 2
+
+  Supplementary_files_format_and_content: adj file: adjacency file ; 7 fields  [chrom1]:
+  chromosome side 1  [start1]: start coordinate side 1  [end1]: end coordinate side
+  1  [chrom2]: chromosome side 2  [start2]: start coordinate side 2  [end2]: end coordinate
+  side 2  [count]: number of molecules supporting this pair'
+Description: 'processed data file: mesc_hic.adj.txt'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05913795
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2248690
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4427071
+    cluster_name: public
+    id: '3298237'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '58230149733'
+    total_spots: '463262616'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2248690
+  iid: SRX2248690
+Series: GSE77553
+Status:
+  Last-Update-Date: '2016-10-18'
+  Release-Date: '2016-10-18'
+  Submission-Date: '2016-10-17'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2248690
+Title: mESC_Hi-C 1
+Type: SRA
+iid: GSM2348288

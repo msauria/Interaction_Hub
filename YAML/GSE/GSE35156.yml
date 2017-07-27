@@ -1,0 +1,128 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Dr.
+    State: CA
+    Zip-Code: '92093'
+  Email: fyue@ucsd.edu
+  Organization: Ludwig Institue for Cancer Research
+  Person:
+    First: Feng
+    Last: Yue
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Jesse
+    Last: Dixon
+  iid: contrib3
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE35156
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: Hi-C experiment were conducted in mESC, hESC and IMR90 cells
+  Pubmed-ID: '22495300'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP010370
+    type: SRA
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA150781
+    type: BioProject
+  Sample-Ref:
+  - name: RenLab-HiC-mESC-HindIII, replicate one
+    ref: GSM862720
+  - name: RenLab-HiC-mESC-HindIII, replicate two
+    ref: GSM862721
+  - name: RenLab-HiC-mESC-NCoI
+    ref: GSM862722
+  - name: RenLab-HiC-hESC, replicate one
+    ref: GSM862723
+  - name: RenLab-HiC-IMR90, replicate one
+    ref: GSM862724
+  - name: RenLab-HiC-cortex, replicate one
+    ref: GSM892304
+  - name: RenLab-HiC-cortex, replicate two
+    ref: GSM892305
+  - name: RenLab-HiC-hESC, replicate two
+    ref: GSM892306
+  - name: RenLab-HiC-IMR90, replicate two
+    ref: GSM892307
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2012-04-10'
+    Submission-Date: '2012-01-17'
+    database: GEO
+  Summary: The spatial organization of the genome is intimately linked to its biological
+    function, yet our understanding of higher order genomic structure is limited.  Here
+    we present high-resolution analyses of chromosomal organization in pluripotent
+    and differentiated human and murine cell types determined using the Hi-C technique.
+    We find that the mammalian genome is composed of over 1000 topological domains,
+    which are stable among different cell types and highly conserved across species.  These
+    megabase-long genomic structures, defined by prominent local chromatin interactions
+    and separated by narrow boundary regions, likely function to restrict regulatory
+    interactions between cis-acting elements and limit the spreading of heterochromatin
+    during cellular differentiation. Interestingly, the boundaries are enriched not
+    only for binding sites of the insulator protein CTCF, but also for promoters of
+    house keeping genes, supporting a role for both CTCF and housekeeping genes in
+    the establishment or maintenance of the topological domains.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP010/SRP010370
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM862720_J1_mESC_HindIII_ori_HiC.nodup.hic.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM862721_J1_mESC_HindIII_rep_HiC.nodup.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM862722_J1_mESC_NcoI_HiC.nodup.hic.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM862723_hESC_HindIII_HiC.nodup.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM862724_IMR90_HindIII_HiC.nodup.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM892304_cortex_HindIII_ori_HiC.nodup.hic.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM892305_cortex_HindIII_replicate_Hic.nodup.hic.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM892306_hESC_HindIII_HiC_replicate.nodup.hic.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35156/GSE35156_GSM892307_IMR90_HindIII_HiC_replicate.nodup.hic.summary.txt.gz
+  Title: Conserved Topological Domains in Mammalian Genomes Identified by High-resolution
+    Analysis of Chromatin Interactions
+  Type: Other
+  iid: GSE35156
+id: '200035156'

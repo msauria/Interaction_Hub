@@ -1,0 +1,121 @@
+Accession: GSM1379431
+Channel:
+  Characteristics: SPK567
+  Extract-Protocol: 'A total of 500 ml of cells (OD at 600nm ~ 0.5) was fixed in 3%
+    formaldehyde (Sigma) for 20 min at 26 C, and quenched with glycine for 5 min at
+    26 C.  Cells were poured into liquid nitrogen using 1x NEB2, disrupted by nitrogen
+    grinding.  Cell lysate was treated with 0.1% SDS for 10 min at 65 C, and then
+    quenched with 1% TritonX-100.  Cell lysate was digested overnight with 100 U HindIII
+    at 37 C.  The 5'' overhang from the HindIII digestion was filled in using Klenow
+    fragment in presence of biotin-14-dCTP and dATP, dGTP, and dTTP at 37 C for 45
+    min.  The reaction was terminated with 1.5% SDS.  The DNA fragments were ligated
+    by T4 DNA ligase in diluted conditions that favor the ligation between cross-linked
+    DNA fragments in 16 C for 8 hours (Hi-C DNA).
+
+    The HiC-DNA was reverse cross-linked at 65 C overnight in the presence of proteinase
+    K and purified by phenol/chrolorom extraction.  Purified Hi-C DNA was treated
+    with 1 mg/ml Rnase A for 30 min at 37 C.  Un-ligated biotin lablelled DNA was
+    selectively removed by T4 DNA plymerase and reaction were purified by phenol/chloroform
+    extraction.  Hi-C DNA was then sheared by ultrasonication (Covaris) in the size
+    range of <500 bp.  The sheared Hi-C DNA was subjected to end-repair and 3'' end
+    adenylation.  Hi-C DNA between 150 - 300 bp was selected with AMPure XP (Beckman-Coulter).  The
+    biotin-labled Hi-C DNA was selectively captured by Dynabeads Myone Streptavidin
+    C1 (Invitrogen) and used for Illumina PE adapter ligation.  Streptavidin beads
+    containing bounds Hi-C DNA were used for the template for library amplification
+    by PE-PCR primers (Illumina).'
+  Growth-Protocol: The Cells were grown on YEA at optimal temperature (30 C).  Wherever
+    temperature sensitive mutatnts were used, the cells were incubated at elevated
+    temperatures (33 C) for 4 - 6 hours before library preparation.
+  Molecule: genomic DNA
+  Organism: Schizosaccharomyces pombe
+  Source: Clr4D cells
+  Treatment-Protocol: The temperature was shifted in the temperature sensitive mutants.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'The pipeline for processing of each data-set was assembled around
+  the library (see https://bitbucket.org/mirnylab).  Briefly, each read of the sample
+  was treated separately for alignment purposes and the information was then put together
+  to make the HiC contact maps.  The bowtie2 aligner was used to align each reads
+  from each end.  Only uniquely mapping reads were considered for further analysis.
+
+  The mapping is interative and starts with first 25 bases of each read, this length
+  is extended by 5 bases till 75 bases to look for a unique mapping.
+
+  The assembled fragments are then filtered at the restriction fragment level and
+  all the reads that span more than 4 restrction sites are discarded.  All the double
+  sided reads  are discarded.  All the reads right next to the restriction site (possible
+  dangling ends) are discarded.  All the duplicates are discarded.  All the fragments
+  with very high or very low counts are discarded (these are usually possible PCR
+  artefacts).  Very large and very small fragments are discarded.  All the interactions
+  separated by very few restriction fragments are also discarded.  These data is then
+  binned at 10 kB resolution
+
+  The bins with lowest 3% coverage are discarded (in addition to bins with zero counts).  Remove
+  the diagonal and neighboring diagonal (i.e. interactions < 20kB).  Remove the standalone
+  bins.  Do the iteractive correction.   Interpolate the singleton bins (singleton
+  bins are the filtered out bins that are flanked by non-filtered out bins).  Normalize
+  the sum = 1 along each row and column.
+
+  For replicate samples, an average matrix was used.
+
+  Genome_build: S. pombe Sept 2007 version from PomBase.
+
+  Supplementary_files_format_and_content: Each file contains a square matrix.  Each
+  row and column has three parts, the
+
+  Supplementary_files_format_and_content: bin number, the number of a 10 kB bin.  Each
+  bin number begins with number of
+
+  Supplementary_files_format_and_content: the chromosome on which that bin belongs.  Then
+  there is name of the organism,
+
+  Supplementary_files_format_and_content: and finally the genomic coordinates of the
+  regions represented by that bin.
+
+  Supplementary_files_format_and_content: Each cell in the matrix denotes score of
+  interaction between the bins denotes by
+
+  Supplementary_files_format_and_content: the defining row and column.  The NA and
+  NANs are the values that were discarded
+
+  Supplementary_files_format_and_content: during the process of generation of the
+  interaction scores.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13988
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02744538
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX533439
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1271379
+    cluster_name: public
+    id: '733996'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '32667817740'
+    total_spots: '161721870'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX533/SRX533439
+  iid: SRX533439
+Series: GSE57316
+Status:
+  Last-Update-Date: '2016-03-11'
+  Release-Date: '2014-10-22'
+  Submission-Date: '2014-05-05'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1379nnn/GSM1379431/GSM1379431_SPK567-corrected-matrix_hic.tsv.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX533/SRX533439
+Title: clr4D_HIC
+Type: SRA
+iid: GSM1379431

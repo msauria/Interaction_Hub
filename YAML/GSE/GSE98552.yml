@@ -1,0 +1,163 @@
+Contributor:
+- Address:
+    City: Burlington
+    Country: USA
+    Line: 89 Beaumont Ave Given E209
+    State: VT
+    Zip-Code: '05405'
+  Department: Biochemistry
+  Email: Joseph.Boyd@med.uvm.edu
+  Organization: University of Vermont
+  Person:
+    First: Joe
+    Last: Boyd
+    Middle: R
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Andrew
+    Last: Fritz
+  iid: contrib3
+- Person:
+    First: Joseph
+    Last: Boyd
+  iid: contrib4
+- Person:
+    First: Coralee
+    Last: Tye
+  iid: contrib5
+- Person:
+    First: Jane
+    Last: Lian
+  iid: contrib6
+- Person:
+    First: Gary
+    Last: Stein
+  iid: contrib7
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL18460
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2014-03-24'
+    Submission-Date: '2014-03-24'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1500 (Homo sapiens)
+  iid: GPL18460
+Series:
+  Accession: GSE98552
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  Overall-Design: 'HiC
+
+
+    ------------------------
+
+
+    title: MCF10A Hi-C GSM1631184
+
+    source name: mammary gland/breast epithelial cell
+
+    characteristics: cell type: basal epithelial, non-tumorigenic
+
+    characteristics: neoplasia type: fibrocystic disease
+
+    characteristics: ATCC ID: ATCC CRL-10317
+
+    description: reanalysis of GSM1631184/SRR1909069
+
+    processed data file: MCF10A_pooled_40000_iced.matrix.gz
+
+    processed data file: HiCPro_40000_matrix_coordinates.bed
+
+    processed data file: MCF10A_pooled.allValidPairs.hic'
+  Pubmed-ID: '28504305'
+  Relation:
+  - target: GSM1631184
+    type: Reanalysis of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA385494
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP106470
+    type: SRA
+  Sample-Ref:
+  - name: MCF10AT1 Hi-C REP 1
+    ref: GSM2599093
+  - name: MCF10AT1 Hi-C REP 2
+    ref: GSM2599094
+  - name: MCF10CA1a Hi-C REP 1
+    ref: GSM2599095
+  - name: MCF10CA1a Hi-C REP 2
+    ref: GSM2599096
+  Status:
+    Last-Update-Date: '2017-05-23'
+    Release-Date: '2017-05-23'
+    Submission-Date: '2017-05-04'
+    database: GEO
+  Summary: Transcription and processing of histone mRNAs occurs at subnuclear domains
+    known as Histone Locus Bodies (HLBs). Although it is known that higher-order chromatin
+    organization is dysregulated in cancer, structural alterations within HLB across
+    breast cancer progression are unclear. Differential expression across known as
+    MCF10, a basal triple negative breast cancer progression model, followed by pathway
+    analysis demonstrated many alterations in signaling cascades known to be related
+    to proliferation. Positional gene enrichment identified the hist1 gene locus at
+    chromosome 6p22 as the most significantly altered cluster of genes from the normal-like
+    MCF10A to premalignant MCF10AT1. The malignant MCF10CA1a had a more varied expression
+    pattern across the hist1 locus. Within this region there are three subclusters
+    of hist1 genes which were generally upregulated while intervening genes were more
+    frequently downregulated. Extending these findings to TCGA breast tumors revealed
+    that normal adjacent tissue had lower expression within the subclusters than their
+    matched tumor samples. Moreover, the expression pattern within the hist1 locus
+    comparing normal versus tumors recapitulated a very similar pattern to that comparing
+    10A to AT1 or CA1a. Since the hist1 locus is transcribed and processed at a specific
+    subnuclear microenvironment, the higher order chromatin organization of this locus
+    may be a critical component of its regulation. We addressed whether CTCF, a key
+    chromatin organizing protein, may play a role in organizing the hist1 HLB. Immunofluorescence
+    for CTCF along with NPAT, a protein which decorates this locus, identified that
+    CTCF may tether the hist1 HLB to the nuclear matrix. All three subclusters reside
+    within a single topologically associating domain wherein interacting loops are
+    bound by CTCF. Inter-subcluster interactions are lost in the premalignant AT1.
+    Consistent with the varied expression across the hist1 HLB in CA1a, inter-subcluster
+    interactions are regained in the malignant state. These data suggest a transient
+    state in highly proliferative breast cancer cells in which the hist1 HLB is dynamically
+    reorganized.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_HiCPro_40000_matrix_coordinates.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_MCF10AT1_pooled.allValidPairs.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_MCF10AT1_pooled_40000_iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_MCF10A_pooled.allValidPairs.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_MCF10A_pooled_40000_iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_MCF10CA1a_pooled.allValidPairs.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE98552/GSE98552_MCF10CA1a_pooled_40000_iced.matrix.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP106/SRP106470
+  Title: Chromatin structure and CTCF across the MCF10 breast cancer progression series
+    (HiC)
+  Type:
+  - Other
+  - Third-party reanalysis
+  iid: GSE98552
+id: '200098552'

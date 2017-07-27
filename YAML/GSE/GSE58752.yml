@@ -1,0 +1,104 @@
+Contributor:
+- Address:
+    City: San Diego
+    Country: USA
+    Line: 9500 Gilman
+    State: CA
+    Zip-Code: '92093'
+  Email: snowdrop83@gmail.com
+  Organization: UCSD
+  Person:
+    First: Inkyung
+    Last: Jung
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Anthony
+    Last: Schmitt
+  iid: contrib3
+- Person:
+    First: Danny
+    Last: Leung
+  iid: contrib4
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE58752
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  Overall-Design: One replicate of Hi-C experiment in four human tissues with four
+    different individuals (Thymus STL001, Aorta STL002, Leftventricle STL003, and
+    Liver STL011).
+  Pubmed-ID: '25693566'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA253910
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP043660
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C, Thymus STL001, replicate one
+    ref: GSM1419083
+  - name: Hi-C, Aorta STL002, replicate one
+    ref: GSM1419084
+  - name: Hi-C, LeftVentricle STL003, replicate one
+    ref: GSM1419085
+  - name: Hi-C, Liver STL011, replicate one
+    ref: GSM1419086
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2015-02-18'
+    Submission-Date: '2014-06-24'
+    database: GEO
+  Summary: Allelic differences between the two sets of chromosomes can affect the
+    propensity of inheritance in humans, but the extent of such differences in the
+    human genome has yet to be fully explored.  Here, we delineate allelic chromatin
+    modifications and transcriptomes amongst a broad set of human tissues, enabled
+    by a chromosome-span haplotype reconstruction strategy1. The resulting haplotype-resolved
+    epigenomic maps reveal extensive allele bias in the transcription of human genes
+    as well as chromatin state, allowing us to infer cis-regulatory relationships
+    between genes and their control sequences. These maps also uncover a new class
+    of cis regulatory elements and detail activities of repetitive elements in various
+    human tissues. The rich datasets described here will enhance our understanding
+    of the mechanisms controlling tissue-specific gene expression programs.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP043/SRP043660
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE58752/GSE58752_RAW.tar
+  Title: Integrative analysis of haplotype-resolved epigenomes across human tissues
+  Type: Other
+  iid: GSE58752
+id: '200058752'

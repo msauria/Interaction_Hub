@@ -1,0 +1,96 @@
+Contributor:
+- Address:
+    City: Philadelphia
+    Country: USA
+    Line: 3501 Civic Center Blvd
+    State: PA
+    Zip-Code: '19074'
+  Laboratory: Kai Tan
+  Organization: Children's Hospital of Philadelphia
+  Person:
+    First: Bing
+    Last: He
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Haihui
+    Last: Xue
+  iid: contrib3
+- Person:
+    First: Kai
+    Last: Tan
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+Series:
+  Accession: GSE85515
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: We performed RNA-Seq experiments in WT and Tcf1/Lef1 difficient
+    CD8+ T cells, and performed Hi-C experiments in WT cells.
+  Pubmed-ID: '27986453'
+  Relation:
+  - target: GSE85560
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA338789
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP081551
+    type: SRA
+  Sample-Ref:
+  - name: CD8_Rep1
+    ref: GSM2274602
+  - name: CD8_Rep2
+    ref: GSM2274603
+  - name: CD8_Rep3
+    ref: GSM2274604
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2016-10-01'
+    Submission-Date: '2016-08-11'
+    database: GEO
+  Summary: "Our experiments aimed to investigate the landscape of enhancers and super-enhancers\
+    \ in na\xEFve, effector and memory CD8+ T cells. Here we mapped four histone modification\
+    \ marks and gene expression in naive, effector, and memory cells after viral infection.\
+    \ Our results suggest that the chromatin environment at regulatory DNA sequences\
+    \ in TCM is more permissive than in TN and TE. We further predicted the enhancers\
+    \ and their targets, and constructed transcriptional regulatory networks (TRNs)\
+    \ in three T cell stages. We have identified a highly dynamic repertoire of the\
+    \ enhancers and their targets during CD8 T cell responses, as 77% of the enhancers\
+    \ and 82% of the enhancer-promoter interactions are stage-specific. Our results\
+    \ suggest the dynamic change of enhancer activity during cell stage transition\
+    \ leads to TRN rewiring, which explains the expression change of the key factors\
+    \ of T cell function."
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP081/SRP081551
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE85515/GSE85515_RAW.tar
+  Title: Genome structure and organization in mouse CD8 T cells [Hi-C-seq]
+  Type: Other
+  iid: GSE85515
+id: '200085515'

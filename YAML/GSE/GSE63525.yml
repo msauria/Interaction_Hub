@@ -1,0 +1,643 @@
+Contributor:
+- Address:
+    City: Houston
+    Country: USA
+    Line: 1 Baylor Plaza
+    State: TX
+    Zip-Code: '77030'
+  Department: Molecular and Human Genetics
+  Email: suhasrao@post.harvard.edu
+  Laboratory: The Center for Genome Architecture
+  Organization: Baylor College of Medicine
+  Person:
+    First: Suhas
+    Last: Rao
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Miriam
+    Last: Huntley
+  iid: contrib3
+- Person:
+    First: Erez
+    Last: Lieberman Aiden
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL15520
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-04-12'
+    Release-Date: '2012-05-02'
+    Submission-Date: '2012-05-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Homo sapiens)
+  iid: GPL15520
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+- Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+Series:
+  Accession: GSE63525
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  Overall-Design: 'in situ Hi-C and dilution Hi-C were used to probe the three-dimensional
+    structure of the genome in eight diverse human cell types and one mouse cell type.
+
+
+    Detailed information about all files (and file formats) uploaded to GEO for this
+    study can be found in the supplementary file ''GSE63525_OVERALL_README.rtf''.'
+  Pubmed-ID:
+  - '25497547'
+  - '26499245'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA268125
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP050102
+    type: SRA
+  Sample-Ref:
+  - name: HIC001
+    ref: GSM1551550
+  - name: HIC002
+    ref: GSM1551551
+  - name: HIC003
+    ref: GSM1551552
+  - name: HIC004
+    ref: GSM1551553
+  - name: HIC005
+    ref: GSM1551554
+  - name: HIC006
+    ref: GSM1551555
+  - name: HIC007
+    ref: GSM1551556
+  - name: HIC008
+    ref: GSM1551557
+  - name: HIC009
+    ref: GSM1551558
+  - name: HIC010
+    ref: GSM1551559
+  - name: HIC011
+    ref: GSM1551560
+  - name: HIC012
+    ref: GSM1551561
+  - name: HIC013
+    ref: GSM1551562
+  - name: HIC014
+    ref: GSM1551563
+  - name: HIC015
+    ref: GSM1551564
+  - name: HIC016
+    ref: GSM1551565
+  - name: HIC017
+    ref: GSM1551566
+  - name: HIC018
+    ref: GSM1551567
+  - name: HIC019
+    ref: GSM1551568
+  - name: HIC020
+    ref: GSM1551569
+  - name: HIC021
+    ref: GSM1551570
+  - name: HIC022
+    ref: GSM1551571
+  - name: HIC023
+    ref: GSM1551572
+  - name: HIC024
+    ref: GSM1551573
+  - name: HIC025
+    ref: GSM1551574
+  - name: HIC026
+    ref: GSM1551575
+  - name: HIC027
+    ref: GSM1551576
+  - name: HIC028
+    ref: GSM1551577
+  - name: HIC029
+    ref: GSM1551578
+  - name: HIC030
+    ref: GSM1551579
+  - name: HIC031
+    ref: GSM1551580
+  - name: HIC032
+    ref: GSM1551581
+  - name: HIC033
+    ref: GSM1551582
+  - name: HIC034
+    ref: GSM1551583
+  - name: HIC035
+    ref: GSM1551584
+  - name: HIC036
+    ref: GSM1551585
+  - name: HIC037
+    ref: GSM1551586
+  - name: HIC038
+    ref: GSM1551587
+  - name: HIC039
+    ref: GSM1551588
+  - name: HIC040
+    ref: GSM1551589
+  - name: HIC041
+    ref: GSM1551590
+  - name: HIC042
+    ref: GSM1551591
+  - name: HIC043
+    ref: GSM1551592
+  - name: HIC044
+    ref: GSM1551593
+  - name: HIC045
+    ref: GSM1551594
+  - name: HIC046
+    ref: GSM1551595
+  - name: HIC047
+    ref: GSM1551596
+  - name: HIC048
+    ref: GSM1551597
+  - name: HIC049
+    ref: GSM1551598
+  - name: HIC050
+    ref: GSM1551599
+  - name: HIC051
+    ref: GSM1551600
+  - name: HIC052
+    ref: GSM1551601
+  - name: HIC053
+    ref: GSM1551602
+  - name: HIC054
+    ref: GSM1551603
+  - name: HIC055
+    ref: GSM1551604
+  - name: HIC056
+    ref: GSM1551605
+  - name: HIC057
+    ref: GSM1551606
+  - name: HIC058
+    ref: GSM1551607
+  - name: HIC059
+    ref: GSM1551608
+  - name: HIC060
+    ref: GSM1551609
+  - name: HIC061
+    ref: GSM1551610
+  - name: HIC062
+    ref: GSM1551611
+  - name: HIC063
+    ref: GSM1551612
+  - name: HIC064
+    ref: GSM1551613
+  - name: HIC065
+    ref: GSM1551614
+  - name: HIC066
+    ref: GSM1551615
+  - name: HIC067
+    ref: GSM1551616
+  - name: HIC068
+    ref: GSM1551617
+  - name: HIC069
+    ref: GSM1551618
+  - name: HIC070
+    ref: GSM1551619
+  - name: HIC071
+    ref: GSM1551620
+  - name: HIC072
+    ref: GSM1551621
+  - name: HIC073
+    ref: GSM1551622
+  - name: HIC074
+    ref: GSM1551623
+  - name: HIC075
+    ref: GSM1551624
+  - name: HIC076
+    ref: GSM1551625
+  - name: HIC077
+    ref: GSM1551626
+  - name: HIC078
+    ref: GSM1551627
+  - name: HIC079
+    ref: GSM1551628
+  - name: HIC080
+    ref: GSM1551629
+  - name: HIC081
+    ref: GSM1551630
+  - name: HIC082
+    ref: GSM1551631
+  - name: HIC083
+    ref: GSM1551632
+  - name: HIC088
+    ref: GSM1551633
+  - name: HIC089
+    ref: GSM1551634
+  - name: HIC090
+    ref: GSM1551635
+  - name: HIC091
+    ref: GSM1551636
+  - name: HIC092
+    ref: GSM1551637
+  - name: HIC093
+    ref: GSM1551638
+  - name: HIC094
+    ref: GSM1551639
+  - name: HIC095
+    ref: GSM1551640
+  - name: HIC096
+    ref: GSM1551641
+  - name: HIC097
+    ref: GSM1551642
+  - name: HIC098
+    ref: GSM1551643
+  - name: HIC099
+    ref: GSM1551644
+  - name: HIC100
+    ref: GSM1551645
+  - name: HIC101
+    ref: GSM1551646
+  - name: HIC102
+    ref: GSM1551647
+  - name: HIC103
+    ref: GSM1551648
+  - name: HIC104
+    ref: GSM1551649
+  - name: HIC105
+    ref: GSM1551650
+  - name: HIC106
+    ref: GSM1551651
+  - name: HIC107
+    ref: GSM1551652
+  - name: HIC108
+    ref: GSM1551653
+  - name: HIC109
+    ref: GSM1551654
+  - name: HIC110
+    ref: GSM1551655
+  - name: HIC111
+    ref: GSM1551656
+  - name: HIC112
+    ref: GSM1551657
+  - name: HIC113
+    ref: GSM1551658
+  - name: HIC114
+    ref: GSM1551659
+  - name: HIC115
+    ref: GSM1551660
+  - name: HIC116
+    ref: GSM1551661
+  - name: HIC117
+    ref: GSM1551662
+  - name: HIC118
+    ref: GSM1551663
+  - name: HIC119
+    ref: GSM1551664
+  - name: HIC120
+    ref: GSM1551665
+  - name: HIC121
+    ref: GSM1551666
+  - name: HIC122
+    ref: GSM1551667
+  - name: HIC123
+    ref: GSM1551668
+  - name: HIC124
+    ref: GSM1551669
+  - name: HIC125
+    ref: GSM1551670
+  - name: HIC126
+    ref: GSM1551671
+  - name: HIC127
+    ref: GSM1551672
+  - name: HIC128
+    ref: GSM1551673
+  - name: HIC129
+    ref: GSM1551674
+  - name: HIC130
+    ref: GSM1551675
+  - name: HIC131
+    ref: GSM1551676
+  - name: HIC132
+    ref: GSM1551677
+  - name: HIC133
+    ref: GSM1551678
+  - name: HIC134
+    ref: GSM1551679
+  - name: HIC135
+    ref: GSM1551680
+  - name: HIC136
+    ref: GSM1551681
+  - name: HIC137
+    ref: GSM1551682
+  - name: HIC138
+    ref: GSM1551683
+  - name: HIC139
+    ref: GSM1551684
+  - name: HIC140
+    ref: GSM1551685
+  - name: HIC141
+    ref: GSM1551686
+  - name: HIC142
+    ref: GSM1551687
+  - name: HIC143
+    ref: GSM1551688
+  - name: HIC144
+    ref: GSM1551689
+  - name: HIC145
+    ref: GSM1551690
+  - name: HIC146
+    ref: GSM1551691
+  - name: HIC147
+    ref: GSM1551692
+  - name: HIC148
+    ref: GSM1551693
+  - name: HIC149
+    ref: GSM1551694
+  - name: HIC150
+    ref: GSM1551695
+  - name: HIC151
+    ref: GSM1551696
+  - name: HIC152
+    ref: GSM1551697
+  - name: HIC153
+    ref: GSM1551698
+  - name: HIC154
+    ref: GSM1551699
+  - name: HIC155
+    ref: GSM1551700
+  - name: HIC156
+    ref: GSM1551701
+  - name: HIC157
+    ref: GSM1551702
+  - name: HIC158
+    ref: GSM1551703
+  - name: HIC159
+    ref: GSM1551704
+  - name: HIC160
+    ref: GSM1551705
+  - name: HIC161
+    ref: GSM1551706
+  - name: HIC162
+    ref: GSM1551707
+  - name: HIC163
+    ref: GSM1551708
+  - name: HIC164
+    ref: GSM1551709
+  - name: HIC165
+    ref: GSM1551710
+  - name: HIC166
+    ref: GSM1551711
+  - name: HIC167
+    ref: GSM1551712
+  - name: HIC168
+    ref: GSM1551713
+  - name: HIC169
+    ref: GSM1551714
+  - name: HIC170
+    ref: GSM1551715
+  - name: HIC171
+    ref: GSM1551716
+  - name: HIC172
+    ref: GSM1551717
+  - name: HIC173
+    ref: GSM1551718
+  - name: HIC174
+    ref: GSM1551719
+  - name: HIC175
+    ref: GSM1551720
+  - name: HIC176
+    ref: GSM1551721
+  - name: HIC177
+    ref: GSM1551722
+  - name: HIC178
+    ref: GSM1551723
+  - name: HIC179
+    ref: GSM1551724
+  - name: HIC180
+    ref: GSM1551725
+  - name: HIC181
+    ref: GSM1551726
+  - name: HIC182
+    ref: GSM1551727
+  - name: HIC183
+    ref: GSM1551728
+  - name: HIC184
+    ref: GSM1551729
+  - name: HIC185
+    ref: GSM1551730
+  - name: HIC186
+    ref: GSM1551731
+  - name: HIC187
+    ref: GSM1551732
+  - name: HIC188
+    ref: GSM1551733
+  - name: HIC189
+    ref: GSM1551734
+  - name: HIC190
+    ref: GSM1551735
+  - name: HIC191
+    ref: GSM1551736
+  - name: HIC192
+    ref: GSM1551737
+  - name: HIC193
+    ref: GSM1551738
+  - name: HIC194
+    ref: GSM1551739
+  - name: HIC195
+    ref: GSM1551740
+  - name: HIC196
+    ref: GSM1551741
+  - name: HIC197
+    ref: GSM1551742
+  - name: HIC198
+    ref: GSM1551743
+  - name: HIC199
+    ref: GSM1551744
+  - name: HIC200
+    ref: GSM1551745
+  - name: HIC201
+    ref: GSM1551746
+  - name: HIC041_MiSeq
+    ref: GSM1551747
+  - name: HIC042_MiSeq
+    ref: GSM1551748
+  - name: HIC048_MiSeq
+    ref: GSM1551749
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2014-12-11'
+    Submission-Date: '2014-11-20'
+    database: GEO
+  Summary: "We use in situ Hi-C to probe the three-dimensional architecture of genomes,\
+    \ constructing haploid and diploid maps of nine cell types. The densest, in human\
+    \ lymphoblastoid cells, contains 4.9 billion contacts, achieving 1-kilobase resolution.\
+    \ We find that genomes are partitioned into local domains, which are associated\
+    \ with distinct patterns of histone marks and segregate into six subcompartments.\
+    \ We identify ~10,000 loops. These loops frequently link promoters and enhancers,\
+    \ correlate with gene activation, and show conservation across cell types and\
+    \ species. Loop anchors typically occur at domain boundaries and bind CTCF. CTCF\
+    \ sites at loop anchors occur predominantly (>90%) in a convergent orientation,\
+    \ with the asymmetric motifs \u2018facing\u2019 one another. The inactive X-chromosome\
+    \ splits into two massive domains and contains large loops anchored at CTCF-binding\
+    \ repeats."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12-LX_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_CH12_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_HiCCUPS_chrX_superloop_list.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_SNPs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_combined_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_combined_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_combined_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_dilution_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_dilution_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_diploid_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_diploid_maternal.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_diploid_paternal.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_DpnII_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_DpnII_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_noXlink_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_noXlink_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_primary+replicate_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_primary+replicate_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_primary.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_primary_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_replicate.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_insitu_replicate_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary+replicate_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary+replicate_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary+replicate_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_primary_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_replicate_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_replicate_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_replicate_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_replicate_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_GM12878_subcompartments.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HMEC_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HUVEC_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HeLa_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HeLa_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_HeLa_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_IMR90_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_K562_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_KBM7_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_HiCCUPS_looplist_with_motifs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_combined.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_combined_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_interchromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_NHEK_intrachromosomal_contact_matrices.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_OVERALL_README.rtf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63525/GSE63525_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP050/SRP050102
+  Title: A three-dimensional map of the human genome at kilobase resolution reveals
+    prinicples of chromatin looping
+  Type: Other
+  iid: GSE63525
+id: '200063525'

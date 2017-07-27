@@ -1,0 +1,172 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: United Kingdom
+    Line: Babraham Research Park
+    Postal-Code: CB22 3AT
+    State: Cambs
+  Department: Bioinformatics
+  Email: steven.wingett@babraham.ac.uk
+  Organization: Babraham Institute
+  Person:
+    First: Steven
+    Last: Wingett
+    Middle: William
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Paula
+    Last: Freire-Pritchett
+  iid: contrib3
+- Person:
+    First: Stefan
+    Last: Schoenfelder
+  iid: contrib4
+- Person:
+    First: Csilla
+    Last: "V\xE1rnai"
+  iid: contrib5
+- Person:
+    First: Steven
+    Last: Wingett
+    Middle: W
+  iid: contrib6
+- Person:
+    First: Jonathan
+    Last: Cairns
+  iid: contrib7
+- Person:
+    First: Amanda
+    Last: Collier
+    Middle: J
+  iid: contrib8
+- Person:
+    First: Raquel
+    Last: Garcia
+  iid: contrib9
+- Person:
+    First: Cameron
+    Last: Osborne
+  iid: contrib10
+- Person:
+    First: Peter
+    Last: Fraser
+  iid: contrib11
+- Person:
+    First: Peter
+    Last: Rugg-Gunn
+    Middle: J
+  iid: contrib12
+- Person:
+    First: Mikhail
+    Last: Spivakov
+  iid: contrib13
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE86821
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  - position: '11'
+    ref: contrib13
+  Overall-Design: Two human ESC CHi-C biological replicates were generated (comprising
+    1 and 2 technical replicates) and a human ESC Hi-C dataset. Two human NEC CHi-C
+    biological replicates were generated and a human NEC Hi-C dataset.   Two RNA-Seq
+    biological replicates for both human ESC and NEC were generated.
+  Pubmed-ID: '28332981'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA342627
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP089694
+    type: SRA
+  Sample-Ref:
+  - name: HiC_hESC
+    ref: GSM2309023
+  - name: HiC_hNEC
+    ref: GSM2309024
+  - name: PCHiC_hESC_Biological_Replicate1
+    ref: GSM2309025
+  - name: PCHiC_hESC_Biological_Replicate2
+    ref: GSM2309026
+  - name: PCHiC_hNEC_Biological_Replicate1
+    ref: GSM2309027
+  - name: PCHiC_hNEC_Biological_Replicate2
+    ref: GSM2309028
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2017-03-23'
+    Submission-Date: '2016-09-12'
+    database: GEO
+  Summary: "Lineage commitment is characterised by orchestrated changes in gene expression\
+    \ and chromatin state. Long-range elements such as enhancers coordinate lineage-specific\
+    \ transcriptional programmes by engaging in DNA looping interactions with target\
+    \ promoters. However, the target genes of most long-range elements remain unknown,\
+    \ hindering an integrated understanding of cis-regulatory gene control. Here,\
+    \ we generate a high-resolution atlas of chromosomal interactions involving ~22,000\
+    \ gene promoters in human pluripotent and lineage-committed cells, identifying\
+    \ putative target genes for known and predicted enhancer elements. We jointly\
+    \ consider promoters and their associated interacting regions as \u201Ccis-regulatory\
+    \ units\u201D that potentially integrate and stabilise regulatory inputs from\
+    \ individual elements. We reveal extensive dynamics of cis-regulatory units upon\
+    \ lineage commitment, including the acquisition and loss of promoter interactions,\
+    \ as well as chromatin state changes at preformed interactions. Finally, we show\
+    \ that reconfiguration of cis-regulatory units associates with changes in target\
+    \ gene expression. Our results therefore provide a high-resolution view of promoter\
+    \ interactome dynamics during lineage commitment and provide insights into the\
+    \ mechanisms of developmental transcriptional regulation."
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP089/SRP089694
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE86821/GSE86821_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE86821/GSE86821_RNA-seq_rawcounts_hESChNPC.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE86821/GSE86821_hESC12_merged_washU.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE86821/GSE86821_hNPC12_merged_washU.txt.gz
+  Title: Global rewiring of cis-regulatory units upon lineage commitment of human
+    embryonic stem cells
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Other
+  iid: GSE86821
+id: '200086821'

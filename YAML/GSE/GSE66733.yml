@@ -1,0 +1,190 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 55 Lake Ave N
+    State: MA
+    Zip-Code: '01655'
+  Department: Cell and Developmental Biology
+  Organization: University of Massachusetts
+  Person:
+    First: Tony
+    Last: Imbalzano
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ahmet
+    Last: Barutcu
+    Middle: R
+  iid: contrib3
+- Person:
+    First: Bryan
+    Last: Lajoie
+    Middle: R
+  iid: contrib4
+- Person:
+    First: Rachel
+    Last: McCord
+    Middle: P
+  iid: contrib5
+- Person:
+    First: Coralee
+    Last: Tye
+    Middle: E
+  iid: contrib6
+- Person:
+    First: Deli
+    Last: Hong
+  iid: contrib7
+- Person:
+    First: Terri
+    Last: Messier
+    Middle: L
+  iid: contrib8
+- Person:
+    First: Gillian
+    Last: Browne
+  iid: contrib9
+- Person:
+    First: Andre
+    Last: van wijnen
+    Middle: J
+  iid: contrib10
+- Person:
+    First: Jane
+    Last: Lian
+    Middle: B
+  iid: contrib11
+- Person:
+    First: Janet
+    Last: Stein
+    Middle: L
+  iid: contrib12
+- Person:
+    First: Job
+    Last: Dekker
+  iid: contrib13
+- Person:
+    First: AnthonyTerri
+    Last: Imbalzano
+    Middle: N
+  iid: contrib14
+- Person:
+    First: Gary
+    Last: Stein
+    Middle: S
+  iid: contrib15
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE66733
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  - position: '11'
+    ref: contrib13
+  - position: '12'
+    ref: contrib14
+  - position: '13'
+    ref: contrib15
+  Overall-Design: "Hi-C experiments were conducted in MCF-7 and MCF-10A parental cells.\
+    \ \n\nThe RNA-seq data associated with this study is deposited under the GEO accession\
+    \ number GSE71862."
+  Pubmed-ID: '26415882'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA277846
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP056040
+    type: SRA
+  Sample-Ref:
+  - name: MCF-10A Hi-C
+    ref: GSM1631184
+  - name: MCF-7 Hi-C
+    ref: GSM1631185
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2015-09-02'
+    Submission-Date: '2015-03-10'
+    database: GEO
+  Summary: 'Background:
+
+    Higher-order chromatin structure is often perturbed in cancer and other pathological
+    states. Although several genetic and epigenetic differences have been charted
+    between normal and breast cancer tissues, changes in higher-order chromatin organization
+    during tumorigenesis have not been fully explored. To probe the differences in
+    higher-order chromatin structure between mammary epithelial and breast cancer
+    cells, we performed Hi-C analysis on MCF-10A mammary epithelial and MCF-7 breast
+    cancer cell lines.
+
+
+    Results:
+
+    Our studies reveal that the small, gene-rich chromosomes chr16 through chr22 in
+    the MCF-7 breast cancer genome display decreased interaction frequency with each
+    other compared to the inter-chromosomal interaction frequency in the MCF-10A epithelial
+    cells. Interestingly, this finding is associated with a higher occurrence of open
+    compartments on chr16-22 in MCF-7 cells. Pathway analysis of the MCF-7 up-regulated
+    genes located in altered compartment regions on chr16-22 reveals pathways related
+    to repression of WNT signalling. There are also differences in intra-chromosomal
+    interactions between the cell lines; telomeric and sub-telomeric regions in the
+    MCF-10A cells display more frequent interactions than are observed in the MCF-7
+    cells.
+
+
+    Conclusions:
+
+    We show evidence of an intricate relationship between chromosomal organization
+    and gene expression between epithelial and breast cancer cells. Importantly, this
+    work provides a genome-wide view of higher-order chromatin dynamics and a resource
+    for studying higher-order chromatin interactions in two cell lines commonly used
+    to study the progression of breast cancer.'
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP056/SRP056040
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE66733/GSE66733_Hi-C_MCF7_MCF10A_processed_HiCfiles.tar.gz
+  Title: Chromatin interaction analysis reveals changes in small chromosome and telomere
+    clustering between epithelial and breast cancer cells
+  Type: Other
+  iid: GSE66733
+id: '200066733'

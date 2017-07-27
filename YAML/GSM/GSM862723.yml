@@ -1,0 +1,92 @@
+Accession: GSM862723
+Channel:
+  Characteristics:
+  - hESC line H1
+  - HindIII
+  Extract-Protocol: Hi-C experiment were conducted in biological replicates using
+    HindIII according to previous publication (Lieberman-Aiden, E. et al. Comprehensive
+    mapping of long-range interactions reveals folding principles of the human genome.
+    Science 326, 289-93 (2009).).
+  Growth-Protocol: 'mESC line J1 was maintained on mitomycin C-inactivated MEF feeder
+    layers in DME containing 15% fetal calf serum, leukemia inhibiting factor, penicillin/streptomycin,
+    L-glutamine and non-essential amino acids. All ES cells were passaged on 0.2 %
+    gelatin twice to deplete feeder cells before harvest for experiments. H1 and IMR90
+    cells were grown as described in: Hawkins, R.D. et al. Distinct epigenomic landscapes
+    of pluripotent and lineage-committed human cells. Cell Stem Cell 6, 479-91'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Human ES
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'fastq:  Illumina''s HiSeq Control Software
+
+  hic.summary.txt:The paired-end Hi-C reads were mapped to mouse genome build mm9
+  and human genome hg18 using an in-house pipeline based on BWA using default parameter.
+  BWA SAMPE was used to merged the pairs. Duplicated reads from the same biological
+  library were removed.
+
+  Genome Build:
+
+  hESC_HindIII_HiC.nodup.summary.txt: hg18'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX116344
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN00773754
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR400260
+    cluster_name: public
+    id: '134155'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '10298671800'
+    total_spots: '51493359'
+  - acc: SRR400261
+    cluster_name: public
+    id: '134155'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4497736464'
+    total_spots: '62468562'
+  - acc: SRR400262
+    cluster_name: public
+    id: '134155'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4457614248'
+    total_spots: '61911309'
+  - acc: SRR400263
+    cluster_name: public
+    id: '134155'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4448810880'
+    total_spots: '61789040'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX116344
+  iid: SRX116344
+Series: GSE35156
+Status:
+  Last-Update-Date: '2013-05-23'
+  Release-Date: '2012-04-10'
+  Submission-Date: '2012-01-17'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX116344
+Title: RenLab-HiC-hESC, replicate one
+Type: SRA
+iid: GSM862723

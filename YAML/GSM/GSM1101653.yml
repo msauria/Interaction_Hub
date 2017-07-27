@@ -1,0 +1,123 @@
+Accession: GSM1101653
+Channel:
+  Characteristics:
+  - embryonic (established from 6-12hours embryo)
+  - Kc167
+  - HindIII
+  - Heat shocked
+  Extract-Protocol: "Hi-C experiments were carried out as described (Lieberman-Aiden\
+    \ et al., 2009) with some modifications. Cells were lysed then the nuclei were\
+    \ treated with 0.1% SDS at 65 degree for 10mins and the SDS was quenched by adding\
+    \ Triton X-100 to final 1% concentration. Nuclei was digested in 1XNEB (New England\
+    \ Biolaboratory) with 400U of HindIII. Digested DNA was blunted with dATP, dGTP,\
+    \ dTTP and biotin labeled dCTP.  DNA wan then ligated and puried. biotin-labled\
+    \ ligated DNA was purified with streptavidin beads. Illumina paired-end adaptor\
+    \ linkers were ligated to DNA pulled-down and amplified and size selected for\
+    \ sequencing.\nLibraries were prepared according to Illumina's instructions accompanying\
+    \ the DNA Sample Kit (Part# 0801-0303). Briefly, DNA was end-repaired using a\
+    \ combination of T4 DNA polymerase, E. coli DNA Pol I large fragment (Klenow polymerase)\
+    \ and T4 polynucleotide kinase. The blunt, phosphorylated ends were treated with\
+    \ Klenow fragment (32 to 52 exo minus) and dATP to yield a protruding 3- 'A' base\
+    \ for ligation of Illumina's adapters which have a single 'T' base overhang at\
+    \ the 3\u2019 end. After adapter ligation DNA was PCR amplified with Illumina\
+    \ primers for 15 cycles and library fragments of ~300 bp (insert plus adaptor\
+    \ and PCR primer sequences) were band isolated from an agarose gel. The purified\
+    \ DNA was captured on an Illumina flow cell for cluster generation. Libraries\
+    \ were sequenced on the HiSeq2000 following the manufacturer's protocols. Hi-C\
+    \ DNA was ligated with Illumina adaptors and then amplified, purified. ChIP DNAs\
+    \ were ligated with six different Illumina index adaptors and amplified, purified."
+  Growth-Protocol: Fruit fly embryonic Kc167 cells were grown to confluence in CCM3
+    serum-free insect medium (HyClone SH30065.01) at 25oC and collected for Hi-C experiments.
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: female embryonic cells
+  Treatment-Protocol: One hundred million Kc167 cells were suspended in 20ml of CM3
+    medium at room temperature mixed with equal volume of 48 degree medium and incubated
+    in 37 degree water bath for 20 minutes. Heat shocked cells were then fixed by
+    adding 0.6 volume of 4 degree medium contain 2.7% formaldehyde to a final concentration
+    of 1%, and incubated at room temperature for 10 min. The reaction was stopped
+    by adding 1/10 volumes of 1.25 M glycine solution and incubated for 5 min before
+    centrifugation at 3000 rpm for 10 min.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C+
+
+  Hi-C datasets were normalized as described (Yaffe and Tanay, Nature Genetics, 2011)
+
+  base-calling was carried out by HudsonAlpha Genomic Service Center
+
+  Paired reads were aligned to the Drosophila reference genome (Dm3) using Bowtie
+  0.12.7 (Langmead et al., 2009)  and filtered to remove any pair with one or two
+  ends aligned to multiple locations.
+
+  Genome_build: Dm3
+
+  Supplementary_files_format_and_content: Six ChIP-seq wig files of protein binding
+  peaks called by MACS, one ChIP input control. One excel file contains listes of
+  long-range interactions identified before and after heat shock at 10kb resolution.
+
+  Supplementary_files_format_and_content: AllHS_hotint_NB_10000rs_allchr.txt: 10kb
+  resolution interactions for heat shocked Hi-C in Kc167 cells
+
+  Supplementary_files_format_and_content: All3_hotint_NB_10000rs_allchr.txt: 10kb
+  resolution interactions for normal Hi-C in Kc167 cells
+
+  Supplementary_files_format_and_content: hsBEAF_treat.wig: BEAF peaks in heat shocked
+  Kc167 cells
+
+  Supplementary_files_format_and_content: hsCP190_treat.wig: CP190 peaks in heat shocked
+  Kc167 cells
+
+  Supplementary_files_format_and_content: hsCTCF_treat.wig: CTCF peaks in heat shocked
+  Kc167 cells
+
+  Supplementary_files_format_and_content: hsPolII_treat.wig: RNAPII peaks in heat
+  shocked Kc167 cells
+
+  Supplementary_files_format_and_content: hsSuHw_treat.wig: SuHw peaks in heat shocked
+  Kc167 cells
+
+  Supplementary_files_format_and_content: input.wig: input DNA
+
+  Supplementary_files_format_and_content: polII_treat.wig: RNAPII in normal Kc167
+  cells'
+Description: 'Heat shocked
+
+  supplementary file: AllHS_hotint_NB_10000rs_allchr.txt'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13304
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX252223
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN01984532
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR786743
+    cluster_name: public
+    id: '352777'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '27320719100'
+    total_spots: '273207191'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX252/SRX252223
+  iid: SRX252223
+Series: GSE45293
+Status:
+  Last-Update-Date: '2016-03-18'
+  Release-Date: '2016-03-18'
+  Submission-Date: '2013-03-19'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX252/SRX252223
+Title: Hi-C library HS2
+Type: SRA
+iid: GSM1101653

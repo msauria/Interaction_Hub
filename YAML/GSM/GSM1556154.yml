@@ -1,0 +1,206 @@
+Accession: GSM1556154
+Channel:
+  Characteristics:
+  - N2
+  - wild type
+  Extract-Protocol: "To obtain nuclear extract, embryos were dounced 10 times using\
+    \ the large pestle, and then 10 times using the small pestle. All douncing steps\
+    \ were performed on ice. The dounced extract was spun for 5 min at 100xg at 4\xB0\
+    C, and the supernatant was saved. The pellet was resuspended in 750 ml of supplemented\
+    \ lysis buffer and dounced again. This procedure was repeated 7-10 times. All\
+    \ supernatants containing only nuclei, and not broken carcasses, were combined.\
+    \ An aliquot of the combined supernatant was stained with DAPI and the nuclei\
+    \ were counted using a hemocytometer, and then spun down for 5 min at 2000xg at\
+    \ 4\xB0C. The nuclei were resuspended in the appropriate volume of 1.25X DpnII\
+    \ buffer (NEB B0543S) to create a Hi-C library.\nThe 3C libraries were created\
+    \ based on the published protocols (Sexton, et al, 2012, van Berkum et al, 2013,\
+    \ Belton et al, 2012), with some modifications. Approximately 1.5 x 108 C. elegans\
+    \ nuclei were pipetted into 5-10 1.7 ml tubes and resuspended in 300 ml of 1.25X\
+    \ DpnII buffer. 38 ml of 1% (w/v) SDS was added per tube and the tubes were incubated\
+    \ at 65\xB0C for 10 min. After the addition of 34 ml of 20% (v/v) Triton X-100,\
+    \ the tubes were incubated at 37\xB0C for 1 hr, shaking at 1000 rpm. 30 ml (1500\
+    \ U) of DpnII (NEB R0543M) were added to each tube, and they were incubated overnight\
+    \ at 37\xB0C while rocking. 26 ml of 20% (w/v) SDS was added to each tube and\
+    \ they were incubated at 65\xB0C for 20 min, 1000 rpm. The reaction was then added\
+    \ to 7.6 ml of ligation master mix (745 ml of 10% Triton X-100, 745 ml of 10X\
+    \ T4 ligation buffer (500 mM Tris-HCl, pH 7.5, 100 mM MgCl2, 100 mM DTT), 80 ml\
+    \ of 10 mg/ml BSA, 80 ml of 100 mM ATP, and 5.96 ml water). 100 ml (100 U) T4\
+    \ DNA ligase (Invitrogen 15224-025) was added and the reactions were incubated\
+    \ for 4 hrs at 16\xB0C. After incubation 50 ml of 10 mg/ml Proteinase K was added\
+    \ and the tubes were further incubated at 65\xB0C overnight. The next day 50 ml\
+    \ of 10 mg/ml Proteinase K was added to the reactions and they were incubated\
+    \ at 65\xB0C for an additional 2 hrs. 2 ml of RNaseA (1 mg/ml) was added to each\
+    \ sample and incubated for 30 min at 37\xB0C. The ligated DNA was then phenol-chloroform\
+    \ extracted and ethanol precipitated overnight. DNA was pelleted at 14,000xg for\
+    \ 30 min at 4\xB0C, and then washed twice with 70% ethanol and air-dried. The\
+    \ DNA pellets from all Hi-C reactions were combined and dissolved in a total of\
+    \ 500 ml of 1X TE buffer, pH 8.0. Excess salt was removed from the samples via\
+    \ centrifugation using a filter unit (AMICON\xAE Ultra Centrifugal Filter Unit\
+    \ \u2013 0.5 ml 30 KDa) following the manufacture\u2019s instruction. The concentration\
+    \ of DNA was determined and 10 mg of the Hi-C library was resuspended in 100 ml\
+    \ of water. AMPure beads, supplied as a suspension of magnetic beads in a PEG\
+    \ solution (Beckman Coulter cat # A63880), were used to remove large DNA fragments\
+    \ (> 10 kb), following the protocol provided by the manufacturer. The eluted DNA\
+    \ was then adjusted to 125 \xB5l with 1X TE, pH 8.0 and sheared to 500-1000 bp\
+    \ using a Covaris S2 (Covaris, 520045) in micro tubes with the following settings:\
+    \ duty cycle, 5%; intensity, 3; cycles/burst, 200; time, 65 sec. The sheared DNA\
+    \ was then size selected for fragments larger than ~100 bp using AMPure beads\
+    \ and eluted in 34 ml of water. The DNA was quantified and 500 ng was used to\
+    \ make a paired-end Illumina sequencing library following the standard protocol\
+    \ (PE-930-1001), with the exception that we size selected 500-600 bp at the gel\
+    \ excision step prior to adding adapters for sequencing.  The library was sequenced\
+    \ using 100 bp paired end reads."
+  Growth-Protocol: "Wild-type N2 worms were grown at 20\xB0C on NG agar plates with\
+    \ concentrated HB101 bacteria. For DC-mutant embryos, 10 ml of packed synchronous\
+    \ sdc-2(y93) L1 worms were placed onto 10 cm RNAi plates (NG agar with 1 mM IPTG\
+    \ and 100 mg/ml Carbenicillin) seeded with 2-3 ml of concentrated HT115 (DE3)\
+    \ bacteria carrying the Ahringer feeding library plasmid expressing the coding\
+    \ region of sdc-2. The RNAi plates were incubated at 25\xB0C overnight before\
+    \ L1s were added.  Mixed-stage embryos were harvested from gravid hermaphrodites."
+  Molecule: genomic DNA
+  Organism: Caenorhabditis elegans
+  Source: mixed stage embryos
+  Treatment-Protocol: "Worms were harvested and bleached to release the embryos and\
+    \ remove the carcasses. Following bleaching, embryos were centrifuged for ~45\
+    \ sec at 1500-1800 rpm and washed 3 times in 1X M9 buffer to remove bleach solution.\
+    \ An equal volume of 1X M9 was added to the embryos and they were frozen in 1\
+    \ ml aliquots and stored at -80\xB0C. The frozen embryos were thawed on ice and\
+    \ supplemented with 1 mM PMSF and 5 mM DTT. The embryos were then washed once\
+    \ in 50 ml formaldehyde solution (1X M9 solution with 2% (v/v) formaldehyde, Polysciences\
+    \ 18814-20). Embryos were cross-linked in 50 ml of formaldehyde solution for 30\
+    \ min at room temperature while shaking. Following crosslinking embryos were washed\
+    \ once with 50 ml of 100 mM Tris-HCl, pH 7.5, followed by two 50 ml washes of\
+    \ 1X M9. The embryos were then washed once in lysis buffer (10 mM Tris-HCl, pH\
+    \ 8.0, 10 mM NaCl and 0.2% (v/v) Igepal CA-630 (Sigma I8896)) supplemented with\
+    \ 5 mM DTT, 1 mM PMSF, 0.1% (v/v) protease inhibitors (EMD 539134) and 0.5 mM\
+    \ EGTA."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Iterative mapping and error correction of the chromatin interaction\
+  \ data were performed as previously described (Imakaev, M. et al. Iterative correction\
+  \ of Hi-C data reveals hallmarks of chromosome organization. Nat. Methods 9, 999-1003,\
+  \ doi:10.1038/nmeth.2148 (2012))\nWe obtained around 70 million valid pairs that\
+  \ represent chromatin interactions per replicate. The frequency of redundant read\
+  \ pairs, due to PCR amplification, were found to be below ~5%. Redundant read pairs\
+  \ were removed. The number of Hi-C interactions mapped to sequences belonging to\
+  \ homologous chromosomes (both intra-chromosomal [cis] and inter-homolog [trans]\
+  \ interactions) was much higher than the interactions mapped to non-homologous chromosomes\
+  \ (inter-chromosomal [trans] interactions).\_Assuming that inter-homolog interactions\
+  \ (trans) are as frequent as non-homologous inter-chromosomal interactions (trans),\
+  \ we estimate that 80-90% of interactions mapped to the same chromosomes are intra-chromosomal\
+  \ (cis) interactions, with DC mutant (90%) higher than wild-type (> 85%).\nThe data\
+  \ were binned at both 10 kb and 50 kb non-overlapping genomic intervals. Binned\
+  \ data were normalized for intrinsic biases such as differences in number of restriction\
+  \ fragments within bins using the previously developed ICE method41. To normalize\
+  \ for differences in read depth of different datasets we summed the entire genome-wide\
+  \ binned ICE-corrected interaction matrix, excluding the diagonal (x = y) bins.\
+  \ We then transformed each interaction into a fraction of the matrix sum (minus\
+  \ diagonal x = y bins). Each fraction was then multiplied by 106. Biological replicates\
+  \ were highly correlated (Pearson\u2019s correlation coefficients > 0.98 for 50\
+  \ kb binned data excluding short-range interactions up to 50 kb). The correlations\
+  \ between biological replicates were higher than those between wild-type and DC\
+  \ mutant. Overall these numbers indicate that the modified Hi-C procedure was reproducible\
+  \ and performed as expected. For most analyses sequence reads obtained for biological\
+  \ replicates were pooled and ICE-corrected as described above to create a combined\
+  \ replicate dataset.\nTo calculate the \u2018insulation\u2019 score of each bin\
+  \ in the 10 kb binned Hi-C data, we calculated the average number of interactions\
+  \ that occurred across each bin. This can be visualized by sliding a 500 kb x 500\
+  \ kb (50 bins x 50 bins) (Extended Data Fig. 4) square along the matrix diagonal,\
+  \ and aggregating all signal within the square. The mean signal within the square\
+  \ was then assigned to the 10 kb diagonal bin and this procedure was then repeated\
+  \ for all 10 kb diagonal bins. For any bins within 500 kb of the matrix start/end,\
+  \ an insulation score was not assigned, as the 500 kb x 500 kb insulation square\
+  \ would extend beyond the matrix bounds. The insulation score was then normalized\
+  \ relative to all of the insulation scores across each chromosome by calculating\
+  \ the log2 ratio of each bin\u2019s insulation score and the mean of all insulation\
+  \ scores. Valleys/Minima along the normalized insulation score vector represent\
+  \ loci of reduced Hi-C interactions that occur across the bin. These valleys/minima\
+  \ are interpreted as TAD boundaries or areas of high local insulation\nWe modeled\
+  \ the overall chromatin interaction decay with distance using a modified LOWESS\
+  \ method (alpha = 0.5%, ignore zeros, IQR filter), as described previously42. LOWESS\
+  \ calculates the weighted-average and weighted-standard deviation for every genomic\
+  \ distance by pooling all data genome-wide. We transformed interaction data into\
+  \ a Z-score by calculating: [(observed signal \u2013 lowess-average) / lowess-stdev].\
+  \ By expressing interaction data as Z-scores, we correct for minor differences in\
+  \ the overall decay with genomic distance that can vary slightly between samples.\n\
+  Genome_build: ce10\nSupplementary_files_format_and_content: tar ball archive of\
+  \ all relevant HiC data (binned at 50kb/10kb).  Iced, zScore, zScore-difference,\
+  \ insulation, boundaries"
+Description: 'protocol: Hi-C
+
+  Two replicates were performed and merged in the analysis. Biological replicate 1
+  is represented by three technical replicates (SRR1665087, SRR1665088, SRR1665089)
+  while Biological replicate 2 is represented by two technical replicates (SRR1665090
+  and SRR1665091). More information on the replicates, SRR ID, and md5 checksums are
+  available in the file "HiC_libraries_Info.xls" available on the series record.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL18245
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03225501
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX770040
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1665087
+    cluster_name: public
+    id: '1111714'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '23196635600'
+    total_spots: '115983178'
+  - acc: SRR1665091
+    cluster_name: public
+    id: '1111714'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '10574005900'
+    total_spots: '105740059'
+  - acc: SRR1665090
+    cluster_name: public
+    id: '1111714'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '21998835000'
+    total_spots: '109994175'
+  - acc: SRR1665089
+    cluster_name: public
+    id: '1111714'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6211345000'
+    total_spots: '62113450'
+  - acc: SRR1665088
+    cluster_name: public
+    id: '1111714'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '17681376000'
+    total_spots: '88406880'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX770/SRX770040
+  iid: SRX770040
+Series: GSE63717
+Status:
+  Last-Update-Date: '2015-07-16'
+  Release-Date: '2015-06-03'
+  Submission-Date: '2014-11-28'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX770/SRX770040
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1556nnn/GSM1556154/GSM1556154_N2-DpnII.tar.gz
+Title: Wild-Type (N2) Sample
+Type: SRA
+iid: GSM1556154

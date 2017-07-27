@@ -1,0 +1,252 @@
+Accession: GSM1905068
+Channel:
+  Characteristics:
+  - MATa, ho::LYS2, lys2, ura3, nuc1D::LEU2, pGAL::HO::URA3
+  - SK1
+  - -ura
+  - NA
+  Extract-Protocol: "Crosslinked cells were lysed by grinding in a cold mortar and\
+    \ pestle\n[Hi-C] The yeast culture was crosslinked with 37% formaldehyde to a\
+    \ final concentration of 3% in the culture media for 20 min at 25\u02DAC.  The\
+    \ crosslinking was quenched by adding 2X the volume of formaldehyde used of 2.5M\
+    \ Glycine to the culture and incubated culture for 5 min at 25\u02DAC.  Cells\
+    \ were lyses by grinding in a cold mortar and pestle.  The chromatin was solubilized\
+    \ by adding 1% w/v SDS and Incubating at 65\u02DAC water bath for 10 min.  Excess\
+    \ SDS was quenched using 10% v/v Triton X-100.  The chromatin was digested with\
+    \ HindIII at 37\u02DAC overnight in a water bath.  Digested ends were filled in\
+    \ with biotin-14-dCTP with Klenow at 37\u02DAC for 2 hr in a water bath.  The\
+    \ klenow was inactivated by Incubating in a 65\u02DAC water bath for 20 min. \
+    \ Crosslinked and digested fragments were ligated together in a dilute reaction\
+    \ inorder to favor intra-molecular ligation in a 16\u02DAC water bath for 8 hr.\
+    \  Crosslinkes were reversed by incubating the ligation mixture with proteinase\
+    \ K in a 65\u02DAC water bath.  Ligation products were purified with phenol (pH\
+    \ 8.0):chloroform and precipitated with sodium acetate pH 5.2 and ethanol.  The\
+    \ precipitated DNA was resuspended in 1X TE and then the DNA was re-extracted\
+    \ with phenol (pH 8.0):chloroform and precipitated with sodium acetate pH 5.2\
+    \ and ethanol.  The DNA pellet was dried thoroughly and excess salt was washed\
+    \ out of the solution using an amicon 30kDa spin column using 1X TE.  Then the\
+    \ sample was concentrated using a 30kDa amicon column.  RNA was degrade using\
+    \ DNase free RNase A at 37\u02DAC for 1 hr.  The Hi-C library was quantified on\
+    \ a 0.8% agarose gel in 0.5X TBE by comparing it to known concentration standards.\
+    \  The Hi-C efficiencey was accessed by first PCR amplifing a neighboring interaction\
+    \ in the Hi-C library.  This amplicon was split and the aliquots were digested\
+    \ with either HindIII, NheI, or HindIII and NheI at 37\u02DAC overnight.  The\
+    \ digested products were quantified on a gel and the percent Hi-C efficiency was\
+    \ calculated as the percent digested with NheI divided by the percent digested\
+    \ in the NheI and HindIII combined reaction.  Biotin was removed from un-ligated\
+    \ ends using T4 DNA polymerase at 20\u02DAC for 4hrs and then at 75\u02DAC for\
+    \ 20 min to inactivate the enzyme. The DNA was sheared to 50-700bp using the Covaris\
+    \ S2 sonicator. The DNA ends were repaired using T4 DNA Polymerase, T4 Polynucleotide\
+    \ Kinase, and Klenow fragment of DNA Polymerase I at 20\u02DAC for 30 min.  The\
+    \ DNA was purified with one Qiagen MinElute Column.  A dATP was added to the 3\u2019\
+    \ end of the molecules by using Klenow Fragment (exo-) at 37\u02DAC for 30 min\
+    \ and then at 65\u02DAC for 20 min to inactivate the enzyme.  The end repaired\
+    \ and A-tailed library was fractionated to 100-300bp using 0.9x and then 1.1x\
+    \ ampure XP extractions.  For each 1.0 ng of biotinylated ligation products, 1.0\
+    \ \xB5l of Dynabeads MyOne Strepavidin C1 beads were used to enrich the library.\
+    \  Illumina PE adapters were ligated to the library using NEB Quick Ligase at\
+    \ room temperature for 15 min.  The library was amplified using Illumina primers\
+    \ PE1.0 and PE2.0 for as few cycles as possible.  Cycle number was determined\
+    \ by a titration experiment that revealed which cycle would produce enough library\
+    \ for sequencing but didn\u2019t produce higher molecular weight artifacts.  The\
+    \ library was purified once more with 1.8x Ampure XP to remove primers and primer\
+    \ dimers.  The final library was quantified on a bioanalyzer.  The libraries were\
+    \ sequenced on either the GAII or HiSeq platforms.\n[5C] The yeast culture was\
+    \ crosslinked with a final volume of 3% formaldehyde (37% w/v, Fisher, Catalog\
+    \ #: BP531-500) in the culture media at 25\u02DAC for 20mins with shaking.  The\
+    \ remaining formaldehyde was quenched with an excess of 2.5M glycine.  The yeast\
+    \ cells were harvested by centrifugation and lysed by grinding with a mortar and\
+    \ pestle in the presence of liquid nitrogen.  The chromatin was digested with\
+    \ HindIII (NEB, R0104S) and the resulting crosslinked restriction fragments were\
+    \ ligated with T4 DNA polymerase (Invitrogen, 15224-090) in a dilute reaction\
+    \ so that intra-molecular ligation was favored.  The crosslinking was reversed\
+    \ by incubating overnight at 65\u02DAC in the presence of proteinase K (Invitrogen,\
+    \ 25530-015).  The chimeric DNA molecules were purified with a series of phenol:chloroform\
+    \ pH 8.0 (1:1) extractions and precipitated with 100% cold ethanol and 3M sodium\
+    \ acetate pH 5.2.  The RNA was degraded with RNase A (Roche, Catalog #: 10109169001)\
+    \ and the yield was quantified using molecular weight standards run on an agarose\
+    \ gel.  3C-PCR was performed on all 3C libraries with 3C PCR primers which represent\
+    \ a variety of genomic distances.  Libraries which showed the characteristic,\
+    \ exponential decay of 3C-PCR product abundance relative to genomic distance passed\
+    \ quality control.  For one 5C reaction, 4 million genome copies (53.3ng) worth\
+    \ of 3C library were mixed with 1fmol of each of the 5C probes in a 40 \xB5l reaction.\
+    \  The reaction was heated to 95\u02DAC for 9mins to melt the DNA, then slowly\
+    \ cooled to 55\u02DAC to allow for the 5C probes to anneal to the 3C ligation\
+    \ products for a minimum of 4hrs and a maximum of 16hrs.  The annealed probes\
+    \ were then ligated together using Taq DNA Ligase (New England Biolabs, M0208S)\
+    \ at 55\u02DAC for 1hr.  The 5C products were amplified with a high fidelity polymerase\
+    \ (Amplitaq Gold, Life technologies, 4398813) and 1.6\xB5M of each of the universal\
+    \ primers (Universal_forward: 5\u2019 -/5Phos/CCTCTCTATGGGCAGTCGGTGAT \u2013 3\u2019\
+    , Universal_reverse: 5\u2019 \u2013 /5Phos/CTGCCCCGGGTTCCTCATTCTCT \u2013 3\u2019\
+    ).  Five 5C reactions for a total of 20 million genome copies were used to produce\
+    \ each 5C library.  The Illumina Paired-end sequencing adapters and primers were\
+    \ used to add the Illumina Paired-end sequences to the 5C molecules in order to\
+    \ prepare them for sequencing on either the Illumina GAII or HiSeq platforms."
+  Growth-Protocol: "Yeast from glycerol stocks were streaked out onto agar plates\
+    \ with the appropriate media and incubated at 30\xB0C.  Three colonies were picked\
+    \ and grown over night in a 6ml culture of the appropriate media at 30\xB0C while\
+    \ shaking at 250 RPM.  The culture was backed down to an OD600 of 0.2 in 100ml\
+    \ of media and grown over night at 30\xB0C with shaking.  The culture was diluted\
+    \ to an OD600 of 0.2 in 400ml of media and incubated to mid-log phase at 30\u02DA\
+    C with shaking."
+  Molecule: genomic DNA
+  Organism: Saccharomyces cerevisiae
+  Source: MATa HiC
+  Treatment-Protocol: NA
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "[Hi-C, mapping] Iterative mapping and error correction of the chromatin\
+  \ interaction data were performed as previously described (Imakaev, M. et al. Iterative\
+  \ correction of Hi-C data reveals hallmarks of chromosome organization. Nat. Methods\
+  \ 9, 999-1003, doi:10.1038/nmeth.2148 (2012))\n[Hi-C normalization] The total read\
+  \ count for each library was normalized to a common value\n[Hi-C, comparisons] subtractions\
+  \ and log2 ratios were performed\n[5C, mapping] fastq files were mapped to the 5C\
+  \ probe pool using our in-house 5C mapping pipeline.  Each side of the paired-end\
+  \ reads was mapped independently to the 5C probe pool using the novoalign mapping\
+  \ software (V2.05 novocraft.com) and 5C interactions were assembled from those paired\
+  \ end reads where both sides mapped uniquely to a single 5C primer of opposite type\
+  \ (forward-reverse or reverse-forward).  Since our experiments were carried out\
+  \ using strains which have a different background than that for which the probes\
+  \ were designed to, we lifted the probe coordinates over to the correct genome assembly.\
+  \  For SK1 the 5C probes were aligned to the SK1 genome produced by Scott Keeney\u2019\
+  s Group (http://cbio.mskcc.org/public/SK1_MvO/) using the BLAST command line tool\
+  \ blastall (http://www.ncbi.nlm.nih.gov/staff/tao/URLAPI/blastall/) using the blastn\
+  \ program and a 20bp word size.  This genome assembly contained what appeared to\
+  \ be a 29,701bp translocation from chromosome XI inserted at position 3,623 in the\
+  \ left arm of Chr. III.  Our 5C data did not show evidence for a large insertion\
+  \ in Chr. III.  Therefore this region of the assembly is likely an assembly error\
+  \ so we manually removed this region from the SK1 genomic sequence (chrIII:3,623-33,324).Once\
+  \ the probes were aligned to the genome they were manually curated to remove those\
+  \ which blasted to the wrong chromosome or to multiple chromosomes.  Probes were\
+  \ also filtered if they no longer aligned adjacent to a HindIII restriction site\
+  \ in the SK1 genome. Finally, since the length of the rDNA on the right arm of chromosome\
+  \ XII contains many copies of the rDNA repeats which could, in reality be up to\
+  \ 2Mbps of DNA, we decided to treat the left and right portions of chromosome XII\
+  \ as separate chromosome in our analysis.  We did this by changing the chromosome\
+  \ name of these probes to the right of the rDNA to chr12R and restarting the coordinates\
+  \ at 0.  The procedure for mapping to the 5C datasets from the strains used for\
+  \ the microscopy experiments (Supplemental Figure S8) was the same as for mapping\
+  \ to the SK1 genome, except that the W303 genome.\n[5C, filtering] Prior to correcting\
+  \ the 5C counts using the Iterative Correction algorithm it was necessary to filter\
+  \ the data of any outliers.  First, the 70kb around Centromere-centromere and telomere-telomere\
+  \ interactions were removed to prevent from filtering high 5C counts from these\
+  \ regions which are known to interact and thus will have a higher signal than expected.\
+  \  Then single data points which were greater than or equal to 7 standard deviations\
+  \ from the local mean, based on genomic distance, were removed for intra-chromosomal\
+  \ interactions.  For inter-chromosomal interactions a cutoff of 8 standard deviations\
+  \ from the mean of the inter-quartile (25%-50%) were removed.  Finally, we removed\
+  \ the highest and lowest 7.5% (15% total) of rows and columns from the dataset which\
+  \ were determined by summing all of the inter-chromosomal interactions for each\
+  \ 5C fragment.  The centromeres and telomeres were replaced and used for all further\
+  \ correction/analysis. The data was binned into 10kb x 10kb bins.  The median of\
+  \ the interactions in each 10kb x 10kb region was used to represent that region.\
+  \  The iterative correction algorithm assumes that all bins should have the same\
+  \ sum of interactions.  This assumption is valid when genome wide Hi-C data is being\
+  \ considered.  However, the 5C design is comprehensive enough to approximate this\
+  \ assumption.  The row and column sums were calculated for each 10kb bin.  Then\
+  \ each row and column was multiplied by a factor that would raise or lower its sum\
+  \ to match the average of all the sums.  This was done iteratively until the row\
+  \ and column sums deviated very little from each other.  Figure S3 shows the sums\
+  \ of each row in the dataset before and after applying the iterative correction\
+  \ algorithm.\n[5C, comparisons] In order to call significant differences between\
+  \ pairs of 5C datasets, we tested for the difference in the ranks of interaction\
+  \ frequencies obtained between two pairs of genomic regions.  To this end, we first\
+  \ bin the 5C data into 30Kb by 30Kb bins that overlap each other by 10Kb.  For each\
+  \ of these bins we pool all 5C interactions that fall within it across the three\
+  \ biological replicates for that strain.  We use this list of pooled values for\
+  \ the first strain and perform a two-tailed rank sum test with the list of corresponding\
+  \ values for the second strain.  We correct for multiple testing and plot the log2\
+  \ of the median of strain 1 divided by the median of strain 2 for that bin in the\
+  \ heat map if the corrected p-value from the test between these two bins is less\
+  \ than or equal to a 5% FDR.Filtering, correction, and normalization of 5C data.\
+  \ Prior to correcting the 5C counts using the Iterative Correction algorithm it\
+  \ was necessary to filter the data of any outliers.  First, the 70kb around Centromere-centromere\
+  \ and telomere-telomere interactions were removed to prevent from filtering high\
+  \ 5C counts from these regions which are known to interact and thus will have a\
+  \ higher signal than expected.  Then single data points which were greater than\
+  \ or equal to 7 standard deviations from the local mean, based on genomic distance,\
+  \ were removed for intra-chromosomal interactions.  For inter-chromosomal interactions\
+  \ a cutoff of 8 standard deviations from the mean of the inter-quartile (25%-50%)\
+  \ were removed.  Finally, we removed the highest and lowest 7.5% (15% total) of\
+  \ rows and columns from the dataset which were determined by summing all of the\
+  \ inter-chromosomal interactions for each 5C fragment.  The centromeres and telomeres\
+  \ were replaced and used for all further correction/analysis.  The data was binned\
+  \ into 10kb x 10kb bins.  The median of the interactions in each 10kb x 10kb region\
+  \ was used to represent that region.  The iterative correction algorithm assumes\
+  \ that all bins should have the same sum of interactions.  This assumption is valid\
+  \ when genome wide Hi-C data is being considered.  However, the 5C design is comprehensive\
+  \ enough to approximate this assumption.  The row and column sums were calculated\
+  \ for each 10kb bin.  Then each row and column was multiplied by a factor that would\
+  \ raise or lower its sum to match the average of all the sums.  This was done iteratively\
+  \ until the row and column sums deviated very little from each other.  Figure S3\
+  \ shows the sums of each row in the dataset before and after applying the iterative\
+  \ correction algorithm.  The 5C data for each dataset was first normalized to a\
+  \ standard read depth.  Each interaction in the dataset was calculated as a percentage\
+  \ of the total number of reads for the dataset.  This percentage was then multiplied\
+  \ by the arbitrary value of 1,000,000. Finally, 5C data was normalized relative\
+  \ to the expected value for pairs of loci separated by a give genomic distance (as\
+  \ decribed in (Sanyal et al., 2012)). This distance-dependent expected value was\
+  \ calculated using the \xE2robust lowess\xE2smoothing method which takes an \xE2\
+  outlier filtered\xE2 weighted average across a percentage of the data (here we used\
+  \ 5%) for each genomic distance.    #5C data analysis.  In order to call significant\
+  \ differences between pairs of 5C datasets, we tested for the difference in the\
+  \ ranks of interaction frequencies obtained between two pairs of genomic regions.\
+  \  To this end, we first bin the 5C data into 30Kb by 30Kb bins that overlap each\
+  \ other by 10Kb.  For each of these bins we pool all 5C interactions that fall within\
+  \ it across the three biological"
+Description: 'library strategy: Hi-C
+
+  yHiC-yJB2__sk1-rmv__genome__H-10000-iced.matrix.gz-n2r.txt
+
+  yHiC-yJB2-R2___yHiC-yJB2-R4.log2ratio.matrix.gz
+
+  yHiC-yJB2-R2___yHiC-yJB2-R4.subtract.matrix.gz
+
+  yHiC-yJB2-R4'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13821
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04158497
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1322549
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2601851
+    cluster_name: public
+    id: '1887226'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7901716700'
+    total_spots: '79017167'
+  - acc: SRR2601852
+    cluster_name: public
+    id: '1887226'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1908834912'
+    total_spots: '26511596'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX132/SRX1322549
+  iid: SRX1322549
+Series: GSE73890
+Status:
+  Last-Update-Date: '2015-11-21'
+  Release-Date: '2015-11-20'
+  Submission-Date: '2015-10-09'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1905nnn/GSM1905068/GSM1905068_yHiC-yJB2-R4_sk1-rmv_genome_H-10000-iced.matrix.gz-n2r.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX132/SRX1322549
+Title: MATa HiC Rep2
+Type: SRA
+iid: GSM1905068

@@ -1,0 +1,87 @@
+Accession: GSM1863752
+Channel:
+  Characteristics:
+  - yellow white
+  - Third instar larvae
+  - Salivary gland
+  Extract-Protocol: "Cross-linked chromatin was released by detergent lysis and Dounce\
+    \ homogenization.  Cross-linked proteins were then biotinylated at cysteine residues\
+    \ and the DNA digested with DpnII.  Digested chromatin was bound to streptavidin\
+    \ beads, thoroughly washed to remove uncross-linked DNA, DNA ends filled in with\
+    \ biotin-14-dATP, and free DNA ends ligated together.  DNA-protein cross-links\
+    \ were reversed, DNA purified, and biotinylated nucleotides marking unligated\
+    \ ends removed\nDNA sheared to a mean size of approximately 200 bp.  DNA was end-repaired\
+    \ and adaptor-ligated by following \u201CNEBNext End Prep\u201D and \u201CAdaptor\
+    \ Ligation\u201D in the NEBNext Ultra DNA Library Prep Kit for Illumina (New England\
+    \ Biolabs).  The biotinylated DNA was pulled down with streptavidin beads and\
+    \ PCR amplified by following \"PCR Amplification\" in the NEBNext Ultra DNA Library\
+    \ Prep Kit for Illumina (New England Biolabs)."
+  Growth-Protocol: "Standard molasses medium in standard culturing vials grown at\
+    \ 25\xB0 C."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: Male salivary glands
+  Treatment-Protocol: Drosophila melanogaster third instar larvae salivary glands
+    were manually dissected and fixed with 2% EM grade paraformaldehyde
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Hi-C reads were aligned to genome dm3 using Bowtie 2.\nAligned reads\
+  \ were assigned to DpnII restriction fragments.\nReads mapping to the same restriction\
+  \ fragment, separated by less than the library insert size, within 4 bp of a restriction\
+  \ site, and duplicate reads were removed.\nExceptionally large (> 100 kb) and small\
+  \ (<100 bp) restriction fragments and fragments with the highest 0.5% of counts\
+  \ were removed.\nFiltered fragments were assigned to 15 kb or 100 kb genomic bins.\n\
+  Further filtering at the bin level removed bins where less than half the bin was\
+  \ sequenced, the lowest 1% of bins, and the highest 0.05% of interchromosomal bins.\n\
+  The resulting Hi-C heatmaps were normalized using a previously described iterative\
+  \ approach (Imakaev, M., Fudenberg, G., McCord, R.P., Naumova, N., Goloborodko,\
+  \ A., Lajoie, B.R., Dekker, J., and Mirny, L.A. (2012). Iterative correction of\
+  \ Hi-C data reveals hallmarks of chromosome organization. Nat Methods 9, 999\u2013\
+  1003).\nAll of the above steps were performed using a previously described pipeline\
+  \ (Imakaev, M., Fudenberg, G., McCord, R.P., Naumova, N., Goloborodko, A., Lajoie,\
+  \ B.R., Dekker, J., and Mirny, L.A. (2012). Iterative correction of Hi-C data reveals\
+  \ hallmarks of chromosome organization. Nat Methods 9, 999\u20131003).\nGenome_build:\
+  \ dm3\nSupplementary_files_format_and_content: Tab-delimited text files of Hi-C\
+  \ contacts.  Each row lists the first chromosome, the start and end coordinate of\
+  \ the first bin, the second chromosome, the start and end coordinates of the second\
+  \ bin, and the normalized contact probability."
+Description: Polytene chromosomes
+Instrument-Model:
+  Predefined: Illumina MiSeq
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL16479
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04017715
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1168263
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2194099
+    cluster_name: public
+    id: '1699330'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '510124628'
+    total_spots: '9810089'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX1168263
+  iid: SRX1168263
+Series: GSE72510
+Status:
+  Last-Update-Date: '2015-11-05'
+  Release-Date: '2015-11-05'
+  Submission-Date: '2015-08-28'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1863nnn/GSM1863752/GSM1863752_tethered_rep3_contacts.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX1168263
+Title: Polytene_Hi-C_tethered_rep3
+Type: SRA
+iid: GSM1863752

@@ -1,0 +1,111 @@
+Accession: GSM2142406
+Channel:
+  Characteristics:
+  - ATCC CRL-2522
+  - '10'
+  Extract-Protocol: "For Hi-C, 25 X 106 cells were cross linked with 1% formaldehyde\
+    \ in situ. Cross linked cells were harvested and flash frozen in liquid nitrogen.\
+    \ For RNA-seq, We used TRIzolr Reagent to extract RNA from cells grown in 6-well\
+    \ plates. Full details in\_PMC4491792.\nAll extracted RNA was treated with RNAse-free\
+    \ DNaseI, then submitted to the University of Michigan Bioinformaics Core lab\
+    \ for library construction andRNA-seq on the Illumina Hiseq-2000 platform. Single-end\
+    \ 50-base sequence reads were generated at a multiplex of 4 per sequencing lane.\
+    \ We adopted the methods for Hi- C library construction from Belton et al. (Methods\
+    \ 58:268, 2012). Full details in\_PMC4491792."
+  Growth-Protocol: Fibroblasts (CRL-2522) were grown in MEM, 10% FBS, X non-essential
+    amino acids, and 1X antibiotic/antimycotic. Cells were dissociated with 0.25%
+    trypsin then plated in 150mm plates for Hi-C, and 6-well plates for RNA-seq.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: fibroblast
+  Treatment-Protocol: "Cell cycle synchronization was performed by serum-starvation\
+    \ for 48 hours. After 48th hours, we added dexamethasone to 100nM or ethanol to\
+    \ the control group. 1 hr later baseline samples were taken and time 0 was set.\
+    \ Thereafter, time series sampling of cells treated with dexamethasone was performed\
+    \ at 8-hour intervals for a total of 56 hours. Full details in\_PMC4491792"
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Reads aligned to HG19 with Tophat 2.0.9 and Bowtie 2.1.0.0 with\
+  \ optional parameters \u201C\u2013b2-very-sensitive\u201D,  \u201C\u2013no- coverage-search\u201D\
+  \ and \u201C\u2013no-novel-juncs\u201D.\nCufflinks and Cuffdiff were used for expression\
+  \ quantification with UCSC hg19.fa/.gtf as the reference genome and transcriptome\
+  \ with additional parameter settings \u201C\u2013multi-read-correct\u201D, \u201C\
+  \u2013compatible-hits-norm\u201D and \u201C\u2013upper-quartile- norm\u201D.\nHomer\
+  \ was used for Hi-C tabulation with \u201CmakeTagDirectory\u201D with the \u201C\
+  \u2013tbp 1\u201D setting, and with \u201CanalyzeHiC\u201D with the \u201C-raw\u201D\
+  \ and \u201C-res 1000000\u201D settings to produce the raw contact matrix at 1MB\
+  \ resolution.\nGenome_build: hg19\nSupplementary_files_format_and_content: Each\
+  \ text file includes one of the time points 100 kb matrices. The csv contains the\
+  \ raw count  RNA-seq data while the xls file contains the  normalized (FPKM) RNA-seq\
+  \ values."
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04939744
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1741606
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3474301
+    cluster_name: public
+    id: '2497412'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4848000000'
+    total_spots: '24000000'
+  - acc: SRR3474300
+    cluster_name: public
+    id: '2497412'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4848000000'
+    total_spots: '24000000'
+  - acc: SRR3474299
+    cluster_name: public
+    id: '2497412'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4848000000'
+    total_spots: '24000000'
+  - acc: SRR3474303
+    cluster_name: public
+    id: '2497412'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3304996336'
+    total_spots: '16361368'
+  - acc: SRR3474302
+    cluster_name: public
+    id: '2497412'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4848000000'
+    total_spots: '24000000'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX174/SRX1741606
+  iid: SRX1741606
+Series: GSE81087
+Status:
+  Last-Update-Date: '2016-05-05'
+  Release-Date: '2016-05-05'
+  Submission-Date: '2016-05-04'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2142nnn/GSM2142406/GSM2142406_S34432_T6_raw_100kb_allQC.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX174/SRX1741606
+Title: 48 hr Hi-C
+Type: SRA
+iid: GSM2142406

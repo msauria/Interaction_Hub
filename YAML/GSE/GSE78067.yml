@@ -1,0 +1,203 @@
+Contributor:
+- Address:
+    City: Berlin
+    Country: Germany
+    Line: Ihnestr. 63-73
+    State: Berlin
+    Zip-Code: '14195'
+  Department: RG Mundlos
+  Email: ibrahim@molgen.mpg.de
+  Organization: Max-Planck Institute for Molecular Genetics
+  Person:
+    First: Daniel
+    Last: Ibrahim
+    Middle: Murad
+  Phone: 030 84131516
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Daniel
+    Last: Ibrahim
+    Middle: M
+  iid: contrib3
+- Person:
+    First: Martin
+    Last: Franke
+  iid: contrib4
+- Person:
+    First: Robert
+    Last: "Sch\xF6pflin"
+  iid: contrib5
+- Person:
+    First: Verena
+    Last: Heinrich
+  iid: contrib6
+- Person:
+    First: Guillaume
+    Last: Andrey
+  iid: contrib7
+- Person:
+    First: Stefan
+    Last: Mundlos
+  iid: contrib8
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+- Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+- Accession: GPL18460
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2014-03-24'
+    Submission-Date: '2014-03-24'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1500 (Homo sapiens)
+  iid: GPL18460
+- Accession: GPL18480
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-04-05'
+    Release-Date: '2014-03-27'
+    Submission-Date: '2014-03-27'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1500 (Mus musculus)
+  iid: GPL18480
+Series:
+  Accession: GSE78067
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  Overall-Design: Circular Chromosome Conformation Capture (4C seq) and Capture Hi-C
+    experimetns at the Sox9/Kcnj locus in developing distal limbs of mutants and WT
+    animals at E12.5 as well as from patient fibroblasts
+  Pubmed-ID: '27706140'
+  Relation:
+  - target: GSE78109
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA312529
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP070527
+    type: SRA
+  Sample-Ref:
+  - name: 4C Cooks KCNJ2TSS
+    ref: GSM2065961
+  - name: 4C Cooks SOX9TSS
+    ref: GSM2065962
+  - name: 4C Ctrl KCNJ2TSS
+    ref: GSM2065963
+  - name: 4C Ctrl SOX9TSS
+    ref: GSM2065964
+  - name: 4C Dup-C Sox9TSS
+    ref: GSM2065965
+  - name: 4C Dup-L LacZ
+    ref: GSM2065966
+  - name: 4C DupC Kcnj2TSS
+    ref: GSM2065967
+  - name: 4C DupL Kcnj2
+    ref: GSM2065968
+  - name: 4C DupL Sox9TSS
+    ref: GSM2065969
+  - name: 4C SexRev KCNJ2TSS
+    ref: GSM2065970
+  - name: 4C SexRev SOX9TSS
+    ref: GSM2065971
+  - name: 4C WT BorKcnjcen
+    ref: GSM2065972
+  - name: 4C WT BorSox9Kcnj
+    ref: GSM2065973
+  - name: 4C WT BorSox9tel
+    ref: GSM2065974
+  - name: 4C WT Kcnj2TSS
+    ref: GSM2065975
+  - name: 4C WT KcnjTAD
+    ref: GSM2065976
+  - name: 4C WT Sox9TAD
+    ref: GSM2065977
+  - name: 4C WT Sox9TSS
+    ref: GSM2065978
+  - name: 4C SexRev Breakpoint
+    ref: GSM2221321
+  - name: 4C SexRev470kb SOX9TSS
+    ref: GSM2221322
+  - name: 4C SexRev470kb KCNJ2TSS
+    ref: GSM2221323
+  - name: 4C SexRev470kb Breakpoint
+    ref: GSM2221324
+  - name: 4C noPhenotype SOX9TSS
+    ref: GSM2221325
+  - name: 4C noPhenotype KCNJ2TSS
+    ref: GSM2221326
+  - name: 4C noPhenotype Breakpoint
+    ref: GSM2221327
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2016-10-06'
+    Submission-Date: '2016-02-18'
+    database: GEO
+  Summary: Genome-scale methods have identified subchromosomal structures so-called
+    topologically associated domains (TADs) that subdivide the genome into discrete
+    regulatory units, establish with their target genes. By re-engineering human duplications
+    at the SOX9 locus in mice combined with 4C-seq and Capture Hi-C experiments, we
+    show that genomic duplications can result in the formation of novel chromatin
+    domains (neo-TADs) and that this process determines their molecular pathology.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP070/SRP070527
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE78067/GSE78067_RAW.tar
+  Title: Pathogenicity of genomic duplications is determined by formation of novel
+    chromatin domains (neo-TADs) (4C-seq)
+  Type: Other
+  iid: GSE78067
+id: '200078067'

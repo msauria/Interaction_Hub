@@ -1,0 +1,255 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: USA
+    Line: 29 Oxford Street
+    State: MA
+    Zip-Code: 02138
+  Email: mhuntley@fas.harvard.edu
+  Organization: Harvard University
+  Person:
+    First: Miriam
+    Last: Huntley
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Emily
+    Last: Darrow
+    Middle: M
+  iid: contrib3
+- Person:
+    First: Miriam
+    Last: Huntley
+    Middle: H
+  iid: contrib4
+- Person:
+    First: Erez
+    Last: Lieberman Aiden
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+- Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+- Accession: GPL19129
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Macaca mulatta
+  Status:
+    Last-Update-Date: '2015-08-06'
+    Release-Date: '2014-08-27'
+    Submission-Date: '2014-08-27'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Macaca mulatta)
+  iid: GPL19129
+- Accession: GPL20795
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2015-08-11'
+    Release-Date: '2015-08-11'
+    Submission-Date: '2015-08-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: HiSeq X Ten (Homo sapiens)
+  iid: GPL20795
+Series:
+  Accession: GSE71831
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  Overall-Design: 'Hi-C protocol was used on wildtype and DXZ4-deleted cells to examine
+    the structure of Xi. A novel variant of our in situ Hi-C protocol, dubbed COLA
+    (COncatemer Ligation Assay), was developed to probe the higher order structures
+    formed by the superloops.
+
+
+    This series also includes RNA-seq data on Retinal Pigmented Epithelial Cells (hTERT-RPE1).
+
+
+    The samples starting with the prefix ''RaoHuntley-2014'' were generated as part
+    of the study described in GSE63525 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525).'
+  Pubmed-ID: '27432957'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA292502
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP062870
+    type: SRA
+  Sample-Ref:
+  - name: DarrowHuntley-2015-HIC001
+    ref: GSM1847520
+  - name: DarrowHuntley-2015-HIC002
+    ref: GSM1847521
+  - name: DarrowHuntley-2015-HIC003
+    ref: GSM1847522
+  - name: DarrowHuntley-2015-HIC004
+    ref: GSM1847523
+  - name: DarrowHuntley-2015-HIC005
+    ref: GSM1847524
+  - name: DarrowHuntley-2015-HIC006
+    ref: GSM1847525
+  - name: DarrowHuntley-2015-HIC007
+    ref: GSM1847526
+  - name: DarrowHuntley-2015-HIC008
+    ref: GSM1847527
+  - name: DarrowHuntley-2015-HIC009
+    ref: GSM1847528
+  - name: DarrowHuntley-2015-HIC010
+    ref: GSM1847529
+  - name: DarrowHuntley-2015-HIC011
+    ref: GSM1847530
+  - name: DarrowHuntley-2015-HIC012
+    ref: GSM1847531
+  - name: DarrowHuntley-2015-HIC013
+    ref: GSM1847532
+  - name: DarrowHuntley-2015-HIC014
+    ref: GSM1847533
+  - name: DarrowHuntley-2015-HIC015
+    ref: GSM1847534
+  - name: DarrowHuntley-2015-HIC016
+    ref: GSM1847535
+  - name: DarrowHuntley-2015-HIC017
+    ref: GSM1847536
+  - name: DarrowHuntley-2015-HIC018
+    ref: GSM1847537
+  - name: DarrowHuntley-2015-HIC019
+    ref: GSM1847538
+  - name: DarrowHuntley-2015-HIC020
+    ref: GSM1847539
+  - name: DarrowHuntley-2015-HIC021
+    ref: GSM1847540
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2016-07-19'
+    Submission-Date: '2015-08-07'
+    database: GEO
+  Summary: During interphase, the inactive X chromosome (Xi) adopts an unusual 3D
+    configuration known as the Barr body and is largely transcriptionally silent.
+    Despite the importance of X inactivation, little is known about the 3D configuration
+    of Xi and its relationship to gene silencing. We recently showed that in humans,
+    Xi exhibits two distinctive structural features. First, Xi is partitioned into
+    two huge intervals, called superdomains, such that pairs of loci in each superdomain
+    show an enhanced contact frequency with one another. The boundary between the
+    two superdomains lies near DXZ4, a macrosatellite repeat spanning ~300kb, whose
+    Xi allele extensively binds the protein CTCF. Second, Xi exhibits extremely large
+    loops, up to 77Mb long, called superloops. DXZ4 lies at the anchor of several
+    superloops. Here, we use 3D mapping to study the structure of Xi, focusing on
+    the role of DXZ4. We show that superloops and superdomains are conserved across
+    mammals. We develop a novel variant of our in situ Hi-C protocol, dubbed COLA
+    (COncatemer Ligation Assay) to probe the higher order structures formed by the
+    superloops. In COLA, in situ proximity ligation of multiple extremely short fragments
+    produced by the enzyme CviJI is used to efficiently map simultaneous proximity
+    among three or more loci. Using data from Hi-C and COLA, we demonstrate that DXZ4
+    and other superloop anchors tend to co-locate simultaneously within the same cells,
+    a result that is confirmed by 3D-FISH. Finally, we examine the effects of deleting
+    DXZ4 from Xi in human cells. Using in situ Hi-C, microscopy, and RNA-FISH, we
+    show that superdomains and superloops disappear; that Xi frequently dissociates
+    into multiple separate structures; and that transcriptional silencing on Xi is
+    compromised. Deletion of DXZ4 from the active X chromosome (Xa) has no such effect.
+    Thus, DXZ4 is essential for proper folding and silencing of Xi.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP062/SRP062870
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_COLA.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_COLA_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_COLA_Interchromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_COLA_Intrachromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_Arrowhead_domainlist_10kb_resolution.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_Interchromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_Intrachromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_maternal.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Patski_paternal.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_README.pdf
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_README_processed_files.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT-chrX_diploid.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT_Arrowhead_domainlist_5kb_resolution.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT_Interchromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-WT_Intrachromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-del-Xa_Interchromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-del-Xi_Interchromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4a-chrX_diploid.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4a.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4a_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4a_Arrowhead_domainlist_10kb_resolution.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4a_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4a_Intrachromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4i-chrX_diploid.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4i.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4i_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4i_Arrowhead_domainlist_5kb_resolution.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4i_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_RPE1-deltaDXZ4i_Intrachromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Rhesus-Macaque.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Rhesus-Macaque_30.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Rhesus-Macaque_Arrowhead_domainlist_10kb_resolution.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Rhesus-Macaque_HiCCUPS_looplist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Rhesus-Macaque_Interchromosomal.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71831/GSE71831_Rhesus-Macaque_Intrachromosomal.tar.gz
+  Title: Deletion of DXZ4 on the human inactive X chromosome eliminates superdomains
+    and impairs gene silencing
+  Type:
+  - Other
+  - Expression profiling by high throughput sequencing
+  iid: GSE71831
+id: '200071831'

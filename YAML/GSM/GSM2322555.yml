@@ -1,0 +1,146 @@
+Accession: GSM2322555
+Channel:
+  Characteristics: Small Intenstine Tissue
+  Extract-Protocol: 'For newly generated Hi-C datasets presented in this study, Hi-C
+    was performed as previously described (Lieberman-Aiden et al., 2009) with minor
+    modifications pertaining to the handling of flash-frozen human tissue as previously
+    described (Leung et al., 2015). Flash frozen human tissues were first pulverized
+    using mortar as pestle, and then crosslinked for 25min using 1% formaldehyde,
+    quenched with Glycine, washed with PBS and then input into the remaining Hi-C
+    protocol or flash frozen for future analysis. For each experiment, ~65mg of tissue
+    was used for subsequent Hi-C library preparation, but varied from tissue to tissue
+    depending on cellular density of each tissue. Using ~65mg of tissue, samples were
+    lysed and dounced to obtain single nuclei suspensions. Chromatin was then solubilized
+    with SDS, and then quenched with TritonX-100. Chromatin was digested overnight
+    with HindIII. Digested ends were filled-in dNTPs, except a biotinylated dCTP was
+    used to label digested ends. Nuclei were then lysed using SDS, and chromatin complexes
+    were diluted. Ligation was performed in large volumes to favor intra-molecular
+    ligation events. Crosslinks were reversed by overnight incubation with Proteinase
+    K and high temperatures. DNA was then purified using two rounds of Pheno-Chloroform
+    purification, followed by ethanol precipitation. Biotinylated nucleotides on unligated
+    ends were removed by a T4 DNA polyermase reaction, and purified using ethanol
+    precipitation. DNA was then quantified using Qubit Fluorometer, and <=5ug of DNA
+    was used for subsequent library preparation.
+
+    Libraries were constructed using a modifed Illumina TruSeq library preparation
+    method specific to the preparation of Hi-C libraries for Illumina sequencing,
+    as previously described (Lieberman-Aiden et al, 2009). First Hi-C ligation products
+    were sheared to ~400bp fragment size. Sheard ends were repaired using a combination
+    of T4 PNK, T4 DNA polymerase, and Klenow. The reaction was purified using Qiagen
+    MinElute columns. DNA molecules were then dA-tailed using Klenow(exo-) and then
+    size selected from 200-600bp using agaorse gel and purified. Biotin-labeled DNA
+    species were then enriched using streptavidin-coated beads and Illumina TruSeq
+    adapters were ligated using T4 DNA ligase while DNA is bound to the streptavidin
+    beads. Beads were then washed, and PCR amplified to obtain enough material for
+    Illumina sequencing.'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Small Intenstine Tissue
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: HiC-Seq
+
+  Each Hi-C read end was mapped indepenedently using BWA -mem and default parameters.
+  BWA version 0.7.8 was used.
+
+  Read ends with >1 alighment were filtered and only 5'' alignments were kept using
+  in-house Python script.
+
+  SAM files were converted to BAM files and sorted using Samtools Version 0.1.18
+
+  PCR duplicates were removed using PicardTools Version 1.49
+
+  Reads aligning >500bp from Hi-C restriction enzyme cutsites were removed and reads
+  <15kb insert size were removed using in-house scripts.
+
+  Raw contact matrices were constructed using in-house scripts, or normalization was
+  applied using HiCNorm, VC, or ICE, where noted.
+
+  FIREs were identified by first applying HiCNormCis on the raw contact marix, as
+  described in this manuscript.
+
+  TAD boundaires were identified by applying the insulation square method on the HiCNorm
+  matrices, as previously described (Crane et al., 2015)
+
+  A/B compartments were identified as previously described (Lieberman-Aiden et al.,
+  2009)
+
+  Statistically significant Hi-C contacts were identified using Fit-Hi-C, as previously
+  described (Ay et al., 2014)
+
+  Genome_build: Human data is in hg19, mouse data is in mm9.
+
+  Supplementary_files_format_and_content: Hi-C matrices are provided at 40kb bin resolution
+  in NxN format for each chromosome for either raw contact maps, or Hi-C matrices
+  normalized with HiCNorm, or HiCNorm followed by quantile normalization using samples
+  from the same published or unpublished source. Even if a dataset was not specifically
+  used in this study, a contact matrix was generated for each sample, for each study.
+  For example, all samples from Zuin et al, 2014 are quantile normalized together.  FIRE
+  and TAD boundary annotations are provided as a unique BED file for each sample.
+  Compartment A/B annotations are provided as a unique bigwig file for each sample.
+  Fit-Hi-C output is provided in a 7-column format, corresponding to position 1, position
+  2, observed count, expected count, O/E, p-value, and q-value. Only the upper-triangle
+  matrix entries (where i<=j)  are provided, and only pairwise contacts within 2Mb
+  genomic distance are provided.'
+Description: STL002_SmallBowel Rep1
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05791249
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2179262
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4272034
+    cluster_name: public
+    id: '3174478'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6661753848'
+    total_spots: '92524359'
+  - acc: SRR4272033
+    cluster_name: public
+    id: '3174478'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7053236568'
+    total_spots: '97961619'
+  - acc: SRR4272032
+    cluster_name: public
+    id: '3174478'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1583585000'
+    total_spots: '7917925'
+  - acc: SRR4272031
+    cluster_name: public
+    id: '3174478'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1448782800'
+    total_spots: '7243914'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX217/SRX2179262
+  iid: SRX2179262
+Series: GSE87112
+Status:
+  Last-Update-Date: '2016-11-15'
+  Release-Date: '2016-11-15'
+  Submission-Date: '2016-09-20'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX217/SRX2179262
+Title: STL002_SmallBowel Rep1
+Type: SRA
+iid: GSM2322555

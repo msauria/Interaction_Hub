@@ -1,0 +1,98 @@
+Accession: GSM938751
+Channel:
+  Characteristics:
+  - C57Bl/6
+  - cortex
+  - HindIII
+  Extract-Protocol: Cortex Hi-C experiment were conducted in biological replicates
+    using HindIII according to previous publication (Lieberman-Aiden, E. et al. Comprehensive
+    mapping of long-range interactions reveals folding principles of the human genome.
+    Science 326, 289-93 (2009).) with modifications for tissue samples. In brief,
+    cortex from 8-week old male C57Bl/6 mice were dissected, minced and fixed with
+    1% formaldehyde for 20 minutes at room temperature.  After fixation, samples were
+    homogenized and counted for cell numbers with Trypan Blue.
+  Growth-Protocol: 'mESC line J1 was maintained on mitomycin C-inactivated MEF feeder
+    layers in DME containing 15% fetal calf serum, leukemia inhibiting factor, penicillin/streptomycin,
+    L-glutamine and non-essential amino acids. All ES cells were passaged on 0.2 %
+    gelatin twice to deplete feeder cells before harvest for experiments. H1 and IMR90
+    cells were grown as described in: Hawkins, R.D. et al. Distinct epigenomic landscapes
+    of pluripotent and lineage-committed human cells. Cell Stem Cell 6, 479-91'
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Mouse cortex
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'fastq:  Illumina''s HiSeq Control Software
+
+  hic.summary.txt:The paired-end Hi-C reads were mapped to mouse genome build mm9
+  using an in-house pipeline based on BWA using default parameter. BWA SAMPE was used
+  to merged the pairs. Duplicated reads from the same biological library were removed.
+
+  Genome Build:
+
+  cortex_HindIII_replicate_Hic.nodup.hic.summary.txt.gz: mm9'
+Description: equivalent to Sample GSM892305
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX150197
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN00998882
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR501778
+    cluster_name: public
+    id: '189582'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5156536176'
+    total_spots: '71618558'
+  - acc: SRR501779
+    cluster_name: public
+    id: '189582'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5449730328'
+    total_spots: '75690699'
+  - acc: SRR501780
+    cluster_name: public
+    id: '189582'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5322429504'
+    total_spots: '73922632'
+  - acc: SRR501781
+    cluster_name: public
+    id: '189582'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5294275920'
+    total_spots: '73531610'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX150/SRX150197
+  iid: SRX150197
+Series: GSE34587
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2012-07-01'
+  Submission-Date: '2012-05-29'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX150/SRX150197
+Title: RenLab-HiC-cortex_replicate two
+Type: SRA
+iid: GSM938751

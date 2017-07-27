@@ -1,0 +1,106 @@
+Accession: GSM870040
+Channel:
+  Characteristics:
+  - ATM2E-I13
+  - A-MuLV transformed pro-B cells
+  - ATM-/-
+  - STI571 for 2d
+  - chr2:180173673
+  - '1'
+  Extract-Protocol: "Cells were crosslinked in 1% formaldehyde.  25 million cells\
+    \ were used for each Hi-C experiment.  Cells were lysed and chromatin was digested\
+    \ with HindIII as described previously (Lieberman-Aiden et al., 2009 (PMID 19815776)).\
+    \  Digested ends were filled in with biotinylated dCTP and then ligated for 4\
+    \ hours at 16 C.  After reversing the formaldehyde crosslinks by incubation at\
+    \ 65 C with Proteinase K overnight, unligated biotinylated ends were removed by\
+    \ 4 hours of incubation with 15 U T4 DNA polymerase at 20 C in the presence of\
+    \ a low concentration of nucleotides (25 \xB5M each dNTP).  The DNA was fragmented\
+    \ by Covaris sonication to an average size of 200 bp and then the ideal size for\
+    \ Illumina sequencing (100-300 bp) was selected by Ampure fractionation (0.9x\
+    \ Ampure beads to remove the DNA fragments >300 bp followed by 1.3x Ampure beads\
+    \ to isolate the remaining DNA fragments > 100 bp).  The DNA ends were prepared\
+    \ for Illumina sequencing adapter ligation by repairing the DNA ends and adding\
+    \ an 'A'  to each end.  The biotinylated junctions were then pulled down using\
+    \ MyOne streptavidin beads at a ratio of 1 uL beads per ng of biotinylated DNA.\
+    \  Illumina paired-end adapters were ligated onto the DNA ends and then the fragments\
+    \ were PCR amplified for 11-13 cycles.  Samples were sequenced on an Illumina\
+    \ HiSeq instrument using the Paired End 50 bp module."
+  Growth-Protocol: A retroviral construct containing 26X I-SceI sites was randomly
+    integrated in the genome of A-MuLV-transformed pro-B cell lines.
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: A-MuLV-transformed pro-B cell line, ATM-/-
+  Treatment-Protocol: "Cells were arrested in G1 by 2 days of treatment with 3\xB5\
+    M STI571."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Image analysis pipeline: OLB1.9/CASAVA 1.7
+
+  For NovoOutput Files: Sequencing reads from the Hi-C experiment were mapped to all
+  possible HindIII fragments in the mouse genome (mm9) using NovoAlign V2.07.11 with
+  default parameters.  If a sequence read contained the junction between two ligated
+  HindIII sites (indicating that the read had passed into the paired interacting fragment),
+  only the sequence upstream of this recognized junction was mapped.
+
+  For Valid Pair files: Paired end reads that mapped to the same restriction fragment
+  (representing self-ligated or unligated sequences) were discarded as were redundant
+  observations of an identical mapped pair of locations.  Such redundant read pairs
+  likely arise from a single interacting fragment pair that was amplified by PCR.  Results
+  are presented in four columns: Restriction fragment 1 (from paired end 1) position,
+  Restriction fragment 2 (from paired end 2) position, total number of paired reads,
+  and total number of unique paired reads.
+
+  Genome Build:
+
+  s_6_1_ATM-67-R1.novoOutput.txt.gz: mm9
+
+  s_6_2_ATM-67-R1.novoOutput.txt.gz: mm9
+
+  ATM-67-R1.validPair.txt.gz: mm9'
+Description: '67-STI2d-R1
+
+  The ATM2E-I13 cell line is derived (stably transfected with I-SceI-GR) from the
+  ATM2E cell line (Bredemeyer et al., 2006, Nature (PMID 16799570)), which was generated
+  from an ATM-/- mouse (Barlow et al., 1996, Cell (PMID 8689683)) with an hBcl-2 transgene
+  (Strasser et al., 1991 Cell (PMID 1959134)).'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX118420
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN00780302
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR404104
+    cluster_name: public
+    id: '136400'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9982265200'
+    total_spots: '99822652'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX118/SRX118420
+  iid: SRX118420
+Series: GSE35519
+Status:
+  Last-Update-Date: '2013-05-23'
+  Release-Date: '2012-02-16'
+  Submission-Date: '2012-02-02'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM870nnn/GSM870040/GSM870040_ATM-67-R1.validPair.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM870nnn/GSM870040/GSM870040_s_6_1_ATM-67-R1.novoOutput.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM870nnn/GSM870040/GSM870040_s_6_2_ATM-67-R1.novoOutput.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX118/SRX118420
+Title: Hi-C ATM-/- I-SceI-chr2-R1
+Type: SRA
+iid: GSM870040

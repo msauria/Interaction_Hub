@@ -1,0 +1,122 @@
+Contributor:
+- Address:
+    City: Darlinghurst
+    Country: Australia
+    Line: 384 Victoria Street
+    Postal-Code: '2010'
+    State: NSW
+  Department: Genomics and Epigenetics Division
+  Email: j.achinger@garvan.org.au
+  Laboratory: Epigenetics Research Laboratory
+  Organization: Garvan Institute of Medical Research
+  Person:
+    First: Joanna
+    Last: Achinger-Kawecka
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: P
+    Last: Taberlay
+  iid: contrib3
+- Person:
+    First: J
+    Last: Achinger-Kawecka
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+Series:
+  Accession: GSE73782
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: 'Hi-C, ChIP-seq and RNA-seq were conducted in three human prostate
+    cell lines: normal prostate epithelial cells (PrEC) and prostate cancer cells
+    (PC3 and LNCaP).'
+  Pubmed-ID: '27053337'
+  Relation:
+  - target: GSE73785
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA297887
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP064524
+    type: SRA
+  Sample-Ref:
+  - name: HiC PrEC rep1
+    ref: GSM1902602
+  - name: HiC PrEC rep2
+    ref: GSM1902603
+  - name: HiC PrEC rep3
+    ref: GSM1902604
+  - name: HiC PC3 rep1
+    ref: GSM1902605
+  - name: HiC PC3 rep2
+    ref: GSM1902606
+  - name: HiC LNCaP rep1.1
+    ref: GSM1902607
+  - name: HiC LNCaP rep2.1
+    ref: GSM1902608
+  - name: HiC LNCaP rep3.1
+    ref: GSM1902609
+  - name: HiC LNCaP rep1.2
+    ref: GSM1902610
+  - name: HiC LNCaP rep2.2
+    ref: GSM1902611
+  - name: HiC LNCaP rep3.2
+    ref: GSM1902612
+  - name: HiC LNCaP rep4
+    ref: GSM1902613
+  - name: HiC LNCaP rep5
+    ref: GSM1902614
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-04-04'
+    Submission-Date: '2015-10-06'
+    database: GEO
+  Summary: A three-dimensional chromatin state underpins the structural and functional
+    basis of the genome by bringing regulatory elements and genes into close spatial
+    proximity to ensure proper, cell-type specific gene expression profiles. Here,
+    we perform Hi-C chromosome conformation to investigate how the three-dimensional
+    organization of the cancer genome is disrupted in the context of epigenetic remodelling
+    and atypical gene expression programs.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_Hi-C_seq_LNCaP_BglII_pooled_100kb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_Hi-C_seq_LNCaP_BglII_pooled_1Mb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_Hi-C_seq_PC3_BglII_pooled_100kb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_Hi-C_seq_PC3_BglII_pooled_1Mb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_Hi-C_seq_PrEC_BglII_pooled_100kb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_Hi-C_seq_PrEC_BglII_pooled_1Mb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_TADs-LNCaP_40kb_domains_final_sorted.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_TADs-PC3_40kb_domains_final_sorted.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73782/GSE73782_TADs-PrEC_40kb_domains_final_sorted.bed.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP064/SRP064524
+  Title: Three-dimensional disorganisation of the cancer genome occurs coincident
+    with long range genetic and epigenetic alterations [Hi-C]
+  Type: Other
+  iid: GSE73782
+id: '200073782'

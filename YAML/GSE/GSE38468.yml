@@ -1,0 +1,121 @@
+Contributor:
+- Address:
+    City: Atlanta
+    Country: USA
+    Line: 1510 Clifton Rd NE
+    Zip-Code: '30322'
+  Organization: Emory University
+  Person:
+    First: Chun-hui
+    Last: Hou
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Chunhui
+    Last: Hou
+  iid: contrib3
+- Person:
+    First: Li
+    Last: Li
+  iid: contrib4
+- Person:
+    First: Zhaohui
+    Last: Qin
+  iid: contrib5
+- Person:
+    First: Victor
+    Last: Corces
+    Middle: G
+  iid: contrib6
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL9058
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2013-05-28'
+    Release-Date: '2009-08-19'
+    Submission-Date: '2009-08-19'
+    database: GEO
+  Technology: other
+  Title: Illumina Genome Analyzer (Drosophila melanogaster)
+  iid: GPL9058
+Series:
+  Accession: GSE38468
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  Overall-Design: 'We carried out Hi-C experiment using HindIII on Kc167 cells and
+    generate two libraries separately. One library was sequenced once more as technical
+    replicates (TR1 and TR2), the other library was sequenced as biological replicate
+    (BR).
+
+    processed files contain the following:
+
+    Column 1:  chromosome ID in which the first read in a pair locates
+
+    Column 2:  coordinate of the first read
+
+    Column 3:  chromosome ID in which the second read in a pair locates
+
+    Column 4:  coordinate of the second read'
+  Pubmed-ID: '23041285'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA167935
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP010264
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C library TR1
+    ref: GSM942889
+  - name: Hi-C library TR2
+    ref: GSM942890
+  - name: Hi-C library BR
+    ref: GSM942891
+  Status:
+    Last-Update-Date: '2013-06-11'
+    Release-Date: '2012-10-04'
+    Submission-Date: '2012-06-04'
+    database: GEO
+  Summary: The mechanisms responsible for the establishment of physical domains in
+    metazoan chromosomes are poorly understood. Here we find that physical domains
+    in Drosophila chromosomes are demarcated at regions of active transcription and
+    high gene density that are enriched for transcription factors and specific combinations
+    of insulator proteins. Physical domains contain different types of chromatin defined
+    by the presence of specific proteins and epigenetic marks, with active chromatin
+    preferentially located at the borders and silenced chromatin in the interior.
+    Domain boundaries participate in long-range interactions that may contribute to
+    the clustering of regions of active or silenced chromatin in the nucleus. Analysis
+    of transgenes suggests that chromatin is more accessible and permissive to transcription
+    at the borders than inside domains, independent of the presence of active or silencing
+    histone modifications. These results suggest that the higher-order physical organization
+    of chromatin may impose an additional level of regulation over classical epigenetic
+    marks.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP010/SRP010264
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE38468/GSE38468_RAW.tar
+  Title: Gene Density, Transcription and Insulators Contribute to the Partition of
+    the Drosophila Genome into Physical Domains (Hi-C analysis of Drosophila melanogaster
+    Kc167 genome)
+  Type: Other
+  iid: GSE38468
+id: GSE38468

@@ -1,0 +1,117 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Dr. CMM-E 2071
+    State: CA
+    Zip-Code: '92093'
+  Email: j1dixon@ucsd.edu
+  Organization: Ludwig Institute for Cancer Research
+  Person:
+    First: Jesse
+    Last: Dixon
+    Middle: R
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Jesse
+    Last: Dixon
+  iid: contrib3
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib4
+- Person:
+    First: Kerstin
+    Last: Wendt
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE44267
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  Overall-Design: Hi-C and mRNA-seq experiments in Cohesin and CTCF depleted HEK293
+    cells
+  Pubmed-ID: '24335803'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA189267
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP018571
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C, RAD21cv HEK293, TEV treated, replicate one
+    ref: GSM1081526
+  - name: Hi-C, RAD21cv HEK293, TEV treated, replicate two
+    ref: GSM1081527
+  - name: Hi-C, RAD21cv HEK293, HRV treated, replicate one
+    ref: GSM1081528
+  - name: Hi-C, RAD21cv HEK293, HRV treated, replicate two
+    ref: GSM1081529
+  - name: Hi-C, HEK293 siRNA Control, replicate one
+    ref: GSM1081530
+  - name: Hi-C, HEK293 siRNA Control, replicate two
+    ref: GSM1081531
+  - name: Hi-C, HEK293 siRNA CTCF, replicate one
+    ref: GSM1081532
+  - name: Hi-C, HEK293 siRNA CTCF, replicate two
+    ref: GSM1081533
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-12-16'
+    Submission-Date: '2013-02-12'
+    database: GEO
+  Summary: Recent studies of genome-wide chromatin interactions have revealed that
+    the human genome is partitioned into many self-associating topological domains.
+    The boundary sequences are enriched for binding sites of CTCF and the cohesin
+    complex, implicating these two factors in the establishment or maintenance of
+    topological domains.  To determine the role of cohesin and CTCF in higher order
+    chromatin architecture in human cells, we proteolytically cleaved the cohesin
+    complex from interphase chromatin and examined changes in chromosomal organization
+    as well as transcriptome. We observed a general loss of local chromosomal interactions
+    upon disruption of cohesin complex, but the topological domains remain intact.
+    However, we found that depletion of CTCF by RNA interference in these cells not
+    only reduced intra-domain interactions but also increased inter-domain interactions.
+    Further more, distinct groups of genes become mis-regulated upon depletion of
+    cohesin and CTCF. Taken together, these observations suggest that CTCF and cohesin
+    contribute in different ways to chromatin organization and gene regulation.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP018/SRP018571
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE44267/GSE44267_RAW.tar
+  Title: Cohesin and CTCF Differentially Affect the Chromatin Architecture and Gene
+    Expression in Human Cells
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE44267
+id: '200044267'

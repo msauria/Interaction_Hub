@@ -1,0 +1,170 @@
+Contributor:
+- Address:
+    City: Odense M
+    Country: Denmark
+    Line: Campusvej 55
+    Postal-Code: '5230'
+  Department: Biochemistry and Molecular Biology
+  Email: s.mandrup@bmb.sdu.dk
+  Organization: University of Southern Denmark
+  Person:
+    First: Susanne
+    Last: Mandrup
+  Phone: +45 6550 2340
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Siersbaek
+    Last: Rasmus
+  iid: contrib3
+- Person:
+    First: Jesper
+    Last: Madsen
+  iid: contrib4
+- Person:
+    First: Javierre
+    Last: Biola
+  iid: contrib5
+- Person:
+    First: Ronni
+    Last: Nielsen
+  iid: contrib6
+- Person:
+    First: Emilie
+    Last: K. Bagge
+  iid: contrib7
+- Person:
+    First: Jonathan
+    Last: Cairns
+  iid: contrib8
+- Person:
+    First: Steven
+    Last: Wingett
+  iid: contrib9
+- Person:
+    First: Sofie
+    Last: Traynor
+  iid: contrib10
+- Person:
+    First: Mikhail
+    Last: Spivakov
+  iid: contrib11
+- Person:
+    First: Peter
+    Last: Fraser
+  iid: contrib12
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL18480
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-04-05'
+    Release-Date: '2014-03-27'
+    Submission-Date: '2014-03-27'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1500 (Mus musculus)
+  iid: GPL18480
+Series:
+  Accession: GSE95533
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  - position: '11'
+    ref: contrib1
+  Overall-Design: We performed Hi-C and promoter capture Hi-C (PCHi-C) to investigate
+    the dynamics of the 3D chromatin structure during adipocyte differentiation. We
+    used mRNA-seq to identify changes in gene expression and ChIP-seq to map the chromatin
+    binding of transcriptional regulators and epigenomic marks.
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA377334
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP100871
+    type: SRA
+  Sample-Ref:
+  - name: HiC_D0_Exp1
+    ref: GSM2515982
+  - name: HiC_D0_Exp2
+    ref: GSM2515983
+  - name: HiC_4h_Exp1
+    ref: GSM2515984
+  - name: HiC_4h_Exp2
+    ref: GSM2515985
+  - name: HiC_D2_Exp1
+    ref: GSM2515986
+  - name: HiC_D2_Exp2
+    ref: GSM2515987
+  - name: PCHiC_D0_Exp1
+    ref: GSM2515988
+  - name: PCHiC_D0_Exp2
+    ref: GSM2515989
+  - name: PCHiC_4h_Exp1
+    ref: GSM2515990
+  - name: PCHiC_4h_Exp2
+    ref: GSM2515991
+  - name: PCHiC_D2_Exp1
+    ref: GSM2515992
+  - name: PCHiC_D2_Exp2
+    ref: GSM2515993
+  Status:
+    Last-Update-Date: '2017-04-28'
+    Release-Date: '2017-04-26'
+    Submission-Date: '2017-02-28'
+    database: GEO
+  Summary: Interactions between transcriptional promoters and their distal regulatory
+    elements play an important role in transcriptional regulation; however, the extent
+    to which these interactions are subject to rapid modulations in response to signals
+    is unknown. Here, we use promoter capture Hi-C to demonstrate a rapid reorganization
+    of promoter anchored  chromatin loops within four hours after induction of differentiation
+    of 3T3-L1 preadipocytes. This reorganization is tightly coupled to dynamic changes
+    in target gene expression. The formation of promoter-enhancer loops is tightly
+    linked to the activation of poised (histone H3 lysine 4 mono- and dimethylated)
+    enhancers, as evidenced by the acquisition of histone H3 lysine 27 acetylation
+    and the binding of MED1, SMC1 and P300 proteins to these regions. Intriguingly,
+    formation of loops connecting activated enhancers and promoters is also associated
+    with extensive recruitment of corepressors such as NCoR and HDACs, indicating
+    that this class of coregulators may play a previously unrecognized role during
+    enhancer activation.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95533/GSE95533_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95533/GSE95533_RNA_counts.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP100/SRP100871
+  Title: Dynamic rewiring of promoter-anchored chromatin loops during adipocyte differentiation
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE95533
+id: '200095533'

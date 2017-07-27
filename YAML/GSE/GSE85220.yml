@@ -1,0 +1,172 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 364 Plantation Street, LRB
+    State: MA
+    Zip-Code: '01605'
+  Department: Biochemistry and Molecular Pharmacology
+  Email: Oliver.Rando@umassmed.edu
+  Laboratory: Rando Lab
+  Organization: University of Massachusetts Medical School
+  Person:
+    First: Oliver
+    Last: Rando
+  Phone: '5088568879'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Oliver
+    Last: Rando
+    Middle: J
+  iid: contrib3
+- Person:
+    First: Tsung-Han
+    Last: Hsieh
+    Middle: S
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL19756
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae
+  Status:
+    Last-Update-Date: '2016-08-23'
+    Release-Date: '2015-02-09'
+    Submission-Date: '2015-02-09'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces cerevisiae)
+  iid: GPL19756
+- Accession: GPL20584
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Schizosaccharomyces pombe
+  Status:
+    Last-Update-Date: '2016-07-27'
+    Release-Date: '2015-06-19'
+    Submission-Date: '2015-06-19'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Schizosaccharomyces pombe)
+  iid: GPL20584
+Series:
+  Accession: GSE85220
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: Chromatin is fragmented by Mnase, subsequenct nucleosomal end repair,
+    and a modified two-step method for purfiying ligation products. Using Illumina
+    paired-end sequencing maps Micro-C library and generates nucleosome resolution
+    contact maps.
+  Pubmed-ID: '27723753'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA336566
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP080954
+    type: SRA
+  Sample-Ref:
+  - name: FA1_ctrl
+    ref: GSM2262317
+  - name: FA1+DSG
+    ref: GSM2262318
+  - name: FA1+EGS
+    ref: GSM2262319
+  - name: FA1+DSG+EGS
+    ref: GSM2262320
+  - name: FA3_ctrl
+    ref: GSM2262321
+  - name: FA3+DSG
+    ref: GSM2262322
+  - name: FA3+EGS
+    ref: GSM2262323
+  - name: FA3+DSG+EGS
+    ref: GSM2262324
+  - name: FA3_pellet-1
+    ref: GSM2262325
+  - name: FA3_pellet-2
+    ref: GSM2262326
+  - name: FA3_sup-1
+    ref: GSM2262327
+  - name: FA3_sup-2
+    ref: GSM2262328
+  - name: DSG_pellet-1
+    ref: GSM2262329
+  - name: DSG_pellet-2
+    ref: GSM2262330
+  - name: DSG_pellet-3
+    ref: GSM2262331
+  - name: DSG_sup-1
+    ref: GSM2262332
+  - name: DSG_sup-2
+    ref: GSM2262333
+  - name: DSG_sup-3
+    ref: GSM2262334
+  - name: EGS_pellet-1
+    ref: GSM2262335
+  - name: EGS_pellet-2
+    ref: GSM2262336
+  - name: EGS_sup-1
+    ref: GSM2262337
+  - name: EGS_sup-2
+    ref: GSM2262338
+  - name: DSG_pellet-1 [S. pombe]
+    ref: GSM2262339
+  - name: DSG_pellet-2 [S. pombe]
+    ref: GSM2262340
+  - name: DSG_sup-1 [S. pombe]
+    ref: GSM2262341
+  - name: EGS_pellet-1 [S. pombe]
+    ref: GSM2262342
+  - name: EGS_pellet-2 [S. pombe]
+    ref: GSM2262343
+  - name: EGS_sup-1 [S. pombe]
+    ref: GSM2262344
+  Status:
+    Last-Update-Date: '2016-12-13'
+    Release-Date: '2016-09-13'
+    Submission-Date: '2016-08-04'
+    database: GEO
+  Summary: Structural analysis of chromosome folding in vivo has been revolutionized
+    by Chromosome Conformation Capture (3C) and related methods, which use proximity
+    ligation to identify chromosomal loci in physical contact. We recently described
+    a variant 3C technique, Micro-C, in which chromatin is fragmented to mononucleosomes
+    using micrococcal nuclease, enabling nucleosome-resolution folding maps of the
+    genome. Here, we describe an improved Micro-C protocol using long crosslinkers,
+    termed Micro-C XL, which exhibits greatly increased signal to noise, and provides
+    further insight into the folding of the yeast genome. We also find that signal
+    to noise is much improved in Micro-C XL libraries generated from relatively insoluble
+    chromatin as opposed to soluble material, providing a simple method to physically
+    enrich for bona-fide long-range interactions. Micro-C XL maps of the budding and
+    fission yeast genomes reveal both short-range chromosome fiber features such as
+    chromosomally-interacting domains (CIDs), as well as higher-order features such
+    as clustering of centromeres and telomeres, thereby addressing the primary discrepancy
+    between prior Micro-C data and reported 3C and Hi-C analyses. Interestingly, comparison
+    of chromosome folding maps of S. cerevisiae and S. pombe revealed widespread qualitative
+    similarities, yet quantitative differences, between these distantly-related species.
+    Micro-C XL thus provides a single assay suitable for interrogation of chromosome
+    folding at length scales from the nucleosome to the full genome.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE85220/GSE85220_Interaction_density.xlsx.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP080/SRP080954
+  Title: 'Micro-C XL: assaying chromosome conformation at length scales from the nucleosome
+    to the entire genome'
+  Type: Other
+  iid: GSE85220
+id: '200085220'

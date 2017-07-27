@@ -1,0 +1,118 @@
+Accession: GSM1481233
+Channel:
+  Characteristics: R1
+  Extract-Protocol: "Cells were cross-linked with 1% formaldehyde for 10 minutes,\
+    \ lysed and nuclei were isolated. Isolated nuclei were digested with 4-cutter\
+    \ FastDigest MboI (Thermo Scientific, 1\xB5l/\xB5g DNA) for 4 hours at 37 \xB0\
+    C. The ends of digested material were filled with biotinylated dATP, dGTP, dCTP\
+    \ and dTTP using Klenow fragment (Fermentas, 0.1 U per 1 \xB5g DNA).  Klenow was\
+    \ deactivated using 0.01 M EDTA at incubating 75 \xB0C for 15 minutes. Then the\
+    \ material was diluted to 3.5 ng/\xB5l and ligated using T4 DNA Ligase (Promega).\
+    \ The crosslinking was reversed by adding Proteinase K and incubating overnight\
+    \ at 65 \xB0C. The proteins were removed and DNA was purified using phenol-chloroform\
+    \ followed by ethanol precipitation. Biotinylated but unligated ends were removed\
+    \ using T4 DNA polymerase by incubating at 12 \xB0C for 15 minutes. The material\
+    \ was fragmented to 300-600 bases by sonication. The fragment ends were repaired\
+    \ and A-tailed. Then the biotinylated fragments were bound to streptavidin beads\
+    \ and unbound fragments were washed away. Sequencing adapters were then ligated\
+    \ to the fragments bound to beads. The material was amplified 6-9 cycles while\
+    \ bound to beads to obtain sufficient amount for sequence capture. Original biotinylated\
+    \ material was removed, supernatant was hybridized to sequence capture probe set\
+    \ according to manufacturer\u2019s instructions (Roche Nimblegen Inc.). Hybridized\
+    \ material was washed according to manufacturer\u2019s instructions and amplified\
+    \ with PCR for 3-6 cycles. Hybridization of the probes to the Hi-C material was\
+    \ done exactly according to the manufacturer\u2019s instructions (Roche Nimblegen\
+    \ Inc).\nLibraries were prepared for sequencing using Illumina TruSeq protocol"
+  Growth-Protocol: "Mouse  embryonic stem cells (line R1) were obtained from Janet\
+    \ Rossant\u2019s lab (Toronto, Canada). Cells were maintained on 0.1% gelatin-coated\
+    \ dishes in Dulbecco modified Eagle medium (DMEM) supplemented with 10% fetal\
+    \ calf serum (FCS), 0.1 mM non- essential amino acids, 0.3 mg/ml L-glutamine,\
+    \ 1 mM pyruvate (Invitrogen), 1000 U/ml murine LIF (Chemicon International ESGRO),\
+    \ and were kept in a 5% CO2 atmosphere at 37 \xB0C. The medium of undifferentiated\
+    \ cells was changed daily."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Embryonic stem cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Mapping of reads. Paired-end sequences were aligned to the mouse
+  genome (build mm9) through the tool HiCUP (Babraham Bioinformatics). We then used
+  custom scripts to pair the independently mapped sequence ends and we indexed each
+  sequence pair to their corresponding MboI restriction fragment.
+
+  Calling of interactions. We called significant interactions for all promoter containing
+  restriction fragments. To this end, aligned pairs of which at least one mate mapping
+  on a promoter were selected. Promoter regions were defined as 1000 bases downstream
+  and 3000 bases upstream of transcription start site. The extension allowed mappings
+  involving the directly surrounding fragment of the promoter-anchored fragment to
+  be incorporated into analyses, as restriction cut efficiency was only 71%. Nonetheless,
+  in 77% of interactions detected in first HiCap replicate and 92% of interactions
+  detected in the second HiCap replicate, all reads mapped to sequence capture probes.
+  We collected all paired sequences with one end originating from a promoter region
+  and the other end at least 1000 bp away from the promoter region. Next we counted
+  the occurrence of interactions to all MboI restriction fragments in the genome from
+  each captured promoter region. Read pairs with the exact same mapping positions
+  were discarded (to remove any potential effect from PCR duplicates). The same procedure
+  was applied to the negative control regions to obtain read pairs for interactions
+  that were later used as background interaction probabilities. We binned all negative
+  control interactions distances (bin size of 1kb) and calculated the average and
+  standard deviation of the number of interactions found per fragment for negative
+  control regions (discarding fragments with zero interactions from the calculations).
+  These background probabilities of interactions were then used to assess whether
+  each promoter-anchored interaction was significant in each biological replicate
+  independently, using a Z-test. We adjusted the P-values, to account for the multiple
+  tests performed, using the Benjamini-Hochberg procedure and we required a significant
+  interaction to have adjusted P-values below 0.2 in both biological replicates, resulting
+  in an effective adjusted P-value threshold of 0.04 since interactions were required
+  to be present in both biological replicates. Additionally, we required at least
+  4 supporting read pairs in each biological replicate. Promoter-promoter interactions
+  were called similarly, but requiring that both ends of the paired reads aligned
+  within the annotated promoter regions.
+
+  Using significant promoter-enhancer interactions (read threshold 3) we generated
+  a GFF files (for biological replicates separately and for replicated interactions
+  between them) for visualization in Genome Browser.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: GFF'
+Description: 'HiCap_rep2_promoter-enhancer.gff
+
+  Hi-C coupled with sequence capture, biological replicate 2'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02997404
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX682808
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1553291
+    cluster_name: public
+    id: '955720'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '44871408168'
+    total_spots: '222135684'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX682/SRX682808
+  iid: SRX682808
+Series: GSE60494
+Status:
+  Last-Update-Date: '2015-07-20'
+  Release-Date: '2015-07-06'
+  Submission-Date: '2014-08-18'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX682/SRX682808
+Title: HiCap_replicate2_mESC
+Type: SRA
+iid: GSM1481233

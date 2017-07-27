@@ -1,0 +1,98 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: '9500 Gilman Drive, #0653'
+    State: CA
+    Zip-Code: 92093-0653
+  Email: biren@ucsd.edu
+  Laboratory: Laboratory of Gene Regulation
+  Organization: Ludwig Institute for Cancer Research
+  Person:
+    First: Bing
+    Last: Ren
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Yin
+    Last: Shen
+  iid: contrib3
+- Person:
+    First: Feng
+    Last: Yue
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE34587
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib1
+  Overall-Design: Cortex Hi-C experiment were conducted in biological replicates
+  Pubmed-ID: '22763441'
+  Relation:
+  - target: GSE29184
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP009996
+    type: SRA
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA150507
+    type: BioProject
+  Sample-Ref:
+  - name: RenLab-HiC-cortex_replicate one
+    ref: GSM938750
+  - name: RenLab-HiC-cortex_replicate two
+    ref: GSM938751
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2012-07-01'
+    Submission-Date: '2011-12-20'
+    database: GEO
+  Summary: As the most widely used mammalian model organism, mice play a critical
+    role in biomedical research for mechanistic study of human development and diseases.
+    Today, functional sequences in the mouse genome are still poorly annotated a decade
+    after its initial sequencing. We report here a map of nearly 300,000 cis-regulatory
+    sequences in the mouse genome, representing active promoters, enhancers and CTCF
+    binding sites in a diverse set of 19 tissues and cell types. This map provides
+    functional annotation to nearly 11% of the genome, and over 70% of conserved,
+    non-coding sequences. We define tissue-specific enhancers and identify potential
+    transcription factors regulating gene expression in each tissue or cell type.
+    Finally, we demonstrate that cis-regulatory sequences are organized into domains
+    of coordinately regulated enhancers and promoters. Our results provide a valuable
+    resource for the annotation of functional elements in the mammalian genome, and
+    study of regulatory mechanisms for tissue-specific gene expression.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE34587/GSE34587_GSM938750_cortex_HindIII_ori_HiC.nodup.hic.summary.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE34587/GSE34587_GSM938751_cortex_HindIII_replicate_Hic.nodup.hic.summary.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP009/SRP009996
+  Title: A draft map of cis-regulatory sequences in the mouse genome [HiC]
+  Type: Other
+  iid: GSE34587
+id: '200034587'

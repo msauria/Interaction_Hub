@@ -1,0 +1,113 @@
+Contributor:
+- Address:
+    City: Montreal
+    Country: Canada
+    Line: 3655 Prom. Sir-William-Osler
+    Postal-Code: H3G 1Y6
+    State: Quebec
+  Department: Biochemistry
+  Email: josee.dostie@mcgill.ca
+  Organization: McGill University
+  Person:
+    First: Josee
+    Last: Dostie
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: James
+    Last: Fraser
+  iid: contrib3
+- Person:
+    First: Carmelo
+    Last: Ferrai
+  iid: contrib4
+- Person:
+    First: Ana
+    Last: Pombo
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE59027
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib1
+  Overall-Design: Hi-C was performed in mouse embryonic stem cells (ESC), neural progenitor
+    cells (NPC), and midbrain-like neurons (Neurons) using both HindIII and NcoI restriction
+    enzymes
+  Pubmed-ID: '26700852'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA254154
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP044017
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C ESC-HindIII
+    ref: GSM1424556
+  - name: Hi-C ESC-NcoI
+    ref: GSM1424557
+  - name: Hi-C NPC-HindIII
+    ref: GSM1424558
+  - name: Hi-C NPC-NcoI
+    ref: GSM1424559
+  - name: Hi-C Neuron-HindIII
+    ref: GSM1424560
+  - name: Hi-C Neuron-NcoI
+    ref: GSM1424561
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2015-12-30'
+    Submission-Date: '2014-07-02'
+    database: GEO
+  Summary: "Mammalian chromosomes fold into arrays of megabase\u2010sized topologically\
+    \ associating domains (TADs), which are arranged into compartments spanning multiple\
+    \ megabases of genomic DNA. TADs have internal substructures that are often cell\
+    \ type specific, but their higher\u2010order organization remains elusive. Here,\
+    \ we investigate TAD higher\u2010order interactions with Hi\u2010C through neuronal\
+    \ differentiation and show that they form a hierarchy of domains\u2010within\u2010\
+    domains (metaTADs) extending across genomic scales up to the range of entire chromosomes.\
+    \ We find that TAD interactions are well captured by tree\u2010like, hierarchical\
+    \ structures irrespective of cell type. metaTAD tree structures correlate with\
+    \ genetic, epigenomic and expression features, and structural tree rearrangements\
+    \ during differentiation are linked to transcriptional state changes. Using polymer\
+    \ modelling, we demonstrate that hierarchical folding promotes efficient chromatin\
+    \ packaging without the loss of contact specificity, highlighting a role far beyond\
+    \ the simple need for packing efficiency."
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP044/SRP044017
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE59027/GSE59027_RAW.tar
+  Title: Hierarchical folding and reorganization of chromosomes are linked to transcriptional
+    changes in cellular differentiation
+  Type: Other
+  iid: GSE59027
+id: '200059027'

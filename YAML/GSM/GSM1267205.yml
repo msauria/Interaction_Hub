@@ -1,0 +1,106 @@
+Accession: GSM1267205
+Channel:
+  Characteristics: H1 Trophectoderm cells
+  Extract-Protocol: Sequencing libraries were constructed according to previous publication
+    (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions reveals
+    folding principles of the human genome. Science 326, 289-93 (2009).).
+  Growth-Protocol: Growth and differentiation of H1 hESCs was performed as previously
+    described in Xie et al., 2013, Cell 153 (1134-1148)
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: H1 Trophectoderm cells
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: Hi-C\nfastq:  Illumina's HiSeq Control Software\n\
+  For Hi-C read alignment, we aligned Hi-C reads to the hg18 (human) genome. We masked\
+  \ any bases in the genome that were genotyped as SNPs in the H1 genome. These bases\
+  \ were masked to \u201CN\u201D in order to reduce reference bias mapping artifacts.\
+  \ Hi-C reads were aligned iteratively as single end reads using Novoalign. Specifically,\
+  \ for iterative alignment, we first aligned the entire sequencing read to either\
+  \ the mouse or human genome. Unmapped reads are then trimmed by 5 base pairs and\
+  \ realigned. This process is repeated until the read successfully aligns to the\
+  \ genome or until the trimmed read is less than 25 base pairs long.  After iterative\
+  \ mapping was finished, read pairs were re-constructed from single reads using an\
+  \ in house pipeline.  Unmapped reads were filtered out and PCR duplicate reads were\
+  \ removed.  Final alignment files were then processed using the GATK pipeline, specifically\
+  \ using Indel Realignment and Variant Recalibration.  A similar pipeline was used\
+  \ for alignment of the other high-throughput sequencing datasets without the iterative\
+  \ alignment step.\nHaplotypes were generated from the final aligned bam file after\
+  \ merging the two biological replicats using the HapCUT algorithm.  The details\
+  \ of HapCUT are described previously (Bansal and Bafna, Bioinformatics 24, i153-159,\
+  \ 2008).\nGenome_build: hg18\nSupplementary_files_format_and_content: Reads are\
+  \ listed in bed format with one line for each sequencing read.  The reads have been\
+  \ split by haplotype into the \"A\" and \"B\" (alternatively, \"p1\" and \"p2\"\
+  ) alleles according to which haplotype the bases within each sequencing read correspond.\
+  \  For paired end Hi-C data, each line lists a single read, and paired infomration\
+  \ can be obtained from the read names.  The original fastq files for data other\
+  \ than the Hi-C and CTCF ChIP-seq are available in the GSE16256 dataset.\nSupplementary_files_format_and_content:\
+  \ The processed haplotypes for the H1 genome (\"H1_haps.vcf\") are available in\
+  \ VCF format."
+Description: 'Tr_R2_T1_read1.fastq.gz
+
+  Tr_R2_T1_read2.fastq.gz
+
+  Tr_R2_T2_read1.fastq.gz
+
+  Tr_R2_T2_read2.fastq.gz
+
+  Tr_R2_T3_read1.fastq.gz
+
+  Tr_R2_T3_read2.fastq.gz'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02404677
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX378280
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1030763
+    cluster_name: public
+    id: '540191'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8151847992'
+    total_spots: '113220111'
+  - acc: SRR1030764
+    cluster_name: public
+    id: '540191'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '21560037400'
+    total_spots: '215600374'
+  - acc: SRR1030765
+    cluster_name: public
+    id: '540191'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '21171673900'
+    total_spots: '211716739'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX378/SRX378280
+  iid: SRX378280
+Series: GSE52457
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2015-02-18'
+  Submission-Date: '2013-11-18'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX378/SRX378280
+Title: Hi-C, H1 Trophectoderm cells, replicate two
+Type: SRA
+iid: GSM1267205

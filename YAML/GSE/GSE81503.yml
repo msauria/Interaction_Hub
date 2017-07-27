@@ -1,0 +1,189 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: United Kingdom
+    Line: Babraham Research Park
+    Postal-Code: CB22 3AT
+    State: Cambs
+  Department: Bioinformatics
+  Email: steven.wingett@babraham.ac.uk
+  Organization: Babraham Institute
+  Person:
+    First: Steven
+    Last: Wingett
+    Middle: William
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Jonathan
+    Last: Cairns
+  iid: contrib3
+- Person:
+    First: Paula
+    Last: Freire-Pritchett
+  iid: contrib4
+- Person:
+    First: Steven
+    Last: Wingett
+    Middle: W
+  iid: contrib5
+- Person:
+    First: Csilla
+    Last: "V\xE1rnai"
+  iid: contrib6
+- Person:
+    First: Andrew
+    Last: Dimond
+  iid: contrib7
+- Person:
+    First: Vincent
+    Last: Plagnol
+  iid: contrib8
+- Person:
+    First: Daniel
+    Last: Zerbino
+  iid: contrib9
+- Person:
+    First: Stefan
+    Last: Schoenfelder
+  iid: contrib10
+- Person:
+    First: Biola-Maria
+    Last: Javierre
+  iid: contrib11
+- Person:
+    First: Cameron
+    Last: Osborne
+  iid: contrib12
+- Person:
+    First: Peter
+    Last: Fraser
+  iid: contrib13
+- Person:
+    First: Mikhail
+    Last: Spivakov
+  iid: contrib14
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE81503
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  - position: '11'
+    ref: contrib13
+  - position: '12'
+    ref: contrib14
+  Overall-Design: 'Three human CHi-C biological replicates were generated (comprising
+    1, 2and 3 technical replicates). Two mouse CHi-C biological replicates were generated
+    (both comprising three technical replicates) and a mouse Hi-C dataset. The publicly
+    available HiCUP pipeline (doi: 10.12688/f1000research.7334.1) was used to process
+    the raw sequencing reads. This pipeline was used to map the read pairs against
+    the mouse (mm9) and human (hg19) genomes, to filter experimental artefacts (such
+    as circularized reads and re-ligations), and to remove duplicate reads. For the
+    CHi-C data, the resulting BAM files were processed into CHiCAGO input files, retaining
+    only those read pairs that mapped, at least on one end, to a captured bait. CHiCAGO
+    then identified Hi-C restriction fragments interacting, with statistical significant,
+    to captured baits.'
+  Pubmed-ID: '27306882'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA321822
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP075259
+    type: SRA
+  Sample-Ref:
+  - name: Human CHi-C Biological Replicate 1
+    ref: GSM2154891
+  - name: Human CHi-C Biological Replicate 2
+    ref: GSM2154892
+  - name: Human CHi-C Biological Replicate 3
+    ref: GSM2154893
+  - name: Mouse CHi-C Biological Replicate 1
+    ref: GSM2154894
+  - name: Mouse CHi-C Biological Replicate 2
+    ref: GSM2154895
+  - name: Mouse Hi-C
+    ref: GSM2154896
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-05-18'
+    Submission-Date: '2016-05-17'
+    database: GEO
+  Summary: Capture Hi-C (CHi-C) is a state-of-the art method for profiling chromosomal
+    interactions involving targeted regions of interest (such as gene promoters) globally
+    and at high resolution. Signal detection in CHi-C data involves a number of statistical
+    challenges that are not observed when using other Hi-C-like techniques. We present
+    a background model, and algorithms for normalisation and multiple testing that
+    are specifically adapted to CHi-C experiments, in which many spatially dispersed
+    regions are captured, such as in Promoter CHi-C. We implement these procedures
+    in CHiCAGO (http://regulatorygenomicsgroup.org/chicago), an open-source package
+    for robust interaction detection in CHi-C. We validate CHiCAGO by showing that
+    promoter-interacting regions detected with this method are enriched for regulatory
+    features and disease-associated SNPs.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP075/SRP075259
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81503/GSE81503_GM12878_PCHiC_merge_final_seqmonk.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81503/GSE81503_GM12878_PCHiC_merge_final_washU_text.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81503/GSE81503_HiC_significantInteractions_1Mb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81503/GSE81503_HiC_significantInteractions_25kb_upto1Mb.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81503/GSE81503_mESC_PCHiC_merge_final_seqmonk.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81503/GSE81503_mESC_PCHiC_merge_final_washU_text.txt.gz
+  Title: 'CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C data'
+  Type: Other
+  iid: GSE81503
+id: '200081503'

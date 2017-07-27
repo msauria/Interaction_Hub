@@ -1,0 +1,142 @@
+Contributor:
+- Address:
+    City: Atlanta
+    Country: USA
+    Line: 1510 Clifton Rd
+    State: GA
+    Zip-Code: '30322'
+  Department: Biology
+  Email: vcorces@emory.edu
+  Laboratory: Corces Lab
+  Organization: Emory University
+  Person:
+    First: Victor
+    Last: Corces
+    Middle: G
+  Phone: '4047274250'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Li
+    Last: Li
+  iid: contrib3
+- Person:
+    First: Xiaowen
+    Last: Lyu
+  iid: contrib4
+- Person:
+    First: Victor
+    Last: Corces
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13304
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2011-03-21'
+    Submission-Date: '2011-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Drosophila melanogaster)
+  iid: GPL13304
+Series:
+  Accession: GSE63515
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  Overall-Design: Analysis of 3D chromatin organization using Hi-C in Drosophila Kc167
+    cells. Cells were grown at 25 C and heat shocked for 20 min at 36.5 C. Cells were
+    also treated with flavopiridol or triptolide to inhibit transcription elongation
+    or initiation, respectively. Cells were depeleted of Cap-H2 or Rad21 using RNAi.
+    Finally, cells depleted of RAd21 were subjected to heat shock at 36.5 C for 20
+    min.
+  Pubmed-ID: '25818644'
+  Relation:
+  - target: GSE63518
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA268118
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP050096
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C_HS_7_Rep1
+    ref: GSM1551439
+  - name: Hi-C_HS_8_Rep2
+    ref: GSM1551440
+  - name: Hi-C_NT5_Rep1
+    ref: GSM1551441
+  - name: Hi-C_NT_25_Rep2
+    ref: GSM1551442
+  - name: Hi-C_NT_53_Rep3
+    ref: GSM1551443
+  - name: Hi-C_NT_89_Rep4
+    ref: GSM1551444
+  - name: Hi-C_Triptolide6_Rep1
+    ref: GSM1551445
+  - name: Hi-C_Triptolide_26_Rep2
+    ref: GSM1551446
+  - name: Hi-C_Triptolide_43_Rep3
+    ref: GSM1551447
+  - name: Hi-C_Flavopiridol7_Rep1
+    ref: GSM1551448
+  - name: Hi-C_Flavopiridol_27_Rep2
+    ref: GSM1551449
+  - name: Hi-C_Flavopiridol_42_Rep3
+    ref: GSM1551450
+  - name: Hi-C_Rad21NT_91_Rep1
+    ref: GSM1551451
+  - name: Hi-C_CapH28_Rep1
+    ref: GSM1551452
+  - name: Hi-C_CapH2_28_Rep2
+    ref: GSM1551453
+  - name: Hi-C_CapH2_50_Rep3
+    ref: GSM1551454
+  - name: Hi-C_Rad21HS_92_Rep1
+    ref: GSM1551455
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2015-02-24'
+    Submission-Date: '2014-11-20'
+    database: GEO
+  Summary: Chromosomes of metazoan organisms are partitioned in the interphase nucleus
+    into discrete topologically associating domains (TADs). Borders between TADs are
+    preferentially formed in regions containing high density of active genes and clusters
+    of architectural protein binding sites. Transcription of most genes is turned
+    off during the heat shock response in Drosophila. Here we show that temperature
+    stress induces relocalization of architectural proteins from TAD borders to inside
+    TADs, and this is accompanied by a dramatic rearrangement in the 3D organization
+    of the nucleus. TAD border strength declines, allowing for an increase in long-distance
+    inter-TAD interactions. Similar but quantitatively weaker effects are observed
+    upon inhibition of transcription or depletion of individual architectural proteins.
+    New heat shock-induced inter-TAD interactions result in increased contacts among
+    enhancers and promoters of silenced genes, which recruit Pc and form Pc bodies
+    at the nucleolus. These results suggest that the TAD organization of metazoan
+    genomes is plastic and can be quickly reconfigured to allow new interactions between
+    distant sequences.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP050/SRP050096
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE63515/GSE63515_RAW.tar
+  Title: Widespread rearrangement of 3D chromatin organization underlies Polycomb-mediated
+    stress-induced silencing [Hi-C]
+  Type: Other
+  iid: GSE63515
+id: '200063515'

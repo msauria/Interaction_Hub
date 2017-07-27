@@ -1,0 +1,306 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 55 Lake Ave N
+    State: MA
+    Zip-Code: '01655'
+  Department: Cell and Developmental Biology
+  Organization: University of Massachusetts
+  Person:
+    First: Tony
+    Last: Imbalzano
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: A
+    Last: Barutcu
+    Middle: R
+  iid: contrib3
+- Person:
+    First: Deli
+    Last: Hong
+  iid: contrib4
+- Person:
+    First: Bryan
+    Last: Lajoie
+    Middle: R
+  iid: contrib5
+- Person:
+    First: Rachel
+    Last: McCord
+    Middle: P
+  iid: contrib6
+- Person:
+    First: Andre
+    Last: van Wijnen
+    Middle: J
+  iid: contrib7
+- Person:
+    First: Jane
+    Last: Lian
+    Middle: B
+  iid: contrib8
+- Person:
+    First: Janet
+    Last: Stein
+    Middle: L
+  iid: contrib9
+- Person:
+    First: Job
+    Last: Dekker
+  iid: contrib10
+- Person:
+    First: Anthony
+    Last: Imbalzano
+    Middle: N
+  iid: contrib11
+- Person:
+    First: Gary
+    Last: Stein
+    Middle: S
+  iid: contrib12
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE75070
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  Overall-Design: Hi-C and RNA-seq experiments were conducted in MCF-7  shNS and shRUNX1
+    cells.  RUNX1 ChIP-seq was conducted in wildtype MCF-7 cells.
+  Pubmed-ID: '27514584'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA302327
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP066276
+    type: SRA
+  Sample-Ref:
+  - name: MCF-7 shNS Hi-C Replicate1
+    ref: GSM1942100
+  - name: MCF-7 shNS Hi-C Replicate2
+    ref: GSM1942101
+  - name: MCF-7 shRUNX1 Hi-C Replicate1
+    ref: GSM1942102
+  - name: MCF-7 shRUNX1 Hi-C Replicate2
+    ref: GSM1942103
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-08-23'
+    Submission-Date: '2015-11-16'
+    database: GEO
+  Summary: RUNX1 is a transcription factor functioning both as an oncogene and a tumor
+    suppressor in breast cancer. RUNX1 alters chromatin structure in cooperation with
+    chromatin modifier and remodeling enzymes. In this study, we examined the relationship
+    between RUNX1-mediated transcription and genome organization. We characterized
+    genome-wide RUNX1 localization and performed RNA-seq and Hi-C in RUNX1-depleted
+    and control MCF-7 breast cancer cells. RNA-seq analysis showed that RUNX1 depletion
+    led to up-regulation of genes associated with chromatin structure and down-regulation
+    of genes related to extracellular matrix biology, as well as NEAT1 and MALAT1
+    lncRNAs. Our ChIP-Seq analysis supports a prominent role for RUNX1 in transcriptional
+    activation. About 30% of all RUNX1 binding sites were intergenic, indicating diverse
+    roles in promoter and enhancer regulation and suggesting additional functions
+    for RUNX1. Hi-C analysis of RUNX1-depleted cells demonstrated that overall three-dimensional
+    genome organization is largely intact, but indicated enhanced association of RUNX1
+    near Topologically Associating Domain (TAD) boundaries and alterations in long-range
+    interactions. These results suggest an architectural role for RUNX1 in fine-tuning
+    local interactions rather than in global organization. Our results provide novel
+    insight into RUNX1-mediated perturbations of higher-order genome organization
+    that are functionally linked with RUNX1-dependent compromised gene expression
+    in breast cancer cells.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr10_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr10_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr11_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr11_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr12_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr12_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr13_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr13_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr14_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr14_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr15_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr15_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr16_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr16_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr17_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr17_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr18_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr18_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr19_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr19_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr1_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr1_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr20_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr20_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr21_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr21_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr22_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr22_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr2_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr2_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr3_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr3_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr4_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr4_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr5_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr5_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr6_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr6_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr7_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr7_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr8_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr8_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr9_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chr9_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chrX_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_chrX_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-1000000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr10_chr10_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr11_chr11_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr12_chr12_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr13_chr13_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr14_chr14_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr15_chr15_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr16_chr16_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr17_chr17_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr18_chr18_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr19_chr19_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr1_chr1_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr20_chr20_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr21_chr21_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr22_chr22_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr2_chr2_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr3_chr3_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr4_chr4_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr5_chr5_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr6_chr6_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr7_chr7_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr8_chr8_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chr9_chr9_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shGFP_hg19_genome_C-250000-iced_chrX_chrX_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr10_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr10_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr11_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr11_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr12_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr12_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr13_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr13_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr14_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr14_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr15_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr15_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr16_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr16_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr17_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr17_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr18_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr18_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr19_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr19_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr1_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr1_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr20_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr20_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr21_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr21_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr22_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr22_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr2_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr2_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr3_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr3_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr4_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr4_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr5_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr5_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr6_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr6_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr7_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr7_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr8_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr8_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr9_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chr9_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chrX_C-100000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_chrX_C-40000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-1000000-iced.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr10_chr10_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr11_chr11_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr12_chr12_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr13_chr13_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr14_chr14_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr15_chr15_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr16_chr16_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr17_chr17_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr18_chr18_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr19_chr19_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr1_chr1_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr20_chr20_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr21_chr21_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr22_chr22_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr2_chr2_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr3_chr3_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr4_chr4_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr5_chr5_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr6_chr6_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr7_chr7_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr8_chr8_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chr9_chr9_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_HiCStein-MCF7-shRUNX1_hg19_genome_C-250000-iced_chrX_chrX_cis.matrix.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_MCF7_RUNX1_ChIPseq_peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_MCF7_shNS_shRUNX1_genes_expression_expected_count.tsv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE75070/GSE75070_MCF7_shRUNX1_shNS_RNAseq_log2_foldchange.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP066/SRP066276
+  Title: RUNX1 contributes to higher-order chromatin organization and gene regulation
+    in breast cancer cells.
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  Web-Link: http://www.ncbi.nlm.nih.gov/pubmed/27514584
+  iid: GSE75070
+id: '200075070'

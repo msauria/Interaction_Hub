@@ -1,0 +1,181 @@
+Contributor:
+- Address:
+    City: Seattle
+    Country: USA
+    Line: 372 15th Ave NE, S220
+    Zip-Code: '98195'
+  Department: Genome Sciences
+  Organization: University of Washington
+  Person:
+    First: Wenxiu
+    Last: Ma
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ferhat
+    Last: Ay
+  iid: contrib3
+- Person:
+    First: Choli
+    Last: Lee
+  iid: contrib4
+- Person:
+    First: Gunhan
+    Last: Gulsoy
+  iid: contrib5
+- Person:
+    First: Xinxian
+    Last: Deng
+  iid: contrib6
+- Person:
+    First: Savannah
+    Last: Cook
+  iid: contrib7
+- Person:
+    First: Jennifer
+    Last: Hesson
+  iid: contrib8
+- Person:
+    First: Carol
+    Last: Ware
+    Middle: B
+  iid: contrib9
+- Person:
+    First: Anton
+    Last: Krumm
+  iid: contrib10
+- Person:
+    First: Jay
+    Last: Shendure
+  iid: contrib11
+- Person:
+    First: C
+    Last: Blau
+    Middle: A
+  iid: contrib12
+- Person:
+    First: Christine
+    Last: Disteche
+  iid: contrib13
+- Person:
+    First: William
+    Last: Noble
+    Middle: S
+  iid: contrib14
+- Person:
+    First: Zhijun
+    Last: Duan
+  iid: contrib15
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE56869
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  - position: '6'
+    ref: contrib7
+  - position: '7'
+    ref: contrib8
+  - position: '8'
+    ref: contrib9
+  - position: '9'
+    ref: contrib10
+  - position: '10'
+    ref: contrib11
+  - position: '11'
+    ref: contrib12
+  - position: '12'
+    ref: contrib13
+  - position: '13'
+    ref: contrib14
+  - position: '14'
+    ref: contrib15
+  Overall-Design: DNase Hi-C assay (x1 replicate) in H1 and K562 cells, respectively.
+    Targeted DNase Hi-C assays of the 220kb promoter-enhancer library (x1 replicate)
+    and the 5Mb lincRNA promoter library (x2 replicate), in H1 and K562 cells, respectively.
+  Pubmed-ID: '25437436'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA244860
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP041253
+    type: SRA
+  Sample-Ref:
+  - name: DNaseHiC-WG-H1
+    ref: GSM1370433
+  - name: DNaseHiC-WG-K562
+    ref: GSM1370434
+  - name: targetedDNaseHiC-pe-H1-rep1
+    ref: GSM1370435
+  - name: targetedDNaseHiC-pe-K562-rep1
+    ref: GSM1370436
+  - name: targetedDNaseHiC-lincRNA-H1-rep1
+    ref: GSM1370437
+  - name: targetedDNaseHiC-lincRNA-H1-rep2
+    ref: GSM1370438
+  - name: targetedDNaseHiC-lincRNA-K562-rep1
+    ref: GSM1370439
+  - name: targetedDNaseHiC-lincRNA-K562-rep2
+    ref: GSM1370440
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2014-11-01'
+    Submission-Date: '2014-04-17'
+    database: GEO
+  Summary: Characterizing the relationship between genome form and function requires
+    methods both for zooming out, to globally survey the genomic architectural landscape,
+    and for zooming in, to investigate regions of interest at high resolution. High
+    throughput methods based on chromosome conformation capture (3C) have greatly
+    advanced our understanding of the three-dimensional (3D) organization of genomes,
+    but are limited in resolution by their reliance on restriction enzymes. Here we
+    describe a method for comprehensively mapping global chromatin contacts that uses
+    DNaseI for chromatin fragmentation, leading to greatly improved efficiency and
+    resolution. Coupling this method with DNA capture technology provides a high-throughput
+    approach for targeted mapping of fine-scale chromatin architecture. We applied
+    targeted DNase Hi-C to characterize the 3D organization of 1,030 lincRNA promoters
+    in two human cell lines, and identified thousands of high-confidence lincRNA promoter-associated
+    chromatin contacts at 1 kilobase pair (kbp) resolution. Detailed analysis of these
+    contacts reveals that expression of lincRNAs is tightly controlled by complex
+    mechanisms involving both super-enhancers and the polycomb repressive complex.
+    Our results provide the first glimpse of the cell-type-specific 3D organization
+    of lincRNA genes.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE56869/GSE56869_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP041/SRP041253
+  Title: Fine-scale chromatin interaction maps reveal the cis-regulatory landscape
+    of human lincRNA genes
+  Type: Other
+  iid: GSE56869
+id: '200056869'

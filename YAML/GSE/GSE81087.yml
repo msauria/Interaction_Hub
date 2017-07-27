@@ -1,0 +1,116 @@
+Contributor:
+- Address:
+    City: Ann Arbor
+    Country: USA
+    Line: 1600 Huron Parkway, NCRC Building 520, Rm. 3392
+    State: MI
+    Zip-Code: '48105'
+  Department: Department of Computational Medicine & Bioinformatics
+  Email: indikar@med.umich.edu
+  Laboratory: 4D+ Genome
+  Organization: University of Michigan
+  Person:
+    First: Indika
+    Last: Rajapakse
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Laura
+    Last: Seaman
+  iid: contrib3
+- Person:
+    First: Haiming
+    Last: Chen
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE81087
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib1
+  Overall-Design: Genome wide chromosome conformation capture (Hi-C) data from human
+    fibroblasts, every 8 hours for 56 hours.
+  Pubmed-ID: '26080430'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA320470
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP074344
+    type: SRA
+  Sample-Ref:
+  - name: 0E Hi-C
+    ref: GSM2142399
+  - name: 0D Hi-C
+    ref: GSM2142400
+  - name: 8 hr Hi-C
+    ref: GSM2142401
+  - name: 16 hr Hi-C
+    ref: GSM2142402
+  - name: 24 hr Hi-C
+    ref: GSM2142403
+  - name: 32 hr Hi-C
+    ref: GSM2142404
+  - name: 40 hr Hi-C
+    ref: GSM2142405
+  - name: 48 hr Hi-C
+    ref: GSM2142406
+  - name: 56 hr Hi-C
+    ref: GSM2142407
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-05-05'
+    Submission-Date: '2016-05-04'
+    database: GEO
+  Summary: The 4D organization of the interphase nucleus, or the 4D Nucleome (4DN),
+    reflects a dynamical interaction between 3D genome structure and function and
+    its relationship to phenotype. We present initial analyses of the human 4DN, capturing
+    genome-wide structure using chromosome conformation capture and 3D imaging, and
+    function using RNA-sequencing. We introduce a quantitative index that measures
+    underlying topological stability of a genomic region. Our results show that structural
+    features of genomic regions correlate with function with surprising persistence
+    over time. Furthermore, constructing genome-wide gene-level contact maps aided
+    in identifying gene pairs with high potential for coregulation and colocalization
+    in a manner consistent with expression via transcription factories. We additionally
+    use 2D phase planes to visualize patterns in 4DN data. Finally, we evaluated gene
+    pairs within a circadian gene module using 3D imaging, and found periodicity in
+    the movement of clock circadian regulator and period circadian clock 2 relative
+    to each other that followed a circadian rhythm and entrained with their expression.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP074/SRP074344
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81087/GSE81087_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81087/GSE81087_S33733_S39889_Rich_fib_Counts.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE81087/GSE81087_S33733_S39889_Rich_fib_Fpkms.xlsx
+  Title: Functional organization of the human 4D Nucleome
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Other
+  iid: GSE81087
+id: '200081087'

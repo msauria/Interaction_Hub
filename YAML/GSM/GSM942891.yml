@@ -1,0 +1,64 @@
+Accession: GSM942891
+Channel:
+  Characteristics: [Kc167, HindIII, biological 2]
+  Extract-Protocol: Hi-C experiments were carried out as described (Lieberman-Aiden
+    et al., 2009) with some modifications. Cells were lysed then the nuclei were treated
+    with 0.1% SDS at 65 degree for 10mins and the SDS was quenched by adding Triton
+    X-100 to final 1% concentration. Nuclei was digested in 1XNEB (New England Biolaboratory)
+    with 400U of HindIII. Digested DNA was blunted with dATP, dGTP, dTTP and biotin
+    labeled dCTP.  DNA wan then ligated and puried. biotin-labled ligated DNA was
+    purified with streptavidin beads. Illumina paired-end adaptor linkers were ligated
+    to DNA pulled-down and amplified and size selected for sequencing.
+  Growth-Protocol: Fruit fly embryonic Kc167 cells were grown to confluence in CCM3
+    serum-free insect medium (HyClone SH30065.01) at 25oC and collected for Hi-C experiments.
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: Kc167
+  Treatment-Protocol: One hundred million Kc167 cells were suspended in 40ml of CM3
+    medium, fixed by adding 37% formaldehyde to a final concentration of 1%, and incubated
+    at room temperature for 10 min. The reaction was stopped by adding 1/10 volumes
+    of 1.25 M glycine solution and incubated for 5 min before centrifugation at 3000
+    rpm for 10 min.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref: {ref: contrib1}
+Data-Processing: 'base-calling was carried out by HudsonAlpha Genomic Service Center
+
+  Paired reads were aligned to the Drosophila reference genome (Dm3) using Bowtie
+  0.12.7 (Langmead et al., 2009)  and filtered to remove any pair with one or two
+  ends aligned to multiple locations.
+
+  GC content and fragment length effects were normalized as described before (Yaffe
+  and Tanay, 2011)
+
+  Genome_build: Dm3
+
+  Supplementary_files_format_and_content: txt files for the aligned paired reads from
+  two technical replicates, one biological replicate. 4 columns in each file with
+  the first two columns corresponding to chromosomes and genomic coordinates of the
+  first reads, and the last two columns corresponding to chromosomes and genomic coordicates
+  of the second reads respectively.'
+Description: ligated DNA with biotin labeling
+Instrument-Model: {Predefined: Illumina Genome Analyzer}
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref: {ref: GPL9058}
+Relation:
+- {target: 'https://www.ncbi.nlm.nih.gov/biosample/SAMN02197554', type: BioSample}
+- {target: 'https://www.ncbi.nlm.nih.gov/sra?term=SRP010264', type: SRA}
+SRA:
+  SRR:
+  - {acc: SRR398920, cluster_name: public, id: '133367', is_public: 'true', load_done: 'true',
+    static_data_available: 'true', total_bases: '11153168900', total_spots: '111531689'}
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX115/SRX115573
+  iid: SRP010264
+Series: GSE38468
+Status: {Last-Update-Date: '2013-06-11', Release-Date: '2012-10-04', Submission-Date: '2012-06-04',
+  database: GEO}
+Supplementary-Data: ['ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX115/SRX115573',
+  'ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM942nnn/GSM942891/GSM942891_04-BR-_paired_reads_coordinates.txt.gz']
+Title: Hi-C library BR
+Type: SRA
+iid: GSM942891

@@ -1,0 +1,76 @@
+Accession: GSM1826481
+Channel:
+  Characteristics: SK-N-SH
+  Extract-Protocol: Hi-C and library prep were performed as previously described (Dixon
+    et al., Nature. 2012. PMID:22495300).
+  Growth-Protocol: Cells cultured in RPMI media supplemented with 10% FBS
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: SK-N-SH
+  Treatment-Protocol: Cells crosslinked for 10 minutes at room temperature with 1%
+    formadehyde. Quencing was performed with 0.125M glycine for 5 minutes are room
+    temperature
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Hi-C reads were mapped to hg19 using BWA-MEM. Reads were aligned\
+  \ as single ends, and read pairs are then re-constructed after mapping.\nUnmapped\
+  \ reads were filtered out and PCR duplicate reads were removed with PicardTools\
+  \ MarkDuplicates.\nContact matrices were constructed at 40kb resolution and normalized\
+  \ with HiCNorm (Hu, M. et al., Bioinformatics. 2012. PMID: 23023982).\nTopologically\
+  \ associated domains (\u201CTADs\u201D) were identified based on Directionality\
+  \ Index (\u201CDI\u201D) as described previously (Dixon et al., Nature. 2012. PMID:\
+  \ 22495300), with one exception: DI was calculated using a sliding window of 300\
+  \ kb upstream/downstream of the view point.\nGenome_build: hg19"
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03879914
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1100381
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2106508
+    cluster_name: public
+    id: '1612281'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3563392600'
+    total_spots: '17816963'
+  - acc: SRR2106509
+    cluster_name: public
+    id: '1612281'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '22224954000'
+    total_spots: '111124770'
+  - acc: SRR2106510
+    cluster_name: public
+    id: '1612281'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7905566880'
+    total_spots: '109799540'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX110/SRX1100381
+  iid: SRX1100381
+Series: GSE71072
+Status:
+  Last-Update-Date: '2015-09-01'
+  Release-Date: '2015-09-01'
+  Submission-Date: '2015-07-18'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX110/SRX1100381
+Title: Hi-C, SK-N-SH, Replicate 1
+Type: SRA
+iid: GSM1826481

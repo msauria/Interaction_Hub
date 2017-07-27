@@ -1,0 +1,130 @@
+Contributor:
+- Address:
+    City: Atlanta
+    Country: USA
+    Line: 1510 Clifton Rd NE
+    Zip-Code: '30322'
+  Organization: Emory University
+  Person:
+    First: Chun-hui
+    Last: Hou
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Chunhui
+    Last: Hou
+  iid: contrib3
+- Person:
+    First: Li
+    Last: Li
+  iid: contrib4
+- Person:
+    First: Ming
+    Last: Hu
+  iid: contrib5
+- Person:
+    First: Zhaohui
+    Last: Qin
+    Middle: S
+  iid: contrib6
+- Person:
+    First: Victor
+    Last: Corces
+    Middle: G
+  iid: contrib7
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13304
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2011-03-21'
+    Submission-Date: '2011-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Drosophila melanogaster)
+  iid: GPL13304
+Series:
+  Accession: GSE45293
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  Overall-Design: We carried out Hi-C experiments using HindIII and ChIP experiments
+    with antibodies against BEAF, CP190, CTCF, SuHw and RNAPII on heat shocked Kc167
+    cells and generated two Hi-C libraries and five ChIP-seq libraries which were
+    sequenced paired-end on Illumina HiSeq2000 platform. Five ChIP libraries are indexed
+    with Illumina index sequencing primers.
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA193438
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP019786
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C library HS1
+    ref: GSM1101652
+  - name: Hi-C library HS2
+    ref: GSM1101653
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2016-03-18'
+    Submission-Date: '2013-03-19'
+    database: GEO
+  Summary: Metazoan chromosomes in interphase nucleus are partitioned into discrete
+    three dimensional physical domains which confine epigenetically modified chromatin
+    and are relative stable across different cell types even species1-4. Physical
+    domains are segregated preferentially at DNase I hypersensitive sequences of high
+    density of active gene and insulator proteins which are hypothesized contributing
+    together to domain border formation3,4. However, whether physical domain structure
+    can be maintained without insulator proteins and transcription is unknown5-8.
+    Transcription of most genes and the insulator proteins binding can be severely
+    impaired in heat shocked (HS) fruit fly nuclei9.  Here we show that chromatin
+    contact frequency increases within and decreases beyond ~100kb after HS respectively
+    accompanied by repartitioning of the Drosophila chromosomes into a different array
+    of physical domain. Prominently, domains tend to merge because borders disappeared
+    are more than borders newly emerged which are located more frequently in repressive
+    chromatin. In contrast to previous hypothesis1,3,4, changes in insulator proteins
+    enrichment and RNAPII show no noticeable difference at lost or emerged borders.
+    Our results show a metazoan genome can be quickly reconfigured as cells undergo
+    brief physiological stress. In addition to insulator proteins and transcription,
+    we speculate that extra trans-factors binding and various biological activities
+    are required for the establishment and maintenance of physical domains. Moreover,
+    we found long-range chromatin interaction network is reshaped after HS implying
+    long-range chromatin interactions can be formed due to domain level reorganization
+    of chromosomes despite functional relevance. We anticipate our analysis to be
+    a starting point for more intensive experimental investigation into the elusive
+    mechanisms behind the physical domain partition and dynamic reconfiguration of
+    metazoan genomes.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE45293/GSE45293_All3_hotint_NB_10000rs_allchr.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE45293/GSE45293_AllHS_hotint_NB_10000rs_allchr.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE45293/GSE45293_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP019/SRP019786
+  Title: Temperature Sensitive Remodeling of Fruit Fly Physical Chromosomal Domains
+    upon Heat Shock
+  Type:
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE45293
+id: '200045293'

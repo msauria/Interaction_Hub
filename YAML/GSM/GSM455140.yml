@@ -1,0 +1,61 @@
+Accession: GSM455140
+Channel:
+  Characteristics:
+  - K562
+  - HindIII
+  - '4'
+  - '1'
+  - '2'
+  - 1,2
+  Extract-Protocol: Hi-C approach as described in the paper
+  Growth-Protocol: Human cell line GM06990, an EBV-transformed lymphoblastoid cell
+    line (Coriell, Camden, NJ), was cultured in RPMI1640, 15% fetal calf serum, 1%
+    penicillin-streptomycin, and 2mM L-glutamine. Human erythroleukemia cell line
+    K562 (ATCC, Manassas, VA) was cultured in DMEM, 10% fetal calf serum, 1% penicillinstreptomycin,
+    and 2mM L-glutamine.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: K562
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: Independent alignment of both ends of each read using Maq (http://maq.sourceforge.net/)
+Description: contains both read ends
+Instrument-Model:
+  Predefined: Illumina Genome Analyzer
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL9052
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX011615
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN00003930
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR027963
+    cluster_name: public
+    id: '11902'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2758182880'
+    total_spots: '18145940'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX011/SRX011615
+  iid: SRX011615
+Series: GSE18199
+Status:
+  Last-Update-Date: '2013-05-23'
+  Release-Date: '2009-10-09'
+  Submission-Date: '2009-09-21'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX011/SRX011615
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM455nnn/GSM455140/GSM455140_428EGAAXX.8.maq.hic.summary.binned.txt.gz
+Title: Hi-C (HindIII,K562,1) 8
+Type: SRA
+iid: GSM455140

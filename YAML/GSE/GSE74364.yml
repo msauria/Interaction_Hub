@@ -1,0 +1,151 @@
+Contributor:
+- Address:
+    City: Norwich
+    Country: United Kingdom
+    Line: Colney Lane
+    Postal-Code: NR4 7UH
+    State: Norfolk
+  Department: Department of Molecular Microbiology
+  Email: tung.le@jic.ac.uk
+  Laboratory: The Le Lab
+  Organization: John Innes Centre
+  Person:
+    First: TUNG
+    Last: LE
+    Middle: BA KHANH
+  Phone: 01603450479
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: T
+    Last: Le
+    Middle: B
+  iid: contrib3
+- Person:
+    First: M
+    Last: Laub
+    Middle: T
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL17001
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Caulobacter crescentus CB15
+  Status:
+    Last-Update-Date: '2016-03-29'
+    Release-Date: '2013-04-10'
+    Submission-Date: '2013-04-10'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Caulobacter crescentus CB15)
+  iid: GPL17001
+Series:
+  Accession: GSE74364
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: Hi-C experiments were performed on (i) untreated wild type swarmer
+    cells and drug-treated swarmer cells (Chloramphenicol) of Caulobacter crescentus
+    CB15N; (ii) on swarmer cells that are starved in M2 salts for 90 minutes; (iii)
+    on swarmer cells harboring van::PrsaA_rsaA as well as derivatives of rsaA with
+    a cassette of 2xTAA 2x transcription terminator inserted at 60bp, 560bp, 1060
+    and 2060 bp from the transcription start site of the ectopic rsaA; (iv) on CB15N
+    strain ML2000 (Plac::dnaA) at time points 90 min, 150 min, 210 min and 270 min
+    after IPTG withdrawal; and (v) on CB15N strain overexpressing CtrAD51E_delta_omega
+    at time point 0 min, 120 min and 180 min after addition of the inducer (xylose).      RNA-seq
+    experiment were performed on RNA extracted from (i) wild-type CB15N cells growing
+    at exponential phase in PYE; and (ii) wild-type CB15N cells starved in M2 salts
+    for 90 min.
+  Pubmed-ID: '27288403'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA299824
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP065280
+    type: SRA
+  Sample-Ref:
+  - name: Laublab_BglII_NA1000_Chloramphenicol50_30min
+    ref: GSM1918945
+  - name: Laublab_BglII_NA1000_ML2000_150min_after_IPTG_withdrawal
+    ref: GSM1918946
+  - name: Laublab_BglII_NA1000_ML2000_210min_after_IPTG_withdrawal
+    ref: GSM1918947
+  - name: Laublab_BglII_NA1000_ML2000_270min_after_IPTG_withdrawal
+    ref: GSM1918948
+  - name: Laublab_BglII_NA1000_ML2000_90min_after_IPTG_withdrawal
+    ref: GSM1918949
+  - name: Laublab_BglII_NA1000_Starvation_M2_90min
+    ref: GSM1918950
+  - name: Laublab_BglII_NA1000_van_Promoterless_rsaA_rsaA
+    ref: GSM1918951
+  - name: Laublab_BglII_NA1000_van_PrsaA_antiterminator_rsaA_ATGTAA
+    ref: GSM1918952
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_ATGTAA
+    ref: GSM1918953
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_full_length
+    ref: GSM1918954
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_ter_1060bp
+    ref: GSM1918955
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_ter_2060bp
+    ref: GSM1918956
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_ter_560bp
+    ref: GSM1918957
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_ter_60bp
+    ref: GSM1918958
+  - name: Laublab_NcoI_NA1000_pJS14ctrAD51Edel3omega_0hr_after_xylose_addition
+    ref: GSM1918959
+  - name: Laublab_NcoI_NA1000_pJS14ctrAD51Edel3omega_2hr_after_xylose_addition
+    ref: GSM1918960
+  - name: Laublab_NcoI_NA1000_pJS14ctrAD51Edel3omega_3hr_after_xylose_addition
+    ref: GSM1918961
+  - name: Laublab_BglII_NA1000_Starvation_M2_90min_replicate2
+    ref: GSM2101271
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_ATGTAA_replicate2
+    ref: GSM2101272
+  - name: Laublab_BglII_NA1000_van_PrsaA_antiterminator_rsaA_ATGTAA_replicate2
+    ref: GSM2101273
+  - name: Laublab_BglII_NA1000_van_PrsaA_rsaA_full_length_replicate2
+    ref: GSM2101274
+  Status:
+    Last-Update-Date: '2016-06-13'
+    Release-Date: '2016-06-05'
+    Submission-Date: '2015-10-26'
+    database: GEO
+  Summary: Chromosomes in all organisms are highly organized and divided into multiple
+    chromosomal interaction domains, or topological domains. Regions of active, high
+    transcription help establish and maintain domain boundaries, but precisely how
+    this occurs remains unclear. Here, using fluorescence microscopy and chromosome
+    conformation capture in conjunction with deep sequencing (Hi-C), we show that
+    in Caulobacter crescentus both transcription rate and transcript length, independent
+    of concurrent translation, drive the formation of domain boundaries. We find that
+    long, highly expressed genes do not form topological boundaries simply through
+    the inhibition of supercoil diffusion. Instead, our results support a model in
+    which long, active regions of transcription drive local decompaction of the chromosome,
+    with these more open regions of the chromosome forming spatial gaps in vivo that
+    diminish contacts between DNA in neighboring domains. These insights into the
+    molecular forces responsible for domain formation in Caulobacter likely generalize
+    to other bacteria and possibly eukaryotes.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74364/GSE74364_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP065/SRP065280
+  Title: Transcription rate and transcript length drive the formation of chromosomal
+    interaction domain
+  Type:
+  - Other
+  - Expression profiling by high throughput sequencing
+  iid: GSE74364
+id: '200074364'

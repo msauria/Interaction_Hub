@@ -1,0 +1,66 @@
+Accession: GSM2088405
+Channel:
+  Characteristics: CD1
+  Extract-Protocol: "For Hi-C, cells were crosslinked with 1% formaldehyde for 10\
+    \ min at room temperature. Crosslinking was quenched with glycine and nuclear\
+    \ lysates were incubated with HindIII. Fragment ends were filled with biotinylated\
+    \ nucleotides, ligated. After reverssion of crosslinks, DNA was purified, sonicated\
+    \ and used to make Illumina libraries.\nLibraries for Illumina sequencing were\
+    \ constructed using the following standard protocol. The fragment end were repaired\
+    \ using the NEBNext End Repair Module, and adenosine was added at the 3\u2019\
+    \ ends of fragment using Klenow fragment (3\u2019 to 5\u2019 exo minus, New England\
+    \ Biolabs). Precipitated DNA and input DNA were incubated with adaptors at room\
+    \ temperature for 1 hr with T4 DNA ligase (New England Biolabs) and amplified\
+    \ with Illumina primers."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Sperm
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'For Hi-C, The paired end Hi-C reads were mapped independently using
+  BWA mem and paired. Reads mapping to more than two genomic locations (one for each
+  paired end or two for one paired end in agreement with its partner) were discarded.
+  Reads were further filtered and normalized using HiFive v1.2.2 (Sauria et al., 2015)
+  using the Express algorithm and the settings "--min-interactions 5 --min-distance
+  100000 --min-binsize 500 --num-bins 50 --express-iterations 5000 --min-change 0.00005
+  --remove-distance --express-reads cis".
+
+  Genome_build: mm9'
+Description: Hi-C library made using HindIII
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04557250
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1631905
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3225862
+    cluster_name: public
+    id: '2335452'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '26351460800'
+    total_spots: '263514608'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX163/SRX1631905
+  iid: SRX1631905
+Series: GSE79229
+Status:
+  Last-Update-Date: '2017-01-17'
+  Release-Date: '2017-01-17'
+  Submission-Date: '2016-03-15'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX163/SRX1631905
+Title: Sperm-HiC_replicate1_biological
+Type: SRA
+iid: GSM2088405

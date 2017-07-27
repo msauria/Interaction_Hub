@@ -1,0 +1,36 @@
+Accession: HPC7_Rep1
+Channel:
+  Characteristics:
+  - Hi-C
+  - HindIII
+  - mm10
+  Extract-Protocol:
+  Growth-Protocol:
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: HPC7
+  Treatment-Protocol:
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing:
+Description:
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+SRA:
+  SRR:
+  - acc: HPC7_Rep1
+    cluster_name: public
+    total_spots: '927465328'
+Series: HPC7_Rep1
+Title: HPC7_Rep1
+Type: SRA
+iid: HPC7_Rep1

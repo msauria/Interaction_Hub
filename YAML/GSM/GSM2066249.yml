@@ -1,0 +1,84 @@
+Accession: GSM2066249
+Channel:
+  Characteristics:
+  - Dup-L
+  - E12.5
+  - limb buds
+  Extract-Protocol: "Limbs were re-suspended in Trypsin and incubated for 10 minutes\
+    \ at 37\xB0C. Tissues were disrupted by pipetting and single cells were retrieved\
+    \ using cell strainer and fixed for 10 minutes at room temperature in 10ml (2%PFA,\
+    \ 10%FCS, 1XPBS). Final 140mM glycine was added to stop crosslinking. Cells were\
+    \ then lysed for 10\u2019 at 4\xB0C in  lysis buffer (50mM TRIS pH7.5, 150mM NaCl,\
+    \ 5mM EDTA, 0.5%NP-40, 1.15% TX-100 and 1X Proteinase Inhibitor).\nSheared DNA\
+    \ was then ligated to adaptors and 4 amplification cycles were performed prior\
+    \ to SureSelect hybridization. 700ng of adaptor-ligated DNA was hybridized to\
+    \ the custom probes according to Agilent instructions. Hybridized fragments were\
+    \ then amplified (12 cycles) and products were cleaned using AMPure XP beads.\
+    \ Each sample was sequence on an individual Illumina HiSeq lane following a 100bp\
+    \ paired-end mode."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: E12.5 limb buds
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Base calling with standard Illumina Software\nMapping and filtering\
+  \ of di-tags was performed with the HiCUP pipeline v0.5.8 (http://www.bioinformatics.babraham.ac.uk/projects/hicup/)\
+  \ (parameters: Nofill:1 Format: Sanger  without any size selection). The pipeline\
+  \ used Bowtie2 v2.2.6 for mapping short reads to reference genome (NCBI37/mm9).\n\
+  Filtered di-tags were further processed with Juicebox command line tools (https://github.com/theaidenlab/juicebox)\
+  \ to bin di-tags (10kb bins) and normalized by KR normalization (Only reads with\
+  \ MAPQ >= 30 were considered). The DNA-capturing step enriches genomic region chr11:109,010,001-114,878,000\
+  \ on mm9 . Before binning and normalization, di-tags were filtered for the enriched\
+  \ region and mm9 coordinates were shifted by -109,010,000 bp (a custom chromosome\
+  \ file containing only the enriched region on chr11 (length 5,868,000 bp) was used).\
+  \ After binning and normalization, coordinates were shifted back to their original\
+  \ values.\nDifference maps were generated based on raw count maps which were scaled\
+  \ individually by dividing each value of the matrix by a factor (sum \u2018masked\u2019\
+  \ triangle matrix/106). The region spanning all tested duplications (chr11:110,772,110-112,514,692)\
+  \ was not considered for the computation of the scaling factor.\nFor visualization\
+  \ CHi-C maps of count values, difference maps, and log2 ratios were visualized with\
+  \ the WashU epigenome browser (epigenomegateway.wustl.edu/browser/).\nGenome_build:\
+  \ mm9\nSupplementary_files_format_and_content: CHi-C map in WashU epigenome browser\
+  \ pairwise interaction format"
+Description: 'processed data file: Sox9-DupL-d1-3-E125_vs_Sox9-DupL-E125_10kb.WashU.txt'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: '?'
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04503366
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1593832
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3179589
+    cluster_name: public
+    id: '2248362'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '48465267500'
+    total_spots: '193861070'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX159/SRX1593832
+  iid: SRX1593832
+Series: GSE78072
+Status:
+  Last-Update-Date: '2016-10-06'
+  Release-Date: '2016-10-06'
+  Submission-Date: '2016-02-18'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX159/SRX1593832
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2066nnn/GSM2066249/GSM2066249_CHi-C-Sox9-DupL-E125_MAPQ30_KRnorm_10kb.WashU.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2066nnn/GSM2066249/GSM2066249_CHi-C-Sox9-DupL-E125_MAPQ30_Raw_10kb.WashU.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2066nnn/GSM2066249/GSM2066249_Sox9-DupL-E125_vs_Sox9-WT-E125_10kb.WashU.txt.gz
+Title: CHiC E12.5 Dup-L
+Type: SRA
+iid: GSM2066249

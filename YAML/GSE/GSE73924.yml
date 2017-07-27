@@ -1,0 +1,129 @@
+Contributor:
+- Address:
+    City: columbia
+    Country: USA
+    Line: Engineering Building West 109
+    State: MO
+    Zip-Code: 65211-2060
+  Department: Computer Science Department
+  Email: chengji@missouri.edu
+  Laboratory: Bioinformatics, Data Mining, and Machine Learning Lab
+  Organization: University of Missouri,columbia
+  Person:
+    First: Jianlin
+    Last: Cheng
+    Middle: Jack
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Zheng
+    Last: Wang
+  iid: contrib3
+- Person:
+    First: Renzhi
+    Last: Cao
+  iid: contrib4
+- Person:
+    First: Kristen
+    Last: Taylor
+  iid: contrib5
+- Person:
+    First: Aaron
+    Last: Briley
+  iid: contrib6
+- Person:
+    First: Charles
+    Last: Caldwell
+  iid: contrib7
+- Person:
+    First: Jianlin
+    Last: Cheng
+  iid: contrib8
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE73924
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  Overall-Design: Three different human cells (RL follicular lymphoma cell line, primary
+    tumor B-cells from an acute lymphoblastic leukemia patient, and MHH-CALL-4 B-cell
+    acute lymphoblastic leukemia cell line) were analyzed
+  Pubmed-ID: '23536826'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA298525
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP064763
+    type: SRA
+  Sample-Ref:
+  - name: RL
+    ref: GSM1906332
+  - name: B-ALL
+    ref: GSM1906333
+  - name: CALL4
+    ref: GSM1906334
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2015-11-01'
+    Submission-Date: '2015-10-12'
+    database: GEO
+  Summary: "In this work, we generated hundreds of millions of Hi-C paired end sequence\
+    \ reads for three different human cells (RL follicular lymphoma cell line, primary\
+    \ tumor B-cells from an acute lymphoblastic leukemia patient, and MHH-CALL-4 B-cell\
+    \ acute lymphoblastic leukemia cell line) using the Hi-C technique. An in-house\
+    \ Bioinformatics software pipeline was developed and applied to map sequence reads\
+    \ to the human reference genome, producing a large data set of high-quality and\
+    \ high-resolution chromosome contacts. Our computational analysis on these data\
+    \ reveal some interesting properties of human genome conformation, including conformational\
+    \ conservation and variation of the genomes of different cells, intra- and inter-chromosomal\
+    \ interactions, aberrant chromosomal translocation, spatial gene clusters, spatial\
+    \ gene-gene interactions, and spatial gene-regulatory-element interaction. Furthermore,\
+    \ we derived spatial interactions between functional elements (genes, transcription\
+    \ factor binding sites) from the chromosomal interaction data. The data were then\
+    \ used to generate chromosome-/genome-wide gene-gene interaction networks, transcription\
+    \ factor binding site (TFBS) \u2013 TFBS networks, and gene-TFBS networks. Remarkably,\
+    \ the connectivity in both networks shows the hallmark features of scale-free\
+    \ networks, suggesting that spatial interactions of gene-gene, gene-TFBS, and\
+    \ TFBS-TFBS in a genome are far from random."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE73924/GSE73924_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP064/SRP064763
+  Title: The Properties of Genome Conformation and Spatial Gene Interaction and Regulation
+    Networks of Normal and Malignant Human Cell Types
+  Type: Other
+  iid: GSE73924
+id: '200073924'

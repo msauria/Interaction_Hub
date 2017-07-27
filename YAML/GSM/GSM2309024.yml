@@ -1,0 +1,73 @@
+Accession: GSM2309024
+Channel:
+  Characteristics:
+  - Derived from H9 ESC
+  - Human ESC-derived Neuroectodermal Cells
+  Extract-Protocol: "DNA was extracted as described in Wilson, N.K. et al., Blood\
+    \ 127, e12\u2013e23 (2016).\nHi-C and PCHi-C libraries were generated as described\
+    \  in Wilson, N.K. et al., Blood 127, e12\u2013e23 (2016). For PCHi-C, ligation\
+    \ products containing promoter sequences were captured using a custom-made RNA\
+    \ capture bait system (SureSelect Target Enrichment, Agilent Technologies) designed\
+    \ as previously described in Mifsud, B. et al. Nat. Genet. 47, 598\u2013606 (2015),\
+    \ and containing 37,608 biotinylated RNAs targeting 22,076 HindIII restriction\
+    \ fragment ends. Libraries were paired-end sequenced on an Illumina HiSeq 1000\
+    \ machine at the Babraham Institute Sequencing Facility."
+  Growth-Protocol: "Human ESC (H9/WA09; obtained from WiCell) were cultured at 37\xB0\
+    C in 5% CO2 in air in Pluripro media and matrix (Cell Guidance Systems). ESC were\
+    \ routinely verified as mycoplasma-free using a PCR-based assay. ESC were differentiated\
+    \ into NEC using a previously described protocol (Rada-Iglesias, A. Nature 470,\
+    \ 279\u2013283 (2011)) and samples were harvested on day 7."
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Human ESC-derived Neuroectodermal Cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C-seq
+
+  Standard Illumina base-calling pipeline.
+
+  PCHi-C/Hi-C reads were mapped and filtered with HiCUP (v0.4.2) and Bowtie(v1.0.0).
+  Significant interactions were called with CHiCAGO(v0.1.4). RNA-Seq mapping was performed
+  with TopHat (v2.0.8b).
+
+  Genome_build: Hg19
+
+  Supplementary_files_format_and_content: Hi-C interaction file (Tabix format); RNA-Seq
+  raw counts per gene'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05762670
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2159279
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR4238032
+    cluster_name: public
+    id: '3154059'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '28599244500'
+    total_spots: '280384750'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX215/SRX2159279
+  iid: SRX2159279
+Series: GSE86821
+Status:
+  Last-Update-Date: '2017-03-23'
+  Release-Date: '2017-03-23'
+  Submission-Date: '2016-09-12'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX215/SRX2159279
+Title: HiC_hNEC
+Type: SRA
+iid: GSM2309024

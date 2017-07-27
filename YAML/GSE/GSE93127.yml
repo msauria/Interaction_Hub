@@ -1,0 +1,212 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Drive
+    State: CA
+    Zip-Code: 92093-0377
+  Department: Biological Sciences
+  Email: yiz106@ucsd.edu
+  Laboratory: Murre lab
+  Organization: university of california,san diego
+  Person:
+    First: Yina
+    Last: Zhu
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ke
+    Last: Gong
+  iid: contrib3
+- Person:
+    First: Matthew
+    Last: Denholtz
+  iid: contrib4
+- Person:
+    First: Vivek
+    Last: Chandra
+  iid: contrib5
+- Person:
+    First: Mark
+    Last: Kamps
+    Middle: P
+  iid: contrib6
+- Person:
+    First: Frank
+    Last: Alber
+  iid: contrib7
+- Person:
+    First: Cornelis
+    Last: Murre
+  iid: contrib8
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL17021
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2013-04-16'
+    Submission-Date: '2013-04-16'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Mus musculus)
+  iid: GPL17021
+Series:
+  Accession: GSE93127
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  - position: '6'
+    ref: contrib7
+  - position: '7'
+    ref: contrib8
+  Overall-Design: Performed  in situ Hi-C, GRO-Seq,  RNA-Seq, ChIP-Seq  and MeDIP-Seq,
+    in combination with 3D-FISH to pinpoint the underlying molecular mechanisms by
+    which diploid genomes fold into a confined geometry imposed by a multi-lobed nuclear
+    architecture.
+  Pubmed-ID: '28167501'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA360121
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP096029
+    type: SRA
+  Sample-Ref:
+  - name: HiC Neutrophils replicate 1
+    ref: GSM2445177
+  - name: HiC Progenitors replicate 1
+    ref: GSM2445178
+  - name: HiC Neutrophils replicate 2
+    ref: GSM2445179
+  - name: HiC Progenitors replicate 2
+    ref: GSM2445180
+  - name: HiC Neutrophils replicate 3
+    ref: GSM2445181
+  - name: HiC Progenitors replicate 3
+    ref: GSM2445182
+  - name: HiC Neutrophils replicate 4
+    ref: GSM2445183
+  - name: HiC Progenitors replicate 4
+    ref: GSM2445184
+  - name: HiC Neutrophils replicate 5
+    ref: GSM2445185
+  - name: HiC Progenitors replicate 5
+    ref: GSM2445186
+  - name: HiC Neutrophils replicate 6
+    ref: GSM2445187
+  - name: HiC Progenitors replicate 6
+    ref: GSM2445188
+  - name: HiC Neutrophils replicate 7 PCR replicate 1
+    ref: GSM2445189
+  - name: HiC Neutrophils replicate 7 PCR replicate 2
+    ref: GSM2445190
+  - name: HiC Progenitors replicate 7
+    ref: GSM2445191
+  - name: HiC BMDN replicate 1 PCR replicate 1
+    ref: GSM2445192
+  - name: HiC BMDN replicate 1 PCR replicate 2
+    ref: GSM2445193
+  - name: HiC BMDN replicate 2 PCR replicate 1
+    ref: GSM2445194
+  - name: HiC BMDN replicate 2 PCR replicate 2
+    ref: GSM2445195
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2017-02-06'
+    Submission-Date: '2017-01-04'
+    database: GEO
+  Summary: 'Neutrophils are responsible for the first line of defense against invading
+    pathogens. Their nuclei are uniquely structured as multiple lobes that establish
+    a highly constrained nuclear environment. Here we found that neutrophil genomes
+    were depleted of local genomic interactions but enriched for long-range genomic
+    interactions that spanned multiple topologically associating domains. Population-based
+    simulation of spherical and torroid genomes revealed declining radii of gyration
+    for neutrophil chromosomes. We found that neutrophil genomes were highly enriched
+    for heterochromatic genomic interactions across vast genomic distances, a process
+    named super-contraction. Super-contraction involved genomic regions located in
+    the heterochromatic compartment in both progenitors and neutrophils or genomic
+    regions that switched from the euchromatic to the heterochromatic compartment
+    during neutrophil differentiation.  Super-contraction was accompanied by the repositioning
+    of centromeres, pericentromeres and Long-Interspersed Nuclear Elements to the
+    neutrophil nuclear lamina. We found that Lamin-B Receptor expression was required
+    to attach centromeric and pericentromeric repeats but not LINE-1 elements to the
+    lamina. Differentiating neutrophils also repositioned rDNA and mini-nucleoli to
+    the lamina: a process that was closely associated with sharply reduced rRNA expression.
+    We propose that large-scale chromatin reorganization involving super-contraction
+    and recruitment of heterochromatin and nucleoli to the nuclear lamina facilitate
+    the folding of the neutrophil genome into a confined geometry imposed by a multi-lobed
+    nuclear architecture.'
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP096/SRP096029
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_BMDN_HiCbackground_50kb.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_BMDN_merged_filtered_25kb.PC1.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_BMDN_unique_filtered_HiCsummary.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_GROSeq_activatedgenes_2fold.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_GROSeq_repressedgenes_2fold.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_H3K27me3_markedRegion_Neu_10k_50k.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_H3K27me3_markedRegion_Pro_10k_50k.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Input_Neu.ucsc.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Input_Pro.ucsc.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_HiCbackground_50kb.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_PDs_PC1negative.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_PDs_PC1positive.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_unique_filtered_25kb.PC1.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_unique_filtered_HiCsummary.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_unique_filtered_downsample_25kb.PC1.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Neu_unique_filtered_downsample_HiCsummary.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Pro_HiCbackground_50kb.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Pro_PDs_PC1negative.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Pro_PDs_PC1positive.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Pro_unique_filtered_25kb.PC1.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_Pro_unique_filtered_HiCsummary.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_RAD21_Neu_peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_RAD21_Pro_peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_RAD21_Pro_specific_Peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_RNASeq_repressedgenes_2fold.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_RNAseq_activatedgenes_2fold.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_YZ12_index7_8_R1_2.hicup.sam.homer.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_YZ12_index9_10.R1_2.hicup.sam.homer.txt.bz2
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE93127/GSE93127_genes.fpkm_tracking_firststrand.csv.gz
+  Title: Comprehensive characterization of neutrophil genome topology
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Methylation profiling by high throughput sequencing
+  - Other
+  iid: GSE93127
+id: '200093127'

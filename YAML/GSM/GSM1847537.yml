@@ -1,0 +1,144 @@
+Accession: GSM1847537
+Channel:
+  Characteristics:
+  - Patski
+  - Mouse Embryonic Kidney Fibroblasts
+  - in situ Hi-C
+  Extract-Protocol: "Cells were crosslinked and then lysed with nuclei permeabilized\
+    \ but still intact. DNA was then restricted with MboI and the overhangs filled\
+    \ in incorporating a biotinylated base. Free ends were then ligated together in\
+    \ situ. Crosslinks were reversed, the DNA was sheared and then biotinylated ligation\
+    \ junctions were recovered with streptavidin beads.\_\nStandard Illumina library\
+    \ construction protocol was performed, and libraries were sequenced on the HiSeq\
+    \ X Ten/NextSeq/HiSeq2500 following the manufacturer's protocols."
+  Growth-Protocol: Cell lines were cultured according to manufacturer's instructions
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Mouse Embryonic Kidney Fibroblasts
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'The paired end reads were aligned separately using BWA against the
+  b37 (human), mm10 (mouse), or rheMac2 (rhesus macaque).
+
+  PCR duplicates, low mapping quality and unligated reads were removed using an in-house
+  Hi-C analysis pipeline (see Rao, Huntley, et al, Cell 2014l)
+
+  Contact matrices were constructed at various resolutions and normalized using an
+  in-house Hi-C analysis pipeline (see Rao, Huntley, et al, Cell 2014)
+
+  genome build: b37 (human), mm10 (mouse), rheMac2 (rhesus macaque)
+
+  processed data files format and content: Contact matrices: a text file with the
+  raw observed contact matrix in sparse matrix notation at a given resolution. Only
+  the upper triangle of the matrix is provided (i.e. i<=j), the matrix is symmetric,
+  so M_i,j = M_j,i. At this stage of processing, read pairs where one or both ends
+  do not align to the reference genome have already been removed, as well as chimeric
+  ambiguous reads (see Section II.a.2 of the Extended Experimental Procedures of Rao,
+  Huntley, et al., Cell 2014 for a definition of chimeric ambiguous reads). In addition,
+  duplicate reads (reads where both ends align to within +/- 4bp of each other) have
+  been removed as well (see Section II.a.3 of the Extended Experimental Procedures
+  of Rao, Huntley, et al., Cell 2014 for a full description of duplicate removal).
+  Full details of the Hi-C processing pipeline used in this study are provided in
+  Section II.a. of the Extended Experimental Procedures of Rao, Huntley, et al., Cell
+  2014.
+
+  processed data files format and content: Normalization files: normalization vectors
+  that can be used to transform the raw contact matrices M into normalized matrices
+  M*.  Each file is ordered such that the first line of the normalization vector file
+  is the norm factor for the first row/column of the corresponding raw contact matrix,
+  the second line is the factor for the second row/column of the contact matrix, and
+  so on. To normalize, an entry M_i,j in a *RAWobserved file, divide the entry by
+  the corresponding norm factors for i and j. (See section II.b of the Extended Experimental
+  Procedures of Rao, Huntley, et al., Cell, 2014 for more information about the different
+  types of normalizations.)
+
+  processed data files format and content: HiCCUPS_looplist.txt files contain loop
+  calls generated via HiCCUPS; first three fields represent the locus participating
+  in the loop closer to the p-end of the chromosome; fields 4-6 represent the locus
+  participating in the loop closer to the q-end of the chromosome; field 7 represents
+  the color used to display the feature in Juicebox (a Hi-C data visualization software,
+  see www.aidenlab.org/juicebox); field 8 represents the observed number of counts
+  at the loop; fields 9-12 represent the expected number of counts at the loop using
+  four different expected models; fields 13-16 are the q-values over each of the expected
+  values; field 17 is the number of enriched pixels that was clustered into a particular
+  loop; field 18-19 are the centroid of the loop; field 20 is the radius of the loop
+
+  processed data files format and content: Arrowhead_domainlist.txt files contain
+  domain calls generated via Arrowhead; first 6 fields represent the boundaries of
+  the domain; field 7 represents the color used to display the feature in Juicebox
+  (a Hi-C data visualization software, see www.aidenlab.org/juicebox); field 8 is
+  the corner score for the domain (see Rao, Huntley, et al); fields 9-12 are the component
+  scores used in the Arrowhead algorithm (see Rao, Huntley, et al)
+
+  processed data files format and content: merged_nodups.txt files contain filtered,
+  "normal" contacts. Each line represents a single Hi-C read pair that has passed
+  the alignment and duplicate removal stages. The format of each line of the file
+  is: read_name, strand1, chromosome1, position1, fragment-index1, strand2, chromosome2
+  ,position2, fragment-index2, mapq1, mapq2
+
+  processed data files format and content: collisions.txt.gz files contain the contacts
+  that have 3 or more loci.'
+Description: Processed data files were not available at the time of accessioning.
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03979976
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1165027
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2184321
+    cluster_name: public
+    id: '1695147'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1837914098'
+    total_spots: '24836677'
+  - acc: SRR2184322
+    cluster_name: public
+    id: '1695147'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1866665688'
+    total_spots: '25225212'
+  - acc: SRR2184323
+    cluster_name: public
+    id: '1695147'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3483428048'
+    total_spots: '47073352'
+  - acc: SRR2184324
+    cluster_name: public
+    id: '1695147'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3522179332'
+    total_spots: '47597018'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX1165027
+  iid: SRX1165027
+Series: GSE71831
+Status:
+  Last-Update-Date: '2016-10-31'
+  Release-Date: '2016-07-19'
+  Submission-Date: '2015-08-11'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1847nnn/GSM1847537/GSM1847537_DarrowHuntley-2015-HIC018_merged_nodups.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX1165027
+Title: DarrowHuntley-2015-HIC018
+Type: SRA
+iid: GSM1847537

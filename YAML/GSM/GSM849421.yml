@@ -1,0 +1,172 @@
+Accession: GSM849421
+Channel:
+  Characteristics:
+  - Embryo
+  - 4-12 hr
+  - Oregon-R w1118
+  Extract-Protocol: "~3000-4000 embryos were dechorionated for 5 min in fresh bleach,\
+    \ before douncing in 5 ml fix buffer (2% formaldehyde, 15 mM HEPES pH 7.6, 60\
+    \ mM KCl, 15 mM NaCl, 4 mM MgCl2, 0.1% Triton-X100, 0.5 mM DTT, protease inhibitor\
+    \ cocktail (Roche)) and fixed for a total of 10 min at 25\xB0C, 750 rpm on a shaker.\
+    \ After quenching with 5 ml 2 M glycine, nuclei were collected by centrifugation\
+    \ for 5 min at 4500 g, 4\xB0C, then washed once with 5 ml fix buffer (without\
+    \ formaldehyde) and once with 1.25 x NEB3 buffer (New England Biolabs), with centrifugation\
+    \ for 5 min at 4500 g, 4\xB0C each time. Nuclei were resuspended in 300 \xB5l\
+    \ 1.25 x Dpn II buffer (New England Biolabs) plus 0.3% SDS and incubated for 1\
+    \ hr at 37\xB0C, 1000 rpm on a shaker. Triton-X100 was added to a final concentration\
+    \ of 2% and the nuclei were incubated for a further 1 hr at 37\xB0C, 1000 rpm,\
+    \ before overnight digestion with 1500 U Dpn II (New England Biolabs) at 37\xB0\
+    C, 1000 rpm. The restriction enzyme was inactivated by incubation for 20 min at\
+    \ 65\xB0C, 1000 rpm with SDS at a final concentration of 1.3%, before dilution\
+    \ of the chromatin in 10 ml 1x T4 DNA ligase buffer (New England Biolabs) plus\
+    \ 1% Triton-X100 and incubation for 1 hr at 37\xB0C, 750 rpm. The chromatin was\
+    \ ligated for 4 hr at 25\xB0C, 750 rpm with 40,000 U T4 DNA ligase (New England\
+    \ Biolabs) then crosslinks were reversed overnight at 65\xB0C, 750 rpm in the\
+    \ presence of 150 \xB5g/ml proteinase K. The 3C DNA was then purified by 1 hr\
+    \ treatment with 40 \xB5g/ml RNase A at 37\xB0C, 750 rpm, phenol extraction, phenol/chloroform\
+    \ extraction and ethanol precipitation. The DNA was quantified with the Qubit\
+    \ dsDNA assay (Invitrogen). Aliquots of 5 \xB5g 3C DNA were sonicated in a Bioruptor\
+    \ (Diagenode) in 50 \xB5l volumes in sonication buffer (50 mM Tris-HCl, pH 8,\
+    \ 10 mM EDTA, 1% SDS) to obtain a smear between 500-1500 bp. The sonicated 3C\
+    \ DNA was then purified by phenol/chloroform extraction and ethanol precipitation\
+    \ and quantified with the Qubit dsDNA assay (Invitrogen). Libraries for paired-end\
+    \ sequencing were made from 500 ng aliquots of sonicated 3C DNA using Illumina\
+    \ reagents and protocols, with size selection for products of ~800 bp for the\
+    \ deep-sequenced sample, or 300-800 bp for the pilot sample."
+  Growth-Protocol: "Oregon-R w1118 flies were raised in standard cornmeal yeast extract\
+    \ media at 25\xB0C. Egg laying was performed on plates with standard vinegar medium\
+    \ and yeast. Embryos were collected in 0.03% Triton-X100, 0.4% NaCl 16-18 hr after\
+    \ egg laying."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: 4-12 hr embryos
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: '10k_bins.txt; genome build: dm3
+
+  20k_bins.txt; genome build: dm3
+
+  40k_bins.txt; genome build: dm3
+
+  80k_bins.txt; genome build: dm3
+
+  160k_bins.txt; genome build: dm3
+
+  pilot10k_normalized.txt; genome build: dm3
+
+  pilot20k_normalized.txt; genome build: dm3
+
+  pilot40k_normalized.txt; genome build: dm3
+
+  pilot80k_normalized.txt; genome build: dm3
+
+  pilot160k_normalized.txt; genome build: dm3
+
+  Paired-end reads were mapped to the Drosophila melanogaster genome (assembly dm3)
+  using the maq program with standard parameters (quality>30). Unmapped or non-unique
+  mapped reads were discarded. We then divided read pairs into four groups: SS (reads
+  mapping to the same restriction fragment, or to two adjacent restriction fragments);
+  S2 (reads in which both ends mapped precisely on the DpnII site); S1 (reads in which
+  one of the ends mapped precisely on the DpnII site); S0 (reads in which both ends
+  did not map precisely to a DpnII site). SS, S2 and S1 pairs were discarded from
+  subsequent analysis. Mapped reads were then associated with the first restriction
+  fragment end encountered when moving from the mapped position in the appropriate
+  strand. All subsequent analysis was done in the space of fragment end pairs. The
+  Drosophila genome contains 464,246 restriction fragments. After discarding low mappability
+  fragments 301,687 fragments are left (and each defines two fragment ends). A model
+  accounting for systematic biases in contact probability was constructed as previously
+  (Yaffe and Tanay; Nature Genetics, 43, p.1059-65). Briefly, we used the local G+C
+  content of up to 200 bp from the restriction site (agc, bgc), and the DpnII restriction
+  fragment lengths (alen, blen), to correct for systematic biases in Hi-C coverage
+  by modeling: P(Xa,b) = Pprior . Flen(alen,blen) . Fgc(agc,bgc). We estimated maximum
+  likelihood model parameters (the matrices Flen and Fgc) through application of an
+  iterative algorithm as described, using 20 bins for G+C content and 20 bins for
+  fragment length.'
+Instrument-Model:
+  Predefined: Illumina Genome Analyzer II
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL9061
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX111554
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN00765543
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR389756
+    cluster_name: public
+    id: '129029'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '492468624'
+    total_spots: '6839842'
+  - acc: SRR389757
+    cluster_name: public
+    id: '129029'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '442982808'
+    total_spots: '6152539'
+  - acc: SRR389758
+    cluster_name: public
+    id: '129029'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '430002000'
+    total_spots: '5972250'
+  - acc: SRR389759
+    cluster_name: public
+    id: '129029'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '344423160'
+    total_spots: '4783655'
+  - acc: SRR389760
+    cluster_name: public
+    id: '129029'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '364020336'
+    total_spots: '5055838'
+  - acc: SRR389761
+    cluster_name: public
+    id: '129029'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '525366864'
+    total_spots: '7296762'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX111/SRX111554
+  iid: SRX111554
+Series: GSE34453
+Status:
+  Last-Update-Date: '2013-05-23'
+  Release-Date: '2012-01-20'
+  Submission-Date: '2011-12-14'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_10k_bins.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_160k_bins.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_20k_bins.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_40k_bins.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_80k_bins.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_pilot10k_normalized.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_pilot160k_normalized.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_pilot20k_normalized.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_pilot40k_normalized.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM849nnn/GSM849421/GSM849421_pilot80k_normalized.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX111/SRX111554
+Title: Pilot simplified Hi-C
+Type: SRA
+iid: GSM849421

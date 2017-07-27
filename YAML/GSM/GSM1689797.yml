@@ -1,0 +1,143 @@
+Accession: GSM1689797
+Channel:
+  Characteristics:
+  - in situ DNase Hi-C
+  - '2'
+  Extract-Protocol: 'DNase Hi-C or in situ DNase Hi-C:  Cells are cross-linked with
+    formaldehyde; chromatin is then randomly fragmented by DNase I. The resulting
+    chromatin fragments are end-repaired and dA-tailed, then marked with a biotinylated
+    internal adaptor; and proximity ligation is carried out inside individual nuclei
+    to favor ligation events between the cross-linked DNA fragments. The resulting
+    DNA sample contains ligation products consisting of chimeric DNA fragments that
+    were originally in close spatial proximity in the nucleus, marked with biotin
+    at the junction. A whole-genome chromatin interaction library is created by shearing
+    the DNA and selecting the biotin-containing fragments with streptavidin magnetic
+    beads. After linear library amplification, a DNase Hi-C library is generated and
+    can be sequenced to identify whole-genome chromatin contacts.'
+  Molecule: genomic DNA
+  Organism: Mus musculus x Mus spretus
+  Source: Patski cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'First, we performed an exhaustive search and cleaning of the Illumina
+  primer and adaptor sequences in the full-length reads and extracted the remaining
+  read fragments of various lengths from 25-80 bp.
+
+  A pseudo-spretus genome was assembled by replacing available SNPs between C57BL/6J
+  and M. spretus (Sanger) into the BL6 reference genome.
+
+  We then mapped each end of these cleaned paired-end reads separately to the C57BL/6J
+  genome (mm9 assembly) and the pseudo-spretus genome using BWA/v0.5.9. We only retained
+  the reads that mapped uniquely, allowing at most 3 mismatches and requiring mapping
+  quality MAPQ >= 30. Only high-quality uniquely-mapped reads were used for assignment
+  to each haploid genome based on available SNPs.
+
+  To eliminate the bias due to the PCR duplication step, we removed redundant paired-end
+  reads. We define two reads as redundant if both ends of the reads are mapped to
+  identical locations in the genome.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: txt files, containing uniquely mapped and
+  non-redundent read pairs. The files are tab-delimited. The columns are #1 read identifier,
+  #2 strand of the 1st end, #3 mapped chr of the 1st end, #4 mapped coordinate of
+  the 1st end, #5 allele of 1st read (ref: BL6; alt: spretus; both-ref; allele-uncertain
+  reads), #6 sequence of 1st end, #7 strand of the 2nd end, #8 mapped chr of the 2nd
+  end, #9 mapped coordinate of the 2nd end, #10 allele of 2nd read (ref: BL6; alt:
+  spretus; both-ref; allele-uncertain reads), #11 sequence of 2nd end.'
+Description: in situ DNase Hi-C experiment in Patski cells
+Instrument-Model:
+  Predefined: Illumina NextSeq 500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DNase
+Platform-Ref:
+  ref: GPL20213
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03701891
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1033309
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2033070
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '385964480'
+    total_spots: '2412278'
+  - acc: SRR2033072
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '404817280'
+    total_spots: '2530108'
+  - acc: SRR2033071
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '378082720'
+    total_spots: '2363017'
+  - acc: SRR2033077
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9839209280'
+    total_spots: '61495058'
+  - acc: SRR2033076
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9835261280'
+    total_spots: '61470383'
+  - acc: SRR2033075
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9531289760'
+    total_spots: '59570561'
+  - acc: SRR2033074
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9699090240'
+    total_spots: '60619314'
+  - acc: SRR2033073
+    cluster_name: public
+    id: '1496868'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '394797920'
+    total_spots: '2467487'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX103/SRX1033309
+  iid: SRX1033309
+Series: GSE68992
+Status:
+  Last-Update-Date: '2015-07-17'
+  Release-Date: '2015-07-16'
+  Submission-Date: '2015-05-18'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX103/SRX1033309
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1689nnn/GSM1689797/GSM1689797_insituDNaseHiC.WG.patski.rep2.cleanedPairs.txt.gz
+Title: insituDNaseHiC-WG-patski-rep2
+Type: SRA
+iid: GSM1689797

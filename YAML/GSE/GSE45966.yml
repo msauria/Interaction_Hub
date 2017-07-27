@@ -1,0 +1,174 @@
+Contributor:
+- Address:
+    City: Norwich
+    Country: United Kingdom
+    Line: Colney Lane
+    Postal-Code: NR4 7UH
+    State: Norfolk
+  Department: Department of Molecular Microbiology
+  Email: tung.le@jic.ac.uk
+  Laboratory: The Le Lab
+  Organization: John Innes Centre
+  Person:
+    First: TUNG
+    Last: LE
+    Middle: BA KHANH
+  Phone: 01603450479
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: T
+    Last: Le
+    Middle: B
+  iid: contrib3
+- Person:
+    First: M
+    Last: Laub
+    Middle: T
+  iid: contrib4
+- Person:
+    First: M
+    Last: Imakaev
+    Middle: V
+  iid: contrib5
+- Person:
+    First: L
+    Last: Mirny
+    Middle: A
+  iid: contrib6
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL17001
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Caulobacter crescentus CB15
+  Status:
+    Last-Update-Date: '2016-03-29'
+    Release-Date: '2013-04-10'
+    Submission-Date: '2013-04-10'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Caulobacter crescentus CB15)
+  iid: GPL17001
+- Accession: GPL17059
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Caulobacter crescentus CB15
+  Status:
+    Last-Update-Date: '2013-04-24'
+    Release-Date: '2013-04-24'
+    Submission-Date: '2013-04-24'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Caulobacter crescentus CB15)
+  iid: GPL17059
+Series:
+  Accession: GSE45966
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  Overall-Design: Hi-C experiments were performed on untreated wild type swarmer cells
+    and drug-treated swarmer cells (Novobiocin or Rifampicin) of Caulobacter crescentus
+    CB15N. Hi-C were also performed on swarmer cells of smc knock-out and hup1hup2
+    knock-out mutants of Caulobacter crescentus. Time-course Hi-C were performed on
+    a synchronous population of Caulobacter crescentus at 5, 10, 30, 45, 60 and 75
+    minutes after synchronization.  The progression of DNA replication during the
+    cell cycle was followed by total genomic DNA sequencing.
+  Pubmed-ID: '24158908'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA196826
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP020913
+    type: SRA
+  Sample-Ref:
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_untreated_replicate1
+    ref: GSM1120445
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_untreated_replicate2
+    ref: GSM1120446
+  - name: Laublab_NcoI_HiC_NA1000_swarmer_cell_untreated
+    ref: GSM1120448
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_Novobiocin_50ug_per_ml_30min
+    ref: GSM1120449
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_Novobiocin_25ug_per_ml_30min
+    ref: GSM1120450
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_Rifampicin_25ug_per_ml_30min
+    ref: GSM1120451
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_smc_knockout
+    ref: GSM1120452
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_hup1hup2_knockout
+    ref: GSM1120453
+  - name: Laublab_HiC_NA1000_swarmer_cell_rsaA_relocation_van_locus
+    ref: GSM1120454
+  - name: Laublab_BglII_HiC_NA1000_cellcycle_0min
+    ref: GSM1120455
+  - name: Laublab_BglII_HiC_NA1000_cellcycle_10min
+    ref: GSM1120456
+  - name: Laublab_BglII_HiC_NA1000_cellcycle_30min
+    ref: GSM1120457
+  - name: Laublab_BglII_HiC_NA1000_cellcycle_45min
+    ref: GSM1120458
+  - name: Laublab_BglII_HiC_NA1000_cellcycle_60min
+    ref: GSM1120459
+  - name: Laublab_BglII_HiC_NA1000_cellcycle_75min
+    ref: GSM1120460
+  - name: Laublab_gDNA_sequencing_NA1000_cellcycle_0min
+    ref: GSM1120462
+  - name: Laublab_gDNA_sequencing_NA1000_cellcycle_10min
+    ref: GSM1120463
+  - name: Laublab_gDNA_sequencing_NA1000_cellcycle_30min
+    ref: GSM1120464
+  - name: Laublab_gDNA_sequencing_NA1000_cellcycle_45min
+    ref: GSM1120465
+  - name: Laublab_gDNA_sequencing_NA1000_cellcycle_60min
+    ref: GSM1120466
+  - name: Laublab_gDNA_sequencing_NA1000_cellcycle_75min
+    ref: GSM1120467
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_rsaA_relocation_xyl_locus
+    ref: GSM1128751
+  - name: Laublab_BglII_HiC_NA1000_swarmer_cell_empty_pMT675_van_locus
+    ref: GSM1128752
+  Status:
+    Last-Update-Date: '2016-03-29'
+    Release-Date: '2013-10-30'
+    Submission-Date: '2013-04-10'
+    database: GEO
+  Summary: Chromosomes must be highly compacted and organized within cells, but how
+    this is achieved in vivo remains poorly understood. We report the first use of
+    Hi-C to map the structure of bacterial chromosomes at a high, unprecedented resolution.
+    Analysis of Hi-C data and polymer modeling indicates that the Caulobacter crescentus
+    chromosome consists of multiple, largely independent spatial domains likely comprised
+    of supercoiled plectonemes arrayed into a bottlebrush-like fiber. These domains
+    are stable throughout the cell cycle and re-established concomitantly with DNA
+    replication. We provide strong evidence that domain boundaries are established
+    by highly-expressed genes and the formation of plectoneme-free regions. Additionally,
+    we use Hi-C to demonstrate that supercoiling, the histone-like protein HU, and
+    SMC act at different length-scales and in complementary ways to organize and structure
+    chromosomes within cells.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE45966/GSE45966_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP020/SRP020913
+  Title: High-resolution mapping of the spatial organization of Caulobacter crescentus
+    chromosome by chromosome conformation capture in conjunction with next-generation
+    sequencing (Hi-C)
+  Type: Other
+  iid: GSE45966
+id: '200045966'

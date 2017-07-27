@@ -1,0 +1,138 @@
+Accession: GSM1718030
+Channel:
+  Characteristics:
+  - mixture of human ESC and mouse embryonic liver
+  - H9 (wa09; wicell)
+  - C57BL/6
+  - human ESC and mouse embryo stage 14.5
+  Extract-Protocol: "Approximately 50 million human ESCs (at passage 56) were harvested\
+    \ with Accutase (Life Technologies), suspended in Pluripro media and directly\
+    \ processed for fixation. Mouse foetal liver cells were suspended in DMEM (Life\
+    \ Technologies) supplemented with 10% FBS, filtered through a cell strainer (70\
+    \ \xB5m) and directly fixed by addition of formaldehyde.\nThirty to 50 million\
+    \ cells were fixed in 2% formaldehyde for 10 min, quenched with 0.125 M glycine,\
+    \ spun down (400 x g, 5 min) and washed once with PBS. The cells were incubated\
+    \ in 50 ml permeabilisation buffer (10 mM Tris-HCl pH 8, 10 mM NaCl, 0.2% Igepal\
+    \ CA-630, Complete EDTA-free protease inhibitor cocktail [Roche]) for 30 min on\
+    \ ice with occasional agitation, spun down (650 x g, 5 min, 4\u02DAC), and the\
+    \ cell pellets were resuspended in 358 \xB5l of 1.25 x NEBuffer2 (NEB) per 5 million\
+    \ cell aliquot. Eleven \xB5l of 10% SDS was added to each aliquot, followed by\
+    \ an incubation at 37\u02DAC for 60 min with continuous agitation (950 rpm). To\
+    \ quench the SDS, 75 \xB5l of 10% Triton X-100 was then added per aliquot, followed\
+    \ by an incubation at 37\u02DAC for 60 min with continuous agitation (950 rpm).\
+    \ To digest chromatin, 1500 U of Hind III (NEB) was added per aliquot and incubated\
+    \ at 37\u02DAC overnight with continuous agitation (950 rpm). After digestion,\
+    \ restriction sites were filled in with Klenow (NEB) in the presence of biotin-14-dATP\
+    \ (Life Technologies), dCTP, dGTP and dTTP (all 30 \xB5M) for 60 min at 37\u02DA\
+    C.   For in-solution ligation, 86 \xB5l of 10% SDS was added per aliquot and incubated\
+    \ at 65\u02DAC for 30 min with continuous agitation (950 rpm), followed by addition\
+    \ of 7.61 ml of ligation mix (745 \xB5l of 10% Triton X-100, 820 \xB5l of 10 x\
+    \ T4 DNA ligase reaction buffer [NEB], 82 \xB5l of 10 mg/ml BSA [NEB] and 5.965\
+    \ ml water) per aliquot and incubation at 37\u02DAC for 60 min with occasional\
+    \ agitation. For in-nucleus ligation, 7.61 ml of ligation mix (820 \xB5l of 10\
+    \ x T4 DNA ligase reaction buffer [NEB], 82 \xB5l of 10 mg/ml BSA [NEB] and 6.71\
+    \ ml water) was added per aliquot (compared to the in-solution ligation, SDS addition\
+    \ and incubation at 65\u02DAC were omitted). For the ligation reaction (both in-solution\
+    \ and in-nucleus variants), 50 \xB5l of 1 U/\xB5l T4 DNA ligase (Life Technologies)\
+    \ was added per aliquot, followed by incubation at 16\u02DAC for 4 hrs.   The\
+    \ cross-links were reversed by adding 60 \xB5l of 10 mg/ml proteinase K (Roche)\
+    \ per aliquot and incubating at 65\u02DAC overnight. After overnight incubation,\
+    \ another 60 \xB5l of proteinase K per aliquot was added, followed by incubation\
+    \ at 65\u02DAC for an additional two hours. RNA was removed by adding 12.5 \xB5\
+    l of 10 mg/ml RNase A (Roche) per aliquot and incubating at 37\u02DAC for 60 min.\
+    \ DNA was isolated by a phenol (Sigma) extraction, followed by a phenol/chloroform/isoamylalcohol\
+    \ (Sigma) extraction and standard ethanol precipitation. The precipitated DNA\
+    \ was washed three times with 70% ethanol, and dissolved in 25 \xB5l TE per aliquot.\
+    \ Subsequently all aliquots were pooled and the Hi-C DNA was quantified (Quant-iT\
+    \ Pico Green, Life Technologies). Biotin was removed from non-ligated restriction\
+    \ fragment ends by incubating 30 to 40 \xB5g of Hi-C library DNA with T4 DNA polymerase\
+    \ (NEB) for 4 hours at 20\u02DAC in the presence of dATP. After DNA purification\
+    \ (Qiagen PCR purification kit) and sonication (Covaris E220), the sonicated DNA\
+    \ was end-repaired with T4 DNA polymerase, T4 DNA polynucleotide kinase, Klenow\
+    \ (all NEB) and dNTPs in 1 x T4 DNA ligase reaction buffer (NEB). Double size\
+    \ selection of DNA was performed using AMPure XP beads (Beckman Coulter), before\
+    \ dATP-addition with Klenow exo- (NEB). Biotin-marked ligation products were isolated\
+    \ with MyOne Streptavidin C1 Dynabeads (Life Technologies) in binding buffer (5\
+    \ mM Tris pH8, 0.5 mM EDTA, 1 M NaCl) for 30 min at room temperature, followed\
+    \ by two washes in binding buffer, and one wash in 1 x T4 DNA ligase reaction\
+    \ buffer (NEB). PE adapters (Illumina) were ligated onto Hi-C ligation products\
+    \ bound to streptavidin beads for 2 hours at room temperature (T4 DNA ligase in\
+    \ 1 x T4 DNA ligase reaction buffer [NEB], slowly rotating). After washes in wash\
+    \ buffer (5 mM Tris, 0.5 mM EDTA, 1 M NaCl, 0.05% Tween-20) and binding buffer,\
+    \ the DNA-bound beads were resuspended in NEBuffer 2. Bead-bound Hi-C DNA was\
+    \ amplified with 12 PCR amplification cycles using PE PCR 1.0 and PE PCR 2.0 primers\
+    \ (Illumina). The concentration and size distribution of Hi-C library DNA after\
+    \ PCR amplification was determined by Bioanalyzer profiles (Agilent Technologies)\
+    \ and quantitative PCR, and the Hi-C libraries were paired-end sequenced on Illumina\
+    \ Hi-Seq1000 or MiSeq platforms."
+  Growth-Protocol: H9 (WA09; WiCell) human ESCs were maintained using Pluripro fully-defined
+    media and matrix (Cell Guidance Systems). Mouse foetal livers were dissected from
+    C57BL/6 mouse embryos at day 14.5 (E14.5) of development.
+  Molecule: genomic DNA
+  Organism:
+  - Homo sapiens
+  - Mus musculus
+  Source: H9 (WA09; WiCell) human ESCs and Mouse foetal liver cells from C57BL/6 mouse
+    embryos, (E14.5)
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Hi-C analysis pipeline HiCUP v0.4.2 (running bowtie2 v2.2.3 for mixed human-mouse
+  samples or bowtie v0.12.9 for other samples). HiCUP homepage: www.bioinformatics.babraham.ac.uk/projects/hicup
+
+  Hi-C normalisation used Hicpipe v0.93 (Hicpipe homepage: http://compgenomics.weizmann.ac.il/tanay/?page_id=283
+  )
+
+  Hi-C normalisation also used Homer (Homer homepage: http://homer.salk.edu/homer
+  )
+
+  Genome_build: hg19 and mm9
+
+  Supplementary_files_format_and_content: The files with extension ".raw" provide
+  the positions of interacting Hi-C read pairs (di-tags). The header line in each
+  file describes each column.'
+Description: 'Mixture of mouse and human samples.
+
+  The human-mouse mixed samples were used to assess the level of experimental artefacts.
+  The FASTQ files were mapped against a reference genome (creating a BAM file) and
+  the interspecies contacts were counted.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 1000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL20607
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03787392
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1070640
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2075622
+    cluster_name: public
+    id: '1550431'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '4120652610'
+    total_spots: '40398555'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX107/SRX1070640
+  iid: SRX1070640
+Series: GSE70181
+Status:
+  Last-Update-Date: '2015-08-12'
+  Release-Date: '2015-08-12'
+  Submission-Date: '2015-06-23'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1718nnn/GSM1718030/GSM1718030_mouse_human1_ISL_Lane1812_ACTTGA_L001_uniques.bam.raw.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX107/SRX1070640
+Title: 'Mouse-human mixture1: Hi-C in-solution ligation'
+Type: SRA
+iid: GSM1718030

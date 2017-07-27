@@ -1,0 +1,101 @@
+Accession: GSM2109905
+Channel:
+  Characteristics: C57BL/6J
+  Extract-Protocol: "Oocytes were fixed in with 2% formaldehyde for 15 minutes at\
+    \ room temperature. Oocytes were washed through drops of complete M2. For SN and\
+    \ NSN distinction oocytes were stained for 15 min with 0.2 \xB5g/ml Hoechst (33342,\
+    \ Invitrogen). Cells were then imaged using a LSM510 (Zeiss) confocal microscope\
+    \ and sorted according to their chromatin structure before proceeding with the\
+    \ Hi-C protocol. After fixation, single oocytes were incubated in 9 \u03BCl of\
+    \ lysis buffer for at least 15 minutes on ice. Similarly cells were incubated\
+    \ in 9 \u03BCl of 1\xD7 NEB3 buffer supplemented with 0.6% SDS for 2 hours at\
+    \ 37\xB0 with shaking in humidified atmosphere. Then cells were incubated in 1\xD7\
+    \ DpnII buffer (NEB) with 1\xD7 BSA and  5 U DpnII (NEB). After overnight incubation\
+    \ in a humidified incubator at 37\xB0 the DNA ends were ligated in 9 \u03BCl of\
+    \ 1\xD7 T4 DNA ligase buffer containing 5 U T4 DNA ligase (Thermo Scientific)\
+    \ and they were incubated at 16\xB0C for 4.5 hours with 50 rpm rotation, and then\
+    \ were kept for 30 min at room temperature. DNA from each nucleus was amplified\
+    \ using illustra GenomiPhi v2 DNA amplification kit (GE Healthcare) or illustra\
+    \ Single Cell GenomiPhi DNA amplification kit according to manufacturer's recommendations,\
+    \ but both protocols were modified to include a decrosslinking step of an overnight\
+    \ (14-16 hours) incubation at 65\xB0C. After the whole-genome amplification procedure,\
+    \ the DNA was purified. 1 \u03BCg (or all available amount, if the yield was lower)\
+    \ of DNA was diluted to 500 \u03BCl with sonication buffer (50 mM Tris-HCl pH\
+    \ 8.0, 10 mM EDTA, 0.1% SDS) and was sonicated using Branson Sonifier 150 for\
+    \ 20 seconds with power setting 3. The sonicated DNA was purified and then submitted\
+    \ for library preparation and sequencing.\nThe library preparation was done by\
+    \ the VBCF NGS unit (vbcf.ac.at) following the standard DNA sample  preparation\
+    \ protocol for Solexa platforms (NEB reagents)."
+  Growth-Protocol: Fully grown denuded GV oocytes were isolated from 2-3 month old
+    C57BL/6J mice by puncturing of ovaries with hypodermic needles28. Oocytes were
+    incubated for at least 2 hours before the procedure to ensure viability. Before
+    formaldehyde fixation, the zona pellucida was removed by treatment with Acidic
+    Tyrode's solution (Sigma).
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: oocyte
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Base calling was performed by VBCF NGS unit
+
+  Mapping: iterative mapping (see Imakaev et al, 2012) using bowtie2 with increased
+  stringency parameters: --score-min -L 0.6,0.2--very-  sensitive
+
+  Read filtering: if two reads map to the same strands, and each side of the read
+  is within 500 bp of any side of the other read, we retained only one copy of the
+  read.
+
+  Additional filtering: we separated the genome into 500 bp bins. If any two bins
+  were interacting more than once, only one interaction was counted. Since each region
+  is only present in the single cell up to 4 times (in oocytes), we eliminated all
+  500 bp bins that form more than 8 unique interactions with other bins.
+
+  Filtered reads were then binned at different resolutions (we provide files at 200Kb
+  resolution) using read start as a read position. No normalization was applied to
+  the data.
+
+  Genome_build: mm9 or hg19
+
+  Supplementary_files_format_and_content: List of all interactions at single contact,
+  40Kb or 200 Kb resolution'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04622237
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1685256
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3343966
+    cluster_name: public
+    id: '2415639'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6144491500'
+    total_spots: '24577966'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685256
+  iid: SRX1685256
+Series: GSE80006
+Status:
+  Last-Update-Date: '2017-03-24'
+  Release-Date: '2017-03-23'
+  Submission-Date: '2016-04-07'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685256
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2109nnn/GSM2109905/GSM2109905_18_oocyte_NSN-200kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2109nnn/GSM2109905/GSM2109905_18_oocyte_NSN-40kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2109nnn/GSM2109905/GSM2109905_18_oocyte_NSN-reads.csv.gz
+Title: 17_oocyte_NSN
+Type: SRA
+iid: GSM2109905

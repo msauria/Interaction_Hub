@@ -1,0 +1,75 @@
+Accession: GSM2138326
+Channel:
+  Biomaterial-Provider: Coriell Cell Repositories http://ccr.coriell.org/Sections/Search/Search.aspx?PgId=165&q=GM12878
+  Characteristics:
+  - Lymphoblastoid
+  - female
+  Extract-Protocol: 'Long-range contacts were generated and ChIP was performed.
+
+    Libraries were prepared using the Tn5 transposase.
+
+    Nextera'
+  Growth-Protocol: mES cells were grown on gelatin plates with serum and LIF. GM cells
+    were grown in RPMI-1640 with serum.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: GM12878
+  Treatment-Protocol: Cells were crosslinked with 1% formaldehyde for 10 minutes,
+    then quenched with 0.125M glycine for 5 minutes.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Sequencing reads were aligned and paired, filtered for long-range
+  contacts, and removed of duplicates using the HiC-Pro pipeline (PMID: 26619908).
+
+  Processed reads were then inputted into the Juicebox pipeline (PMID: 27467250) to
+  allow for visualization of the interaction matrix.
+
+  Genome_build: hg19,mm9
+
+  Supplementary_files_format_and_content: *allValidPairs.txt: Output from the HiC-Pro
+  pipeline. Aligned, filtered, and unique long-range contacts to call loops with.
+
+  Supplementary_files_format_and_content: *hic: Output from the Juicebox pipeline.
+  This file allows for visualization of the interaction matrix.'
+Description: 'Protein-enriched long-range contact.
+
+  Processed data file: HiChIP_GM_cohesin.hic'
+Instrument-Model:
+  Predefined: Illumina HiSeq 4000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: '?'
+Platform-Ref:
+  ref: GPL20301
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04915624
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1736958
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3467177
+    cluster_name: public
+    id: '2486888'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '31978343906'
+    total_spots: '212384008'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX173/SRX1736958
+  iid: SRX1736958
+Series: GSE80820
+Status:
+  Last-Update-Date: '2016-10-14'
+  Release-Date: '2016-08-31'
+  Submission-Date: '2016-04-29'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2138nnn/GSM2138326/GSM2138326_GM_HiChIP_cohesin_r2-1_allValidPairs.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX173/SRX1736958
+Title: HiChIP GM biological replicate 2 technical replicate 1
+Type: SRA
+iid: GSM2138326

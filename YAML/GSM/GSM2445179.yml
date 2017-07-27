@@ -1,0 +1,148 @@
+Accession: GSM2445179
+Channel:
+  Characteristics:
+  - Ecomg derived neutrophils
+  - C57BL/6
+  - human E2A_ER_Pbx1b
+  Extract-Protocol: 'The in-situ Hi-C experiments were performed similarly as described
+    (Rao SSP, et al. 2014. A 3D map of the human genome at kilobase resolution reveals
+    principles of chromatin looping. Cell 159: 1665-1680).
+
+    The GRO-Seq experiments were performed as described (Core LJ, Waterfall JJ, Lis
+    JT. 2008. Nascent RNA sequencing reveals widespread pausing and divergent initiation
+    at human promoters. Science 322: 1845-8).
+
+    The ChIP-Seq experiments were performed similarly as described (Lin YC, et al.
+    2012. Global changes in the nuclear positioning of genes and intra- and interdomain
+    genomic interactions that orchestrate B cell fate. Nat Immunol 13: 1196-1204).
+
+    The MeDIP-Seq experiments were performed similarly as described (Pomraning KR,
+    Smith KM, Freitag M. 2009. Genome-wide high throughput analysis of DNA methylation
+    in eukaryotes. Methods 47: 142-150).
+
+    For RNA-Seq: total RNA was isolated using RNeasy Mini kit (Qiagen). RNA was treated
+    with TURBO DNase (Life Technologies). mRNA was purified from total RNA using Dynabeads
+    mRNA purification kit (Life Technologies).cDNA was generated with the First-strand
+    synthesis kit (Life Technologies) using a combination of random hexamers and oligo(dT)
+    in presence of actinomycin D. Second-strand synthesis was performed with dUTP
+    instead of dTTP. The ds-cDNA was sonicated to 200-400 bp using the S220 Focused-ultrasonicator
+    (Covaris).
+
+    Hi-C libraries were prepared with the NEBNext primer set and were selected by
+    size by 6% PAGE and sequenced for 50 cycles on Illumina HiSeq 2500.
+
+    GRO-Seq libraries were prepared with custom GRO-Seq PCR primers and were selected
+    by size by 8% PAGE and sequenced for 50 cycles on Illumina HiSeq 2000.
+
+    ChIP-Seq and MeDIP-Seq libraries were prepared with the NEBNext primer set and
+    were selected by size by 8% PAGE and sequenced for 50 cycles on Illumina HiSeq
+    2000 or 2500.
+
+    RNA-Seq ibraries were prepared with the TruSeq primer set and were selected by
+    size by 8% PAGE and sequenced for 50 cycles on Illumina HiSeq 2000.'
+  Growth-Protocol: "GM-CSF-dependent ECOMG cells were grown in RPMI 1640 with 10%\
+    \ FBS and penicillin-streptomycin-glutamine, by the addition of 1:100 conditioned\
+    \ media (about 10 ng/mL GM-CSF) isolated from a B16 melanoma cell line stably\
+    \ transfected with a murine GM-CSF construct. b-estradiol where applicable, was\
+    \ added to the medium at a final concentration of 1 mM from a 10,000\u2009\xD7\
+    \ stock in 100% ethanol. Differentiation of ECOMG cells into granulocytes was\
+    \ induced by withdrawal \u03B2-estradiol for 5 days.\nC57BL/6J mice were housed\
+    \ in specific pathogen-free conditions in accordance with the Institutional Animal\
+    \ Care and Use Committee of University of California, San Diego. Bone marrow derived\
+    \ neutrophils were separated by EasySepTM Mouse Neutrophil Enrichment Kit (Stem\
+    \ Cell Technologies, 19762). Bone marrow cells were harvested from femur, tibia\
+    \ and crista iliac. Bone marrow cells were incubated with a cocktail of biotinylated\
+    \ lineage specific antibodies (EasySepTM Mouse Neutrophil Enrichment Cocktail),\
+    \ conjugated with EasySepTM Biotin Selection Cocktail, labeled with EasySepTM\
+    \ D Magnetic Particles, followed by depletion of biotin-labeled cells with EasySep\u2122\
+    \ Magnet."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: in-vitro differentiated neutrophils
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'The paired-end Hi-C reads were truncated at GATCGATC site, aligned
+  separately to the mm9 genome using BOWTIE2, only keeping read pairs if both ends
+  mapped to unique locations. The two reads were merged into pairs using HOMER (http://biowhat.ucsd.edu/homer/).
+  Read alignment filtering and other Hi-C processing including normalization was performed
+  using HOMER. Reads passing these filters are included in the Hi-C summary files.
+  Principle component analysis of normalized Hi-C interaction frequency matrices was
+  performed using HOMER and R. Hi-C statistics was processed using HiCUP(http://www.bioinformatics.babraham.ac.uk/projects/hicup/).
+
+  For ChIP-Seq, MeDIP-Seq and GRO-Seq samples (single end reads), reads were aligned
+  to the mm9 genome using BOWTIE2, keeping only reads that mapped unique locations.
+  Aligned read files were analyzed with HOMER to find peaks, generate bedGraph, calculate
+  RPKM from the gene bodies of RefFlat genes, and perform other analyses in the study.
+
+  RNA-Seq reads were aligned to the mm9 reference genome using Tophat2. RPKMs for
+  each RefFlat gene were calculated from aligned reads using Cufflink. For a gene
+  to be considered expressed the cutoff of FPKM is 0.5.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: Processed files include BED files (ChIP-Seq
+  peak or region positions, Hi-C PC1 domain positions), FKPM CSV files (RNA-Seq expression
+  data), RPKM CSV files (GRO-Seq expression data), BEDGRAPH (ChIP-Seq, duplicates-combined
+  GRO-Seq and MeDIP-Seq tracks, principle component values along the genome for combined
+  Hi-C data), and TXT files, including Hi-C summary files (filtered read pairs from
+  combined Hi-C data processed using HOMER; filtered read pairs from each Hi-C replicates
+  processed using HiCUP), columns: Read Name, chromosome for read 1, positions for
+  read 1 (5'' end of read, one-indexed), strand of read 1, chromosome for read 2,
+  positions for read 2 (5'' end of read, one-indexed), strand of read 2), as well
+  as Hi-C background files from HOMER.'
+Description: genomic interactions
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DNase
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN06203356
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2463368
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR5144912
+    cluster_name: public
+    id: '3576326'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '369697900'
+    total_spots: '3696979'
+  - acc: SRR5144913
+    cluster_name: public
+    id: '3576326'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '1806954200'
+    total_spots: '18069542'
+  - acc: SRR5144914
+    cluster_name: public
+    id: '3576326'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '5456594800'
+    total_spots: '54565948'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX246/SRX2463368
+  iid: SRX2463368
+Series: GSE93127
+Status:
+  Last-Update-Date: '2017-02-07'
+  Release-Date: '2017-02-06'
+  Submission-Date: '2017-01-04'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX246/SRX2463368
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2445nnn/GSM2445179/GSM2445179_index18_yz3_R1_2.hicup.sam.homer.txt.bz2
+Title: HiC Neutrophils replicate 2
+Type: SRA
+iid: GSM2445179

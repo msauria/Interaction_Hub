@@ -1,0 +1,119 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Dr. CMM-E 2071
+    State: CA
+    Zip-Code: '92093'
+  Email: j1dixon@ucsd.edu
+  Organization: Ludwig Institute for Cancer Research
+  Person:
+    First: Jesse
+    Last: Dixon
+    Middle: R
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Siddarth
+    Last: Selvaraj
+  iid: contrib3
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+Series:
+  Accession: GSE48592
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  Overall-Design: Hi-C experiments in two replicates of Human GM12878 Lymphoblastoid
+    cells and two replicates of F123 mouse ES cells (4 total samples)
+  Pubmed-ID: '24185094'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA210760
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP026610
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C, F123 mouse ES cells, replicate one
+    ref: GSM1181865
+  - name: Hi-C, F123 mouse ES cells, replicate two
+    ref: GSM1181866
+  - name: Hi-C, GM12878 Lymphoblastoid cells, replicate one
+    ref: GSM1181867
+  - name: Hi-C, GM12878 Lymphoblastoid cells, replicate two
+    ref: GSM1181868
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-11-03'
+    Submission-Date: '2013-07-08'
+    database: GEO
+  Summary: Rapid advances in high-throughput DNA sequencing technologies are accelerating
+    the pace of research into personalized medicine. While methods for variant discovery
+    and genotyping from whole genome sequencing (WGS) datasets have been well established,
+    linking variants together into a single haplotype remains a challenge. An understanding
+    of complete haplotypes of an individual will help clarify the consequences of
+    inheriting multiple alleles in combination, identify novel disease associations,
+    and augment studies of gene regulation. Although numerous methods have been developed
+    to reconstruct haplotypes from WGS data, chromosome-span haplotypes at high resolution
+    have been difficult to obtain. Here we present a novel method to accurately reconstruct
+    chromosome-span haplotypes from proximity-ligation and DNA shotgun sequencing.
+    We demonstrate the utility of this approach in producing high-resolution chromosome-span
+    haplotype phasing in mouse and human. While proximity-ligation based methods were
+    originally designed to investigate spatial organization of the genome, our results
+    lend support for their use as a general tool for haplotyping in the future.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP026/SRP026610
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE48592/GSE48592_F123.haps.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE48592/GSE48592_GM12878_depristoeal.vcf.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE48592/GSE48592_GM12878_lcp.vcf.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE48592/GSE48592_GM12878_seed.haps.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE48592/GSE48592_castx129_variants.vcf.txt.gz
+  Title: Whole-genome Haplotype Reconstruction using Proximity-ligation and Shotgun
+    Sequencing
+  Type: Other
+  iid: GSE48592
+id: '200048592'

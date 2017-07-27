@@ -1,0 +1,130 @@
+Contributor:
+- Address:
+    City: Atlanta
+    Country: USA
+    Line: 1510 Clifton Rd
+    State: GA
+    Zip-Code: '30322'
+  Department: Biology
+  Email: vcorces@emory.edu
+  Laboratory: Corces Lab
+  Organization: Emory University
+  Person:
+    First: Victor
+    Last: Corces
+    Middle: G
+  Phone: '4047274250'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Caelin
+    Last: Cubenas-Potts
+  iid: contrib3
+- Person:
+    First: Michael
+    Last: Rowley
+    Middle: J
+  iid: contrib4
+- Person:
+    First: Xiaowen
+    Last: Lyu
+  iid: contrib5
+- Person:
+    First: Ge
+    Last: Li
+  iid: contrib6
+- Person:
+    First: Elissa
+    Last: Lei
+  iid: contrib7
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13304
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2011-03-21'
+    Submission-Date: '2011-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Drosophila melanogaster)
+  iid: GPL13304
+Series:
+  Accession: GSE80701
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib1
+  Overall-Design: Analysis of the protein occupancy and chromatin interactions of
+    the two distinct enhancer classes in Drosophila
+  Pubmed-ID: '27899590'
+  Relation:
+  - target: GSE80702
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA319740
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP073988
+    type: SRA
+  Sample-Ref:
+  - name: DpnII_HiC
+    ref: GSM2133771
+  - name: HinfI_HiC
+    ref: GSM2133772
+  - name: Hi-C_NT5_Rep1_re-analyzed
+    ref: GSM2133773
+  - name: Hi-C_NT_25_Rep2_re-analyzed
+    ref: GSM2133774
+  - name: Hi-C_NT_53_Rep3_re-analyzed
+    ref: GSM2133775
+  - name: Hi-C_NT_89_Rep4_re-analyzed
+    ref: GSM2133776
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2016-11-16'
+    Submission-Date: '2016-04-26'
+    database: GEO
+  Summary: In this study, we further characterized the hkCP and dCP enhancers, which
+    were identified by STARR-seq, and shown to have an intrinsic capacity to interact
+    with a specific type of core promoter depending on the presence of a DRE motif
+    [9]. hkCP enhancers are marked by H3K4me3, associated with TAD borders, and mediate
+    large TSS-clustered interactions to promote robust transcription. Furthermore,
+    they contain the architectural proteins CAP-H2, Chromator, DREF and Z4. In contrast,
+    dCP enhancers are marked by H3K4me1, associated with chromatin loop anchors and
+    are more commonly associated with single TSS-contacts. dCP enhancers are depleted
+    of the hkCP-specific architectural proteins and show an enrichment for Fs(1)h-L
+    and Rad21 instead. Thus, our data supports the model that the unique occupancy
+    of architectural proteins in the distinct enhancer classes are key contributors
+    to the types of interactions that enhancers can mediate genome-wide, ultimately
+    affecting enhancer-promoter specificity.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80701/GSE80701_DpnII_HinfI_combo.hic.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE80701/GSE80701_Fithic_Sig_Interactions.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP073/SRP073988
+  Title: Distinct Enhancer Classes in Drosophila Bind Different Architectural Proteins
+    and Mediate Unique Chromatin Interactions and 3D Architecture [Hi-C]
+  Type: Other
+  iid: GSE80701
+id: '200080701'

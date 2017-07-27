@@ -1,0 +1,174 @@
+Accession: GSM987816
+Channel:
+  Characteristics:
+  - Tcf3(E2A) deficient pre-pro-B
+  - None
+  - C57bl/6
+  - Tcf3-/-
+  Extract-Protocol: "ChIP-seq: Lysates were clarified from sonicated cells and protein-DNA\
+    \ complexes were isolated with antibody. Libraries were prepared according to\
+    \ Illumina's instructions. Briefly, DNA was end-repaired using a combination of\
+    \ T4 DNA polymerase, E. coli DNA Pol I large fragment (Klenow polymerase) and\
+    \ T4 polynucleotide kinase. The blunt, phosphorylated ends were treated with Klenow\
+    \ fragment (minus exo) and dATP to yield a protruding 3- 'A' base for ligation\
+    \ of Illumina's adapters which have a single 'T' base overhang at the 3\u2019\
+    \ end. After adapter ligation, ChIP DNA was PCR-amplified with Illumina primers\
+    \ with the respective indexes for 18 cycles and library fragments (ChIP) (insert\
+    \ plus adaptor and PCR primer sequences) were size- selected from a 8% polyacrylamide\
+    \ gel. The purified DNA was captured on an Illumina flow cell for cluster generation.\
+    \ Libraries were sequenced on a Genome Analyzer II (Illumina) or HiSeq 2000 (Illumina)\
+    \ following the manufacturer's protocols.\nGRO-seq: GRO-Seq was performed as described\
+    \ (Core, L.J., Waterfall, J.J., and Lis, J.T., Science 322, 1845-1848 (2008))\
+    \ with minor modifications. Briefly, nuclei from 10 million cells isolated by\
+    \ hypotonic lysis, and RNA polymerases were run-on for 5 minutes at 30\xB0C in\
+    \ the presence of sarkosyl, BrUTP, ATP, GTP and limiting concentrations of CTP.\
+    \ Total RNA was purified with Trizol/isopropanol precipitiation, DNAse-treated\
+    \ (TURBO-DNase, Ambion), fragmented with fragmentation buffer (Ambion), and re-buffered\
+    \ by size exclusion chromatography. RNA fragments were 3' dephosphorylated with\
+    \ polynucleotide kinase (Enzymatics), and BrUTP-labeled run-on RNA was immunopurified\
+    \ with anti-BrdUTP-coated agarose beads, washed, eluted and EtOH-precipitated.\
+    \ Run-on RNA was then de-capped with tobacco acid pyrophosphatase (Epicentre),\
+    \ 5' phosphorylated with polynucleotide kinase (Enzymatics) and purified with\
+    \ Trizol LS/isopropanol precipitiation. Sequencing libraries were prepared by\
+    \ ligating a single-stranded, 3'-blocked, 5'-adenylated 3\u2019 oligonucleotide\
+    \ with mutant (K227Q) truncated RNA ligase 2 (NEB) to the 3' end of the RNA fragments,\
+    \ followed by annealing a reverse transcription primer complementary to the 3'\
+    \ adapter to suppress adapter dimer formation, and ligating a hybrid 5' DNA-RNA\
+    \ oligonucleotide using RNA ligase I and then reverse-transcribing with SuperScript\
+    \ III reverse transcriptase (Invitrogen). The cDNA was purified with AMPure XL\
+    \ beads and PCR-amplified with primers bearing primer landing sites compatible\
+    \ with Illumina indexed sequencing. The library was size-selected on a PAGE gel\
+    \ to 60-110 bp insert size and sequenced on a HiSeq 2000 (Illumina).\nHi-C: The\
+    \ Hi-C experiment was performed similarly as described (Lieberman-Aiden, E., et\
+    \ al., Science 326, 289-293 (2009)). Libraries were subjected to paired-end sequencing\
+    \ on a HiSeq 2000 (Illumina)."
+  Growth-Protocol: "Tcf(E2A)-deficient multipoint progenitors were derived from E2A-deficient\
+    \ fetal liver and grown in the presence of IL7, SCF and FLT3L on sub-confluent\
+    \ S17 stromal cells.  B220 MACS enriched Rag1-deficient bone marrow cells were\
+    \ grown in Opti-MEM 10% FCS/ 2% PSG/ 50 \u03BCM \u03B2-mercaptoethanol in the\
+    \ presence of IL7 and SCF for 7 days."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: multipotent progenitor
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'For ChIP-Seq and GRO-Seq samples (single end reads), reads were
+  aligned to the mm9 genome using bowtie (v0.12.7), keeping only reads that mapped
+  best to a single, unique location.  Aligned read files were analyzed with HOMER
+  (http://biowhat.ucsd.edu/homer/) to find peaks, calculate RPKM from the gene bodies
+  of RefSeq genes, and perform other analyses in the study.
+
+  For Hi-C samples (paired end reads), read ends were aligned separately to the mm9
+  genome using bowtie (v0.12.7), only keeping read pairs if both ends mapped best
+  to unique locations.  Four additional filtering steps were applied to the mapped
+  reads: 1) Duplicate read pairs aligning to the exact same positions were removed
+  (possible PCR amplification artifacts). 2) Reads aligning within 2x the library
+  size (estimated library insert size = 400) were removed (representing genomic background/religation
+  events).  3) Read pairs where neither read was within 500 bp of a HindIII site were
+  removed. (background ligation events) 4) Read pairs aligning to adjacent restriction
+  enzyme sites representing circularization of a HindIII fragment were removed.  Reads
+  passing these filters are included in the Hi-C summary files.  Read alignment filtering
+  and other Hi-C processing including normalization was performed using HOMER (http://biowhat.ucsd.edu/homer/).  Principle
+  component analysis of normalized Hi-C interaction frequency matrices was performed
+  using HOMER and R (www.r-project.org).  Results for the first principle component
+  are included as BEDGRAPH files.  Positive principle component values correspond
+  to regions that are generally transcriptionally active.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: Processed files include BED files (ChIP-Seq
+  peak positions), rpkm text files (GRO-Seq expression data), BEDGRAPH (principle
+  component values along the genome for Hi-C), and Hi-C summary files (raw filtered
+  read pairs from Hi-C data, columns: readName, chr1, 5'' position1, strand1, chr2,
+  5'' position2,strand2 [positions are 1-index based]).  All genomic coordinates are
+  relative to mm9 (NCBI 37) mouse assembly.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: GSE90958
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX178471
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN01120340
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR543421
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8378615700'
+    total_spots: '83786157'
+  - acc: SRR543427
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8338325900'
+    total_spots: '83383259'
+  - acc: SRR543426
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8588143100'
+    total_spots: '85881431'
+  - acc: SRR543425
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7563229400'
+    total_spots: '75632294'
+  - acc: SRR543424
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8421484900'
+    total_spots: '84214849'
+  - acc: SRR543423
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8315546600'
+    total_spots: '83155466'
+  - acc: SRR543422
+    cluster_name: public
+    id: '229469'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8213032900'
+    total_spots: '82130329'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX178/SRX178471
+  iid: SRX178471
+Series: GSE40173
+Status:
+  Last-Update-Date: '2016-12-06'
+  Release-Date: '2012-10-09'
+  Submission-Date: '2012-08-16'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM987nnn/GSM987816/GSM987816_preproB.HiC.PC1.mm9.bedGraph.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM987nnn/GSM987816/GSM987816_preproB.HiC.summary.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX178/SRX178471
+Title: pre-proB, Hi-C EGS
+Type: SRA
+iid: GSM987816

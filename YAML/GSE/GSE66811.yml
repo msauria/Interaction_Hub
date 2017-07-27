@@ -1,0 +1,123 @@
+Contributor:
+- Address:
+    City: Norwich
+    Country: United Kingdom
+    Line: Colney Lane
+    Postal-Code: NR4 7UH
+    State: Norfolk
+  Department: Department of Molecular Microbiology
+  Email: tung.le@jic.ac.uk
+  Laboratory: The Le Lab
+  Organization: John Innes Centre
+  Person:
+    First: TUNG
+    Last: LE
+    Middle: BA KHANH
+  Phone: '01603450776'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: A
+    Last: Badrinarayanan
+  iid: contrib3
+- Person:
+    First: T
+    Last: Le
+    Middle: B
+  iid: contrib4
+- Person:
+    First: M
+    Last: Laub
+    Middle: T
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL18276
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Caulobacter crescentus NA1000
+  Status:
+    Last-Update-Date: '2014-02-11'
+    Release-Date: '2014-02-11'
+    Submission-Date: '2014-02-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Caulobacter crescentus NA1000)
+  iid: GPL18276
+Series:
+  Accession: GSE66811
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  Overall-Design: "Caulobacter cells were depleted of DnaA for 1.5 h before synchronization.\
+    \ Swarmer cells were then released into DnaA depleting conditions (without IPTG)\
+    \ and double-strand breaks were induced for 1 h by the addition of 500 \u03BC\
+    M vanillate. For control sample, no vanillate was added. Formadehyde (Sigma) was\
+    \ then added to the final concentration of 1%. Formadehyde crosslinks protein-DNA\
+    \ and DNA-DNA together, thereby capturing the structure of the chromosome at the\
+    \ time of fixation. Fixation was performed at the cell density of OD600 = 0.2.\
+    \ The crosslinking reactions were allowed to proceed for 30 minutes at 25 \xB0\
+    C before quenching with 2.5 M glycine at a final concentration of 0.125 M. Fixed\
+    \ cells were then pelleted by centrifugation and subsequently washed twice with\
+    \ 1x M2 buffer (6.1 mM Na2HPO4, 3.9 mM KH2PO4, 9.3 mM NH4Cl, 0.5 mM MgSO4, 10\
+    \ \u03BCM FeSO4, 0.5 mM CaCl2) before resuspending in 1x TE buffer (10 mM Tris-HCl\
+    \ pH 8.0 and 1 mM EDTA) to a final concentration of 107 cells per \xB5l. Resuspended\
+    \ cells were then divided into 25 \xB5l aliquots and stored at -80 \xB0C for no\
+    \ more than 2 weeks. Each Hi-C experiment was performed using two of the 25 \xB5\
+    L aliquots. Chromosome conformation capture with next-generation seqeuncing (Hi-C)\
+    \ was carried out exactly as described previously (Le et al., 2013 PMID: 24158908)"
+  Pubmed-ID: '26240183'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA278008
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP056099
+    type: SRA
+  Sample-Ref:
+  - name: Laublab_BglII_HiC_NA1000_IsceI_site_33kb_from_oriC_IsceI_enzyme_induced
+    ref: GSM1632602
+  - name: Laublab_BglII_HiC_NA1000_IsceI_enzyme_absence
+    ref: GSM1632603
+  Status:
+    Last-Update-Date: '2015-10-14'
+    Release-Date: '2015-07-03'
+    Submission-Date: '2015-03-12'
+    database: GEO
+  Summary: Double-strand breaks (DSBs) can lead to the loss of genetic information
+    and cell death. Consequently, cells in all domains of life have evolved mechanisms
+    to repair DSBs, including through homologous recombination. Although recombination
+    has been well characterized, the spatial organization of this process in living
+    cells remains poorly understood. Here, we introduced site-specific DSBs in Caulobacter
+    crescentus, and then used time-lapse microscopy to visualize the homology search,
+    DSB repair, and the resegregation of chromosomal DNA. Even loci tethered to opposite
+    cell poles can efficiently release, pair to enable recombination-based repair,
+    and then resegregate to their original locations. Resegregation occurs independent
+    of DNA replication and without disrupting global chromosome organization. Origin-proximal
+    regions are resegregated by the same machinery, ParABS, used to segregate undamaged
+    chromosomes following DNA replication. In contrast, origin-distal regions efficiently
+    resegregate after a DSB independent of ParABS, and likely without dedicated segregation
+    proteins. Instead, we propose that a physical, spring-like force drives the resegregation
+    of origin-distal loci after DSB repair.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE66811/GSE66811_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP056/SRP056099
+  Title: Rapid pairing and subsequent resegregation of distant homologous loci enables
+    double-strand break repair in bacteria
+  Type: Other
+  iid: GSE66811
+id: '200066811'

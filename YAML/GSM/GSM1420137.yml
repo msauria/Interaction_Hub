@@ -1,0 +1,89 @@
+Accession: GSM1420137
+Channel:
+  Characteristics:
+  - S2
+  - HindIII
+  - biological 2
+  Extract-Protocol: 'Hi-C in S2 or clone8 cells was carried out as described (Belton
+    et al., 2012) with a few modifications to account for Drosophila cell and genome
+    size: 50 million fixed insect cells per sample were used and batches of 20 million
+    cells each were digested with 400U HindIII as Hi-C samples with a control 3C sample
+    of 10 million cells. Cohesive ends in Hi-C samples were filled in with dATP, dGTP,
+    dTTP and biotin-14-dCTP. Then DNA was ligated, purified and sonicated. Size selection
+    for ~230bp fragments carried out and then enriched for biotinylated specimen with
+    straptavidin beads. Illumina paired-end adapters and PfuUltra II Fusion DNA polymerase
+    were used for S2 library generation while TruSeq adapters and Q5 DNA polymerase
+    were used for clone8 samples. For all libraries 10 cycles of PCR amplification
+    were used.
+
+    50 million S2 cells were collected and resuspended in 22.5ml of fresh medium.
+    Clone8 cells were washed with PBS and 22.5ml of fresh medium added. 37% formaldehyde
+    solution was added to obtain a final concetration of 1%, followed by incubation
+    at room temperature for 10min. 1.25ml 2.5M glycine solution was added and incubated
+    for another 5 min at RT followed by 10min on ice.'
+  Growth-Protocol: "S2 cells were cultured in Schneider\u2019s medium (Gibco) supplemented\
+    \ with 10% FCS and 0.05% Pluronic F-68 (Sigma-Aldrich) on shaking incubators at\
+    \ 27\xB0C at a density of 2-16 million/ml. Clone8 (cl.8+) cells were grown in\
+    \ Shields and Sang M3 Insect Medium (Sigma-Aldrich) supplemented with 2% FCS,\
+    \ 5\xB5g/ml insulin and 2.5% fly extract on 15cm cell culture dishes."
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: cultured fruit fly cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Basecalls performed using Illumina bcl2fastq 1.8.3
+
+  Each mate file  was mapped using Bowtie2 adding the --local parameter to accommodate
+  for reads containing a ligation site.
+
+  All reads that mapped multiple times to the genome were discarded as well as read
+  pairs that were less than 500 bp apart. Only reads having a mapping quality of at
+  least 20 were considered. Hi-C matrices of different bin sizes were created by counting
+  the number of times a Hi-C pair connected any two bins. The bin sizes considered
+  were: 10,000 bp, 25,000 bp, 50,000 bp and 100,000 bp. Replicates were merged into
+  one dataset. Merged matrices of Hi-C corrected counts replicates for each cell type
+  were used to compute boundary points as reported in the study publication.
+
+  Genome_build: dm3
+
+  Supplementary_files_format_and_content: Processed files contain matrices of corrected
+  Hi-C contact counts for different bin resolution and .bed files with the genomic
+  coordinates of boundaries.'
+Description: ligated DNA with biotin labeling
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13304
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02872872
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX625653
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1460690
+    cluster_name: public
+    id: '876342'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '28129409500'
+    total_spots: '281294095'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX625/SRX625653
+  iid: SRX625653
+Series: GSE58821
+Status:
+  Last-Update-Date: '2015-10-01'
+  Release-Date: '2015-10-01'
+  Submission-Date: '2014-06-25'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX625/SRX625653
+Title: Hi-C S2 Wild type 2
+Type: SRA
+iid: GSM1420137

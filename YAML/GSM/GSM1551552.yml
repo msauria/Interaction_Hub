@@ -1,0 +1,112 @@
+Accession: GSM1551552
+Channel:
+  Biomaterial-Provider: http://ccr.coriell.org/Sections/Search/Search.aspx?PgId=165&q=GM12878
+  Characteristics:
+  - GM12878
+  - in situ Hi-C
+  Extract-Protocol: "Cells were crosslinked and then lysed with nuclei permeabilized\
+    \ but still intact. DNA was then restricted and the overhangs filled in incorporating\
+    \ a biotinylated base. Free ends were then ligated together in situ. Crosslinks\
+    \ were reversed, the DNA was sheared to 300-500bp and then biotinylated ligation\
+    \ junctions were recovered with streptavidin beads.\nstandard Illumina library\
+    \ construction protocol, Briefly, DNA was end-repaired using a combination of\
+    \ T4 DNA polymerase, E. coli DNA Pol I large fragment (Klenow polymerase) and\
+    \ T4 polynucleotide kinase. The blunt, phosphorylated ends were treated with Klenow\
+    \ fragment (32 to 52 exo minus) and dATP to yield a protruding 3- 'A' base for\
+    \ ligation of Illumina's adapters which have a single 'T' base overhang at the\
+    \ 3\u2019 end. After adapter ligation DNA was PCR amplified with Illumina primers\
+    \ for 8-12 cycles and library fragments of 400-600 bp (insert plus adaptor and\
+    \ PCR primer sequences) were purified using SPRI beads. The purified DNA was captured\
+    \ on an Illumina flow cell for cluster generation. Libraries were sequenced on\
+    \ the MiSeq/HiSeq2000/HiSeq2500 following the manufacturer's protocols"
+  Growth-Protocol: Cell lines were cultured according to manufacturer's instructions
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: B-lymphoblastoids
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'library strategy: HiC-Seq
+
+  The paired end reads were aligned separately using BWA against the b37 human build
+  or the mm9 mouse build
+
+  PCR duplicates, low mapping quality and unligated reads were removed using an in-house
+  Hi-C analysis pipeline (see Rao, Huntley, et al)
+
+  Contact matrices were constructed at various resolutions and normalized using an
+  in-house Hi-C analysis pipeline (see Rao, Huntley, et al)
+
+  loops were annotated using HiCCUPS (see Rao, Huntley, et al), domains were annotated
+  using Arrowhead (see Rao, Huntley, et al), subcompartments were annotated using
+  a Gaussian HMM (see Rao, Huntley, et al)
+
+  Genome_build: b37 (human), mm9 (mouse)
+
+  Supplementary_files_format_and_content: HiCCUPS_looplist.txt files contain loop
+  calls generated via HiCCUPS; first three fields represent the locus participating
+  in the loop closer to the p-end of the chromosome; fields 4-6 represent the locus
+  participating in the loop closer to the q-end of the chromosome; field 7 represents
+  the color used to display the feature in Juicebox (a Hi-C data visualization software,
+  see www.aidenlab.org/juicebox); field 8 represents the observed number of counts
+  at the loop; fields 9-12 represent the expected number of counts at the loop using
+  four different expected models; fields 13-16 are the q-values over each of the expected
+  values; field 17 is the number of enriched pixels that was clustered into a particular
+  loop; field 18-19 are the centroid of the loop; field 20 is the radius of the loop
+
+  Supplementary_files_format_and_content: Arrowhead_domainlist.txt files contain domain
+  calls generated via Arrowhead; first 6 fields represent the boundaries of the domain;
+  field 7 represents the color used to display the feature in Juicebox (a Hi-C data
+  visualization software, see www.aidenlab.org/juicebox); field 8 is the corner score
+  for the domain (see Rao, Huntley, et al); fields 9-12 are the component scores used
+  in the Arrowhead algorithm (see Rao, Huntley, et al)
+
+  Supplementary_files_format_and_content: the subcompartment bed file contains the
+  coordinates of the 6 nuclear subcompartments identified in Rao, Huntley, et al.
+
+  Supplementary_files_format_and_content: HIC*_merged_nodups.txt files specify each
+  Hi-C read pair (i.e., the mapping locations of each individual read pair).'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: GSM2360313
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03203268
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX764938
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1658572
+    cluster_name: public
+    id: '1104673'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '98343330138'
+    total_spots: '486848169'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX764/SRX764938
+  iid: SRX764938
+Series: GSE63525
+Status:
+  Last-Update-Date: '2016-10-27'
+  Release-Date: '2014-12-11'
+  Submission-Date: '2014-11-20'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1551nnn/GSM1551552/GSM1551552_HIC003.hic.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1551nnn/GSM1551552/GSM1551552_HIC003_30.hic.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1551nnn/GSM1551552/GSM1551552_HIC003_merged_nodups.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX764/SRX764938
+Title: HIC003
+Type: SRA
+iid: GSM1551552

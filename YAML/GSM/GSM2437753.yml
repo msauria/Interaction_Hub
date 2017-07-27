@@ -1,0 +1,73 @@
+Accession: GSM2437753
+Channel:
+  Characteristics:
+  - A549
+  - immortalized cell line
+  - ENCBS335EZX (SAMN06172252)
+  - adult
+  - 58 year
+  - male
+  - Tim Reddy, Duke
+  - ENCBS335EZX at ENCODE; https://www.encodeproject.org/ENCBS335EZX/
+  - Derived from ENCODE donor ENCDO000AAZ; https://www.encodeproject.org/ENCDO000AAZ/
+  Extract-Protocol: 'general protocol: https://www.encodeproject.org/documents/0dd3624f-d1f9-4505-b97c-da01b90a70f4/@@download/attachment/Hi-C%20Protocol.pdf'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Homo sapiens A549 immortalized cell line
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: See GSM*_README.txt supplementary file linked below
+Description: 'https://www.encodeproject.org/experiments/ENCSR244BBG/
+
+  ***************
+
+  biological replicate number: 1
+
+  technical replicate number: 2
+
+  description: Hi-C on A549 cell line treated with 100 nM dexamethasone for 1 hours.
+
+  experiment encode accession: ENCSR244BBG
+
+  assay title: Hi-C
+
+  possible controls: ENCSR662QKG
+
+  encode release date: 2016-11-23
+
+  lab: Tim Reddy, Duke
+
+  library encode accession: ENCLB743EXW
+
+  size range: >200'
+Instrument-Model:
+  Predefined: Illumina HiSeq 4000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: Hi-C
+Partition: MboI
+Platform-Ref:
+  ref: GPL20301
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN06172252
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2443818
+  type: SRA
+SRA:
+  SRR: []
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX244/SRX2443818
+  iid: SRX2443818
+Series: GSE92793
+Status:
+  Last-Update-Date: '2017-05-03'
+  Release-Date: '2017-01-10'
+  Submission-Date: '2016-12-22'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2437nnn/GSM2437753/GSM2437753_ENCLB743EXW_README.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX244/SRX2443818
+Title: Hi-C from A549 (ENCLB743EXW)
+Type: SRA
+iid: GSM2437753

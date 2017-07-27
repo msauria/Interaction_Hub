@@ -1,0 +1,107 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: United Kingdom
+    Line: Downing Street
+    Postal-Code: CB23DY
+  Department: Physiology, Development and Neuroscience
+  Email: rw108@cam.ac.uk
+  Organization: University of Cambridge
+  Person:
+    First: Rob
+    Last: White
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Jose
+    Last: Magbanua
+    Middle: P
+  iid: contrib3
+- Person:
+    First: Bettina
+    Last: Fischer
+  iid: contrib4
+- Person:
+    First: Robert
+    Last: White
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL15334
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2012-03-08'
+    Release-Date: '2012-03-08'
+    Submission-Date: '2012-03-08'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1000 (Drosophila melanogaster)
+  iid: GPL15334
+Series:
+  Accession: GSE85503
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  Overall-Design: Analysis of 3D chromatin organization using Hi-C with DpnII in Drosophila
+    Kc167 cells.
+  Pubmed-ID: '28282436'
+  Relation:
+  - target: GSE85504
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA338723
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP081603
+    type: SRA
+  Sample-Ref:
+  - name: Kc_HiC-seq_rep1
+    ref: GSM2267930
+  - name: Kc_HiC-seq_rep2
+    ref: GSM2267931
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2017-05-02'
+    Submission-Date: '2016-08-11'
+    database: GEO
+  Summary: We have investigated boundaries of topologically associated domains (TADs)
+    in the Drosophila genome and find that they can be identified as domains of very
+    low H3K27me3. The genome-wide H3K27me3 profile partitions into two states; very
+    low H3K27me3 identifies Depleted (D) domains that contain housekeeping genes and
+    their regulators such as the histone acetyltransferase-containing NSL complex,
+    whereas domains containing mid-to-high levels of H3K27me3 (Enriched or E domains)
+    are associated with regulated genes, irrespective of whether they are active or
+    inactive. The D domains correlate with the boundaries of TADs and are enriched
+    in a subset of architectural proteins, particularly Chromator, BEAF-32, and Z4.
+    However, rather than being clustered at the borders of these domains, these proteins
+    bind throughout the H3K27me3-depleted regions and are much more strongly associated
+    with the TSSs of the housekeeping genes than with the H3K27me3 domain boundaries.
+    We suggest that the D domain chromatin state, characterised by very low H3K27me3
+    and established by housekeeping gene regulators, acts to separate topological
+    domains thereby setting up the domain architecture of the genome.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE85503/GSE85503_Kc_rep1rep2_bin10kb_HiCseg.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE85503/GSE85503_Kc_rep1rep2_bin10kb_normalised_interactions.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE85503/GSE85503_Kc_rep1rep2_bin10kb_raw_interactions.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP081/SRP081603
+  Title: Regions of very low H3K27me3 partition the Drosophila genome into topological
+    domains [HiC-seq]
+  Type: Other
+  iid: GSE85503
+id: '200085503'

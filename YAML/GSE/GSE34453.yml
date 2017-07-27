@@ -1,0 +1,112 @@
+Contributor:
+- Address:
+    City: Montpellier
+    Country: France
+    Line: 141, rue de la Cardonille
+    Zip-Code: '34396'
+  Email: thomas.sexton@igh.cnrs.fr
+  Organization: Institute of Human Genetics, CNRS UPR 1142
+  Person:
+    First: Tom
+    Last: Sexton
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Eitan
+    Last: Yaffe
+  iid: contrib3
+- Person:
+    First: Amos
+    Last: Tanay
+  iid: contrib4
+- Person:
+    First: Giacomo
+    Last: Cavalli
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL9061
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2016-09-01'
+    Release-Date: '2009-08-20'
+    Submission-Date: '2009-08-20'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina Genome Analyzer II (Drosophila melanogaster)
+  iid: GPL9061
+- Accession: GPL13304
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Drosophila melanogaster
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2011-03-21'
+    Submission-Date: '2011-03-21'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Drosophila melanogaster)
+  iid: GPL13304
+Series:
+  Accession: GSE34453
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  Overall-Design: One pilot sample, comprising seven paired-end Illumina GA-II lanes;
+    one deep-sequenced sample, comprising seven paired-end Illumina HiSeq lanes
+  Pubmed-ID: '22265598'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP009838
+    type: SRA
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA151197
+    type: BioProject
+  Sample-Ref:
+  - name: Pilot simplified Hi-C
+    ref: GSM849421
+  - name: Deep-sequenced simplified Hi-C
+    ref: GSM849422
+  Status:
+    Last-Update-Date: '2017-04-07'
+    Release-Date: '2012-01-20'
+    Submission-Date: '2011-12-14'
+    database: GEO
+  Summary: Chromosomes are the physical realization of genetic information and thus
+    form the basis for its reading, hindering and propagation. Here we present a high-resolution
+    chromosomal contact map derived from a new genome-wide chromosome conformation
+    capture approach (a simplified version of the Hi-C method) applied to Drosophila
+    embryonic nuclei. The data show that the entire genome is linearly partitioned
+    into well-demarcated physical domains that overlap extensively with active and
+    repressive epigenetic marks. Chromosomal contacts are hierarchically organized
+    between domains. Global modeling of compaction and clustering of domains show
+    that inactive domains are condensed and confined to their chromosomal territories,
+    while active domains reach out of the territory to form remote intra- and inter-chromosomal
+    contacts.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE34453/GSE34453_RAW.tar
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP009/SRP009838
+  Title: Three-dimensional folding and functional organization principles of the Drosophila
+    genome
+  Type: Other
+  iid: GSE34453
+id: '200034453'

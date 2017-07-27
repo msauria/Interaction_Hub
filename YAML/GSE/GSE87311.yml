@@ -1,0 +1,159 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: USA
+    Line: 77 Massachusetts Ave., E25-524
+    State: Massachusetts
+    Zip-Code: 02139
+  Department: Physics
+  Email: goloborodko.anton@gmail.com
+  Laboratory: Mirny lab
+  Organization: MIT
+  Person:
+    First: Anton
+    Last: Goloborodko
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Stephanie
+    Last: Schalbetter
+    Middle: A
+  iid: contrib3
+- Person:
+    First: Geoffrey
+    Last: Fudenberg
+  iid: contrib4
+- Person:
+    First: Jon-Matthew
+    Last: Belton
+  iid: contrib5
+- Person:
+    First: Catrina
+    Last: Miles
+  iid: contrib6
+- Person:
+    First: Miao
+    Last: Yu
+  iid: contrib7
+- Person:
+    First: Job
+    Last: Dekker
+  iid: contrib8
+- Person:
+    First: Leonid
+    Last: Mirny
+  iid: contrib9
+- Person:
+    First: Jonathan
+    Last: Baxter
+  iid: contrib10
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13821
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae
+  Status:
+    Last-Update-Date: '2016-09-23'
+    Release-Date: '2011-07-05'
+    Submission-Date: '2011-07-05'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Saccharomyces cerevisiae)
+  iid: GPL13821
+Series:
+  Accession: GSE87311
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib1
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  - position: '6'
+    ref: contrib7
+  - position: '7'
+    ref: contrib8
+  - position: '8'
+    ref: contrib9
+  - position: '9'
+    ref: contrib10
+  Overall-Design: 'This submission contains the following Hi-C experiments: 2 biological
+    replicates of WT S. cerevisiae cells arrested in G1 and metaphase; 2 replicates
+    of cohesin and condensin temperature-sensitive mutants arrested in metaphase;
+    1 replicate of cdc45-degron cells arrested in early mitosis and 1 replicate of
+    temperature-sensitive cohesin mutant cdc45-degron cells arrested in early mitosis.'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA344307
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP090371
+    type: SRA
+  Sample-Ref:
+  - name: G1-R1
+    ref: GSM2327656
+  - name: G1-R2
+    ref: GSM2327657
+  - name: M-R1
+    ref: GSM2327658
+  - name: M-R2
+    ref: GSM2327659
+  - name: MD-R1
+    ref: GSM2327660
+  - name: MD-R2
+    ref: GSM2327661
+  - name: MH-R1
+    ref: GSM2327662
+  - name: MH-R2
+    ref: GSM2327663
+  - name: C-R1
+    ref: GSM2327664
+  - name: CH-R1
+    ref: GSM2327665
+  Status:
+    Last-Update-Date: '2017-03-22'
+    Release-Date: '2017-03-22'
+    Submission-Date: '2016-09-23'
+    database: GEO
+  Summary: "The extreme length of chromosomal DNA requires organizing mechanisms to\
+    \ both promote functional genetic interactions and ensure faithful chromosome\
+    \ segregation when cells divide. Microscopy and genome wide contact frequency\
+    \ (Hi-C) analyses indicate that intra-chromosomal looping of DNA is a primary\
+    \ pathway of chromosomal organization during all stages of the cell cycle (Dekker,\
+    \ J. & Mirny, L. . Cell 164, 1110\u20131121 (2016). Although the enzymatic pathways\
+    \ required for DNA loop formation are yet to be fully characterized, the activity\
+    \ of the SMC family of proteins has been consistently associated with this process\
+    \ in interphase and mitosis. Here we use Hi-C to study the reorganization of budding\
+    \ yeast chromosome conformation in early mitosis and the role of SMCs in this\
+    \ process. Using polymer simulations, we find that the differences between interphase\
+    \ and mitotic Hi-C maps can be explained by the formation of intra-chromosomal\
+    \ (cis-) loops in mitotic chromosomes. We demonstrate that mitotic SMC cohesin\
+    \ activity is required for formation of cis-loops, independently of sister-chromatid\
+    \ cohesion. In contrast, SMC condensin is not required for loop formation in these\
+    \ early mitotic cells. Rather condensin activity promotes distinct higher order\
+    \ structures in the chromosomes at centromeres and in the rDNA proximal regions.\
+    \ Thus we demonstrate that cohesin-dependent cis-loops provide the primary higher\
+    \ order organization of budding yeast mitotic chromosomes, independently of condensin\
+    \ and sister chromatid cohesion."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE87311/GSE87311_matrices.tar.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP090/SRP090371
+  Title: Cohesin-dependent compaction of mitotic chromosomes in budding yeast
+  Type: Other
+  iid: GSE87311
+id: '200087311'

@@ -1,0 +1,132 @@
+Accession: GSM2123564
+Channel:
+  Characteristics:
+  - haploid mESCs derived from strain 129/Ola
+  - none
+  Extract-Protocol: "5-10 million Haploid mouse ES cells were fixed for 5 min with\
+    \ 2 % formaldehyde in PBS and then the reaction was quenched for another 5 min\
+    \ in 0.125 M glycine. Nuclei were then extracted by incubating cells on ice for\
+    \ 30 min (inverting every 10 min) in 10 mM Tris pH 8.0, 10 mM NaCl, 0.2 % NP-40\
+    \ (IGEPAL CA-630) and protease inhibitor cocktail (Roche).\nPopulation Hi-C libraries\
+    \ were prepared as follows. Briefly, sonicated DNA was end-repaired using a combination\
+    \ of T4 DNA polymerase, E. coli DNA Pol I large fragment (Klenow polymerase) and\
+    \ T4 polynucleotide kinase. Biotinylated junctions were captured on streptavidin\
+    \ M-280 dynabeads and the blunt, phosphorylated ends were treated with Klenow\
+    \ fragment  exo minus) and dATP to yield a protruding 3- 'A' base for ligation\
+    \ of custom adapters which have a single 'T' base overhang at the 3\u2019 end.\
+    \ After adapter ligation DNA was PCR amplified with Illumina primers for 10 cycles\
+    \ and library fragments of ~300-700 bp (insert plus adaptor and PCR primer sequences)\
+    \ were isolated using AMPure beads (Beckman). The purified DNA was captured on\
+    \ an Illumina flow cell for cluster generation. Libraries were sequenced on the\
+    \ HiSeq2500 following the manufacturer's protocols."
+  Growth-Protocol: 'All mouse embryonic stem cells (mESCs) were cultured on 0.2 %
+    gelatin in 2i media (NDiff B27 base medium, Stem Cell Sciences Ltd, catalogue
+    no: SCS-SF-NB-02, supplemented with 1 uM PD0325901, 3 uM CHIR99021 and 20 ng/ml
+    LIF). Haploid mESCs were sorted every 4 passages to enrich for haploid cells as
+    previously described in Leeb M & Wutz A, Nature, 2011'
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: mESCs
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Basecalls performed using Phred quality score (Q score)
+
+  ChIP-seq reads were aligend to the GRCm38/mm10 mouse genome reference using Bowtie
+  2 v2.1.050 and filtered to retain reads with mapping quality >30.
+
+  ChIP-seq peaks were called using MACS2 v2.1.0.2015073157 with a minimum FDR cutoff
+  of 0.01 (-q 0.01), except for broad features (H3K27me3, H3K36me3 and H3K9me3) where
+  a cutoff of 0.05 was used (-q 0.05).
+
+  ChIP-seq peaks were filtered to remove those not corresponding to the canonical
+  chromosomes.
+
+  RNA-seq transcript abundance estimates for all annotated mouse transcripts (Ensembl
+  v71, GRCm38/mm10) and ERCC spike-in sequences were obtained using Kallisto v0.42.4
+  (arXiv:1505.02710).
+
+  RNA-seq gene-level abundances were summarized from transcript-level estimates using
+  the tximport R package.
+
+  Population Hi-C reads were processed using the HiCUP software package (http://www.bioinformatics.babraham.ac.uk/projects/hicup/overview/).
+  Processed reads were aligned to the GRCm38/mm10 mouse genome reference using Bowtie
+  2 and filtered to retain reads that formed a valid Hi-C contact junction between
+  two RE1 resriction sites.
+
+  Single cell Hi-C reads were initially processed using the NucProcessing software
+  package (available upon request). Processed reads were aligned to the GRCm38/mm10
+  mouse genome reference using Bowtie 2 and filtered to retain reads that formed a
+  valid Hi-C contact junction between two RE1 resriction sites. Output files were
+  further processed to perform extra, single-cell specific processing and cleanup.
+  These remove any pairs that represent only a single observation of a specific RE1-RE1
+  ligation junction after PCR amplification, while at least two separate, albeit sometimes
+  identical, molecules must be paired-end sequenced to confirm a ligation junction.
+  Next the sequence pairs were filtered to remove those with promiscuous ends: where
+  the RE1 fragment at either end was involved in more than one ligation event. Finally,
+  the redundancy in amplified RE1-RE1 ligation events was removed to create a single
+  list of paired RE1 fragment ends.
+
+  Genome_build: mm10
+
+  Supplementary_files_format_and_content: bed files (.bed) are tab-delimited text
+  files containing chromosomal coordinates of all ChIP-seq peaks (chromosome name,
+  start, end).
+
+  Supplementary_files_format_and_content: tsv files (.tsv) contain gene-level abundance
+  estimates for all genes.
+
+  Supplementary_files_format_and_content: Single cell Hi-C txt file (.txt) is a tab-separated
+  text format containing the Hi-C contacts. After the header line, each individual
+  contact is represented on a line consisting of chromosome_1 seq_pos_1 chromosome_2seq_pos_2
+
+  Supplementary_files_format_and_content: Population Hi-C txt file (.txt) is a tab-separated
+  text format containing all the chromosomal coordinates for Hi-C contacts and the
+  number observed (chromosome_A start position_A end position_A chromosome_B start
+  position_B end position_B number observed)
+
+  Supplementary_files_format_and_content: Single cell genome structure pdb file (.pdb)
+  is protein data bank format. Atom type N is used to indicate restrained particles.
+  Atom type C is used to represent unrestrained backbone particles. Residue number
+  corresponds to the particle and increases every 100 kb. Chain letter represents
+  the chromosome. The last column represents the particle sequence position.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MboI
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04855994
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1704901
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3383285
+    cluster_name: public
+    id: '2442049'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '44301964500'
+    total_spots: '177207858'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX170/SRX1704901
+  iid: SRX1704901
+Series: GSE80280
+Status:
+  Last-Update-Date: '2017-03-07'
+  Release-Date: '2017-03-07'
+  Submission-Date: '2016-04-14'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2123nnn/GSM2123564/GSM2123564_Haploid_mESC_population_hic.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX170/SRX1704901
+Title: Population Hi-C (haploid)
+Type: SRA
+iid: GSM2123564

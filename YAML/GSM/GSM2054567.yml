@@ -1,0 +1,78 @@
+Accession: GSM2054567
+Channel:
+  Characteristics:
+  - Postconception week 18
+  - Fetal cortex
+  - Germinal zone
+  Extract-Protocol: 'Fetal brains dissected into cortical plates (CP) and germinal
+    zone (GZ).
+
+    Tissue was fixed in 1% formaldehyde for 10 min. Cross-linked DNA was digested
+    by restriction enzyme HindIII. Digested chromatin ends were filled and marked
+    with biotin-14-dCTP. Resulting blunt-end fragments were ligated under dilute concentration
+    to minimize random intermolecular ligations. DNA purified after crosslinking was
+    reversed by proteinase K treatment. Biotins from unligated ends were removed by
+    exonuclease activity of T4 DNA polymerase. DNA was sheared by sonication and 300-600bp
+    fragments were selected. Biotin-tagged DNA, which is intermolecular ligation products,
+    was pulled down with streptavidin beads (Invitrogen, 65001), and ligated with
+    Illumina paired end adapters. Resulting Hi-C library was amplified by PCR and
+    sequenced by Illumina 50bp paired-end sequencing.'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Fetal brain
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  alignment: bowtie2 (--score-min -L 0.6,0.2--very-sensitive)
+
+  filtering and bias correction: hiclib
+
+  normalization: hiclib
+
+  Genome_build: hg19
+
+  Supplementary_files_format_and_content: *hdf5 files contain a normalized chromatin
+  contact matrix at different resolutions, included in file name (10kb, 40kb, 100kb);
+  Sczloci*.bed files contain schizophrenia GWAS loci interacting regions, and Evolloci*.bed
+  files contain Human-gained enhancer interacting regions; CP_TAD.bed file contains
+  TAD coordinates in bed file format for CP (cortical plate); GZ_TAD.bed contains
+  TAD coordinates in bed file format for GZ (germinal zone).'
+Description: 'processed data file: FBP_IC-heatmap-chr-10k.hdf5
+
+  processed data file: FBP_IC-heatmap-chr-40k.hdf5
+
+  processed data file: FBP_IC-heatmap-res-100k.hdf5
+
+  processed data file: Sczloci_interacting_region_FBP_FDR.bed
+
+  processed data file: Evolloci_interacting_region_enhctrl_FBP_FDR.bed'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04316928
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1462923
+  type: SRA
+SRA:
+  SRR: []
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX146/SRX1462923
+  iid: SRX1462923
+Series: GSE77565
+Status:
+  Last-Update-Date: '2016-12-07'
+  Release-Date: '2016-10-20'
+  Submission-Date: '2016-02-03'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX146/SRX1462923
+Title: GZ, individual 1
+Type: SRA
+iid: GSM2054567

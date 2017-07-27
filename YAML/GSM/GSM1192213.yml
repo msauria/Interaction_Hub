@@ -1,0 +1,74 @@
+Accession: GSM1192213
+Channel:
+  Characteristics:
+  - astrocytes
+  - wild type
+  Extract-Protocol: 'Cells were treated with accutase and immediately fixed with 1%
+    formaldehyde before proceeding with Hi-C protocol.The PE library preparations
+    for the HiC were also done according to illuminas PE kit procedure.
+
+    Ligated material was sonicated, enriched for biotinylated ligation junctions and
+    PE sequencing adapters were added according to Illumina standard protocols'
+  Growth-Protocol: Cells were grown in serum-free media containing EGF+FGF (for NSCs)
+    or BMP+FGF (for ASTs) and Laminin
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: astrocytes
+  Treatment-Protocol: To delete Rad21, cells were grown in OHT for 48hr (for NSCs)
+    or AdCre for 96hr (for ASTs)
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Read alignment was done by using Bowtie v1.0.0 with the parameters
+  as "-n 3 -a -m 1 --best --strata".
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: The tab-delimited text file summaries alignment
+  results for all samples.'
+Instrument-Model:
+  Predefined: Illumina Genome Analyzer II
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL9250
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02260388
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX326548
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR941305
+    cluster_name: public
+    id: '455330'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3220899900'
+    total_spots: '31577450'
+  - acc: SRR941306
+    cluster_name: public
+    id: '455330'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3254361102'
+    total_spots: '31905501'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX326/SRX326548
+  iid: SRX326548
+Series: GSE49017
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-12-11'
+  Submission-Date: '2013-07-18'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX326/SRX326548
+Title: HadjurLab-HiC-mAST-Rad21-WT, replicate 1
+Type: SRA
+iid: GSM1192213

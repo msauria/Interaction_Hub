@@ -1,0 +1,99 @@
+Accession: GSM1250503
+Channel:
+  Characteristics:
+  - MCF-7
+  - breast cancer cells
+  - after 24h of estrogen (E2) stimulation
+  Extract-Protocol: 'Briefly, cells were fixed with 1% formaldehyde. Chromatin was
+    digested with HindIII (NEB, Ipswich, MA). DNA ends of digested chromatin were
+    marked by biotin-14-dCTP (Invitrogen, Carlsbad, CA) following blunt-end ligation
+    with T4 DNA ligase in diluted condition. Ligated DNA was then de-crosslinked and
+    purified by phenol extraction procedures. Biotin-14-dCTP at non-ligated DNA ends
+    was removed with exonuclease activity of T4 DNA polymerase. Ligated DNA was then
+    applied to paired-end sequencing by using the Illumina sequencing technology platform
+    (Genome Analyzer IIx, Illumina).
+
+    Sample preparation for paired-end sequencing was performed following the manufacturer''s
+    instructions. Briefly, ligated DNA (5 microg) was sheared to a size of 300-500
+    basepairs by a nebulizer supplied with the Illumina paired-end sample preparation
+    kit. Fragmented DNA was end-paired using T4 DNA polymerase and Klenow polymerase
+    with T4 polynucleotide kinase to phosphorylate the 5'' ends.  A 3'' overhang was
+    created using a 3''-5'' exonuclease-deficient Klenow fragment, and then subjected
+    to immunoprecipitation by Dynabeads MyOne Streptavin C1 Beads (Invitrogen) in
+    DNA LoBind tubes (Eppendorf, Westbury, NY) with ligation of Illumina paired-end
+    adaptor oligonucleotides.  The ligation mixtures were electrophoresed on E-gel
+    SizeSelect 2% pre-cast agarose gels (Invitrogen) to collect 250-bp fragments.
+    Size-selected DNA fragments were enriched with Illumina paired-end primers by
+    a 15-cycle PCR reaction. DNA samples (20 nM per sample), quantified by an Agilent
+    Bioanalyzer, were loaded onto the paired-end flowcell of Genome Analyzer IIx (GAIIx)
+    in the supplied cluster station according to the manufacturer''s protocol. Clusters
+    of PCR colonies were then sequenced on GAIIx with 51-bp per read.'
+  Growth-Protocol: MCF-7 breast cancer cell line, obtained from the American Type
+    Culture Collection, was maintained in phenol red-free medium.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: MCF-7_24h
+  Treatment-Protocol: 'After 48 hours of hormone deprivation in 5% charcoal-dextran
+    stripped serum media (no phenol red), cells were stimulated with 70 nM estrogen
+    (E2) for various times: before (0) or after 0.5, 1, 4 and 24 hours of stimulation.'
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'library strategy: Hi-C seq
+
+  Conversion of qseq.txt.gz raw files to fastq.gz files using fastqutil module of
+  NGSutils.
+
+  Iterative mapping using Mirny''s lab library (HiC correction library 0.9).
+
+  Fragment filtering using Mirny''s lab library (HiC correction library 0.9).
+
+  Heatmap processing using Mirny''s lab library (HiC correction library 0.9).
+
+  Normalization across time points using short-range interaction counts (<10kb).
+
+  Removal of translocated and amplified regions.
+
+  Genome_build: hg19
+
+  Supplementary_files_format_and_content: .csv.gz: interaction count heatmap; .txt:
+  chromosome index'
+Description: 'Hi-C experiments
+
+  100804_s_3'
+Instrument-Model:
+  Predefined: Illumina Genome Analyzer IIx
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL10999
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02383913
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX367573
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1016443
+    cluster_name: public
+    id: '526184'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2777564346'
+    total_spots: '27231023'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX367/SRX367573
+  iid: SRX367573
+Series: GSE51687
+Status:
+  Last-Update-Date: '2013-10-25'
+  Release-Date: '2013-10-25'
+  Submission-Date: '2013-10-24'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX367/SRX367573
+Title: 24h_replicate_2_lane_1
+Type: SRA
+iid: GSM1250503

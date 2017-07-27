@@ -1,0 +1,104 @@
+Accession: GSM1704493
+Channel:
+  Biomaterial-Provider: Coriell; http://ccr.coriell.org/Sections/Search/Search.aspx?PgId=165&q=GM12878
+  Characteristics:
+  - GM12878
+  - HindIII
+  Extract-Protocol: "Cells were thawed on ice and re-suspended in 50ml freshly prepared\
+    \ ice-cold lysis buffer (10mM Tris-HCl pH 8, 10mM NaCl, 0.2% Igepal CA-630, one\
+    \ protease inhibitor cocktail tablet). Routinely, two pellets from each cell line\
+    \ were re-suspended and combined in 7ml complete lysis buffer to give ~50-60million\
+    \ cells. Cells were lysed on ice for a total of 30 min, with 2x10 strokes of a\
+    \ Dounce homogeniser with a 5 minute break between Douncing. Following lysis,\
+    \ the nuclei were pelleted and washed with 1.25xNEB Buffer 2 then re-suspended\
+    \ in 1.25xNEB Buffer 2 to make aliquots of 5-6million cells for digestion. Following\
+    \ lysis, Hi-C libraries were digested using HindIII then prepared as described\
+    \ in van Berkum et al with modifications described in Dryden et al.\nPre-Capture\
+    \ amplification was performed with 8 cycles of PCR on multiple parallel reactions\
+    \ from Hi-C libraries immobilised on Streptavidin beads which were pooled post-PCR\
+    \ and SPRI bead purified. The final library was re-suspended in 30\xB5l TLE and\
+    \ the quality and quantity assessed by Bioanalyzer and qPCR. Hi-C samples corresponding\
+    \ to 750ng were concentrated in a Speedvac then re-suspended in 3.4\u03BCl water.\
+    \ Hybridisation of SureSelect custom promoter and region capture libraries to\
+    \ Hi-C libraries was carried out using Agilent SureSelectXT reagents and protocols.\
+    \ Post-capture amplification was carried out using 6 cycles of PCR from streptavidin\
+    \ beads in multiple parallel reactions, then pooled and purified using SPRI beads."
+  Growth-Protocol: GM12878 cells were cultured in RPMI 1640/20 mM L-glutamine supplemented
+    with 15% fetal bovine serum in 25cm2 vented culture flasks at 37C/5% CO2
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: GM12878 Lymphoblastoid cells
+  Treatment-Protocol: Cells were fixed in 2% formaldehyde for 10 minutes at room temperature,
+    followed by the addition of cold 1M glycine to a final concentration of 0.125M
+    for 5 minutes at room temperature, then by 15 minutes on ice.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Casava software (v1.8, Illumina) was used to make base calls.
+
+  reads failing Illumina filters were removed before further analysis
+
+  Sequences were output in FASTQ format, poor quality reads truncated or removed as
+  necessary, using Trimmomatic version 0.3023, and subsequently mapped to the human
+  reference genome (GRCh37/hg19) and filtered to remove experimental artefacts using
+  the Hi-C User Pipeline (HiCUP, http://www.bioinformatics.babraham.ac.uk/projects/hicup/).
+
+  Off-target di-tags, where neither end mapped to a targeted fragment, were removed
+  from the final data sets using a combination of BEDTools and command line tools.
+
+  Genome_build: hg19
+
+  Supplementary_files_format_and_content: BEDPE files include on-target read counts
+
+  Supplementary_files_format_and_content: BED files include capture bait coordinates
+  (region_baits_coordinates.bed.gz & promoter_baits_coordinates.bed.gz)'
+Description: This Sample represents 2 replicates
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03763366
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1050324
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2052903
+    cluster_name: public
+    id: '1525472'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '12002246700'
+    total_spots: '80014978'
+  - acc: SRR2052904
+    cluster_name: public
+    id: '1525472'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '16826252400'
+    total_spots: '112175016'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX105/SRX1050324
+  iid: SRX1050324
+Series: GSE69600
+Status:
+  Last-Update-Date: '2015-11-25'
+  Release-Date: '2015-11-24'
+  Submission-Date: '2015-06-05'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1704nnn/GSM1704493/GSM1704493_GMRegCap_rep1.bedpe.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1704nnn/GSM1704493/GSM1704493_GMRegCap_rep2.bedpe.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX105/SRX1050324
+Title: Region Capture Hi-C, GM12878 Lymphoblastoid cells, replicate one & two
+Type: SRA
+iid: GSM1704493

@@ -1,0 +1,290 @@
+Contributor:
+- Address:
+    City: Houston
+    Country: USA
+    Line: 1 Baylor Plaza
+    State: TX
+    Zip-Code: '77030'
+  Department: Molecular and Human Genetics
+  Email: suhasrao@post.harvard.edu
+  Laboratory: The Center for Genome Architecture
+  Organization: Baylor College of Medicine
+  Person:
+    First: Suhas
+    Last: Rao
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Adrian
+    Last: Sanborn
+  iid: contrib3
+- Person:
+    First: Erez
+    Last: Aiden
+    Middle: L
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL15520
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-04-12'
+    Release-Date: '2012-05-02'
+    Submission-Date: '2012-05-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Homo sapiens)
+  iid: GPL15520
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+- Accession: GPL18573
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2014-04-15'
+    Submission-Date: '2014-04-15'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Homo sapiens)
+  iid: GPL18573
+- Accession: GPL20795
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2015-08-11'
+    Release-Date: '2015-08-11'
+    Submission-Date: '2015-08-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: HiSeq X Ten (Homo sapiens)
+  iid: GPL20795
+Series:
+  Accession: GSE74072
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib1
+  - position: '3'
+    ref: contrib4
+  Overall-Design: in situ Hi-C and HYbrid Capture Hi-C (Hi-C2) were used to probe
+    the three-dimensional structure of the genome in two different human cell types
+    before and after genome editing.
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA299007
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP064914
+    type: SRA
+  Sample-Ref:
+  - name: SanbornRao-2015-HIC001
+    ref: GSM1909121
+  - name: SanbornRao-2015-HIC002
+    ref: GSM1909122
+  - name: SanbornRao-2015-HIC003
+    ref: GSM1909123
+  - name: SanbornRao-2015-HIC004
+    ref: GSM1909124
+  - name: SanbornRao-2015-HIC005
+    ref: GSM1909125
+  - name: SanbornRao-2015-HIC006
+    ref: GSM1909126
+  - name: SanbornRao-2015-HIC007
+    ref: GSM1909127
+  - name: SanbornRao-2015-HIC008
+    ref: GSM1909128
+  - name: SanbornRao-2015-HIC009
+    ref: GSM1909129
+  - name: SanbornRao-2015-HIC010
+    ref: GSM1909130
+  - name: SanbornRao-2015-HIC011
+    ref: GSM1909131
+  - name: SanbornRao-2015-HIC012
+    ref: GSM1909132
+  - name: SanbornRao-2015-HIC013
+    ref: GSM1909133
+  - name: SanbornRao-2015-HIC014
+    ref: GSM1909134
+  - name: SanbornRao-2015-HIC015
+    ref: GSM1909135
+  - name: SanbornRao-2015-HIC016
+    ref: GSM1909136
+  - name: SanbornRao-2015-HIC017
+    ref: GSM1909137
+  - name: SanbornRao-2015-HIC018
+    ref: GSM1909138
+  - name: SanbornRao-2015-HIC019
+    ref: GSM1909139
+  - name: SanbornRao-2015-HIC020
+    ref: GSM1909140
+  - name: SanbornRao-2015-HIC021
+    ref: GSM1909141
+  - name: SanbornRao-2015-HIC022
+    ref: GSM1909142
+  - name: SanbornRao-2015-HIC023
+    ref: GSM1909143
+  - name: SanbornRao-2015-HIC024
+    ref: GSM1909144
+  - name: SanbornRao-2015-HIC025
+    ref: GSM1909145
+  - name: SanbornRao-2015-HIC026
+    ref: GSM1909146
+  - name: SanbornRao-2015-HIC027
+    ref: GSM1909147
+  - name: SanbornRao-2015-HIC028
+    ref: GSM1909148
+  - name: SanbornRao-2015-HIC029
+    ref: GSM1909149
+  - name: SanbornRao-2015-HIC030
+    ref: GSM1909150
+  - name: SanbornRao-2015-HIC031
+    ref: GSM1909151
+  - name: SanbornRao-2015-HIC032
+    ref: GSM1909152
+  - name: SanbornRao-2015-HIC033
+    ref: GSM1909153
+  - name: SanbornRao-2015-HIC034
+    ref: GSM1909154
+  - name: SanbornRao-2015-HIC035
+    ref: GSM1909155
+  - name: SanbornRao-2015-HIC036
+    ref: GSM1909156
+  - name: SanbornRao-2015-HIC037
+    ref: GSM1909157
+  - name: SanbornRao-2015-HIC038
+    ref: GSM1909158
+  - name: SanbornRao-2015-HIC039
+    ref: GSM1909159
+  - name: SanbornRao-2015-HIC040
+    ref: GSM1909160
+  - name: SanbornRao-2015-HIC041
+    ref: GSM1909161
+  - name: SanbornRao-2015-HIC042
+    ref: GSM1909162
+  - name: SanbornRao-2015-HIC043
+    ref: GSM1909163
+  - name: SanbornRao-2015-HIC044
+    ref: GSM1909164
+  - name: SanbornRao-2015-HIC045
+    ref: GSM1909165
+  - name: SanbornRao-2015-HIC046
+    ref: GSM1909166
+  - name: SanbornRao-2015-HIC047
+    ref: GSM1909167
+  - name: SanbornRao-2015-HIC048
+    ref: GSM1909168
+  - name: SanbornRao-2015-HIC049
+    ref: GSM1909169
+  - name: SanbornRao-2015-HIC050
+    ref: GSM1909170
+  - name: SanbornRao-2015-HIC051
+    ref: GSM1909171
+  - name: SanbornRao-2015-HIC052
+    ref: GSM1909172
+  - name: SanbornRao-2015-HIC053
+    ref: GSM1909173
+  - name: SanbornRao-2015-HIC054
+    ref: GSM1909174
+  - name: SanbornRao-2015-HIC055
+    ref: GSM1909175
+  - name: SanbornRao-2015-HIC056
+    ref: GSM1909176
+  - name: SanbornRao-2015-HIC057
+    ref: GSM1909177
+  - name: SanbornRao-2015-HIC058
+    ref: GSM1909178
+  - name: SanbornRao-2015-HIC059
+    ref: GSM1909179
+  - name: SanbornRao-2015-HIC060
+    ref: GSM1909180
+  - name: SanbornRao-2015-HIC061
+    ref: GSM1909181
+  - name: SanbornRao-2015-HIC062
+    ref: GSM1909182
+  - name: SanbornRao-2015-HIC063
+    ref: GSM1909183
+  - name: SanbornRao-2015-HIC064
+    ref: GSM1909184
+  - name: SanbornRao-2015-HIC065
+    ref: GSM1909185
+  - name: SanbornRao-2015-HIC066
+    ref: GSM1909186
+  - name: SanbornRao-2015-HIC067
+    ref: GSM1909187
+  - name: SanbornRao-2015-HIC068
+    ref: GSM1909188
+  - name: SanbornRao-2015-HIC069
+    ref: GSM1909189
+  - name: SanbornRao-2015-HIC070
+    ref: GSM1909190
+  - name: SanbornRao-2015-HIC071
+    ref: GSM1909191
+  - name: SanbornRao-2015-HIC072
+    ref: GSM1909192
+  - name: SanbornRao-2015-HIC073
+    ref: GSM1909193
+  - name: SanbornRao-2015-HIC005_Hi-C2
+    ref: GSM1909195
+  Status:
+    Last-Update-Date: '2017-05-04'
+    Release-Date: '2015-10-23'
+    Submission-Date: '2015-10-15'
+    database: GEO
+  Summary: We recently used in situ Hi-C to create kilobase-resolution 3D maps of
+    mammalian genomes. Here, we combine these with new Hi-C, microscopy, and genome-editing
+    experiments to study the physical structure of chromatin fibers, domains, and
+    loops. We find that the observed contact domains are inconsistent with the equilibrium
+    state for an ordinary condensed polymer. Combining Hi-C data and novel mathematical
+    theorems, we show that contact domains are also not consistent with a fractal
+    globule. Instead, we use physical simulations to study two models of genome folding.
+    In one, intermonomer attraction during polymer condensation leads to formation
+    of an anisotropic "tension globule." In the other, CTCF and cohesin act together
+    to extrude loops during interphase. Both models are consistent with the observed
+    contact domains and with the observation that contact domains tend to form inside
+    loops. However, the extrusion model explains a far wider array of observations,
+    such as why loops tend not to overlap and why the CTCF-binding motifs at pairs
+    of loop anchors lie in the convergent orientation. Finally, we perform 13 genome-editing
+    experiments examining the effect of altering CTCF-binding sites on chromatin folding.
+    The convergent rule correctly predicts the affected loop in every case. Moreover,
+    the extrusion model accurately predicts in silico the 3D maps resulting from each
+    experiment using only the location of CTCF-binding sites in the WT. Thus, we show
+    that it is possible to disrupt, restore, and move loops and domains using targeted
+    mutations as small as a single base pair.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74072/GSE74072_Hap1_Arrowhead_domainlist.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74072/GSE74072_Hap1_HiCCUPS_looplist.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP064/SRP064914
+  Title: Chromatin extrusion explains key features of loop and domain formation in
+    wild-type and engineered genomes
+  Type: Other
+  iid: GSE74072
+id: '200074072'

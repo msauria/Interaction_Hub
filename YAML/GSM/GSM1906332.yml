@@ -1,0 +1,74 @@
+Accession: GSM1906332
+Channel:
+  Characteristics:
+  - RL
+  - B-cell Follicular  Lymphoma
+  - B cells
+  Extract-Protocol: 'Hundreds of millions of Hi-C paired-end sequence reads for three
+    different human cells (RL follicular lymphoma cell line, primary tumor B-cells
+    from an acute lymphoblastic leukemia patient, and MHH-CALL-4 B-cell acute lymphoblastic
+    leukemia cell line) using the Hi-C technique.
+
+    Hi-C libraries were created  for a case of primary human B-acute lymphoblastic
+    leukemia (B-ALL), the MHH-CALL-4 B-ALL cell line (CALL4), and the follicular lymphoma
+    cell-line (RL). These libraries were sequenced using an Illumina HiSeq 2000. High-quality
+    paired-end reads of 39M, 79M, and 33M were obtained for these cells, respectively.'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: B-cell Follicular  Lymphoma
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: Hi-C seq\nThese libraries were sequenced using\
+  \ an Illumina HiSeq 2000\nSoftware Maq was used to map each read-pair to the reference\
+  \ human genomes (NCBI build 36.3), where parameter \u201Csum of mismatching base\
+  \ qualities (-e)\u201D controlling the tolerance of mismatches was set to 150 in\
+  \ most experiments.\nData were filtered using the following specifications\u2026\
+  \nMaq outputs the base pair positions in the reference genomes where each DNA read\
+  \ is mapped to. The mapped positions were analyzed by our method to generate chromosomal\
+  \ contacts\nAn in-house bioinformatics software pipeline was developed and applied\
+  \ to map sequence reads to the human reference genome, producing a large data set\
+  \ of high-quality and high-resolution chromosome contacts\nGenome_build: NCBI build\
+  \ 36.3\nSupplementary_files_format_and_content: The processed data file is tab delimited\
+  \ with five columns. The column headers are; Mapping ID, chromosome number 1, chromosome\
+  \ location 1, chromosome number 2, chromosome location 2. The Mapping ID is the\
+  \ key assigned during Mapping for each sequence. The chromosome number and location\
+  \ respectively correspond to the id and location of the chromosome being mapped."
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1330143
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04160495
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR2630711
+    cluster_name: public
+    id: '1895531'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6557987200'
+    total_spots: '32789936'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX133/SRX1330143
+  iid: SRX1330143
+Series: GSE73924
+Status:
+  Last-Update-Date: '2015-11-01'
+  Release-Date: '2015-11-01'
+  Submission-Date: '2015-10-12'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1906nnn/GSM1906332/GSM1906332_contact_RL.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX133/SRX1330143
+Title: RL
+Type: SRA
+iid: GSM1906332

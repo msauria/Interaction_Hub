@@ -1,0 +1,97 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Dr. CMM-East 2071
+    State: California
+    Zip-Code: '92093'
+  Email: dgorkin@ucsd.edu
+  Laboratory: Bing Ren
+  Organization: Ludwig Institute for Cancer Research
+  Person:
+    First: David
+    Last: Gorkin
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Inkyung
+    Last: Jung
+  iid: contrib3
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib4
+- Person:
+    First: Daniele
+    Last: Canzio
+  iid: contrib5
+- Person:
+    First: Tom
+    Last: Maniatis
+  iid: contrib6
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+Series:
+  Accession: GSE71072
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  Overall-Design: Two biological replicates were performed, each with roughly 25x10^7
+    cells.
+  Pubmed-ID: '26276636'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA290278
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP061298
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C, SK-N-SH, Replicate 1
+    ref: GSM1826481
+  - name: Hi-C, SK-N-SH, Replicate 2
+    ref: GSM1826482
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2015-09-01'
+    Submission-Date: '2015-07-18'
+    database: GEO
+  Summary: Hi-C was performed on SK-N-SH cells to study 3-dimensional chromatin architecture.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71072/GSE71072_SK-N-SH_DI_replicates-merged.table.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE71072/GSE71072_SK-N-SH_domain_calls_replicates-merged.bed.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP061/SRP061298
+  Title: SK-N-SH Hi-C
+  Type: Other
+  iid: GSE71072
+id: '200071072'

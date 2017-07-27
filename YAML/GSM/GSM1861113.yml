@@ -1,0 +1,64 @@
+Accession: GSM1861113
+Channel:
+  Characteristics:
+  - seedling
+  - wild type
+  - Col-0
+  Extract-Protocol: 'Nuclei were isolated and digested with DPNII overnight. T4 ligase
+    was added in dilute conditions (10ml) and incubated at 16C for 4-6hrs.
+
+    Libraries were prepared by the University of Michigan Seqcore.'
+  Growth-Protocol: Long day 2-3 weeks
+  Molecule: genomic DNA
+  Organism: Arabidopsis thaliana
+  Source: Seedlings
+  Treatment-Protocol: Formaldehyde crosslinking.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Alignment was done by bowtie for each end separately keeping only
+  unique matches. Mapped reads were then paired.
+
+  Alignment was done by tophat2 for rna-seq samples and processed by edgeR.
+
+  Genome_build: TAIR10
+
+  Supplementary_files_format_and_content: nrpe1 DMRs with long range chromosomal contacts.
+
+  Supplementary_files_format_and_content: Chromosome Start End Col-0_Methylation nrpe1_Methylation'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL13222
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04011643
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1164367
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2183103
+    cluster_name: public
+    id: '1694465'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '12225624732'
+    total_spots: '119859066'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX1164367
+  iid: SRX1164367
+Series: GSE64389
+Status:
+  Last-Update-Date: '2016-06-01'
+  Release-Date: '2016-06-01'
+  Submission-Date: '2015-08-25'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX116/SRX1164367
+Title: Col-0 Hi-C Rep2
+Type: SRA
+iid: GSM1861113

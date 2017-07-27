@@ -1,0 +1,226 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: United Kingdom
+    Line: Babraham Research Park
+    Postal-Code: CB22 3AT
+    State: Cambs
+  Department: Bioinformatics
+  Email: steven.wingett@babraham.ac.uk
+  Organization: Babraham Institute
+  Person:
+    First: Steven
+    Last: Wingett
+    Middle: William
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Takashi
+    Last: Nagano
+  iid: contrib3
+- Person:
+    First: Csilla
+    Last: "V\xE1rnai"
+  iid: contrib4
+- Person:
+    First: Stefan
+    Last: Schoenfelder
+  iid: contrib5
+- Person:
+    First: Biola-Maria
+    Last: Javierre
+  iid: contrib6
+- Person:
+    First: Steven
+    Last: Wingett
+    Middle: W
+  iid: contrib7
+- Person:
+    First: Peter
+    Last: Fraser
+  iid: contrib8
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11002
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-03-31'
+    Release-Date: '2010-09-30'
+    Submission-Date: '2010-09-30'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina Genome Analyzer IIx (Mus musculus)
+  iid: GPL11002
+- Accession: GPL15103
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-02-02'
+    Release-Date: '2012-01-09'
+    Submission-Date: '2012-01-09'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1000 (Mus musculus)
+  iid: GPL15103
+- Accession: GPL15433
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2015-11-05'
+    Release-Date: '2012-04-11'
+    Submission-Date: '2012-04-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1000 (Homo sapiens)
+  iid: GPL15433
+- Accession: GPL15520
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-04-12'
+    Release-Date: '2012-05-02'
+    Submission-Date: '2012-05-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Homo sapiens)
+  iid: GPL15520
+- Accession: GPL16417
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2012-12-20'
+    Submission-Date: '2012-12-20'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Mus musculus)
+  iid: GPL16417
+- Accession: GPL19969
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism:
+  - Homo sapiens
+  - Mus musculus
+  Status:
+    Last-Update-Date: '2015-03-31'
+    Release-Date: '2015-03-31'
+    Submission-Date: '2015-03-31'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Homo sapiens; Mus musculus)
+  iid: GPL19969
+- Accession: GPL20607
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism:
+  - Homo sapiens
+  - Mus musculus
+  Status:
+    Last-Update-Date: '2015-06-23'
+    Release-Date: '2015-06-23'
+    Submission-Date: '2015-06-23'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1000 (Homo sapiens; Mus musculus)
+  iid: GPL20607
+Series:
+  Accession: GSE70181
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  Overall-Design: We created Hi-C libraries by two different methods, in-solution
+    ligation and in-nucleus ligation, from two biological replicates each of mouse
+    foetal liver cells (mouse-1 and mouse-2) and human ES cells (human-1 and human-2)
+    or the mixture of these two species. We also sequenced a random ligation library
+    prepared by reversal of the cross-links and purification of the DNA prior to ligation.
+  Pubmed-ID: '26306623'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA287806
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP059793
+    type: SRA
+  Sample-Ref:
+  - name: 'Human sample1: Hi-C in-nucleus ligation'
+    ref: GSM1718020
+  - name: 'Human sample1: Hi-C in-solution ligation'
+    ref: GSM1718021
+  - name: 'Human sample2: Hi-C in-nucleus ligation'
+    ref: GSM1718022
+  - name: 'Human sample2: Hi-C in-solution ligation'
+    ref: GSM1718023
+  - name: 'Mouse sample1: Hi-C in-nucleus ligation'
+    ref: GSM1718024
+  - name: 'Mouse sample1: Hi-C in-solution ligation'
+    ref: GSM1718025
+  - name: 'Mouse sample2: Hi-C in-nucleus ligation'
+    ref: GSM1718026
+  - name: 'Mouse sample2: Hi-C in-solution ligation'
+    ref: GSM1718027
+  - name: Mouse random Hi-C ligation
+    ref: GSM1718028
+  - name: 'Mouse-human mixture1: Hi-C in-nucleus ligation'
+    ref: GSM1718029
+  - name: 'Mouse-human mixture1: Hi-C in-solution ligation'
+    ref: GSM1718030
+  - name: 'Mouse-human mixture2: Hi-C in-nucleus ligation'
+    ref: GSM1718031
+  - name: 'Mouse-human mixture2: Hi-C in-solution ligation'
+    ref: GSM1718032
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2015-08-12'
+    Submission-Date: '2015-06-23'
+    database: GEO
+  Summary: Chromosome conformation capture (3C) and derivative (4C, 5C and Hi-C) methods
+    employ ligation of diluted cross-linked chromatin complexes, intended to favor
+    proximity-dependent, intra-complex ligation. We previously described an alternative
+    Hi-C protocol with ligation in preserved nuclei rather than in solution. Here
+    we directly compare Hi-C methods employing "in-nucleus ligation" and the standard
+    "in-solution ligation". The results show that in-nucleus ligation captures chromatin
+    interactions more consistently over a wider range of distances, and significantly
+    reduces both experimental noise and bias. Thus in-nucleus ligation not only simplifies
+    the experimental procedures, but also produces higher quality data with benefits
+    for the entire range of 3C applications.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE70181/GSE70181_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE70181/GSE70181_hicup_report_ISL_INL_RL.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE70181/GSE70181_powerlaw_curves.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP059/SRP059793
+  Title: Comparison of Hi-C results using in-solution versus in-nucleus ligation
+  Type: Other
+  iid: GSE70181
+id: '200070181'

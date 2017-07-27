@@ -1,0 +1,156 @@
+Accession: GSM1483872
+Channel:
+  Characteristics: KBM7
+  Extract-Protocol: "Approximately six million NHEK and ten million KBM7 cells were\
+    \ fixed in 1.5% formaldehyde at room temperature for 10 minutes. The fixed cells\
+    \ were washed with TN buffer (10 mM Tris, 40 mM NaCl, pH 7.5) and collected by\
+    \ centrifugation at 600 g for 3 minutes. To increase digestion efficiency, fixed\
+    \ cells (6 or 10 million / 122 ul) were treated with SDS (add 3.8 ul of 10% SDS\
+    \ to a final of 0.30% SDS) at 64\xB0C for 10 minutes and then at 37\xB0C overnight\
+    \ (15 hours). The SDS concentration was reduced gradually to 0.10% by adding five\
+    \ times of 50 ul (1 x DpnII digestion buffer or NEB buffer 4 for multiple enzymes)\
+    \ with mixing. Triton X-100 (38 ul of 20% Triton X) was added to 1.8% concentration\
+    \ and the sample was incubated at  37\xB0C for 1 hour. Sample volume was adjusted\
+    \ to 600 ul by adding 1 X restriction buffer, ATP (0.2 mM final) and BSA (100\
+    \ ug/ml final). Digestion with appropriate restriction enzymes (300 units each)\
+    \ was carried out on a rotate shaker at 37\xB0C for 15 hours. We used high concentration\
+    \ NEB enzymes to keep the final volume of the enzyme mixture less than 60 ul (1/10\
+    \ reaction volume). The digested samples were deactivated at 65\xB0C for 15 minutes\
+    \ and then centrifuged at 15,000 g for 5 min. We recovered ~95% of cellular DNA\
+    \ in the pellet fraction. The pellet fraction was re-suspended with T4 ligation\
+    \ buffer (15 ul 10 x buffer, 65 ul total) heated at 65\xB0C and mixed with 100\
+    \ ul of melted 2.5% low-melting agarose. We used 200 ul pipette to deliver the\
+    \ hot agarose sample to ice-cold ligation buffer (800 ul of 1 x ligation buffer\
+    \ containing T4 ligase (4000 units, NEB) in a steady fashion within ~5 seconds,\
+    \ on melted ice. Strings of gel bead appeared instantly at 0\xB0C. We sealed the\
+    \ tube with parafilm and perform ligation at RT (23\xB0C.) overnight on top of\
+    \ a shaker (~300 rpm), then transfer the tube to a iced water bath. The sample\
+    \ pellet was recovered by centrifugation at 20,000 g for 2 minutes, then 10 ul\
+    \ of 1% SDS (0.05% final) was added and heated at 80\xB0C for 1 hour. Cross-links\
+    \ were reversed by treatment with Proteinase K (200 ug/ml) at 65\xB0C and 300\
+    \ rpm overnight (12 hours). Melted TM3C-agarose sample was incubated with RNase\
+    \ A (10 ug / 210 ul) at 55\xB0C for 15 minutes and then purified by QIAquick gel\
+    \ extraction protocol (QUIAGEN Inc., CA). Purified TM3C DNA was quantified using\
+    \ both a NanoDrop spectrophotometer (Thermo Scientific) and a Qubit 2.0 Fluorometer.\
+    \ The Qubit quantification represents the more accurate DNA concentration.\nSize-selected\
+    \ fragments were paired-end sequenced (100 bp per end) after adding sequencing\
+    \ adaptors using Illumina Hi-Seq 2000."
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: near-haploid human chronic leukemia cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'We mapped the paired-end reads to the human reference genome (hg19)
+  using the short read alignment mode  of BWA (v0.5.9) with default parameter settings.
+  Each end of the paired reads was mapped individually.  We post-processed the alignment
+  results to extract the reads that satisfy the following three criteria: (i)  mapped
+  uniquely to one location in the reference genome, (ii) mapped with an alignment
+  quality score of  at least 30, (iii) mapped with an edit distance of at most 3.
+  Reads that satisfy these criteria are named  fully-mapped (F), and the rest of the
+  mapped reads that did not satisfy these criteria are discarded from  further analysis.
+  We identified pairs of fully-mapped reads that share a common identifier to generate
+  the  set of contacts that we denote as F-F (fully-mapped - fully-mapped). The reads
+  that did not map to any  location in this phase of mapping are named non-mapped
+  and are analyzed further.
+
+  Within each non-mapped read, we first counted the number of cleavage sites, taking
+  into account all the  restriction enzymes that are used in the digestion step for
+  that specific library. We discarded reads that  contain more than two cleavage sites.
+  We also discarded reads that contain no cleavage sites because such  reads surely
+  are not chimeric.
+
+  We split the remaining reads, which contain one or two cleavage sites, into  two
+  or three smaller fragments, respectively, preserving the entire cleavage site on
+  both adjacent fragments.  We only kept the largest two fragments from each read.
+  We mapped the resulting fragments to the genome  using BWA with default parameter
+  settings. The 3-point filtering criteria mentioned in the previous section  are
+  applied to the aligned reads, but allowing an edit distance of at most 1 to make
+  sure we only extract  the unique and high quality mappings.
+
+  The reads that are extracted from this phase of mapping are named  partially-mapped
+  (P) because they did not map as a whole, but their constituent fragments were successfully  mapped
+  to different loci. The two classes of mapped reads (fully-mapped (F) and partially-mapped
+  (P))  yield three possible types of contacts, namely F-F, F-P/P-F and P-P. The first
+  set (F-F) is extracted after the  initial mapping in which each paired-end read
+  can contribute at most one interaction between two loci. The  second set (F-P/P-F)
+  consists of paired-end reads with one end fully mapped and the other end having
+  either one  or two smaller fragments that mapped to the genome. If the latter contains
+  only one mapped fragment, then  the only interaction is between this fragment and
+  the fully-mapped end. However, if the end has two mapped  fragments, then this paired-end
+  read produces three contacts: one between the two mapped fragments on  the partially-mapped
+  end and two others that have one side from a fragment from the partially-mapped
+  end  and the other side from the fully-mapped end. In addition, the same paired-end
+  read produces one triple  (i.e., interaction among three loci) of type F-P/P-F.
+  For the contacts of the third type (P-P), each paired-end  can produce either one,
+  three or six binary contacts, depending on whether one or two fragments from each  end
+  are successfully mapped. If only one fragment from one end and two from the other
+  is mapped, then,  similar to the case of P-F, three binary contacts and one triple
+  is produced. If both ends have two mapped  fragments, then six binary contacts,
+  four triples (of type P-P) and one quadruple (i.e., contact among four  loci) are
+  produced.
+
+  Genome_build: hg19
+
+  Supplementary_files_format_and_content: Processed data files contain the pairwise
+  (doubles) and multi-locus contacts for each library that is not an experimental
+  control. For pairwise contacts we used BEDPE file format (see http://bedtools.readthedocs.org/en/latest/content/general-usage.html)
+  with name field (column 7) representing the contact type (F-F or F-P or P-F or P-P)
+  and score field (column 8) listing the read ID for cross referencing with fastq
+  files. For contacts that link more than two loci simultaneously, we extended the
+  BEDPE format to include triples (extension BEDTE) and quadruples (extension BEDQE)
+  of genomic regions. Each line of a BEDTE or a BEDQE file first lists the coordinates
+  of each locus then the contact type and read ID columns and finally the mapping
+  strands of each locus in order.'
+Description: TM3C library constructed using only DpnII restriction enzyme.
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03001953
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX684709
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1555602
+    cluster_name: public
+    id: '958538'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9500000000'
+    total_spots: '47500000'
+  - acc: SRR1555603
+    cluster_name: public
+    id: '958538'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '9500000000'
+    total_spots: '47500000'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX684/SRX684709
+  iid: SRX684709
+Series: GSE60623
+Status:
+  Last-Update-Date: '2015-04-30'
+  Release-Date: '2015-04-29'
+  Submission-Date: '2014-08-21'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX684/SRX684709
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1483nnn/GSM1483872/GSM1483872_KBM7-TM3C-1_replicate1_allDoubles.bedpe.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1483nnn/GSM1483872/GSM1483872_KBM7-TM3C-1_replicate1_allQuadruples.bedqe.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1483nnn/GSM1483872/GSM1483872_KBM7-TM3C-1_replicate1_allTriples.bedte.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1483nnn/GSM1483872/GSM1483872_KBM7-TM3C-1_replicate2_allDoubles.bedpe.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1483nnn/GSM1483872/GSM1483872_KBM7-TM3C-1_replicate2_allQuadruples.bedqe.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1483nnn/GSM1483872/GSM1483872_KBM7-TM3C-1_replicate2_allTriples.bedte.gz
+Title: KBM7-TM3C-1
+Type: SRA
+iid: GSM1483872

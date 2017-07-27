@@ -1,0 +1,78 @@
+Contributor:
+- Address:
+    City: Seattle
+    Country: USA
+    Line: 3720 15th Ave NE
+    State: WA
+    Zip-Code: '98195'
+  Department: Genome Sciences
+  Laboratory: Shendure Lab
+  Organization: University of Washington
+  Person:
+    First: Vijay
+    Last: Ramani
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL22245
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism:
+  - Homo sapiens
+  - Mus musculus
+  Status:
+    Last-Update-Date: '2016-07-27'
+    Release-Date: '2016-07-27'
+    Submission-Date: '2016-07-27'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens; Mus musculus)
+  iid: GPL22245
+Series:
+  Accession: GSE84920
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+    position: '1'
+    ref: contrib1
+  Overall-Design: 'Single-cell Hi-C
+
+
+    Raw data for GSM2254215, GSM2254216, GSM2254218, GSM2254219 and GSM2438426 were
+    submitted to dbGaP due to patient privacy concerns. The raw data are available
+    at dbGaP accession ID phs001269.v1.p1.'
+  Pubmed-ID: '28135255'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA335638
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP079988
+    type: SRA
+  Sample-Ref:
+  - name: Combinatorial scHi-C Library ML3
+    ref: GSM2254217
+  Status:
+    Last-Update-Date: '2017-02-03'
+    Release-Date: '2017-01-28'
+    Submission-Date: '2016-07-27'
+    database: GEO
+  Summary: Proof-of-concept for a massively parallel single-cell version of the Hi-C
+    protocol
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE84920/GSE84920_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE84920/GSE84920_README.txt
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP079/SRP079988
+  Title: Massively multiplex single-cell Hi-C
+  Type: Other
+  iid: GSE84920
+id: '200084920'

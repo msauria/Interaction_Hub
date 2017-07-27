@@ -1,0 +1,159 @@
+Contributor:
+- Address:
+    City: Atlanta
+    Country: USA
+    Line: 1510 Clifton Rd
+    State: Georgia
+    Zip-Code: '30322'
+  Department: Biology
+  Email: yoonhee.jung@emory.edu
+  Laboratory: Corces lab
+  Organization: Emory university
+  Person:
+    First: Yoonhee
+    Last: Jung
+  Phone: '4047274250'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Yoon-Hee
+    Last: Jung
+  iid: contrib3
+- Person:
+    First: Michael
+    Last: Sauria
+  iid: contrib4
+- Person:
+    First: Xiaowen
+    Last: Lyu
+  iid: contrib5
+- Person:
+    First: James
+    Last: Taylor
+  iid: contrib6
+- Person:
+    First: Victor
+    Last: Corces
+  iid: contrib7
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE79229
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  Overall-Design: Analysis of the distribution of histone modifications and chromatin
+    proteins in mouse sperm
+  Pubmed-ID: '28178516'
+  Relation:
+  - target: GSE79230
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA315215
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP071784
+    type: SRA
+  Sample-Ref:
+  - name: Sperm-HiC_replicate1_biological
+    ref: GSM2088405
+  - name: Sperm-HiC_replicate2_technical
+    ref: GSM2088406
+  - name: Sperm-HiC_replicate3_biological
+    ref: GSM2088407
+  - name: Sperm-HiC_replicate4_technical
+    ref: GSM2088408
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2017-01-17'
+    Submission-Date: '2016-03-15'
+    database: GEO
+  Summary: The mammalian sperm genome is generally thought to be condensed and transcriptionally
+    inert. Here we show that most promoters in mouse sperm contain elongating RNA
+    polymerase II and are flanked by several positioned nucleosomes marked by a variety
+    of active histone modifications. The sperm genome is bound by several transcription
+    factors, including Nanog, Oct4, Mediator, condensin, and the pioneer factor FoxA1.
+    These proteins are found at promoters, enhancers, and super-enhancers, many of
+    which are active in mESCs or adult tissues. CTCF and cohesin are also present
+    in sperm DNA, where they mediate interactions that organize the sperm genome into
+    domains and compartments that overlap extensively with those found in mESCs. These
+    results indicate that the sperm genome is rich in epigenetic information and   primed
+    for its expression during embryonic and adult life, and suggest mechanisms by
+    which environmental effects on the paternal germline can be transmitted trans-generationally.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr1.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr10.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr11.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr12.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr13.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr14.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr15.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr16.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr17.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr18.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr19.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr2.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr3.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr4.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr5.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr6.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr7.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr8.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chr9.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep1.chrX.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr1.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr10.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr11.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr12.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr13.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr14.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr15.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr16.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr17.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr18.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr19.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr2.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr3.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr4.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr5.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr6.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr7.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr8.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chr9.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE79229/GSE79229_Normalized.Sperm.Rep2.chrX.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP071/SRP071784
+  Title: Mammalian sperm exhibit epigenetic priming of embryonic and adult regulatory
+    landscapes (HiC-Seq)
+  Type: Other
+  iid: GSE79229
+id: '200079229'

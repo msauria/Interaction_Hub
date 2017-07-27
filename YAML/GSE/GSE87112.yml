@@ -1,0 +1,380 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 GILMAN DR., BLDG. CMME RM 2071
+    State: California
+    Zip-Code: '92037'
+  Department: Cellular and Molecular Medicine
+  Email: aschmitt1987@gmail.com
+  Laboratory: Dr. Bing Ren
+  Organization: UC San Diego
+  Person:
+    First: Anthony
+    Last: Schmitt
+    Middle: D
+  Phone: '6178429022'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE87112
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+    position: '1'
+    ref: contrib1
+  Overall-Design: 'The study contains new Hi-C datasets in 11 primary adult tissues.
+    4 of the 11 tissues have biological replicates, which is defined as two datasets
+    from the same tissue type but from different donor individuals.The study also
+    contains analysis of 3 previously published tissue Hi-C datasets (Leung et al.,
+    2015), as well as several other cell lines from other studies as noted throughout
+    our study. The study also contains the re-analysis and integration of previously
+    published RNA-seq by the Roadmap Epigenomics Consortium (GEO database under accession
+    number GSE16256 and from SRA database under accession umber SRP000941).
+
+    all the Hi-C data generated in this study can be visualized in 3dgenome.org'
+  Pubmed-ID: '27851967'
+  Relation:
+  - target: GSM1419084
+    type: Reanalysis of
+  - target: GSM1181867
+    type: Reanalysis of
+  - target: GSM1181868
+    type: Reanalysis of
+  - target: GSM1267196
+    type: Reanalysis of
+  - target: GSM1267197
+    type: Reanalysis of
+  - target: GSM1055800
+    type: Reanalysis of
+  - target: GSM1055801
+    type: Reanalysis of
+  - target: GSM1154021
+    type: Reanalysis of
+  - target: GSM1154022
+    type: Reanalysis of
+  - target: GSM1154023
+    type: Reanalysis of
+  - target: GSM1154024
+    type: Reanalysis of
+  - target: GSM1419086
+    type: Reanalysis of
+  - target: GSM1419085
+    type: Reanalysis of
+  - target: GSM1267198
+    type: Reanalysis of
+  - target: GSM1267199
+    type: Reanalysis of
+  - target: GSM1267200
+    type: Reanalysis of
+  - target: GSM1267201
+    type: Reanalysis of
+  - target: GSM1267202
+    type: Reanalysis of
+  - target: GSM1267203
+    type: Reanalysis of
+  - target: GSM1267204
+    type: Reanalysis of
+  - target: GSM1267205
+    type: Reanalysis of
+  - target: GSM862720
+    type: Reanalysis of
+  - target: GSM862721
+    type: Reanalysis of
+  - target: GSM862722
+    type: Reanalysis of
+  - target: GSM1551550
+    type: Reanalysis of
+  - target: GSM1551551
+    type: Reanalysis of
+  - target: GSM1551552
+    type: Reanalysis of
+  - target: GSM1551553
+    type: Reanalysis of
+  - target: GSM1551554
+    type: Reanalysis of
+  - target: GSM1551555
+    type: Reanalysis of
+  - target: GSM1551556
+    type: Reanalysis of
+  - target: GSM1551557
+    type: Reanalysis of
+  - target: GSM1551558
+    type: Reanalysis of
+  - target: GSM1551559
+    type: Reanalysis of
+  - target: GSM1551560
+    type: Reanalysis of
+  - target: GSM1551561
+    type: Reanalysis of
+  - target: GSM1551562
+    type: Reanalysis of
+  - target: GSM1551563
+    type: Reanalysis of
+  - target: GSM1551564
+    type: Reanalysis of
+  - target: GSM1551565
+    type: Reanalysis of
+  - target: GSM1551566
+    type: Reanalysis of
+  - target: GSM1551567
+    type: Reanalysis of
+  - target: GSM1551568
+    type: Reanalysis of
+  - target: GSM1551569
+    type: Reanalysis of
+  - target: GSM1551570
+    type: Reanalysis of
+  - target: GSM1551571
+    type: Reanalysis of
+  - target: GSM1551572
+    type: Reanalysis of
+  - target: GSM1551573
+    type: Reanalysis of
+  - target: GSM1551574
+    type: Reanalysis of
+  - target: GSM1551575
+    type: Reanalysis of
+  - target: GSM1551576
+    type: Reanalysis of
+  - target: GSM1551577
+    type: Reanalysis of
+  - target: GSM1551578
+    type: Reanalysis of
+  - target: GSM1424556
+    type: Reanalysis of
+  - target: GSM1424560
+    type: Reanalysis of
+  - target: GSM1424558
+    type: Reanalysis of
+  - target: GSM1192211
+    type: Reanalysis of
+  - target: GSM1192212
+    type: Reanalysis of
+  - target: GSM1192209
+    type: Reanalysis of
+  - target: GSM1192210
+    type: Reanalysis of
+  - target: GSM1192204
+    type: Reanalysis of
+  - target: GSM1192205
+    type: Reanalysis of
+  - target: GSM1192202
+    type: Reanalysis of
+  - target: GSM1192203
+    type: Reanalysis of
+  - target: GSM1718026
+    type: Reanalysis of
+  - target: GSM1718027
+    type: Reanalysis of
+  - target: GSM938750
+    type: Reanalysis of
+  - target: GSM938751
+    type: Reanalysis of
+  - target: GSM1184321
+    type: Reanalysis of
+  - target: GSM1184322
+    type: Reanalysis of
+  - target: GSM1184323
+    type: Reanalysis of
+  - target: GSM1184324
+    type: Reanalysis of
+  - target: GSM1081528
+    type: Reanalysis of
+  - target: GSM1081529
+    type: Reanalysis of
+  - target: GSM1081526
+    type: Reanalysis of
+  - target: GSM1081527
+    type: Reanalysis of
+  - target: GSM1424557
+    type: Reanalysis of
+  - target: GSM1424561
+    type: Reanalysis of
+  - target: GSM1424559
+    type: Reanalysis of
+  - target: GSM1192214
+    type: Reanalysis of
+  - target: GSM1192213
+    type: Reanalysis of
+  - target: GSM1192206
+    type: Reanalysis of
+  - target: GSM1192208
+    type: Reanalysis of
+  - target: GSM1192207
+    type: Reanalysis of
+  - target: GSM1081530
+    type: Reanalysis of
+  - target: GSM1081531
+    type: Reanalysis of
+  - target: GSM1081532
+    type: Reanalysis of
+  - target: GSM1081533
+    type: Reanalysis of
+  - target: GSM1120301
+    type: Reanalysis of
+  - target: GSM1010950
+    type: Reanalysis of
+  - target: GSM1120302
+    type: Reanalysis of
+  - target: GSM1010952
+    type: Reanalysis of
+  - target: GSM1067793
+    type: Reanalysis of
+  - target: GSM1233909
+    type: Reanalysis of
+  - target: GSM1233910
+    type: Reanalysis of
+  - target: GSM915328
+    type: Reanalysis of
+  - target: GSM915329
+    type: Reanalysis of
+  - target: GSM916094
+    type: Reanalysis of
+  - target: GSM1112836
+    type: Reanalysis of
+  - target: GSM1154029
+    type: Reanalysis of
+  - target: GSM1120308
+    type: Reanalysis of
+  - target: GSM1067795
+    type: Reanalysis of
+  - target: GSM1010964
+    type: Reanalysis of
+  - target: GSM915324
+    type: Reanalysis of
+  - target: GSM915325
+    type: Reanalysis of
+  - target: GSM915322
+    type: Reanalysis of
+  - target: GSM915323
+    type: Reanalysis of
+  - target: GSM915326
+    type: Reanalysis of
+  - target: GSM915327
+    type: Reanalysis of
+  - target: GSM1120309
+    type: Reanalysis of
+  - target: GSM1010966
+    type: Reanalysis of
+  - target: GSM1120310
+    type: Reanalysis of
+  - target: GSM1120311
+    type: Reanalysis of
+  - target: GSM1010968
+    type: Reanalysis of
+  - target: GSM1120312
+    type: Reanalysis of
+  - target: GSM1010940
+    type: Reanalysis of
+  - target: GSM1120313
+    type: Reanalysis of
+  - target: GSM1120314
+    type: Reanalysis of
+  - target: GSM1120316
+    type: Reanalysis of
+  - target: GSM1120317
+    type: Reanalysis of
+  - target: GSM915320
+    type: Reanalysis of
+  - target: GSM915321
+    type: Reanalysis of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA343608
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP090175
+    type: SRA
+  Sample-Ref:
+  - name: STL002_Adrenal Rep1
+    ref: GSM2322539
+  - name: STL001_Bladder Rep1
+    ref: GSM2322540
+  - name: STL001_Bladder Rep2
+    ref: GSM2322541
+  - name: Dorsolateral Prefrontal Cortex
+    ref: GSM2322542
+  - name: Hippocampus
+    ref: GSM2322543
+  - name: STL002_Lung Rep1
+    ref: GSM2322544
+  - name: STL001_Lung Rep1
+    ref: GSM2322545
+  - name: STL002_Ovary Rep1
+    ref: GSM2322546
+  - name: STL002_Pancreas Rep1
+    ref: GSM2322547
+  - name: STL003_Pancreas Rep1
+    ref: GSM2322548
+  - name: STL003_Pancreas Rep2
+    ref: GSM2322549
+  - name: STL003_Pancreas Rep3
+    ref: GSM2322550
+  - name: STL003_Psoas Rep1
+    ref: GSM2322551
+  - name: STL001_Psoas Rep1
+    ref: GSM2322552
+  - name: STL001_Psoas Rep2
+    ref: GSM2322553
+  - name: STL003_RightVentricle Rep1
+    ref: GSM2322554
+  - name: STL002_SmallBowel Rep1
+    ref: GSM2322555
+  - name: STL003_Spleen Rep1
+    ref: GSM2322556
+  - name: STL001_Spleen Rep1
+    ref: GSM2322557
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-11-15'
+    Submission-Date: '2016-09-20'
+    database: GEO
+  Summary: The three-dimensional configuration of DNA is integral to all nuclear processes
+    in eukaryotes, yet our knowledge of the chromosome architecture is still limited.
+    Genome-wide chromosome conformation capture studies have uncovered features of
+    chromatin organization in cultured cells, however, genome architecture in human
+    tissues has yet to be explored.  Here, we report the most comprehensive survey
+    to date of chromatin organization in human tissues. Through integrative analysis
+    of chromatin contact maps in 21 primary human tissues and cell types, we discover
+    genomic regions that exhibit unusually high levels of local chromatin interactions.
+    These frequently interacting regions (FIREs) are enriched for active enhancers
+    and are located near tissue-specifically expressed genes. Unlike previously identified
+    chromatin loops, FIREs tend to engage in promiscuous local chromatin interactions
+    in a tissue-specific manner. FIRE formation is dependent on the Cohesin complex.
+    Additionally, we show that FIREs can help annotate function of non-coding sequence
+    variants.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE87112/GSE87112_README_pmids.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE87112/GSE87112_file.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE87112/GSE87112_readme.xls.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP090/SRP090175
+  Title: A Compendium of Chromatin Contact Maps Reveal Spatially Active Regions in
+    the Human Genome
+  Type:
+  - Other
+  - Expression profiling by high throughput sequencing
+  - Third-party reanalysis
+  iid: GSE87112
+id: '200087112'

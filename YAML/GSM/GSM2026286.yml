@@ -1,0 +1,101 @@
+Accession: GSM2026286
+Channel:
+  Characteristics: PreB
+  Extract-Protocol: 'Cells are cross linked using 2% formaldehyde for 10min at room
+    temperature in PBS 10%FCS, nuclei are isolated, after which chromatin is digested
+    with DpnII subsequently ligated. After reversal of the cross links the DNA is
+    purified (3C template).
+
+    The 3C template is fragmented and TruSeq libraries are prepared according to the
+    vendor protocol.'
+  Growth-Protocol: "ESCs and iPSCs were cultured on Mitomycin-C treated MEFs in KO-DMEM\
+    \ (Invitrogen) supplemented with 1% nonessential amino acids (Invitrogen), 0.1\
+    \ mM \u03B2-mercaptoethanol (Invitrogen), 1,000 U/ml LIF (Millipore) and 15% fetal\
+    \ bovine serum (FBS, Invitrogen) (ESC medium). Na\xEFve ESCs were cultured in\
+    \ serum-free N2B27 medium on gelatin-coated dishes. N2B27 medium (500ml) was generated\
+    \ by inclusion of the following: 240ml DMEM/F12 (Invitrogen), 240ml Neurobasal\
+    \ (Invitrogen), 5ml N2 supplement (Invitrogen), 10ml B27 supplement (Invitrogen),\
+    \ 1,000 U/ml LIF (Millipore), 1% nonessential amino acids (Invitrogen), 0.1mM\
+    \ \u03B2-mercaptoethanol (Invitrogen), and the small molecules PD0325901 (Stemgent,\
+    \ 1\u03BCM) and CHIR (Stemgent, 3\u03BCM). CD19 + pre-B cells and Mac1 + macrophages\
+    \ were isolated from bone marrow with monoclonal antibodies to CD19 and Mac-1\
+    \ (BD Pharmingen) respectively, using MACS sorting (Miltenyi Biotech). B cells\
+    \ were grown in RPMI medium with 10% FBS and 10ng/ml IL-7 (Peprotech); macrophages\
+    \ in DMEM with 10% FBS and 10ng/ml each of CSF1 and IL-3 (Peprotech). MEFs were\
+    \ established from day 13.5 mouseembryos and cultured in DMEM containing 10% FBS.\
+    \ NSC were isolated and cultured aspreviously described (Di Stefano et al., 2009).\
+    \ All media were supplemented with L-glutamineand penicillin/streptomycin (GIBCO).\n\
+    Reprogramming experiments with B cells were performed as previously described\
+    \ (Di Stefano et al., 2014); with MEFs, macrophages and NSCs were conducted by\
+    \ plating 100.000 cells/well on gelatinized plates seeded with irradiated MEFs,\
+    \ using ESC medium supplemented with 2 \u03BCg/ml of doxycycline. For the isolation\
+    \ of iPSC lines, doxycycline was washed out after 15 days of reprogramming and\
+    \ colonies with ESC-like morphology were picked at 20 days before further passaging.\
+    \ iPSC lines were expanded for an additional 9 days (3 passages) to obtain P3\
+    \ iPS cell lines or for 20 passages to obtain P20 iPS cell lines."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: PreB 2
+  Treatment-Protocol: cells are cross linked using 2% formaldehyde for 10minutes at
+    room temperature in 10%FCS/PBS
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: HiC
+
+  Forward and reverse (R1,R2) sequencing files are seperately aligned to the mouse
+  genome (mm9) using bwa mem. Duplicates are removed and mapped pairs are filtered
+  using the hicup_filter from the HiCUP package. Pairs that fall within 1kb of each
+  other are removed from the sample as they likely represent non-cut genomic DNA fragments.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: Hi-C summary files contain the genomic position
+  and strand of the two pairs of a Hi-C ligation'
+Description: TruSeq libraries prepared from 3C template
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL17021
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04382674
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1513838
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3081861
+    cluster_name: public
+    id: '2141936'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7045865428'
+    total_spots: '71896586'
+  - acc: SRR3081862
+    cluster_name: public
+    id: '2141936'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6943697684'
+    total_spots: '70854058'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX151/SRX1513838
+  iid: SRX1513838
+Series: GSE76479
+Status:
+  Last-Update-Date: '2016-03-01'
+  Release-Date: '2016-03-01'
+  Submission-Date: '2016-01-04'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2026nnn/GSM2026286/GSM2026286_PreB_2_summary.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX151/SRX1513838
+Title: PreB_2 Hi-C
+Type: SRA
+iid: GSM2026286

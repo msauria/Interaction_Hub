@@ -1,0 +1,287 @@
+Accession: GSM2186732
+Channel:
+  Characteristics:
+  - wild type
+  - spheroplasts
+  Extract-Protocol: "[HiC] To determine the concentration of genomic DNA (gDNA) per\
+    \ aliquot of spheroplasts, 1 aliquot per replicate was resuspended in 200 \u03BC\
+    L decrosslinking buffer (50 mM Tris-HCl [pH 8], 5 mM Na Ethylenediaminetetraacetic\
+    \ acid (Na-EDTA), 0.5% (w/v) sodium dodecyl sulfate (SDS)) plus 100 mg proteinase\
+    \ K and incubated at 65 \xB0C overnight. The next day, the volume was brought\
+    \ to 500 uL with TE buffer (10 mM Tris-HCl [pH 8], 1 mM Na-EDTA) plus 40 mg RNase\
+    \ A and aliquots were incubated at 37\xB0C for 30 minutes. gDNA was then extracted\
+    \ twice with a 1:1 mixture of buffered phenol (pH 8) and chloroform, and once\
+    \ with chloroform. gDNA was precipitated by adding 1/10 volume of Na acetate (pH\
+    \ 5.2) and 1 volume of isopropanol. DNA pellets were washed 3x with 70% (v/v)\
+    \ ethanol, dried at RT for 10 minutes and resuspended in 50 \u03BCL TE. The DNA\
+    \ concentration was determined from the absorbance at 260 nm. Spheroplasts corresponding\
+    \ to 3.5 \u03BCg of gDNA were resuspended in 270 \u03BCL of HindIII buffer and\
+    \ 30 \u03BCL of 10% (w/v) SDS was added to a final concentration of 0.1% (w/v).\
+    \ Spheroplasts were then lightly decrosslinked by incubation at 65\xB0C for 10\
+    \ minutes and then placed immediately on ice. 33 \u03BCL of 10% (v/v) Triton X-100\
+    \ and 8.3 \u03BCL of 10x HindIII buffer was added and gDNA digested with 400 U\
+    \ (20 \u03BCL of 20 U/\u03BCL from NEB) HindIII for 16 hours at 37 \xB0C while\
+    \ nutating. The next day, samples were placed on ice and split into two aliquots.\
+    \ To construct HiC libraries, one aliquot of HindIII digested chromatin was labeled\
+    \ with biotin-14-dCTP in a 210 \u03BCL reaction consisting of 30 \u03BCM dATP,\
+    \ 30 \u03BCM dTTP, 30 \u03BCM dGTP, 30 \u03BCM biotin-14-dCTP and 25 U of Klenow\
+    \ (large fragment). This reaction was incubated at 37 \xB0C for 45 minutes with\
+    \ nutating. Klenow (large fragment) and HindIII was then inactivated by the addition\
+    \ of SDS to 1.5% (w/v) and incubation at 65\xB0C for 30 minutes. This chromatin\
+    \ was then used in a 3.5 mL ligation reaction consisting of 50 mM Tris-HCl [pH\
+    \ 7.5 @ 25 \xB0C], 10 mM MgCl2, 0.9% (v/v) Triton X-100, 10 mM Dithiothrireitol\
+    \ (DTT), 100 \u03BCg/mL BSA, 1 mM adenosine triphosphate (ATP) and 1675 U T4 DNA\
+    \ ligase (4.2 \u03BCL of 400,000 U/mL T4 DNA ligase from NEB). This reaction was\
+    \ incubated at 16\xB0C for 4 hours. At the end of the 4 hour 3C and HiC ligation\
+    \ reactions, 250 mg of proteinase K was added and all reactions were allowed to\
+    \ decrosslink at 65\xB0C overnight. The next day, another 250 mg of proteinase\
+    \ K was added and samples were decrosslinked at 65\xB0C for another 2 hours. Samples\
+    \ were cooled to ~25\xB0C on ice, and extracted with 5 mL of phenol (pH 8) by\
+    \ vortexing for 2 minutes. After centrifugation (3500 RPM, 10 minutes), the aqueous\
+    \ phase was removed and extracted with 5 mL of phenol (pH 8):chloroform (1:1)\
+    \ by vortexing for 2 min. After centrifugation (3500 RPM, 10 minutes), the aqueous\
+    \ phase was removed and brought to a volume of 5 mL with TE. DNA was precipitated\
+    \ by the addition of 0.5 mL 3 M Na Acetate [pH 5.2], 50 mg glycogen, 12.5 mL 95%\
+    \ ethanol and incubation at -80\xB0C for 1 hour. DNA was pelleted by centrifugation\
+    \ (20,000 g, 20 minutes, 4\xB0C), the supernatant decanted and DNA resuspended\
+    \ in 450 \u03BCL TE by vortexing. DNA was again extracted with 1 volume of phenol\
+    \ (pH 8):chloroform (1:1) and then chloroform as before. DNA was then ethanol\
+    \ precipitated as before and resuspended in 25 \u03BCL of TE/10 buffer (10 mM\
+    \ Tris-HCl [pH 8 @ 25\xB0C], 0.1 mM Na-EDTA). To remove biotin-dCTP from unligated\
+    \ ends, the HiC libraries were digested for 2 hours at 12\xB0C in a 50 \u03BC\
+    L reaction consisting of 5 \u03BCL of NEB buffer 2, 100 \u03BCg/mL BSA, 100 \u03BC\
+    M dATP, 100 \u03BCM dGTP and 5 U of T4 DNA polymerase. These reactions were quenched\
+    \ by adding Na-EDTA to 10 mM and DNA extracted with 1 volume of phenol (pH 8):chloroform\
+    \ and then with 1 volume of chloroform. DNA was ethanol precipitated, resuspeneded\
+    \ in 500 \u03BCL of TE and sheared by sonication (duty cycle 80, power 1.2, 10\
+    \ s, 5x with 1 minute rest on ice between pulses). Sheared, biotinylated DNA was\
+    \ captured by adding 25 \u03BCL of streptavidin beads (Invitrogen) that had been\
+    \ equilibrated in BW buffer (5 mM Tris-HCl [pH 8 @ 25\xB0C], 0.5 mM Na-EDTA, 1\
+    \ M NaCl, 0.05% (v/v) Tween-20) and incubating for 30 minutes with shaking. Beads\
+    \ were washed 2x with BW buffer, 2x with TE/10 buffer and resuspended in 25 \u03BC\
+    L TE/10 buffer.\n[HiC] To prepare HiC libraries for Illumina sequencing, either\
+    \ Illumina TruSeq kits was used according to the manufacturers\u2019 protocol,\
+    \ or essentially a \u201Chomemade version\u201D of that protocol was used. In\
+    \ the homemade version, DNA ends were repaired in reactions consisting of 25 \u03BC\
+    L of HiC libraries on streptavidin beads, 5 \u03BCL of T4 DNA ligase buffer, 2\
+    \ \u03BCL 10 mM (each) dNTPs, 0.5 \u03BCL end repair enzyme mix (0.5 U T4 DNA\
+    \ polymerase, 0.25 U Klenow Fragment, 2.25 U T4 DNA Polynucleotide Kinase) in\
+    \ a final volume of 50 \u03BCL and incubated at 20\xB0C for 30 minutes. Beads\
+    \ were washes 2x with BW buffer and 2x with TE/10, resuspended in 16.5 \u03BC\
+    l TE/10. A-tailing was performed by adding 2 ul 10x NEB Buffer #2, 1 ul 4 mM dATP,\
+    \ 0.5 ul Klenow 3\u2019 to 5\u2019 exo minus (5 U/ul) and incubating at 37 C for\
+    \ 30 minutes, mixing every 10 minutes. Beads were again washed with BW and TE/10\
+    \ buffers as above and resuspended in 20 ul TE/10. Indexed adaptors were ligated\
+    \ by adding 25 ul 2x ligase buffer (132 mM Tris-HCl [pH 7.6], 20 mM MgCl2, 2 mM\
+    \ DTT, 2 mM ATP, 15% (w/v) PEG 6000), 2.5 ul T4 DNA ligase (400 U/ul) and 2.5\
+    \ ul Illumina TruSeq DNA adapters diluted 1:10 and incubating at RT for 20 minutes,\
+    \ mixing every 10 minutes. Ligation reactions were quenched with 5 ul of 0.5 M\
+    \ Na-EDTA [pH 8] and beads washed 3x with BW buffer and 2x with TE/10. Beads were\
+    \ then resuspended in 50 ul TE/10 and HiC libraries amplified in 50 ul PCR reactions\
+    \ using the Phusion polymerase and the following cycle: 45 s at 98\xB0C; 18 cycles\
+    \ of 15 s at 98\xB0C, 30 s at 63\xB0C, 30 s at 72\xB0C; 1 minute at 72\xB0C. The\
+    \ PCR product was separated from the beads, cleaned with Ampure XP beads, and\
+    \ resuspended in 25 ul TE/10. Library quality was assessed by gel electrophoresis\
+    \ before deeps sequencing.\n[ChIP] Cultures were grown in Vogels medium and 1.5%\
+    \ sucrose (standard minimal medium), shaking for 16 hours at 32oC. Mycelia were\
+    \ washed in PBS prior to crosslinking. Mycelia were cross-linked for 10 min in\
+    \ 0.5% formaldehyde for histone modification ChIP.  Tissue added to ChIP lysis\
+    \ buffer (50mM Hepes pH 7.5, 90mM NaCl, 1mM EDTA, 1% triton + proteinase inhibitors)\
+    \ and was disrupted by sonication for thirty pulses before chromatin was sheared\
+    \ using a Bioruptor (Diagenode) for 15 min with a cycle of 30 sec on followed\
+    \ by 30 sec off, at high power. Lysates were cleared by centrifugation, 1/20th\
+    \ Input was saved, and histone modification antibody was added (typically 1uL)\
+    \ and samples were rotated overnight at 4oC. The next day, equilibrated Protein\
+    \ A or Protein G slurry (agarose or magnetic beads) was added to bind the antibody,\
+    \ incubated for 3 hours at 4oC, and washed twice in cold ChIP Lysis buffer, once\
+    \ with ChIP Lysis buffer + 0.5M NaCl, once with LiCl was buffer (10mM Tris pH\
+    \ 8.0, 250mM LiCl, 1mM EDTA, 0.5% NP40), and DNA/protein was eluted with TES buffer\
+    \ (50mM Tris pH 8.0, 10mM EDTA, 1% SDS) and incubated at 65oC.  Samples (IP and\
+    \ input) were decrosslinked at 65oC overnight.  The next day, samples were proteinase\
+    \ K treated for 2 hours at 50oC, and DNA was purified using the QIAquick PCR purification\
+    \ kit  and eluted in 30 \u03BCl of water.  Approximately 10 ng of DNA was used\
+    \ to generate ChIP-Seq libraries.  Each library was prepared using the Illumina\
+    \ Tru-Seq kits A and B (Illumina, IP-202-1012 and IP-202-1024) according to the\
+    \ manufacturer\u2019s instructions.  \u201CInvisible\u201D fragments between 250-400\
+    \ bp were excised and purified using the MinElute gel extraction kit (Qiagen,\
+    \ 28606).  Final libraries were PCR-amplified using one cycle at 98 \xB0C for\
+    \ 30 sec, 8 cycles at 98 \xB0C for 10 sec, 60 \xB0C for 30 sec and 72 \xB0C for\
+    \ 30 sec and a final extension at 72 \xB0C for 5 min.\n[RNA] Cultures were grown\
+    \ in Vogels m"
+  Growth-Protocol: 2.5x10^8 conidia were grown in cultures of 50mL 1xVogels, 1.5%
+    Sucrose medium for 3-4 hours at 30oC with shaking at 200rpm (At this time, >70%
+    of the conidia for all strains had germination tubes >4x their original size,
+    as roughly measured by light microscopy)
+  Molecule: genomic DNA
+  Organism: Neurospora crassa
+  Source: germinated conidia
+  Treatment-Protocol: "[HiC] 2.6 mL of methanol-free formaldehyde (20%) was added\
+    \ to a final concentration of 1%. After a 10 minute room temperature (RT) incubation\
+    \ with shaking at 100 RPM, crosslinking reactions were quenched by adding 3.4\
+    \ mL of 2 M Tris-HCl [pH 8 @ 25 \xB0C] to a final concentration of 125 mM and\
+    \ incubating at room temperature (RT) for another 10 minutes with shaking at 100\
+    \ RPM. Conidia were harvested by centrifugation (3000 RPM, 5 minutes) and resuspended\
+    \ gently in 40 mL spheroplasting buffer (1 M sorbitol, 100 mM KPO4  [pH 7.5])\
+    \ plus 30 mM \u03B2-mercaptoethanol, pelleted again (3000 RPM, 5 minutes) and\
+    \ resuspended in 40 mL spheroplasting buffer. 200 mg of VinoTaste Pro (Novozymes)\
+    \ was added and strains were spheroplasted for 60 minutes at 30\xB0C with shaking\
+    \ at 100 RPM. Spheroplasts were harvested by centrifugation (2000 RPM, 5 minutes)\
+    \ and washed 3x with 20 mL HindIII buffer (50 mM NaCl, 10 mM Tris-HCl [pH 7.9\
+    \ @ 25\xB0C], 10 mM MgCl2, 100 \u03BCg/mL bovine serum albumin (BSA)). Washed\
+    \ pellets were resuspended in 6 mL HindIII buffer, split into 1 mL aliquots in\
+    \ 1.7 mL eppendorf tubes. Spheroplasts were pelleted (1500 g, 5 minutes) and the\
+    \ supernatant was aspirated away. Aliquots were frozen in liquid nitrogen and\
+    \ stored at -80\xB0C."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Paired-end reads were demultiplexed, trimmed to 50bp (if needed)\n\
+  Hi-C contact maps were produced according to Imakaev et al. (Imakaev et al. 2012).\
+  \ Briefly, an attempt was made to uniquely map the first 15 base pairs (bp) of each\
+  \ read to the Neurospora genome. If a unique match was not found, the read was extended\
+  \ 5 bp and another attempt was made. This process continued until a unique match\
+  \ was found or the end of the read reached (50 bp).\nRead pairs were then assessed\
+  \ using a number of quality control filters, typically removing reads that covered\
+  \ unligated products (Dangling Ends), products that were too close to the restriction\
+  \ site, Self-circles, and extremely large or small fragments.\nRead pairs passing\
+  \ all filters (typically 10% of total read pairs) were used to build uncorrected\
+  \ contact maps (arrays) that were then corrected to account for the unequal representation\
+  \ of genomic loci in HiC datasets. Corrected maps were used in all subsequent analyses\n\
+  To calculate the ratio of observed contacts to expected contacts, the median contact\
+  \ frequency was calculated at each genomic distance (up to a distance of ~3.5 Mb\
+  \ at which point contact frequency had reached background levels) and used as the\
+  \ expected contact frequency at each respective distance.\nTo directly compare datasets,\
+  \ a fixed number of reads (prior to filtering) were sampled with the program seqtk,\
+  \ such that the sampled number of raw reads from each dataset produced approximately\
+  \ equal numbers of reads that passed the filtering steps.\nTo make ChIPseq enrichment\
+  \ files across 10kb bins to use for Circos plots, .bcf files were produced using\
+  \ samtools' mpileup function from ChIPseq .bam files, the .bcf files were \"fixed\"\
+  \ to replace empty positions with zeros, and processed with a custom script to report\
+  \ the ChIP-seq enrichment over 10kb bins (the resulting seven files were catenated\
+  \ into one file).\nAll python scripts (\".py\" files) used for Hi-C data processing\
+  \ are available as supplemental information in the manuscript Galazka et al, 2016,\
+  \ Genome Research, except for the modified scripts, plotIntraTelomeres.py and plotInterTelomeres.py,\
+  \ which were used to calculate intra and inter telomeric enrichment in our Hi-C\
+  \ datasets. In addition, the python script K9-K27Quant.py counts the number of Hi-C\
+  \ links originating from a H3K9me3-marked 10kb bin and end in a bin marked by H3K27me2/3,\
+  \ while the python script K9-K27only_Quant.py counts the number of Hi-C links originating\
+  \ from a H3K9me3-marked 10kb bin and end in a bin marked ONLY by H3K27me2/3 (and\
+  \ not H3K9me3). The program count_links_K27marked.py counts the number of Hi-C links\
+  \ in each 10Kb bin marked by H3K27me2/3. The program hicEigenvectorAnalysis.py derives\
+  \ the number of principle components for the whole genome specified using non-iteratively\
+  \ corrected Hi-C .hdf5 datasets. The program hicEigenvector_singleLG.py extracts\
+  \ the Eigenvector of a single Linkage Group from the whole genome data derived from\
+  \ the \"hicEigenvectorAnalysis.py\" script. The program hicPearsonCorrelationHeatmap.py\
+  \ calculates the Pearson Correlation between all genomic regions and displays them\
+  \ as a heatmap for a specific Linkage Group. These scripts are provided here.\n\
+  To determine differences in the genome organization caused by mutants, mutants were\
+  \ compared to the WT Hi-C data (NMF39 [GSM1825702] within the GEO dataset GSE71024).\
+  \ See GSM2186732 in this GSE82222 dataset.\nTo make ChIPseq enrichment files for\
+  \ display in Integrative Genomics Viewer (IGV, Robinson et al, 2011, Nat. Biotechnol.),\
+  \ .bam files (and the corresponding .bai index files) were counted with the \"Count\"\
+  \ command of igvtools, using the mean window function and 200bp windows. Output\
+  \ file was a .tdf file, displayable on IGV.\nFor Poly-A mRNA seq, high quality,\
+  \ adapter-less reads were identified (Stacks); Kmer filtering reduced sequencing\
+  \ errors. Reads were mapped (TopHat) to the modified Neurospora genome assembly\
+  \ 12, and sorted (SAMTools), and directionality-preserved read numbers were calculated\
+  \ at each gene ID (HTSeq), adding one read count to prevent abnormal fold changes.\
+  \ Differential gene expression analysis (DESeq) examined replicate differences and\
+  \ pair-wise analyses between WT and mutants. Output .bed files of genes with log2\
+  \ \u2265 2 or log2 \u2264 -2 expression and adjusted p-values \u2264 0.05 were modified\
+  \ as .txt files for Circos plot display.\nGenome_build: Neurospora crassa assembly\
+  \ 12 Fixed (files: neurospora_crassa_or74a_12_genome_FIXED.fasta, and neurospora_crassa_or74a_12_transcripts_FIXED.gtf)\n\
+  Supplementary_files_format_and_content: for Hi-C files: \"...array.txt\" files are\
+  \ the generated tab-delininated files with raw counts (on a log2 scale) for each\
+  \ bin (the entire genome is divided into 40kb, 50kb, or 10kb segments, and a bin\
+  \ indicates the intersection of two of these segments in an array format) across\
+  \ the genome. \"...observed_expected.txt\" is a file where the above array file\
+  \ containing observed interactions in our HiC dataset was normalized by the \"expected\"\
+  \ interaction if interactions were locally strong and stochastically decreased as\
+  \ genomic distance increased.\nSupplementary_files_format_and_content: For ChIP-seq\
+  \ files: The tdf files were generated using the \"count\" function in igvtools (Integrative\
+  \ Genomics Viewer; Broad Institute, Robinson et al, 2011), using a window size of\
+  \ 200bp (.tdf files are binary files that shows enrichment peaks for each ChIP sample\
+  \ and have been processed for faster display of the data in IGV). The bcf files\
+  \ were produced from bam files (mapped to the Neurospora crassa assembly 12 Fixed\
+  \ by samtools), and report enrichment values.\nSupplementary_files_format_and_content:\
+  \ For RNA-seq files: the .txt files were generated by the program HTseq (using sequencing\
+  \ reads aligned to the Neurospora crassa assembly 12 Fixed genome with the program\
+  \ samtools). These HTseq.txt files report read number counts per gene for each replicate\
+  \ sample (two replicates total) from our four strains (WT N3752, delta set-7 N4718\
+  \ and N4730, delta npf N4721, delta set-7;delta dim-5 N5916). The three Dataset.xls\
+  \ files were produced using the replicate HTseq.txt files in the program DESeq to\
+  \ determine genes that were differentially expressed > four fold and were significant\
+  \ (p < 0.05) in each mutant strain when compared to the WT N3752 reference expression\
+  \ datasets."
+Description: 'genomic DNA HiC libraries
+
+  library strategy: HiC'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: '?'
+Platform-Ref:
+  ref: GPL20705
+Relation:
+- target: GSM1825702
+  type: Reanalysis of
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN05201316
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1818752
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3623675
+    cluster_name: public
+    id: '2600024'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2801749770'
+    total_spots: '27468135'
+  - acc: SRR3623678
+    cluster_name: public
+    id: '2600024'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '7334924652'
+    total_spots: '71911026'
+  - acc: SRR3623677
+    cluster_name: public
+    id: '2600024'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '3849745290'
+    total_spots: '19058145'
+  - acc: SRR3623676
+    cluster_name: public
+    id: '2600024'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '2589244092'
+    total_spots: '25384746'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX181/SRX1818752
+  iid: SRX1818752
+Series: GSE82222
+Status:
+  Last-Update-Date: '2016-10-27'
+  Release-Date: '2016-10-27'
+  Submission-Date: '2016-06-03'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX181/SRX1818752
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2186nnn/GSM2186732/GSM2186732_NMF39_WT-35bp_wholegenome_10kb-res_HiC_array.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2186nnn/GSM2186732/GSM2186732_NMF39_WT-35bp_wholegenome_40kb-res_HiC_array.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2186nnn/GSM2186732/GSM2186732_NMF39_WT-35bp_wholegenome_50kb-res_HiC_array.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2186nnn/GSM2186732/GSM2186732_NMF39_WT-35bp_wholegenome_HiCarray_10k_observed_expected.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2186nnn/GSM2186732/GSM2186732_NMF39_WT-35bp_wholegenome_HiCarray_40k_observed_expected.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2186nnn/GSM2186732/GSM2186732_NMF39_WT-35bp_wholegenome_HiCarray_50k_observed_expected.txt.gz
+Title: NMF39_WildType_HiC (reanalyzed)
+Type: SRA
+iid: GSM2186732

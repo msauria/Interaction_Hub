@@ -1,0 +1,177 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 55 Lake Ave N
+    State: MA
+    Zip-Code: '01655'
+  Department: Cell and Developmental Biology
+  Organization: University of Massachusetts
+  Person:
+    First: Tony
+    Last: Imbalzano
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: A
+    Last: Barutcu
+    Middle: R
+  iid: contrib3
+- Person:
+    First: Bryan
+    Last: Lajoie
+    Middle: R
+  iid: contrib4
+- Person:
+    First: Andrew
+    Last: Fritz
+    Middle: J
+  iid: contrib5
+- Person:
+    First: Rachel
+    Last: McCord
+    Middle: P
+  iid: contrib6
+- Person:
+    First: Jeffrey
+    Last: Nickerson
+    Middle: A
+  iid: contrib7
+- Person:
+    First: Andre
+    Last: van Wijnen
+    Middle: J
+  iid: contrib8
+- Person:
+    First: Jane
+    Last: Lian
+    Middle: B
+  iid: contrib9
+- Person:
+    First: Janet
+    Last: Stein
+    Middle: L
+  iid: contrib10
+- Person:
+    First: Job
+    Last: Dekker
+  iid: contrib11
+- Person:
+    First: Gary
+    Last: Stein
+    Middle: S
+  iid: contrib12
+- Person:
+    First: Anthiny
+    Last: Imbalzano
+    Middle: N
+  iid: contrib13
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE74716
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  - position: '8'
+    ref: contrib10
+  - position: '9'
+    ref: contrib11
+  - position: '10'
+    ref: contrib12
+  - position: '11'
+    ref: contrib13
+  Overall-Design: Hi-C and RNA-seq  experiments were conducted in MCF-10A shSCRAM
+    and shSMARCA4 cells.  SMARCA4 ChIP-seq was conducted in wildtype MCF-10A cells.  Hi-C
+    was performed by using the HindIII restriction enzyme.
+  Pubmed-ID: '27435934'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA301233
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP065836
+    type: SRA
+  Sample-Ref:
+  - name: MCF-10A shSCRAM Hi-C Replicate1
+    ref: GSM1930751
+  - name: MCF-10A shSCRAM Hi-C Replicate2
+    ref: GSM1930752
+  - name: MCF-10A shBRG1 Hi-C Replicate1
+    ref: GSM1930753
+  - name: MCF-10A shBRG1 Hi-C Replicate2
+    ref: GSM1930754
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-06-02'
+    Submission-Date: '2015-11-05'
+    database: GEO
+  Summary: The packaging of DNA into chromatin plays an important role in transcriptional
+    regulation and nuclear processes. Brahma related gene-1 SMARCA4 (also known as
+    BRG1), the essential ATPase subunit of the mammalian SWI/SNF chromatin remodeling
+    complex, uses the energy from ATP hydrolysis to disrupt nucleosomes at target
+    regions. Although the transcriptional role of SMARCA4 at gene promoters is well-studied,
+    less is known about its role in higher-order genome organization. SMARCA4 knockdown
+    in human mammary epithelial MCF-10A cells resulted in 176 up-regulated genes,
+    including many related to lipid and calcium metabolism, and 1292 down-regulated
+    genes, some of which encode extracellular matrix (ECM) components that can exert
+    mechanical forces and affect nuclear structure. ChIP-seq analysis of SMARCA4 localization
+    and SMARCA4-bound super-enhancers demonstrated extensive binding at intergenic
+    regions. Furthermore, Hi-C analysis showed extensive SMARCA4-mediated alterations
+    in higher-order genome organization at multiple resolutions. First, SMARCA4 knockdown
+    resulted in clustering of intra- and inter- sub-telomeric regions, demonstrating
+    a novel role for SMARCA4 in telomere organization. SMARCA4 binding was enriched
+    at TAD (Topologically Associating Domain) boundaries, and SMARCA4 knockdown resulted
+    in weakening of TAD boundary strength. Taken together, these findings provide
+    a dynamic view of SMARCA4-dependent changes in higher-order chromatin organization
+    and gene expression, identifying SMARCA4 as a novel component of chromatin organization.
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74716/GSE74716_MCF10A_BRG1_CHIP.ucsc.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74716/GSE74716_MCF10A_BRG1_peaks.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74716/GSE74716_MCF10A_INPUT.ucsc.bedGraph.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74716/GSE74716_genes_expression_expected_count.tsv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74716/GSE74716_shBRG1_over_shSCRAM_SignificantlyExpressedGenes.csv.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE74716/GSE74716_shSCRAM_shBRG1_processed_HiC_files.tar.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP065/SRP065836
+  Title: SMARCA4 regulates gene expression and higher-order chromatin structure in
+    proliferating mammary epithelial cells
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE74716
+id: '200074716'

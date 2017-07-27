@@ -1,0 +1,93 @@
+Accession: GSM1661129
+Channel:
+  Characteristics:
+  - BY4741
+  - YPD
+  Extract-Protocol: 'DNA was purified by PCI extraction and ethanol precipitation,
+    treated with RNase A, and ~250-350 bp DNA was gel-purified following 3% agarose
+    gel electrophoresis.
+
+    Purified DNA was treated with End-it, subject to A-tailing with Exo- Klenow, and
+    ligated to Illumina adaptors. Adaptor-ligated DNA was then purified with streptavidin
+    beads to isolate ligated Micro-C products away from undigested dinucleosomal DNA.
+    Streptavidin beads were then subject to ~12-15 cycles of PCR using Illumina paired-end
+    primers.
+
+    Amplified library was purified and subject to Illumina HiSeq or Nextseq paired
+    end sequencing with 50 bp or 100 bp reads.'
+  Growth-Protocol: 100mL yeast culture were grown to midlog phase ~OD 0.55 in YPD
+    media at 30 C.
+  Molecule: genomic DNA
+  Organism: Saccharomyces cerevisiae
+  Source: Yeast_BY4741-No_ligation
+  Treatment-Protocol: Yeast cells were fixed with 3% formaldehyde for 15 min, and
+    quenched with 125 mM glycine for 5 min. Cells were pelleted, spheroplasted with
+    Zymolyase, and treated with a level of MNase yielding >95% mononucleosom. After
+    stopping MNase, chromatin supernatant was dephosphorylated using Antarctic phosphatase.
+    Crosslinked chromatin was subject to T4 DNA polymerase / T4 PNK enzyme mix solution
+    to generate blunt ends. Crosslinked chromatin was diluted into 10 mL and treated
+    with T4 DNA ligase. After heat inactivation, chromatin was concentrated to 250uL,
+    and treated with 100U of exonuclease III for 5 min to eliminate biotinylated ends
+    of unligated DNA. Proteinase K was then added and incubated for 65 C overnight.
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'library strategy: Micro-C
+
+  OLB 1.9/CASAVA_v1.8.2 were used for base calling
+
+  Barcoded libraries were demultiplexed by Novobarcode.
+
+  Paired reads were mapped to sacCer3 genome separately by Bowtie2
+
+  Parse SAM files and remove duplicate reads.
+
+  Mate unique paired mates and generate interaction matrix.
+
+  Genome_build: S288C (sacCer3)
+
+  Supplementary_files_format_and_content: readme.txt file contains additional description
+  of how each processed data file was generated.'
+Description: 'Sample 23
+
+  processed data file: Micro-C interactions vs. distance for all datasets.xlsx
+
+  NDR-spanning reads for all replicates.xlsx
+
+  Gene compaction scores for all datasets with multiple replicates.xlsx'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: MNase
+Platform-Ref:
+  ref: GPL13821
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03490958
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX999242
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1980076
+    cluster_name: public
+    id: '1451806'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '14463023000'
+    total_spots: '144630230'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX999/SRX999242
+  iid: SRX999242
+Series: GSE68016
+Status:
+  Last-Update-Date: '2015-06-25'
+  Release-Date: '2015-06-25'
+  Submission-Date: '2015-04-17'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX999/SRX999242
+Title: BY4741-No_ligation
+Type: SRA
+iid: GSM1661129

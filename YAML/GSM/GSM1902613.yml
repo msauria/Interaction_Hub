@@ -1,0 +1,86 @@
+Accession: GSM1902613
+Channel:
+  Characteristics:
+  - prostate
+  - BglII
+  - LNCaP
+  Extract-Protocol: 'Cells were cross-linked with formaldehyde, lysed and the nuclei
+    was permeabilized. DNA was then cut with BglII restriction enzyme, the overhangs
+    filled in incorporating a biotinylated base and the free ends were then ligated
+    together. Crosslinks were reversed, the DNA was sheared to 300-500bp and the biotinylated
+    ligation junctions were pulled down with streptavidin beads.
+
+    Custom library construction protocol was followed. Briefly, DNA was end-repaired
+    and dA-tailing using the NEBNext DNA Master Mixes kit and the ligation of universal
+    adapter was performed on Streptavidin-bound DNA using the NEBNext Ultra DNA Library
+    Prep kit. After adapter ligation DNA was PCR amplified with indexed Illumina primers
+    for 8-12 cycles and library fragments of at least 200bp were purified using SPRI
+    beads. The purified DNA was captured on an Illumina flow cell for cluster generation.
+    Libraries were sequenced on the HiSeq2500 following the manufacturer''s protocols.'
+  Growth-Protocol: Cells were cultured under normal conditions.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: prostate cancer cells LNCaP
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "Library strategy: Hi-C\nAll HiC libraries were processed through\
+  \ the NGSane framework v0.5.2, using the \"fastqc\", \"hicup\" and \"fithicaggregate\"\
+  \ modules.\nQuality check of sequence libraries was performed with FastQC v0.11.2.\
+  \ Raw fastq files were\_then pre-processed, mapped with bowtie v1.1.0 and assessed\
+  \ for artifact levels through HiCuP v0.5.2 supplying genome assembly (hg19) and\
+  \ the BglII restriction enzyme cut site. Aligned read files in BAM format were sorted\
+  \ with Samtools v1.2 and duplicates were tagged using MarkDuplicates from Picard\
+  \ tools v1.121. Replicates were pooled using bespoke Python scripts (provided within\
+  \ NGSane) leveraging the sparse matrices formats in the SciPy librarie.\nSignificant\
+  \ connections were assessed from contact count matrices for multiple resolution\
+  \ (100kb and 1Mb) using a custom adaptation of fit-hi-c (provided within NGSane)\
+  \ supplying iteratively corrected bias offsets calculated through HiCorrector v1.1\
+  \ as well as genome mappability tracks from ENCODE.\nGenome_build: hg19\nSupplementary_files_format_and_content:\
+  \ Hi-C data files are normalized/corrected whole genome matrices binned at 100kb/1Mb.\
+  \ The columns follow the fithic output format as follows: column1 chromosome name\
+  \ for contact locus 1; column2 chromosomal position for contact locus 1 (midpoint\
+  \ for given resolution); column3 chromosome name for contact locus 2; column4 chromosomal\
+  \ position for contact locus 2 (midpoint for given resolution); column5 number of\
+  \ contacts (read pairs) mapping between the two loci; column6 p-value; column7 q-value;\
+  \ column8 HiCorrector bias for contact locus 1; column9 HiCorrector bias for contact\
+  \ locus 2; column10 bias adjusted number of contacts. TADs were identified with\
+  \ previously described \u201CHi-C Domain Caller\u201D pipeline by Ren\u2019s Lab\
+  \ at 40kb resolution."
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: BglII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04147549
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1308517
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2566809
+    cluster_name: public
+    id: '1866966'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '13661390600'
+    total_spots: '68306953'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX130/SRX1308517
+  iid: SRX1308517
+Series: GSE73782
+Status:
+  Last-Update-Date: '2016-04-04'
+  Release-Date: '2016-04-04'
+  Submission-Date: '2015-10-06'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX130/SRX1308517
+Title: HiC LNCaP rep4
+Type: SRA
+iid: GSM1902613

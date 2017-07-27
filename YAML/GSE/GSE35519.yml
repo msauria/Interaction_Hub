@@ -1,0 +1,148 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 364 Plantation St. LRB 570M
+    State: MA
+    Zip-Code: '01605'
+  Department: Program in Gene Function and Expression
+  Email: Rachel.McCord@umassmed.edu
+  Laboratory: Job Dekker Lab
+  Organization: University of Massachusetts Medical School
+  Person:
+    First: Rachel
+    Last: McCord
+    Middle: Patton
+  Phone: 508-856-4377
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Rachel
+    Last: McCord
+    Middle: P
+  iid: contrib3
+- Person:
+    First: Yu
+    Last: Zhang
+  iid: contrib4
+- Person:
+    First: Bryan
+    Last: Lajoie
+    Middle: R
+  iid: contrib5
+- Person:
+    First: Yu-Jui
+    Last: Ho
+  iid: contrib6
+- Person:
+    First: Frederick
+    Last: Alt
+    Middle: W
+  iid: contrib7
+- Person:
+    First: Job
+    Last: Dekker
+  iid: contrib8
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+Series:
+  Accession: GSE35519
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  Overall-Design: Hi-C interaction maps for WT and ATM -/- G1-arrested AMuLV-transformed
+    pro-B cell lines.
+  Pubmed-ID: '22341456'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP010728
+    type: SRA
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA152237
+    type: BioProject
+  Sample-Ref:
+  - name: Hi-C ATM-/- I-SceI-chr2-R1
+    ref: GSM870040
+  - name: Hi-C ATM-/- I-SceI-chr2-R2
+    ref: GSM870041
+  - name: Hi-C ATM-/- I-SceI-chr7-R1
+    ref: GSM870042
+  - name: Hi-C ATM-/- I-SceI-chr18-R1
+    ref: GSM870043
+  - name: Hi-C ATM-/- I-SceI-chr18-R2
+    ref: GSM870044
+  - name: Hi-C WT I-SceI-chr15-R1
+    ref: GSM870045
+  - name: Hi-C WT I-SceI-chr2-R1
+    ref: GSM870046
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2012-02-16'
+    Submission-Date: '2012-02-02'
+    database: GEO
+  Summary: The extent to which the three-dimensional organization of the genome contributes
+    to chromosomal translocations is an important question in cancer genomics.  We
+    now have generated a high-resolution Hi-C spatial organization map of the G1-arrested
+    mouse pro-B cell genome and mapped translocations from target DNA double-strand
+    breaks (DSBs) within it via high-throughput genome-wide translocation sequencing.  RAG
+    endonuclease-cleaved antigen-receptor loci are dominant translocation partners
+    for target DSBs regardless of genomic position, reflecting high frequency DSBs
+    at these loci and their co-localization in a fraction of cells.  To directly assess
+    spatial proximity contributions, we normalized genomic DSBs via ionizing-radiation.  Under
+    these conditions, translocations were highly enriched in cis along single chromosomes
+    containing target DSBs and within other chromosomes and sub-chromosomal domains
+    in a manner directly related to pre-existing spatial proximity.  Our studies reveal
+    the power of combining two high-throughput genomic methods to address long-standing
+    questions in cancer biology.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP010/SRP010728
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_AMuLV-ATM-pooled-100k-allxall-ICed.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_AMuLV-ATM-pooled-10M-allxall-ICed.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_AMuLV-ATM-pooled-1M-allxall-ICed.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_AMuLV-WT-pooled-100k-allxall-ICed.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_AMuLV-WT-pooled-10M-allxall-ICed.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_AMuLV-WT-pooled-1M-allxall-ICed.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_ATM-IndivChr-ABEig.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_CompartmentEigenvector_bedfiles_README.txt
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_ICedMatrices_README.txt
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_NovoOutput_README.txt
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_WT-IndivChr-200kb-ABEig.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE35519/GSE35519_validPair_README.txt
+  Title: Chromosomal translocations are guided by the spatial organization of the
+    genome
+  Type: Other
+  iid: GSE35519
+id: '200035519'

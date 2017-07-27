@@ -1,0 +1,116 @@
+Accession: GSM1419083
+Channel:
+  Characteristics: Thymus
+  Extract-Protocol: 'Hi-C experiments were conducted using HindIII according to previous
+    publication (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions
+    reveals folding principles of the human genome. Science 326, 289-93 (2009).).
+
+    Sequencing libraries were constructed according to previous publication (Lieberman-Aiden,
+    E. et al. Comprehensive mapping of long-range interactions reveals folding principles
+    of the human genome. Science 326, 289-93 (2009).).'
+  Growth-Protocol: Tissues samples were obtained from deceased donors at the time
+    of organ procurement at the Barnes-Jewish Hospital (St. Louis, USA).  Samples
+    were flash frozen and pulverized prior to formaldehyde cross-linking.  Research
+    consent from family was obtained, and this study was approved by Mid-American
+    Transplant Services.
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Thymus STL001
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "library strategy: HaploSeq\nfastq:  Illumina's HiSeq Control Software\n\
+  For Hi-C read alignment, we aligned Hi-C reads to the hg18 (human) genome. We masked\
+  \ any bases in the genome that were genotyped as SNPs in the individual genome.\
+  \ These bases were masked to \u201CN\u201D in order to reduce reference bias mapping\
+  \ artifacts. Hi-C reads were aligned as single end reads using Novoalign. After\
+  \ mapping was finished, read pairs were re-constructed from single reads using an\
+  \ in house pipeline.  Unmapped reads were filtered out and PCR duplicate reads were\
+  \ removed.\nHaplotypes were generated from the final aligned bam file using the\
+  \ HapCUT algorithm.  The details of HapCUT are described previously (Bansal and\
+  \ Bafna, Bioinformatics 24, i153-159, 2008).\nThe final processed haplotypes were\
+  \ generateds after removing local biases through following three steps. First the\
+  \ alignment biases were removed by aligning simulated reads spanning surrounding\
+  \ variants location. If there is more than 5% difference between alleles those variant\
+  \ loci were considered to subject an inherent mapping bias. Second, we removed alleles\
+  \ located in copy number variable regions and allelic biased copy number variable\
+  \ regions by comparing the coverage between two alleles based on WGS data. Any variants\
+  \ that had more coverage than three standard deviation above the mean of each haplotype\
+  \ were excluded. Any variants showing biased WGS coverage between two alleles were\
+  \ also excluded (binomial test p-value 0.05 after Benjamini correction). Lastly,\
+  \ we remove erroneously called as heterozygous variant during genotyping. We calculated\
+  \ the probability of each heterozygous variants were actually homozygous from the\
+  \ likelihood of observing the coverage on each allele from whole genome sequencing.\
+  \ Only heterozygous SNPs that had a FDR of less than 0.5% were included in downstream\
+  \ analysis.\nHaploSeq generates two haplotypes for each chromosome, one for the\
+  \ maternal allele and one for the paternal allele. One allele is named as P1 (parent1)\
+  \ and another allele is named as P2 (parent2) since we do not have information regarding\
+  \ the parent of origin in each donor genome. For the chr9 we can generate haplotypes\
+  \ in each chromosome arm. The haplotypes in chrX STL002 was independtly generated\
+  \ based on hg19 genome build.\nGenome_build: hg18\nSupplementary_files_format_and_content:\
+  \ The processed haplotypes for the individual genome (\"*_haps.vcf\") are available\
+  \ in VCF format."
+Description: Sample 1
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02898030
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX641264
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1501134
+    cluster_name: public
+    id: '897164'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '42297522400'
+    total_spots: '211487612'
+  - acc: SRR1501137
+    cluster_name: public
+    id: '897164'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '30637333200'
+    total_spots: '153186666'
+  - acc: SRR1501136
+    cluster_name: public
+    id: '897164'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '43306364800'
+    total_spots: '216531824'
+  - acc: SRR1501135
+    cluster_name: public
+    id: '897164'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '42578442400'
+    total_spots: '212892212'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX641/SRX641264
+  iid: SRX641264
+Series: GSE58752
+Status:
+  Last-Update-Date: '2015-02-18'
+  Release-Date: '2015-02-18'
+  Submission-Date: '2014-06-24'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1419nnn/GSM1419083/GSM1419083_STL001_haps.vcf.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX641/SRX641264
+Title: Hi-C, Thymus STL001, replicate one
+Type: SRA
+iid: GSM1419083

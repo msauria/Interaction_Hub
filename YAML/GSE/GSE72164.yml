@@ -1,0 +1,168 @@
+Contributor:
+- Address:
+    City: Nijmegen
+    Country: Netherlands
+    Line: Geert Grooteplein 28
+    Postal-Code: 6525GA
+  Department: Molecular Biology
+  Organization: RIMLS
+  Person:
+    First: Shuang-Yin
+    Last: Wang
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Onkar
+    Last: Joshi
+  iid: contrib3
+- Person:
+    First: Shuang
+    Last: Wang
+    Middle: Y
+  iid: contrib4
+- Person:
+    First: Yaser
+    Last: Atlasi
+  iid: contrib5
+- Person:
+    First: Tianran
+    Last: Peng
+  iid: contrib6
+- Person:
+    First: Sadia
+    Last: Saeed
+  iid: contrib7
+- Person:
+    First: Lusy
+    Last: Handoko
+  iid: contrib8
+- Person:
+    First: Tatyana
+    Last: Kuznetsova
+  iid: contrib9
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL13112
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2011-02-02'
+    Submission-Date: '2011-02-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Mus musculus)
+  iid: GPL13112
+- Accession: GPL19057
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-05-01'
+    Release-Date: '2014-08-07'
+    Submission-Date: '2014-08-07'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Mus musculus)
+  iid: GPL19057
+Series:
+  Accession: GSE72164
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  Overall-Design: "To study dynamics in chromatin architecture and to characterize\
+    \ long-range interaction, we performed Hi-C using DpnII as the restriction enzyme,\
+    \ potentially reaching a genome-wide coverage at a less than 1Kb resolution. We\
+    \ subsequently performed enrichment of interaction by a target capture similar\
+    \ to the exome sequencing approach. We enriched for DNaseI hyper-sensitive sites\
+    \ (DHS\u2019s) in chromatin from mESCs. Probes were designed against the union\
+    \ of all DHS\u2019s of Serum and 2i mESCs. Capture Hi-C reveals Extremely Long-Range\
+    \ Interactions (ELRI) in Serum but not in 2i ESCs. We observed H3K27me3 as a prominent\
+    \ characteristic, but not exclusive feature of ELRI loci in Serum mESCs. To further\
+    \ elucidate the involvement of constituents of PRC1 and PRC2 in ELRI, we performed\
+    \ ChIP-seq experiment on Suz12 and Ring1B during serum-to-2i transition. In addition,\
+    \ RNA-seq was performed to compare the expression levels of genes."
+  Pubmed-ID: '26637943'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA293238
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP062574
+    type: SRA
+  Sample-Ref:
+  - name: CHi-C_mESCs_serum_BR1
+    ref: GSM1856416
+  - name: CHi-C_mESCs_serum_BR2
+    ref: GSM1856417
+  - name: CHi-C_mESCs_2i_BR1
+    ref: GSM1856418
+  - name: CHi-C_mESCs_2i_BR2
+    ref: GSM1856419
+  - name: CHi-C_mESCs_serum_to_2i_Day1_BR1
+    ref: GSM1856420
+  - name: CHi-C_mESCs_serum_to_2i_Day3_BR1
+    ref: GSM1856421
+  - name: CHi-C_mESCs_serum_Eed_KO_BR1
+    ref: GSM1856422
+  - name: Chi-C_mESCs_serum_to_2i_Day1_BR2
+    ref: GSM1908105
+  - name: Chi-C_mESCs_serum_to_2i_Day3_BR2
+    ref: GSM1908106
+  - name: Chi-C_mESCs_serum_Eed_KO_BR2
+    ref: GSM1908107
+  Status:
+    Last-Update-Date: '2017-05-02'
+    Release-Date: '2015-12-07'
+    Submission-Date: '2015-08-18'
+    database: GEO
+  Summary: Serum-to-2i interconversion of mouse Embryonic Stem Cells (mESCs) is a
+    valuable in vitro model for early embryonic development. To assess whether 3D
+    chromatin organization changes during this transition, we established Capture
+    Hi-C with target-sequence enrichment of DNase I hypersensitive sites. We detected
+    extremely long-range intra- and inter-chromosomal interactions between a small
+    subset of H3K27me3 marked bivalent promoters involving the Hox clusters in serum
+    grown cells. Notably, these promoter-mediated interactions are not present in
+    2i ground-state pluripotent mESCs but appear upon further development into primed-like
+    serum mESCs. Reverting serum mESCs to ground-state 2i mESCs removes these promoter-promoter
+    interactions in a spatiotemporal manner. H3K27me3, which is largely absent at
+    bivalent promoters in ground-state 2i mESCs, is necessary but not sufficient to
+    establish these interactions, as confirmed by Capture Hi-C on Eed-/- serum mESCs.
+    Our results implicate H3K27me3 and PRC2 as critical players in chromatin alteration
+    during priming of ESCs for differentiation.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP062/SRP062574
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE72164/GSE72164_Hi-C_Merged_interactions_intervals.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE72164/GSE72164_RAW.tar
+  Title: Dynamic reorganization of extremely long-range promoter-promoter interactions
+    between two states of pluripotency
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE72164
+id: '200072164'

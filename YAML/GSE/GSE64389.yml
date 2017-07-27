@@ -1,0 +1,127 @@
+Contributor:
+- Address:
+    City: Atlanta
+    Country: USA
+    Line: 1510 Clifton Rd
+    State: Georgia
+    Zip-Code: '30322'
+  Department: Biology
+  Email: jordrow@gmail.com
+  Laboratory: Corces Lab
+  Organization: Emory
+  Person:
+    First: M
+    Last: Rowley
+    Middle: Jordan
+  Phone: '7343580454'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: M
+    Last: Rowley
+    Middle: J
+  iid: contrib3
+- Person:
+    First: Gudrun
+    Last: "B\xF6hmdorfer"
+  iid: contrib4
+- Person:
+    First: Jan
+    Last: "Kuci\u0144ski"
+  iid: contrib5
+- Person:
+    First: Andrzej
+    Last: Wierzbicki
+    Middle: T
+  iid: contrib6
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL13222
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Arabidopsis thaliana
+  Status:
+    Last-Update-Date: '2017-02-09'
+    Release-Date: '2011-02-24'
+    Submission-Date: '2011-02-24'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Arabidopsis thaliana)
+  iid: GPL13222
+Series:
+  Accession: GSE64389
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  Overall-Design: Differential expression in ago4 compared to Col-0. Examination of
+    Long Distance Chromosomal Interactions by Hi-C.
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA270874
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP051392
+    type: SRA
+  Sample-Ref:
+  - name: Col-0 Hi-C Rep1
+    ref: GSM1861110
+  - name: nrpe1 Hi-C Rep1
+    ref: GSM1861111
+  - name: ago4 Hi-C Rep1
+    ref: GSM1861112
+  - name: Col-0 Hi-C Rep2
+    ref: GSM1861113
+  - name: nrpe1 Hi-C Rep2
+    ref: GSM1861114
+  - name: ago4 Hi-C Rep2
+    ref: GSM1861115
+  - name: Col-0 Hi-C Rep3
+    ref: GSM1861116
+  - name: nrpe1 Hi-C Rep3
+    ref: GSM1861117
+  - name: ago4 Hi-C Rep3
+    ref: GSM1861118
+  Status:
+    Last-Update-Date: '2017-02-09'
+    Release-Date: '2016-06-01'
+    Submission-Date: '2014-12-19'
+    database: GEO
+  Summary: RNA-directed DNA methylation (RdDM) is a process, where small interfering
+    RNA (siRNA) and long non-coding RNA (lncRNA) work together to repress transposons.
+    In addition to controlling repetitive sequences, it contributes to the regulation
+    of gene expression. Molecular mechanisms of transcription regulation by RdDM remain
+    mostly unknown. We show that RdDM is involved in repression of long range chromosomal
+    interactions. We propose a model where RdDM contributes to the regulation of gene
+    expression by controlling looping between genes and their distant enhancers.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP051/SRP051392
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_DMR_with_contacts_ago4_rep1.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_DMR_with_contacts_ago4_rep2.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_DMR_with_contacts_ago4_rep3.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_DMR_with_contacts_nrpe1_rep1.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_DMR_with_contacts_nrpe1_rep2.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_DMR_with_contacts_nrpe1_rep3.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE64389/GSE64389_edgeRago4.txt.gz
+  Title: RNA-directed DNA Methylation is associated with gene expression via chromosomal
+    Interactions
+  Type:
+  - Expression profiling by high throughput sequencing
+  - Other
+  iid: GSE64389
+id: '200064389'

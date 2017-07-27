@@ -1,0 +1,122 @@
+Accession: GSM1888521
+Channel:
+  Characteristics:
+  - Embryonic stem cells
+  - C57BL/6
+  Extract-Protocol: "Cells were fixed in 2% formaldehyde for 10 min, and the reaction\
+    \ was quenched by the addition of ice-cold glycine (0.125 M final concentration).\
+    \ After centrifugation (400xg, 10 min), cells were washed with PBS, spun down\
+    \ (400xg, 10 min), the supernatant was removed, and the cell pellet was flash-frozen\
+    \ in liquid nitrogen and stored at -80\u02DAC. Cell pellets were incubated in\
+    \ 50 ml ice-cold lysis buffer (10 mM Tris-HCl pH 8, 10 mM NaCl, 0.2% Igepal CA-630,\
+    \ protease inhibitor cocktail (Roche)) for 30 min on ice, followed by a centrifugation\
+    \ to pellet cell nuclei (650xg, 5 min). Nuclei were resuspended in 1.25x NEBuffer\
+    \ 2, SDS was added (0.3% final concentration), and nuclei were incubated at 37\u02DA\
+    C and 950 rpm (shaking) for one hour. Triton X-100 was added to a final concentration\
+    \ 1.7%, and nuclei were incubated at 37\u02DAC and 950 rpm (shaking) for one hour.\
+    \ After digestion with HindIII (NEB; 1500 units per 5 million cells) overnight\
+    \ at 37\u02DAC and 950rpm (shaking), restriction sites were filled in with Klenow\
+    \ (NEB) using biotin-14-dATP (Life Technologies), dCTP, dGTP and dTTP (all at\
+    \ a final concentration of 30 \xB5M) for 60 min at 37\u02DAC. After addition of\
+    \ SDS (1.42% final concentration) and incubation at 65\u02DAC and 950rpm (shaking)\
+    \ for 25 min, ligation was performed for four hours at 16\u02DAC (50 units T4\
+    \ DNA ligase (Life Technologies) per 5 million cells starting material) in a total\
+    \ volume of 8.2 ml ligation buffer (50 mM Tris-HCl, 10 mM MgCl2, 1mM ATP, 10 mM\
+    \ DTT, 100 ug/ml BSA, 0.9% Triton X-100). The reversal of crosslinks (65\u02DA\
+    C overnight in the presence of Proteinase K), was followed by RNase A treatment\
+    \ and two sequential phenol chloroform extractions of DNA.\nThe concentration\
+    \ DNA was determined using Quant-iT Pico Green (Life Technologies), and 40 \xB5\
+    g of Hi-C library DNA were subjected to removal of biotin (T4 DNA polymerase (NEB),\
+    \ 4 hours at 20\u02DAC) from non-ligated fragment ends, followed by DNA purification\
+    \ (Qiagen PCR purification kit) and sonication (Covaris E220). Sonicated DNA was\
+    \ end-repaired (T4 DNA polymerase, T4 DNA polynucleotide kinase, Klenow (all NEB)),\
+    \ and a double size selection using AMPure XP beads (ratio SPRI beads solution\
+    \ volume to sample volume to 0.6:1, then 0.9:1) was performed, before dATP-addition\
+    \ with Klenow exo- (NEB). Biotin-marked ligation products were isolated using\
+    \ MyOne Streptavidin C1 Dynabeads (Life Technologies) in binding buffer (5 mM\
+    \ Tris pH8, 0.5 mM EDTA, 1 M NaCl) for 30 min at room temperature, followed by\
+    \ two washes in binding buffer, and one wash in ligation buffer (NEB). PE adapters\
+    \ (Illumina) were ligated onto Hi-C ligation products bound to streptavidin beads\
+    \ for 2 hours at room temperature (T4 DNA ligase NEB, in ligation buffer, slowly\
+    \ rotating). After washes in wash buffer (5 mM Tris, 0.5 mM EDTA, 1 M NaCl, 0.05%\
+    \ Tween-20) and binding buffer, the DNA-bound beads were resuspended in a final\
+    \ volume of 30 \xB5l NEBuffer 2. Bead-bound Hi-C DNA was amplified with 6 to 8\
+    \ PCR amplification cycles using PE PCR 1.0 and PE PCR 2.0 primers (Illumina).\
+    \ The concentration and size distribution of Hi-C library DNA after PCR amplification\
+    \ was determined by Bioanalyzer profiles (Agilent Technologies).  Bait capture\
+    \ system design for Promoter Capture Hi-C A list of transcripts was obtained from\
+    \ the Ensembl BioMart system, detailing the positions and assigned biotype for\
+    \ all transcripts in their gene build. The list was filtered to keep only transcripts\
+    \ with a biotype of protein-coding, non-coding (lincRNA), antisense, snRNA, miRNA\
+    \ or snoRNA. A genomic restriction map was then created to generate a list of\
+    \ all HindIII fragments in the genome, and this was subsequently filtered against\
+    \ the transcript list to keep only restriction fragments which contained the transcriptional\
+    \ start position for one or more transcripts. For each restriction fragment containing\
+    \ a transcription start site, two 120 bp capture probes were designed, one to\
+    \ each end of the fragment. Because of the size selection step following sonication,\
+    \ the probes had to fall entirely within a region no more than 500 bp from the\
+    \ end of the fragment. Each probe was required to have no more than 3 consecutive\
+    \ bases masked by repeatmasker, and they had to have a GC content of 25 to 65%\
+    \ to match the efficient capture range of the SureSelect target enrichment system\
+    \ (Agilent Technologies). Where multiple probes passed these criteria, the probe\
+    \ nearest the end of the restriction fragment was chosen."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: Embryonic stem cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Base calling with standard Illumina software
+
+  Mapping and filtering with HiCUP v0.5.3 (using Bowtie 1.1.0)
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: The processed files were generated with
+  HiCUP (v0.5.3), homepage:
+
+  http://www.bioinformatics.babraham.ac.uk/projects/hicup
+
+  In the tab-delimited output file, each line represents a Hi-C di-tag and comprises
+  7 columns (index ID; chromsome read 1; position read 1; strand read 1; chromsome
+  read 2, position read 2; strand read 2)'
+Description: Hi-C ditag
+Instrument-Model:
+  Predefined: Illumina HiSeq 1000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL15103
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04096366
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1261448
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2452668
+    cluster_name: public
+    id: '1810270'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '26408691190'
+    total_spots: '130736095'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX126/SRX1261448
+  iid: SRX1261448
+Series: GSE73204
+Status:
+  Last-Update-Date: '2015-10-29'
+  Release-Date: '2015-10-29'
+  Submission-Date: '2015-09-18'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1888nnn/GSM1888521/GSM1888521_Sample5_Lane615_L004_R1_2.duplicates_removed.ditags.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1888nnn/GSM1888521/GSM1888521_Sample5_Lane615_L004_R1_2.duplicates_retained.ditags.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX126/SRX1261448
+Title: Capture Hi-C Sample5
+Type: SRA
+iid: GSM1888521

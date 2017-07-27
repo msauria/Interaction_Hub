@@ -1,0 +1,129 @@
+Accession: GSM2515993
+Channel:
+  Characteristics: adipocyte
+  Extract-Protocol: "RNA: Cells were harvested in Isol-RNA lysis reagent (5 PRIME)\
+    \ and purified according to the manufacturer's instructions. ChIP-seq: Crosslinking:\
+    \ For MED1/TRAP220, SMC1, P300, HDAC2, HDAC3 and NCoR ChIP-seq: Cells were crosslinked\
+    \ by 2 mM disuccinimidyl glutarate (DSG) for 20-30 min at RT followed by 1% formaldehyde\
+    \ for 10 min at RT. Crosslinking was quenched by addition of 0.125M glycine for\
+    \ 10 min. For CTCF and histone mark ChIP-seq: Cells were crosslinked in formaldehyde\
+    \ only as described above. Sonication: For MED1/TRAP220, SMC1, CTCF and histone\
+    \ marks: Crosslinked cells were scraped in ChIP lysis buffer (0.1% SDS, 1% Triton\
+    \ X-100, 0.15M NaCl, 1mM EDTA, 20mM Tris, pH=8) and sonicated for 40 cycles (approximately\
+    \ 10-12 million crosslinked cells in 1.5 ml lysis buffer was sonicated in 15 ml\
+    \ tubes, 30 sec on, 30 sec off, maximum intensity) in a Bioruptor (Diagenode).\
+    \ For P300, HDAC2, HDAC3 and NCoR: Crosslinked cells were scraped in high SDS\
+    \ lysis buffer (1% SDS,  20mM EDTA, 50mM Tris, pH=8) and rotated 2h at 4\uF0B0\
+    C to release nuclei. A buffer change was done on pelleted nuclei to the ChIP lysis\
+    \ buffer described above before sonication for 7 cycles (nuclei from approximately\
+    \ 10-12 million crosslinked cells in 0.3 ml lysis buffer was sonicated in 1.5\
+    \ ml tubes, 30 sec on, 30 sec off, maximum intensity) in a Bioruptor (Diagenode).\
+    \ Immunoprecipitation was performed overnight using specific antibodies. After\
+    \ washing, IP\u2019ed chromatin was decrosslinked overnight at 65 \xB0C and DNA\
+    \ was purified by phenol-chloroform extraction. Crosslinking of cells for Hi-C\
+    \ and PCHi-C: Approximately 50-80 millions of 3T3-L1 cells were crosslinked for\
+    \ 10 min by 2% formaldehyde in PBS. Crosslinking was quenched by addition of 0.125M\
+    \ glycine. Cells were incubated at room temperature for 5 min and then on ice\
+    \ for 15 min. Crosslinked cells were washed once in cold PBS, and the cell pellets\
+    \ were flash frozen in liquid nitrogen and stored at -80\xB0C.\nmRNA-seq: Libraries\
+    \ were prepared from purified RNA (TruSeq Illumina mRNA prep kit) and sequenced\
+    \ according to the manufacturer\u2019s instructions (HiSeq v4 Illumina SR sequencing\
+    \ kit). ChIP-seq: Libraries were prepared from the purified DNA using the NEB\
+    \ ChIPseq prep kit and samples were sequenced according to the manufacturer\u2019\
+    s instructions (HiSeq v4 Illumina SR sequencing kit). Hi-C : Hi-C library generation\
+    \ was carried out with in-nucleus ligation as described previously (Nagano et\
+    \ al., 2015). PCHi-C: Capture Hi-C of promoters was carried out with SureSelect\
+    \ target enrichment (SureSelectXT Custom 3-5.9Mb library), using the custom-designed\
+    \ biotinylated RNA bait library and custom paired-end blockers according to the\
+    \ manufacturer\u2019s instructions (Agilent Technologies). Between 500 ng to 1\
+    \ \xB5g of Hi-C library were captured. After library enrichment, a post-capture\
+    \ PCR amplification step was carried out using PE PCR 1.0 and PE PCR 2.0 primers\
+    \ with 4 PCR amplification cycles.\nRNA-seq, ChIP-seq, Hi-C, PCHi-C"
+  Growth-Protocol: "Mouse 3T3-L1 cells (obtained from ATCC) were grown in Dulbecco\u2019\
+    s Modified Eagle\u2019s Medium (DMEM, #52-100-021, Gibco) supplemented with 10%\
+    \ calf serum (#B15-005, PAA) and 1% pen/strep (#DE 17-602E, Lonza)."
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: 3T3-L1 preadipocytes
+  Treatment-Protocol: "Cells were induced to differentiate two days post confluency\
+    \ by addition of differentiation media (DMEM supplemented with 10% fetal bovine\
+    \ serum (#S 01 15, Biochrom) and 1% pen/strep) supplemented with 1 \u03BCg/ml\
+    \ insulin (Sigma-Aldrich, I9278), 390 ng/ml dexamethasone (Sigma-Aldrich, D4902)\
+    \ and 1115 \u03BCg/ml 3-Isobutyl-1-methylxanthine (Sigma-Aldrich, I5879). Two\
+    \ days after induction of differentiation, fresh differentiation media supplemented\
+    \ with 1 \u03BCg/ml insulin were added. From day four and onwards, differentiated\
+    \ cells were maintained in differentiation media."
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'mRNA-seq reads were aligned to mm9 by STAR (Dobin et al., 2013)
+  and differentially expressed genes were identified by DESeq2 (Love et al., 2014)
+
+  ChIP-seq reads were aligned to mm9 by STAR, peaks were identified by HOMER, and
+  significantly changing binding sites were identified by DESeq2.
+
+  Hi-C and PCHi-C raw sequencing reads were aligned and filtered by HiCUP (Wingett
+  et al., 2015). Hi-C data was further processed by HOMER (Heinz et al., 2010). PCHi-C
+  data was analysed by CHiCAGO (Cairns et al., 2016) to identify chromatin interactions.
+
+  Genome_build: mm9
+
+  Supplementary_files_format_and_content: txt, bedGraph'
+Description: Genomic DNA
+Instrument-Model:
+  Predefined: Illumina HiSeq 1500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: Hi-C
+Partition: DpnII
+Platform-Ref:
+  ref: GPL18480
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN06471423
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX2599842
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR5297651
+    cluster_name: public
+    id: '3762502'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '18072458700'
+    total_spots: '180724587'
+  - acc: SRR5297652
+    cluster_name: public
+    id: '3762502'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '18265790500'
+    total_spots: '182657905'
+  - acc: SRR5297653
+    cluster_name: public
+    id: '3762502'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '11921190200'
+    total_spots: '119211902'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX259/SRX2599842
+  iid: SRX2599842
+Series: GSE95533
+Status:
+  Last-Update-Date: '2017-04-26'
+  Release-Date: '2017-04-26'
+  Submission-Date: '2017-02-28'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2515nnn/GSM2515993/GSM2515993_PCHiC_D2_Exp2_Seq1.hicup.captured.raw.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2515nnn/GSM2515993/GSM2515993_PCHiC_D2_Exp2_Seq2.hicup.captured.raw.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2515nnn/GSM2515993/GSM2515993_PCHiC_D2_Exp2_Seq3.hicup.captured.raw.txt.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2515nnn/GSM2515993/GSM2515993_PCHiC_D2_Exp2_merged.hicup.captured.raw.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX259/SRX2599842
+Title: PCHiC_D2_Exp2
+Type: SRA
+iid: GSM2515993

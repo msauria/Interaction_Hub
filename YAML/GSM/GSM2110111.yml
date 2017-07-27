@@ -1,0 +1,125 @@
+Accession: GSM2110111
+Channel:
+  Characteristics: N/A
+  Extract-Protocol: "7.5 million cells were fixed for 10 or 15 minutes by resuspending\
+    \ cell pellet in 7.5 ml full culture medium supplemented with 1% or 2% formaldehyde\
+    \ (Sigma), respectively. The reaction was quenched by addition of 2M glycine to\
+    \ a final concentration of 0.2 M and incubation for 5 minutes at room temperature\
+    \ on a rocker. Cells were pelleted by centrifugation at 300 g for 5 minutes at\
+    \ 4\xB0C, washed by resuspension in 1 ml of PBS, pelleted and resuspended in 1\
+    \ ml of PBS again. 1.9 mln cells from each sample were taken, the rest were snap-frozen\
+    \ for other experiments. The samples were pelleted again, then resuspended in\
+    \ 300 \u03BCl of cold lysis buffer (10 mM Tris-HCl pH 8.0, 10 mM NaCl, 0.2% NP-40\
+    \ substitute (Sigma), 1\xD7 Halt\u2122 Protease Inhibitor Cocktail (Thermo Scientific))\
+    \ and incubated on ice for at least 15 minutes. Cells were pelleted by centrifugation\
+    \ at 2,500g for 5 minutes, resuspended in 500 \xB5l of lysis buffer and pelleted\
+    \ again. The pellet was resuspended in 50 \u03BCl 0.3% SDS in NEBuffer 3 and incubated\
+    \ at 62\xB0C for 10 minutes. Then the suspension was diluted with 145 \u03BCl\
+    \ of 1\xD7 NEBuffer 3, 12.5 \u03BCl mQ and 12.5 \u03BCl of 20% Triton X-100 and\
+    \ incubated at 37\xB0C for 1 hour to quench SDS. 30 \xB5l were taken as a chromatin\
+    \ integrity control. The cells were pelleted by centrifugation at 3,000g for 5\
+    \ minutes, resuspended in 250 \u03BCl of 1\xD7 DpnII buffer (NEB) with 600 U DpnII\
+    \ enzyme (NEB), and the chromatin was digested overnight (14-16 hours) at 37\xB0\
+    C with rotation. In the morning 200 more units were added and the cells were incubated\
+    \ for additional 2 hours. DpnII was inactivated by incubation at 65\xB0C for 20\
+    \ minutes. 40 \u03BCl was taken as a digestion control, 40 \u03BCl of mQ were\
+    \ added to the sample. The ends were filled-in by addition of 50 \u03BCl fill-in\
+    \ mix (36 ul mQ, 1.5 \u03BCl of 10 mM biotin-14-CTP, 1.5 \u03BCl of 10 mM dATP,\
+    \ 1.5 \u03BCl of 10 mM dGTP, 1.5 \u03BCl of 10 mM dTTP, 8 \u03BCl of 5 U/\u03BC\
+    l DNA Polymerase I, Large (Klenow) Fragment (NEB)) and incubation at 37\xB0C for\
+    \ 1.5 hours. Then 900 \u03BCl of ligation mix (712 \u03BCl water, 120 \u03BCl\
+    \ 10\xD7 NEB T4 DNA ligase buffer (NEB), 50 \u03BCl 20% Triton X-100, 12 \u03BC\
+    l 10 mg/ml BSA (NEB), 6 \u03BCl 5 U/\u03BCl T4 DNA Ligase (Thermo Scientific))\
+    \ were added to the sample. The sample was mixed by inversion and incubated with\
+    \ rotation for 4 hours at room temperature. Then the nuclei were pelleted by centrifugation\
+    \ at 3,000g for 10 minutes and resuspended in 200 \u03BCl mQ. Proteins were degraded\
+    \ by addition of 15 \u03BCl of 20 mg/ml proteinase K and 20 \u03BCl of 10% SDS\
+    \ and incubation at 55\xB0C for 30 minutes. Then 130 \u03BCl 5M NaCl were added\
+    \ and the samples were incubated at 65\xB0C overnight (14-16 hours). The DNA was\
+    \ ethanol precipitated and then dissolved in 500 \u03BCl 10 mM Tris-HCl pH 8.0,\
+    \ washed twice on Amicon 30K filter units (Millipore) with 10 mM Tris-HCl pH 8.0\
+    \ and then eluted into a clean tube. The volume was adjusted to 500 \u03BCl with\
+    \ sonication buffer (50 mM Tris, 10 mM EDTA, 0.1% SDS) and the samples were sonicated\
+    \ using VirSonic 100 (Virtis) with power setting 15 for 15 seconds twice with\
+    \ 1 minute interval. Samples were washed twice again using Amicon 30K filter units\
+    \ (Millipore). All consecutive steps until PCR were performed in LoBind tubes\
+    \ (Eppendorf). 30 \xB5l of 10 mg/ml Dynabeads MyOne Streptavidin T1 beads (Life\
+    \ technologies) were prepared for biotin pull-down by washing with 80 \xB5l of\
+    \ 1\xD7 TWB (1\xD7 Tween Washing Buffer, 5 mM Tris-HCl pH 7.5, 0.5 mM EDTA, 1\
+    \ M NaCl, 0.05% Tween 20). Then the beads were resuspended in 60 \u03BCl of 2\xD7\
+    \ BB (2\xD7 Binding Buffer: 10 mM Tris-HCl pH 7.5, 1 mM EDTA, 2 M NaCl) and added\
+    \ to the samples; the suspension was incubated for 15 minutes at room temperature\
+    \ with rotation. After that the beads were used for library preparation.\nThe\
+    \ library preparation was done by the VBCF NGS unit (vbcf.ac.at) following the\
+    \ standard DNA sample  preparation protocol for Solexa platforms (NEB reagents)."
+  Growth-Protocol: "MEL cells (murine erythroleukemia cell line; ATCC) were cultured\
+    \ in RPMI-1640 medium supplemented with FBS and Pen/Strep (100 U/ml and 100 \u03BC\
+    g/ml)"
+  Molecule: genomic DNA
+  Organism: Mus musculus
+  Source: murine erythroleukemia, erythroid progenitor cells
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Base calling was performed by VBCF NGS unit
+
+  Mapping: iterative mapping (see Imakaev et al, 2012) using bowtie2 with increased
+  stringency parameters: --score-min -L 0.6,0.2--very-  sensitive
+
+  Read filtering: if two reads map to the same strands, and each side of the read
+  is within 500 bp of any side of the other read, we retained only one copy of the
+  read.
+
+  Additional filtering: we separated the genome into 500 bp bins. If any two bins
+  were interacting more than once, only one interaction was counted. Since each region
+  is only present in the single cell up to 4 times (in oocytes), we eliminated all
+  500 bp bins that form more than 8 unique interactions with other bins.
+
+  Filtered reads were then binned at different resolutions (we provide files at 200Kb
+  resolution) using read start as a read position. No normalization was applied to
+  the data.
+
+  Genome_build: mm9 or hg19
+
+  Supplementary_files_format_and_content: List of all interactions at single contact,
+  40Kb or 200 Kb resolution'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: DpnII
+Platform-Ref:
+  ref: GPL13112
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN04622156
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1685454
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR3344178
+    cluster_name: public
+    id: '2415837'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '783375998'
+    total_spots: '3878099'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685454
+  iid: SRX1685454
+Series: GSE80006
+Status:
+  Last-Update-Date: '2017-03-24'
+  Release-Date: '2017-03-23'
+  Submission-Date: '2016-04-07'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX168/SRX1685454
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2110nnn/GSM2110111/GSM2110111_MEL_2-200kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2110nnn/GSM2110111/GSM2110111_MEL_2-40kb.csv.gz
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM2110nnn/GSM2110111/GSM2110111_MEL_2-reads.csv.gz
+Title: MEL cells 2% 15 min fixation
+Type: SRA
+iid: GSM2110111

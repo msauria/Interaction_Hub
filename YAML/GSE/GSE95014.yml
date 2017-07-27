@@ -1,0 +1,139 @@
+Contributor:
+- Address:
+    City: Amsterdam
+    Country: Netherlands
+    Line: Plesmanlaan 121
+    Postal-Code: 1066 CX
+    State: Noord-Holland
+  Department: Division Of Gene Regulation
+  Laboratory: de Wit Lab
+  Organization: Netherlands Cancer Institute
+  Person:
+    First: Robin H.
+    Last: van der Weide
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Robin
+    Last: van der Weide
+    Middle: H
+  iid: contrib3
+- Person:
+    First: Elzo
+    Last: de Wit
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+- Accession: GPL20795
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2015-08-11'
+    Release-Date: '2015-08-11'
+    Submission-Date: '2015-08-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: HiSeq X Ten (Homo sapiens)
+  iid: GPL20795
+Series:
+  Accession: GSE95014
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: "Hi-C was performed in control, \u0394WAPL HAP1 , \u0394SCC4 and\
+    \ \u0394WAPL/\u0394SCC4cells with template replicates. Hi-C was also performed\
+    \ in a \u0394WAPL HAP1 biological replicate."
+  Relation:
+  - target: GSE95015
+    type: SubSeries of
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA375743
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP100154
+    type: SRA
+  Sample-Ref:
+  - name: Hap1-A Hi-C
+    ref: GSM2494290
+  - name: WaplKO_3.3-A Hi-C
+    ref: GSM2494291
+  - name: SCC4KO-A Hi-C
+    ref: GSM2494292
+  - name: DKO_3.3-A Hi-C
+    ref: GSM2494293
+  - name: Hap1-B Hi-C
+    ref: GSM2494294
+  - name: WaplKO_3.3-B Hi-C
+    ref: GSM2494295
+  - name: SCC4KO-B Hi-C
+    ref: GSM2494296
+  - name: DKO_3.3-B Hi-C
+    ref: GSM2494297
+  - name: Hap1-C Hi-C
+    ref: GSM2494298
+  - name: WaplKO_3.3-C Hi-C
+    ref: GSM2494299
+  - name: SCC4KO-C Hi-C
+    ref: GSM2494300
+  - name: DKO_3.3-C Hi-C
+    ref: GSM2494301
+  - name: WaplKO_1.14-A Hi-C
+    ref: GSM2494302
+  - name: WaplKO_1.14-B Hi-C
+    ref: GSM2494303
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2017-05-03'
+    Submission-Date: '2017-02-17'
+    database: GEO
+  Summary: "The spatial organization of chromosomes influences many nuclear processes\
+    \ including gene expression. The cohesin complex shapes the 3D genome by looping\
+    \ together CTCF sites along chromosomes. We show here that chromatin loop size\
+    \ can be increased, and that the duration with which cohesin embraces DNA determines\
+    \ the degree to which loops are enlarged. Cohesin\u2019s DNA release factor WAPL\
+    \ restricts the degree of this loop extension and also prevents looping between\
+    \ incorrectly oriented CTCF sites. We reveal that the SCC2/SCC4 complex promotes\
+    \ the extension of chromatin loops and the formation of topologically associated\
+    \ domains (TADs). Our data support the model that cohesin structures chromosomes\
+    \ through the processive enlargement of loops and that TADs reflect polyclonal\
+    \ collections of loops in the making. Finally, we find that whereas cohesin promotes\
+    \ chromosomal looping, it rather limits nuclear compartmentalization. We conclude\
+    \ that the balanced activity of SCC2/SCC4 and WAPL enables cohesin to correctly\
+    \ structure chromosomes."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95014/GSE95014_DKO_3.3.validPairs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95014/GSE95014_Hap1.validPairs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95014/GSE95014_SCC4KO.validPairs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95014/GSE95014_WaplKO_1.14.validPairs.txt.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE95014/GSE95014_WaplKO_3.3.validPairs.txt.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP100/SRP100154
+  Title: The cohesin release factor WAPL restricts chromatin loop extension. [HiC-Seq]
+  Type: Other
+  iid: GSE95014
+id: '200095014'

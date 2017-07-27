@@ -1,0 +1,122 @@
+Accession: GSM1181867
+Channel:
+  Biomaterial-Provider: Coriell; http://ccr.coriell.org/Sections/Search/Search.aspx?PgId=165&q=GM12878
+  Characteristics: GM12878 Lymphoblastoid cell line
+  Extract-Protocol: 'Hi-C experiments were conducted using HindIII according to previous
+    publication (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions
+    reveals folding principles of the human genome. Science 326, 289-93 (2009).).
+
+    Sequencing libraries were constructed according to previous publication (Lieberman-Aiden,
+    E. et al. Comprehensive mapping of long-range interactions reveals folding principles
+    of the human genome. Science 326, 289-93 (2009).).'
+  Growth-Protocol: 'GM12878 cells (Coriell) were cultured in suspension in 85% RPMI
+    media supplemental with 15% fetal bovine serum and 1X penicillin/streptomycin.
+
+    see samples section'
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: GM12878 Lymphoblastoid cells
+  Treatment-Protocol: None
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: "fastq:  Illumina's HiSeq Control Software\nFor Hi-C read alignment,\
+  \ we aligned Hi-C reads to the mm9 (mouse) or the hg18 (human) genome. In each case,\
+  \ we masked any bases in the genome that were genotyped as SNPs in either Mus musculus\
+  \ castaneus or S129/SvJae (for mouse) or GM12878 (for humans). These bases were\
+  \ masked to \u201CN\u201D in order to reduce reference bias mapping artifacts. Hi-C\
+  \ reads were aligned iteratively as single end reads using Novoalign. Specifically,\
+  \ for iterative alignment, we first aligned the entire sequencing read to either\
+  \ the mouse or human genome. Unmapped reads are then trimmed by 5 base pairs and\
+  \ realigned. This process is repeated until the read successfully aligns to the\
+  \ genome or until the trimmed read is less than 25 base pairs long.  After iterative\
+  \ mapping was finished, read pairs were re-constructed from single reads using an\
+  \ in house pipeline.  Unmapped reads were filtered out and PCR duplicate reads were\
+  \ removed.  Final alignment files were then processed using the GATK pipeline, specifically\
+  \ using Indel Realignment and Variant Recalibration\nHaplotypes were generated from\
+  \ the final aligned bam file after merging the two biological replicats using the\
+  \ HapCUT algorithm.  The details of HapCUT are described previously (Bansal and\
+  \ Bafna, Bioinformatics 24, i153-159, 2008).\nGenome_build: mm9\nGenome_build: hg18\n\
+  Supplementary_files_format_and_content: The castx129_variants.vcf and GM12878_depristoeal.vcf\
+  \ are VCF format files of the variants used for input into the haplotyping algorithm.\
+  \  Both of these files are derived from publicly available datasets. WIth regards\
+  \ to the \"publicly available datasets\", the castx129_variants.vcf file is derived\
+  \ from data downloaded from the ENA (ERP000042) and the SRA (SRX037820).  The GM12878_depristoeal.vcf\
+  \ is downloaded from the 1000 genomes project.\nSupplementary_files_format_and_content:\
+  \ The F123.haps and GM12878_seed.haps are modified bed format files.  In this files,\
+  \ the first column is the chromosome, and the second column is the location of the\
+  \ variant.  The third and fourth column are the phased variants in the \"A\" and\
+  \ \"B\" haplotypes.  The choice of \"A\" and \"B\" is arbitrary, and it should be\
+  \ noted that the \"A\" haplotype from one chromosome is not necessarily derived\
+  \ from the same parent as the \"A\" haplotype from a different chromosome.\nSupplementary_files_format_and_content:\
+  \ The GM12878_lcp.vcf file is a VCF format file from after local conditional phasing\
+  \ of variants in the seed haplotype"
+Description: 'GM12878_lcp.vcf
+
+  GM12878_depristoeal.vcf
+
+  GM12878_seed.haps'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2500
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL16791
+Relation:
+- target: GSE85977
+  type: Reanalyzed by
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN02228119
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX318776
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR927086
+    cluster_name: public
+    id: '444364'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '18536992000'
+    total_spots: '92684960'
+  - acc: SRR927087
+    cluster_name: public
+    id: '444364'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '23907627200'
+    total_spots: '119538136'
+  - acc: SRR927088
+    cluster_name: public
+    id: '444364'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '21539758200'
+    total_spots: '107698791'
+  - acc: SRR927089
+    cluster_name: public
+    id: '444364'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '21160161800'
+    total_spots: '105800809'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX318/SRX318776
+  iid: SRX318776
+Series: GSE48592
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-11-03'
+  Submission-Date: '2013-07-08'
+  database: GEO
+Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX318/SRX318776
+Title: Hi-C, GM12878 Lymphoblastoid cells, replicate one
+Type: SRA
+iid: GSM1181867

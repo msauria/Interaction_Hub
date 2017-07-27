@@ -1,0 +1,102 @@
+Contributor:
+- Address:
+    City: Ann Arbor
+    Country: USA
+    Line: 1600 Huron Parkway, NCRC Building 520, Rm. 3392
+    State: MI
+    Zip-Code: '48105'
+  Department: Department of Computational Medicine & Bioinformatics
+  Email: indikar@med.umich.edu
+  Laboratory: 4D+ Genome
+  Organization: University of Michigan
+  Person:
+    First: Indika
+    Last: Rajapakse
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Laura
+    Last: Seaman
+  iid: contrib3
+- Person:
+    First: Haiming
+    Last: Chen
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE77237
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib1
+  Overall-Design: Genome wide chromosome conformation capture (Hi-C) data from primary
+    human fibroblasts grown in 2D and 3D plates, 2 replicates
+  Pubmed-ID: '25738643'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA309829
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP068929
+    type: SRA
+  Sample-Ref:
+  - name: 2D rep 1
+    ref: GSM2046417
+  - name: 2D rep 2
+    ref: GSM2046418
+  - name: 3D rep 1
+    ref: GSM2046419
+  - name: 3D rep 2
+    ref: GSM2046420
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-01-26'
+    Submission-Date: '2016-01-26'
+    database: GEO
+  Summary: In the study of interphase chromosome organization, genome-wide chromosome
+    conformation capture (Hi-C) maps are often generated using 2-dimensional (2D)
+    monolayer cultures. These 2D cells have morphological deviations from cells that
+    exist in 3-dimensional (3D) tissues in vivo, and may not maintain the same chromosome
+    conformation. We used Hi-C maps to test the extent of differences in chromosome
+    conformation between human fibroblasts grown in 2D cultures and those grown in
+    3D spheroids. Significant differences in chromosome conformation were found between
+    2D cells and those grown in spheroids. Intra-chromosomal interactions were generally
+    increased in spheroid cells, with a few exceptions, while inter-chromosomal interactions
+    were generally decreased. Overall, chromosomes located closer to the nuclear periphery
+    had increased intra-chromosomal contacts in spheroid cells, while those located
+    more centrally had decreased interactions. This study highlights the necessity
+    to conduct studies on the topography of the interphase nucleus under conditions
+    that mimic an in vivo environment.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP068/SRP068929
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77237/GSE77237_RAW.tar
+  Title: Chromosome Conformation of Human Fibroblasts Grown in 3-Dimensional Spheroids
+  Type: Other
+  iid: GSE77237
+id: '200077237'

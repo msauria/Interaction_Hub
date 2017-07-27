@@ -1,0 +1,70 @@
+Accession: GSM1587703
+Channel:
+  Characteristics:
+  - primary liver cells
+  - Young adult
+  Extract-Protocol: 'After liver homogenisation, cells were immediately fixed with
+    1% formaldehyde before proceeding with Hi-C protocol.
+
+    Ligated material was sonicated, enriched for biotinylated ligation junctions and
+    PE sequencing adapters were added according to Illumina standard protocols'
+  Molecule: genomic DNA
+  Organism: Oryctolagus cuniculus
+  Source: Liver
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Read alignment was done by using Bowtie v0.12.8 with the parameters
+  "-v 3 -a -m 1 --best --strata".
+
+  HiC data analysis was done using hicpipe v1.01 (Yaffe and Tanay, 2011)
+
+  genome_build: mm10,oryCun2,rheMac2,canFam3
+
+  Supplementary_files_format_and_content: HiCseq_summary'' is a tab-delimited text
+  file summarizing alignment results for all samples. All other processed data files
+  are cis-interaction maps reporting observed and expected values for contacts between
+  50 Kb bins separated by up to 2 Mb. One processed data file is supplied for each
+  replicate plus a merge of the two replicates for each species. The files are in
+  a modified bed format (with header) in which the first three columns are the coordinate
+  of the first bin (chrom1, start1, end1), the second three columns are the coordinates
+  of the second bin (chrom2, start2, end2) and the last two columns are the expected
+  and observed interaction counts.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL18453
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03292452
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX851863
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR1771326
+    cluster_name: public
+    id: '1201727'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '27173460150'
+    total_spots: '181156401'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX851/SRX851863
+  iid: SRX851863
+Series: GSE65126
+Status:
+  Last-Update-Date: '2015-02-26'
+  Release-Date: '2015-02-26'
+  Submission-Date: '2015-01-21'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1587nnn/GSM1587703/GSM1587703_HiC_rabbit_liver_rep1_50000.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX851/SRX851863
+Title: HiC_rabbit_liver, replicate 1
+Type: SRA
+iid: GSM1587703

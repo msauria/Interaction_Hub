@@ -1,0 +1,116 @@
+Accession: GSM1081528
+Channel:
+  Characteristics: HEK293T RAD21cv
+  Extract-Protocol: 'Hi-C experiments were conducted using HindIII according to previous
+    publication (Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions
+    reveals folding principles of the human genome. Science 326, 289-93 (2009).).
+
+    Sequencing libraries were constructed according to previous publication (Lieberman-Aiden,
+    E. et al. Comprehensive mapping of long-range interactions reveals folding principles
+    of the human genome. Science 326, 289-93 (2009).).'
+  Growth-Protocol: "Cells were grown in DMEM supplemented with 0.2mM L-glutamine,\
+    \ 100 U/mL penicillin, 100 mg/mL streptomycin, and 10% fetal calf serum at 37\xB0\
+    C and 5% CO2"
+  Molecule: genomic DNA
+  Organism: Homo sapiens
+  Source: Hi-C, RAD21cv HEK293, HRV treated
+  Treatment-Protocol: "A stably integrated transgene in the RAD21cv HEK293T cells\
+    \ was activated for 3 days with 2\xB5g/mL of doxycycline.  Cells were then transfected\
+    \ with a plasmid expressing HRV protease using Lipofectamine 2000 (Invitrogen)\
+    \ for 24 hours before harvesting"
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  fastq:  Illumina''s HiSeq Control Software
+
+  Hi-C reads were aligned as single end reads using BWA with default parameters.  Uniquely
+  mapping reads were manually paired using in an in house pipeline.  PCR duplicate
+  reads were removed using Picard MarkDuplicates.
+
+  RNA-seq data were mapped as paired-end reads using tophat with the following parameters:
+  -g 1 -p 12 --solexa1.3-quals --library-type fr-firststrand --segment-length 25 --bowtie1
+
+  RNA-seq bigWig files were generated through an in house pipeline that includes performing
+  trimmed mean of M (TMM) normalization (Robinson et al. Genome Biology 2010)
+
+  ChIP-seq data were mapping with bowtie using the following parameters: -v 3 -m 1
+  --best --strata -S --time -p 8.  Data was filtered for uniquely mapping reads.  PCR
+  duplicates were removed using Picard MarkDuplicates
+
+  ChIP-seq bigWig files were generated through an in house pipeline
+
+  Genome_build: hg18
+
+  Supplementary_files_format_and_content: ChIP-seq and RNA-seq processed files are
+  in bigWig format.  As the RNA-seq experiment was strand specific, bigWig files for
+  both the positive and negative strands are included
+
+  Supplementary_files_format_and_content: Hi-C processed files are in a modified bed
+  format.  Each row lists the chromosome and the start and end coordiates of two interacting
+  bins as well as the normalized interaction frequency between these two bins
+
+  Supplementary_files_format_and_content: Processed mRNA-seq data include information
+  for each gene and its count and rpkm values.  Each line includes chromosome, start
+  position, end position, strand, gene name, read counts, and rpkm values
+
+  Genome Build:
+
+  HRV_r1_cis.index.txt: hg18'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL11154
+Relation:
+- target: GSE87112
+  type: Reanalyzed by
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX235594
+  type: SRA
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN01919639
+  type: BioSample
+SRA:
+  SRR:
+  - acc: SRR710064
+    cluster_name: public
+    id: '324586'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8764527384'
+    total_spots: '121729547'
+  - acc: SRR710065
+    cluster_name: public
+    id: '324586'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '8695880712'
+    total_spots: '120776121'
+  - acc: SRR710066
+    cluster_name: public
+    id: '324586'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '11261538288'
+    total_spots: '156410254'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX235/SRX235594
+  iid: SRX235594
+Series: GSE44267
+Status:
+  Last-Update-Date: '2016-09-20'
+  Release-Date: '2013-12-16'
+  Submission-Date: '2013-02-12'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1081nnn/GSM1081528/GSM1081528_HRV_r1_cis.index.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX235/SRX235594
+Title: Hi-C, RAD21cv HEK293, HRV treated, replicate one
+Type: SRA
+iid: GSM1081528

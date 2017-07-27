@@ -1,0 +1,160 @@
+Contributor:
+- Address:
+    City: Cambridge
+    Country: United Kingdom
+    Line: Babraham Research Park
+    Postal-Code: CB22 3AT
+    State: Cambs
+  Department: Bioinformatics
+  Email: steven.wingett@babraham.ac.uk
+  Organization: Babraham Institute
+  Person:
+    First: Steven
+    Last: Wingett
+    Middle: William
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Louise
+    Last: Harewood
+  iid: contrib3
+- Person:
+    First: Steven
+    Last: Wingett
+    Middle: W
+  iid: contrib4
+- Person:
+    First: Danita
+    Last: Pearson
+  iid: contrib5
+- Person:
+    First: Matthew
+    Last: Eldridge
+    Middle: D
+  iid: contrib6
+- Person:
+    First: Stefan
+    Last: Schoenfelder
+  iid: contrib7
+- Person:
+    First: V
+    Last: Collins
+    Middle: P
+  iid: contrib8
+- Person:
+    First: Peter
+    Last: Fraser
+  iid: contrib9
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL15103
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Mus musculus
+  Status:
+    Last-Update-Date: '2017-02-02'
+    Release-Date: '2012-01-09'
+    Submission-Date: '2012-01-09'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1000 (Mus musculus)
+  iid: GPL15103
+- Accession: GPL15433
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2015-11-05'
+    Release-Date: '2012-04-11'
+    Submission-Date: '2012-04-11'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 1000 (Homo sapiens)
+  iid: GPL15433
+Series:
+  Accession: GSE81879
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  - position: '3'
+    ref: contrib5
+  - position: '4'
+    ref: contrib6
+  - position: '5'
+    ref: contrib7
+  - position: '6'
+    ref: contrib8
+  - position: '7'
+    ref: contrib9
+  Overall-Design: 'Performed Hi-C on two human lymphoblastoid cell lines with known
+    chromosomal translocations (FY1199 and DD1618) and on a transformed mouse cell
+    line (EKLF). In addition, performed Hi-C on six human brain tumours: five glioblastomas
+    ( GB176, GB180, GB182, GB183 and GB238) and one anaplastic astrocytoma (AA86).
+    Hi-C was also performed in a human cell line control (GM07017).  QDNAseq was performed
+    on the AA86, GB176, GB180, GB182, GB183 and GB238 sampes.'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA322837
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP075697
+    type: SRA
+  Sample-Ref:
+  - name: AA86
+    ref: GSM2176962
+  - name: DD1618
+    ref: GSM2176963
+  - name: EKLF
+    ref: GSM2176964
+  - name: FY1199
+    ref: GSM2176965
+  - name: GB176
+    ref: GSM2176966
+  - name: GB180
+    ref: GSM2176967
+  - name: GB182
+    ref: GSM2176968
+  - name: GB183
+    ref: GSM2176969
+  - name: GB238
+    ref: GSM2176970
+  - name: GM07017
+    ref: GSM2176971
+  Status:
+    Last-Update-Date: '2017-05-23'
+    Release-Date: '2017-05-23'
+    Submission-Date: '2016-05-25'
+    database: GEO
+  Summary: Chromosomal rearrangements are prevalent events in the human population,
+    occurring both constitutionally in the general population and somatically in the
+    majority of cancers. Detection of balanced rearrangements, such as reciprocal
+    translocations and inversions, is troublesome with many rearrangements remaining
+    undetected. This is particularly detrimental in oncology where rearrangements
+    play diagnostic and prognostic roles and can influence choice and efficacy of
+    treatment protocols. New methods to detect and characterize balanced rearrangements
+    are therefore required for both research and clinical applications. Here we describe
+    the use of the chromosome conformation capture derived method Hi-C as a tool for
+    detection of both balanced and unbalanced chromosomal rearrangements in cell lines
+    and human tumor samples, with the ability to detect gene fusions and define chromosomal
+    breakpoints to base pair resolution. In addition, we show that copy number information
+    can also be obtained from the same data, allowing rearrangements, gains, amplifications
+    and deletions of genomic regions to be detected in a single experiment.
+  Supplementary-Data: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP075/SRP075697
+  Title: Hi-C As A New Tool For Precise Detection And Characterization Of Chromosomal
+    Rearrangements And Copy Number Variation In Human Tumors
+  Type: Other
+  iid: GSE81879
+id: '200081879'

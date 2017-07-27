@@ -1,0 +1,169 @@
+Accession: GSM1690086
+Channel:
+  Characteristics:
+  - Kc167
+  - late embryonic stage
+  - embryo
+  Extract-Protocol: "Hi-C experiment was performed as described previously (Belton\
+    \ et al. 2012) with minor modifications that are described below. 3-5 millions\
+    \ of cells were pelleted and resuspended in 10 ml of 1\xD7 PBS (10 mM phosphate\
+    \ buffer, 2.7 mM KCI, 137 mM NaCI, pH7.4) and fixed with 1% formaldehyde (Sigma)\
+    \ for 10 min at room temperature. The reaction was stopped by adding 2 M glycine\
+    \ to a final concentration of 125 mM. Cell suspension was incubated on ice for\
+    \ 5 min, and then cells were pelleted (10 min at 1000 g in pre-chilled (4C) centrifuge).\
+    \ The supernatant was removed, the cell pellet was washed with 500 \u03BCl of\
+    \ 1X PBS and then frozen and, if necessary, stored in a liquid nitrogen. After\
+    \ thawing the cells were lysed for 15 min in 1.5 ml of ice-cold lysis buffer (50\
+    \ mM Tris-HCI (pH8.0), 150 mM NaCI, 0.5% (v/v) NP-40, 1% (v/v) Triton-X100, 1\xD7\
+    \ Protease Inhibitor Cocktail (CALBIOCHEM #539137 of Thermo Scientific #78430)).\
+    \ The nuclei were harvested at 5000 g for 7 min in pre-chilled centrifuge, washed\
+    \ twice with 100 \u03BCl of 1.2\xD7 restriction NEBuffer 2 (NEB) and resuspended\
+    \ in 200 \u03BCl of 1.2\xD7 NEBuffer 2. 20% SDS was added to a final concentration\
+    \ of 0.3%, and nuclei were incubated at 37C for 1h with constant shaking. After\
+    \ incubation, 330 \u03BCl of 1.2\xD7 NEBuffer 2 were added, 20% Triton X-100 was\
+    \ added to a final concentration of 1.8%, and samples were incubated for 1h in\
+    \ the same conditions. DNA was digested overnight with 600-800 U of 100 U/\u03BC\
+    l HindIII-HF restriction endonuclease (NEB) at 37C with shaking. Next morning,\
+    \ 200 U of HindIII-HF were added and samples were incubated for 2h in the same\
+    \ conditions. Nuclei were harvested at 5000 g for 10 min at 25C and resuspended\
+    \ in 50 \u03BCl of the collected supernatant. Cohesive DNA ends were biotinylated\
+    \ by adding 7.6 \u03BCl of the biotin fill-in mixture prepared in 1\xD7 NEBuffer\
+    \ 2 (0.025 mM dATP (Thermo Scientific), 0.025 mM dGTP (Thermo Scientific), 0.025\
+    \ mM dTTP (Thermo Scientific), 0.025 mM biotin-14-dCTP (Invitrogen), 0.8 U/ul\
+    \ Klenow enzyme (NEB)). Samples were incubated at 37C for 75 min with slow shaking,\
+    \ then 20% SDS was added to a final concentration of 1.8%, and samples were heated\
+    \ at 65C for 20 min to inactivate Klenow enzyme and residual HindIII-HF. The samples\
+    \ were transferred into 10-ml tubes with 3 ml of 1\xD7 T4 DNA ligase reaction\
+    \ buffer (Thermo Scientific) supplied with 1.8% Triton X-100, incubated at 37C\
+    \ for 1h and then cooled on ice. Next, 100 U of T4 DNA ligase (Thermo Scientific)\
+    \ was added and the DNA was ligated for 6 h at 22C with slow agitation. The cross-links\
+    \ were reversed by incubation at 65C overnight in the presence of proteinase K\
+    \ (100 ug/ml). After cross-link reversal, DNA was purified by single phenol-chloroform\
+    \ extraction followed by ethanol precipitation (tRNA (Sigma) at a concentration\
+    \ of 7.5 ug/ml and glycogen (Thermo Scientific) at a concentration of 20 ug/ml\
+    \ were used as co-precipitators due to a low amount of DNA in the samples). After\
+    \ precipitation, the pellets was dissolved in 500 \u03BCl 10 mM Tris-HCI pH8.0,\
+    \ and DNA was additionally purified to remove residual salts and DTT on AMICON\
+    \ Ultra Centrifugal Filter Units (0.5 ml, 30K, Millipore #UFC5030BK) by washing\
+    \ with 10 mM Tris-HCI pH 8.0 (after two washing steps the final volume of the\
+    \ DNA solution was 40-50 \u03BCl). Biotinylated nucleotides from non-ligated DNA\
+    \ ends were removed by incubation of Hi-C libraries in the presence of 1.5 U of\
+    \ T4 DNA polymerase (NEB) in NEBuffer 2 supplied with 0.025 mM dATP and 0.025\
+    \ mM dGTP at 20C for 4 h. Next, DNA was purified by phenol-chloroform extraction\
+    \ followed by ethanol precipitation. The DNA pellets were dissolved in 500 \u03BC\
+    l of sonication buffer (50 mM Tris-HCI (pH 8.0), 10 mM EDTA, 0.1% SDS), the samples\
+    \ were treated with 50 ug of RNAse A (Thermo Scientific) for 45 min at 37C, and\
+    \ DNA was then sheared to the size of approximately 100-1000 bp using a VirSonic\
+    \ 100 (VerTis). Samples were concentrated (and simultaneously purified) on AMICON\
+    \ Ultra Centrifugal Filter Units. Fraction of 100-500 bp DNA fragments was captured\
+    \ by using Agencourt AMPure XP beads (Beckman Coulter), DNA was eluted with 50\
+    \ \u03BCl of 10 mM Tris-HCI (pH 8.0).\nThe DNA ends after the sonication step\
+    \ were repaired by adding 62.5 \u03BCl MQ water, 14 \u03BCl of 10\xD7 T4 DNA ligase\
+    \ reaction buffer, 3.5 \u03BCl of 10 mM dNTP mix, 5 \u03BCl of 3 U/\u03BCl T4\
+    \ DNA polymerase (NEB), 5 \u03BCl of 10 U/\u03BCl T4 polynucleotide kinase (NEB),\
+    \ 1 \u03BCl of 5 U/\u03BCl Klenow DNA polymerase (NEB) and incubating at 20C for\
+    \ 30 min. DNA was purified with Agencourt AMPure XP beads and eluted with 50 \u03BC\
+    l of 10 mM Tris-HCI (pH 8.0). To perform an A-tailing reaction, the DNA samples\
+    \ were then supplemented with 6 \u03BCl 10X NEBuffer 2, 1.2 \u03BCl of 10 mM dATP,\
+    \ 1 \u03BCl of MQ water and 3.6 \u03BCl of 5 U/\u03BCl Klenow (exo-) (NEB). The\
+    \ reactions were carried out for 30 min at 37C in PCR-machine and then their enzyme\
+    \ was heat-inactivated by incubation at 65C for 20 min. DNA was purified using\
+    \ Agencourt AMPure XP beads and eluted with 100 \u03BCl of 10 mM Tris-HCI (pH\
+    \ 8.0). Biotin pull-down of the ligation junctions was performed as described\
+    \ previously (Belton et al. 2012) with minor modifications. Briefly, 4 \u03BC\
+    l of MyOne Dynabeads Streptavidin C1 (Invitrogen) beads were used to capture biotinylated\
+    \ DNA, and the volumes of all buffers were decreased by 4 times. The washed beads\
+    \ with captured ligation junctions were resuspended in 50 \u03BCl of adapter ligation\
+    \ mixture composed of 41.5 \u03BCl MQ water, 5 \u03BCl 10X T4 DNA ligase reaction\
+    \ buffer (Thermo Scientific), 2.5 \u03BCl of Illumina TruSeq adapters and 1 \u03BC\
+    l of 5 U/\u03BCl T4 DNA ligase (Thermo Scientific). Adapter ligation was performed\
+    \ at 22C for 2.5 h. Then beads were sequentially washed twice with 100 \u03BC\
+    l of TWB (5 mM Tris-HCl (pH8.0), 0.5 mM EDTA, 1 M NaCl, 0.05% Tween-20), once\
+    \ with 100 \u03BCl of 1\xD7 binding buffer (10 mM Tris-HCl (pH8.0), 1 mM EDTA,\
+    \ 2 M NaCl) and once with 100 \u03BCl of CWB (10 mM Tris-HCI (pH8.0), 50 mM NaCI)\
+    \ and then resuspended in 20 \u03BCl of MQ water. Test PCR reactions containing\
+    \ 4 \u03BCl of streptavidin bound Hi-C library were performed to determine the\
+    \ optimal number of PCR cycles needed to generate enough PCR products for sequencing.\
+    \ PCR reactions (volume of each reaction is 25 \u03BCl) were performed using KAPA\
+    \ High Fidelity DNA Polymerase (KAPA) and Illumina PE1.0 and PE2.0 PCR primers\
+    \ (10 pmol each). The temperature profile was 5 min at 98C followed by 6, 9, 12,\
+    \ 15 and 18 cycles of 20 s at 98C, 15 s at 65C, 20 s at 72C. The PCR reactions\
+    \ were run on a 2% agarose gel supplied with ethidium bromide and the number of\
+    \ PCR cycles necessary to obtain sufficient amount of DNA was determined based\
+    \ on visual inspection of gels (typically 12-15 cycles). Four preparative PCR\
+    \ reactions were performed for each sample. PCR mixtures were combined, PCR products\
+    \ were purified with QIAGEN PCR Purification Kit. The DNA was eluted with 50 \u03BC\
+    l of 10 mM Tris-HCI (pH 8.0) and was run on a 1.8% agarose gel supplied with ethidium\
+    \ bromide. 200-600 bp DNA fragments were cut off the gel, purified on QIAGEN Gel\
+    \ Extraction Kit and sequenced on Illumina HiSeq 2000 by paired-end 101-nt reads."
+  Growth-Protocol: "S2 and Kc167 cells were grown at 25 C in Schneider\u2019s Drosophila\
+    \ Medium (Gibco) supplemented with 10% heat-inactivated fetal bovine serum (FBS,\
+    \ Gibco) and 50 units/ml penicillin and 50 mkg/ml streptomycin. DmBG3-c2 cells\
+    \ were grown in the same conditions except that half of Schneider\u2019s Drosophila\
+    \  Medium was substituted by the Shields and Sang M3 insect medium (Sigma). OSC\
+    \ cells were cultured in Shields and Sang M3 insect medium (Sigma) supplemented\
+    \ with 10% heat inactivated FBS (Gibco), 10% fly extract, 10 \xB5g/ml insulin\
+    \ (Sigma), 0.6 mg/ml glutathione (Sigma), 50 units/ml penicillin and 50 mkg/ml\
+    \ streptomycin"
+  Molecule: genomic DNA
+  Organism: Drosophila melanogaster
+  Source: cultured cells_Kc167
+  position: '1'
+Channel-Count: '1'
+Contact-Ref:
+  ref: contrib1
+Data-Processing: 'Library strategy: Hi-C
+
+  Illumina Casava1.8.2 software was used for basecalling.
+
+  Reads were mapped to the D. melanogaster reference genome (version dm3) using bowtie2
+  v2.2.1 with --very-sensitive option in a single-end mode.
+
+  Hi-C data were processed using ICE pipeline v0.9 with 20 iterations of iterative
+  correction as described previously (Imakaev et al, 2012) at 20Kb resolution.
+
+  genome build: dm3
+
+  processed data files format and content:  Processed data files are genome-wide maps
+  reporting iteratively corrected values for contacts between 20Kb bins. One processed
+  data file is supplied for each replicate (available on the sample record) plus a
+  merge of the two replicates for each cell line (available on the series record).
+  The files are in a plain text format (tab-delimited) in which rows and columns correspond
+  to 20Kb genomic bins.'
+Instrument-Model:
+  Predefined: Illumina HiSeq 2000
+Library-Selection: other
+Library-Source: genomic
+Library-Strategy: OTHER
+Partition: HindIII
+Platform-Ref:
+  ref: GPL13304
+Relation:
+- target: https://www.ncbi.nlm.nih.gov/biosample/SAMN03701018
+  type: BioSample
+- target: https://www.ncbi.nlm.nih.gov/sra?term=SRX1032738
+  type: SRA
+SRA:
+  SRR:
+  - acc: SRR2032294
+    cluster_name: public
+    id: '1496295'
+    is_public: 'true'
+    load_done: 'true'
+    static_data_available: 'true'
+    total_bases: '6369713800'
+    total_spots: '31848569'
+  ftp: ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX103/SRX1032738
+  iid: SRX1032738
+Series: GSE69013
+Status:
+  Last-Update-Date: '2015-10-27'
+  Release-Date: '2015-10-26'
+  Submission-Date: '2015-05-18'
+  database: GEO
+Supplementary-Data:
+- ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1690nnn/GSM1690086/GSM1690086_KC-2_IC-heatmap-20K.txt.gz
+- ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX103/SRX1032738
+Title: Kc167_HindIII Hi-C library_rep2
+Type: SRA
+iid: GSM1690086

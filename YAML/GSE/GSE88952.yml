@@ -1,0 +1,291 @@
+Contributor:
+- Address:
+    City: Seattle
+    Country: USA
+    Line: 3720 15th Ave NE
+    State: WA
+    Zip-Code: '98195'
+  Department: Genome Sciences
+  Laboratory: Jay Shendure
+  Organization: University of Washington
+  Person:
+    First: Seungsoo
+    Last: Kim
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Ivan
+    Last: Liachko
+  iid: contrib3
+- Person:
+    First: Donna
+    Last: Brickner
+    Middle: G
+  iid: contrib4
+- Person:
+    First: Kate
+    Last: Cook
+  iid: contrib5
+- Person:
+    First: William
+    Last: Noble
+    Middle: S
+  iid: contrib6
+- Person:
+    First: Jason
+    Last: Brickner
+    Middle: H
+  iid: contrib7
+- Person:
+    First: Jay
+    Last: Shendure
+  iid: contrib8
+- Person:
+    First: Maitreya
+    Last: Dunham
+    Middle: J
+  iid: contrib9
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL17143
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae
+  Status:
+    Last-Update-Date: '2014-06-02'
+    Release-Date: '2013-05-08'
+    Submission-Date: '2013-05-08'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina MiSeq (Saccharomyces cerevisiae)
+  iid: GPL17143
+- Accession: GPL19756
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae
+  Status:
+    Last-Update-Date: '2016-08-23'
+    Release-Date: '2015-02-09'
+    Submission-Date: '2015-02-09'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces cerevisiae)
+  iid: GPL19756
+- Accession: GPL22580
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces paradoxus
+  Status:
+    Last-Update-Date: '2016-10-19'
+    Release-Date: '2016-10-19'
+    Submission-Date: '2016-10-19'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces paradoxus)
+  iid: GPL22580
+- Accession: GPL22581
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces uvarum
+  Status:
+    Last-Update-Date: '2016-10-19'
+    Release-Date: '2016-10-19'
+    Submission-Date: '2016-10-19'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces uvarum)
+  iid: GPL22581
+- Accession: GPL22587
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae x Saccharomyces uvarum
+  Status:
+    Last-Update-Date: '2016-10-19'
+    Release-Date: '2016-10-19'
+    Submission-Date: '2016-10-19'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces cerevisiae x Saccharomyces uvarum)
+  iid: GPL22587
+- Accession: GPL22588
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces cerevisiae x Saccharomyces paradoxus
+  Status:
+    Last-Update-Date: '2016-10-19'
+    Release-Date: '2016-10-19'
+    Submission-Date: '2016-10-19'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces cerevisiae x Saccharomyces paradoxus)
+  iid: GPL22588
+- Accession: GPL22589
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Saccharomyces paradoxus x Saccharomyces uvarum
+  Status:
+    Last-Update-Date: '2016-10-19'
+    Release-Date: '2016-10-19'
+    Submission-Date: '2016-10-19'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina NextSeq 500 (Saccharomyces paradoxus x Saccharomyces uvarum)
+  iid: GPL22589
+Series:
+  Accession: GSE88952
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  - position: '6'
+    ref: contrib7
+  - position: '7'
+    ref: contrib8
+  - position: '8'
+    ref: contrib9
+  Overall-Design: Hi-C, RNA-seq, and Nup60-TAP ChIP-seq on yeast strains under exponential
+    growth in glucose and galactose, and saturated culture
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA349185
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP091787
+    type: SRA
+  Sample-Ref:
+  - name: YMD1797_raffinose_Sau3AI
+    ref: GSM2355760
+  - name: YDG613_exponential_Sau3AI
+    ref: GSM2355761
+  - name: YZB5-113_exponential_Sau3AI
+    ref: GSM2355762
+  - name: Y12_exponential_Sau3AI
+    ref: GSM2355763
+  - name: DBVPG6044_exponential_Sau3AI
+    ref: GSM2355764
+  - name: FY69_YZB5-113_saturated_Sau3AI
+    ref: GSM2355765
+  - name: FY69_YDG613_exponential_Sau3AI
+    ref: GSM2355766
+  - name: Y12_DBVPG6044_exponential_Sau3AI
+    ref: GSM2355767
+  - name: ILY456_saturated_Sau3AI
+    ref: GSM2355768
+  - name: ILY456_saturated_HindIII
+    ref: GSM2355769
+  - name: ILY456_exponential_Sau3AI
+    ref: GSM2355770
+  - name: ILY456_exponential_rep2_Sau3AI
+    ref: GSM2355771
+  - name: ILY456_galactose_Sau3AI
+    ref: GSM2355772
+  - name: ILY456_nocodazole_Sau3AI
+    ref: GSM2355773
+  - name: YMD3263_saturated_Sau3AI
+    ref: GSM2355774
+  - name: YMD3263_exponential_Sau3AI
+    ref: GSM2355775
+  - name: YMD3264_saturated_Sau3AI
+    ref: GSM2355776
+  - name: YMD3264_exponential_Sau3AI
+    ref: GSM2355777
+  - name: YMD3265_saturated_Sau3AI
+    ref: GSM2355778
+  - name: YMD3265_exponential_Sau3AI
+    ref: GSM2355779
+  - name: YMD3266_saturated_Sau3AI
+    ref: GSM2355780
+  - name: YMD3267_saturated_Sau3AI
+    ref: GSM2355781
+  - name: YMD3268_saturated_Sau3AI
+    ref: GSM2355782
+  - name: YMD3269_saturated_Sau3AI
+    ref: GSM2355783
+  - name: YMD3270_saturated_Sau3AI
+    ref: GSM2355784
+  - name: YMD3270_exponential_Sau3AI
+    ref: GSM2355785
+  - name: YMD3271_saturated_Sau3AI
+    ref: GSM2355786
+  - name: YMD3271_exponential_Sau3AI
+    ref: GSM2355787
+  - name: YMD3377_saturated_Sau3AI
+    ref: GSM2583731
+  - name: YMD3377_exponential_Sau3AI
+    ref: GSM2583732
+  - name: YMD3377_galactose_Sau3AI
+    ref: GSM2583733
+  Status:
+    Last-Update-Date: '2017-04-21'
+    Release-Date: '2016-12-05'
+    Submission-Date: '2016-10-19'
+    database: GEO
+  Summary: "The budding yeast Saccharomyces cerevisiae is a long-standing model for\
+    \ the three-dimensional organization of eukaryotic genomes1,2, and recent high-throughput\
+    \ chromatin conformation capture (Hi-C)2 methods have allowed systematic and unbiased\
+    \ measurement of this organization. Using polymer modeling, some groups have suggested\
+    \ that yeast genome conformation is simple and dominated by its Rabl-like orientation\
+    \ (anaphase-like polarization)3,4. Others have argued that yeast genome conformation\
+    \ is influenced by homolog pairing in diploids5\u20137 and environment-induced\
+    \ gene relocalization8\u201313, but the generality and extent of these phenomena\
+    \ remain unclear14. Here, we perform Hi-C on diverged Saccharomyces hybrid diploids\
+    \ to obtain the first global view of chromosome conformation in diploid budding\
+    \ yeasts. Previous studies of homolog pairing have attempted to control for the\
+    \ Rabl-like orientation14, but genomic analysis combined with polymer modeling\
+    \ reveals underappreciated contributions of the Rabl-like orientation to homolog\
+    \ proximity. After controlling for these features, we observe a residual signature\
+    \ of homolog proximity, particularly in saturated phase. From these same data,\
+    \ we also identify known and unexpected inducible gene repositioning. We observe\
+    \ that GAL1 shifts away from the centromere cluster upon galactose induction,\
+    \ consistent with reports of peripheral relocalization8,15. Surprisingly, under\
+    \ galactose induction and saturated phase, we observe a localized increase in\
+    \ homologous interactions between the HAS1 alleles, mediated by association with\
+    \ nuclear pore complexes. The discovery of this conformational change in such\
+    \ well-studied conditions suggests that our understanding of inducible genome\
+    \ reorganization remains incomplete. Together, these results reveal that the diploid\
+    \ yeast genome displays dynamic and complex 3D organization."
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_ScSu.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Sc_Sp.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Sc_Su.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Sp_Su.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Spar.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Spgap-rDNA.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Surep-rDNA-_ScYMR290-291.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Surep-rDNA.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Suva.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_Y12xDBVPG6044.32000.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_mismapped.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE88952/GSE88952_sacCer3_genes.gff.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP091/SRP091787
+  Title: The dynamic three-dimensional organization of the diploid yeast genome
+  Type:
+  - Other
+  - Expression profiling by high throughput sequencing
+  - Genome binding/occupancy profiling by high throughput sequencing
+  iid: GSE88952
+id: '200088952'

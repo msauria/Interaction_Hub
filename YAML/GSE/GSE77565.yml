@@ -1,0 +1,133 @@
+Contributor:
+- Address:
+    City: Los Angeles
+    Country: USA
+    Line: 695 Charles E. Young Dr. South, Gonda 2309
+    State: California
+    Zip-Code: '90095'
+  Department: Neurology
+  Email: wonhyejung87@gmail.com
+  Organization: UCLA
+  Person:
+    First: Hyejung
+    Last: Won
+  Phone: '3106000592'
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Daniel
+    Last: Geschwind
+    Middle: H
+  iid: contrib3
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE77565
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib1
+  Overall-Design: 'Hi-C data of fetal cortical anlage from three individuals. SRA:
+    SRP066745, BioProject ID: PRJNA304334, dbGaP: phs001190.v1.p1.
+
+
+    *Raw reads are available through dbGaP (phs001190.v1.p1).*'
+  Pubmed-ID: '27760116'
+  Relation:
+    target: https://www.ncbi.nlm.nih.gov/sra?term=SRP066745
+    type: SRA
+  Sample-Ref:
+  - name: CP, individual 1
+    ref: GSM2054564
+  - name: CP, individual 2
+    ref: GSM2054565
+  - name: CP, individual 3
+    ref: GSM2054566
+  - name: GZ, individual 1
+    ref: GSM2054567
+  - name: GZ, individual 2
+    ref: GSM2054568
+  - name: GZ, individual 3
+    ref: GSM2054569
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2016-10-20'
+    Submission-Date: '2016-02-03'
+    database: GEO
+  Summary: The demonstration that chromatin exhibits a complex 3 dimensional organization,
+    whereby short and long distance physical interactions correspond to complex gene
+    regulatory processes has opened a new window on understanding the functional organization
+    of the human genome. Recently, chromatin remodeling has also been causally implicated
+    in several neurodevelopmental disorders, including autism and schizophrenia. However,
+    it remains unclear whether knowledge of chromosome organization in a tissue specific
+    manner might inform our understanding of gene regulation in brain development
+    or disease. Here we determined the genome-wide landscape of chromosome conformation
+    during early human cortical development by performing Hi-C analysis in the mitotically
+    active and post mitotic laminae of human fetal brain. We integrate Hi-C data with
+    transcriptomic and epigenomic data and utilize chromosome contact information
+    to delineate physical gene-gene regulatory interactions for non-coding regulatory
+    elements. We show how these data permit large-scale functional annotation of non-coding
+    variants identified in schizophrenia GWAS and of human specific enhancers. These
+    data provide a rubric that illustrates the power of tissue-specific annotation
+    of non-coding regulatory elements, as well as novel insights into the pathogenic
+    mechanisms of neurodevelopmental disorders and the evolution of higher cognition.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP066/SRP066745
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_CP_TAD.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_ES_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBD1_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBD2_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBD3_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBD_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBP1_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBP2_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBP3_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_FBP_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Evolloci_interacting_region_enhctrl_IMR90_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_FBD_IC-heatmap-chr-10k.hdf5.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_FBD_IC-heatmap-chr-40k.hdf5.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_FBD_IC-heatmap-res-100k.hdf5.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_FBP_IC-heatmap-chr-10k.hdf5.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_FBP_IC-heatmap-chr-40k.hdf5.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_FBP_IC-heatmap-res-100k.hdf5.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_GZ_TAD.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_ES_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBD1_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBD2_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBD3_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBD_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBP1_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBP2_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBP3_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_FBP_FDR.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE77565/GSE77565_Sczloci_interacting_region_IMR90_FDR.bed.gz
+  Title: Genome-wide chromosomal conformation elucidates regulatory relationships
+    in human brain development and disease
+  Type: Other
+  iid: GSE77565
+id: '200077565'

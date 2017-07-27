@@ -1,0 +1,144 @@
+Contributor:
+- Address:
+    City: La Jolla
+    Country: USA
+    Line: 9500 Gilman Dr. CMM-E 2071
+    State: CA
+    Zip-Code: '92093'
+  Email: j1dixon@ucsd.edu
+  Organization: Ludwig Institute for Cancer Research
+  Person:
+    First: Jesse
+    Last: Dixon
+    Middle: R
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Inkyung
+    Last: Jung
+  iid: contrib3
+- Person:
+    First: Siddarth
+    Last: Selvaraj
+  iid: contrib4
+- Person:
+    First: Bing
+    Last: Ren
+  iid: contrib5
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+- Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+- Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+Series:
+  Accession: GSE52457
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  Overall-Design: 'Two biological replicates of Hi-C experiment and one replicate
+    of CTCF ChIP-Seq experiment in embryonic stem cells and 4 other differentiated
+    cell-types from H1 cell line. Re-analysis of data from GSE16256 in an allele specific
+    manner is linked as supplementary data.
+
+
+    Hi-C data generated in this study can be visualized at www.3dgenome.org.'
+  Pubmed-ID: '25693564'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA228983
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP033089
+    type: SRA
+  Sample-Ref:
+  - name: Hi-C, H1 embryonic stem cells, replicate one
+    ref: GSM1267196
+  - name: Hi-C, H1 embryonic stem cells, replicate two
+    ref: GSM1267197
+  - name: Hi-C, H1 Mesendoderm cells, replicate one
+    ref: GSM1267198
+  - name: Hi-C, H1 Mesendoderm cells, replicate two
+    ref: GSM1267199
+  - name: Hi-C, H1 Mesenchymal stem cells, replicate one
+    ref: GSM1267200
+  - name: Hi-C, H1 Mesenchymal stem cells, replicate two
+    ref: GSM1267201
+  - name: Hi-C, H1 Neuronal Progenitor cells, replicate one
+    ref: GSM1267202
+  - name: Hi-C, H1 Neuronal Progenitor cells, replicate two
+    ref: GSM1267203
+  - name: Hi-C, H1 Trophectoderm cells, replicate one
+    ref: GSM1267204
+  - name: Hi-C, H1 Trophectoderm cells, replicate two
+    ref: GSM1267205
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2015-02-18'
+    Submission-Date: '2013-11-18'
+    database: GEO
+  Summary: The 3D organization of the genome is important for regulation of diverse
+    nuclear processes ranging from transcription to DNA replication. Knowledge of
+    the higher order chromatin structure is critical for understanding mechanisms
+    of gene regulation by long-range control elements such as enhancers and insulators.
+    We describe high resolution, genome-wide dynamic chromatin interaction maps in
+    human embryonic stem cells (hESC) as they differentiate into four distinct embryonic
+    cell lineages. Extensive reorganization of higher-order chromatin structure occurs
+    during hESC differentiation. In this process, topological domains remain largely
+    intact but inter-domain association patterns change dramatically, coincident with
+    widespread changes in chromatin state and gene expression. Moreover, using proximity
+    ligation sequencing to generate chromosome span haplotypes, widespread allele
+    biased gene activities are detected. The allelic gene expression patterns can
+    be correlated to epigenetic state at distal enhancers, supporting the role of
+    these elements in regulating gene expression over a distance.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP033/SRP033089
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE52457/GSE52457_BED_files.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE52457/GSE52457_H1_haps.vcf.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE52457/GSE52457_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE52457/GSE52457_inference_files.tar.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE52457/GSE52457_reanalyzed_data_detail.xls.gz
+  Title: Global Reorganization of Chromatin Architecture during Embronic Stem Cell
+    Differentiation
+  Type:
+  - Genome binding/occupancy profiling by high throughput sequencing
+  - Other
+  iid: GSE52457
+id: '200052457'

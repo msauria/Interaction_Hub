@@ -1,0 +1,142 @@
+Contributor:
+- Address:
+    City: Manchester
+    Country: United Kingdom
+    Line: Oxford Road
+    Postal-Code: M13 9PT
+    State: Greater Manchester
+  Department: Arthritis Research UK
+  Email: paul.martin-2@manchester.ac.uk
+  Organization: University of Manchester
+  Person:
+    First: Paul
+    Last: Martin
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Amanda
+    Last: McGovern
+  iid: contrib3
+- Person:
+    First: Gisela
+    Last: Orozco
+  iid: contrib4
+- Person:
+    First: Kate
+    Last: Duffus
+  iid: contrib5
+- Person:
+    First: Annie
+    Last: Yarwood
+  iid: contrib6
+- Person:
+    First: Anne
+    Last: Barton
+  iid: contrib7
+- Person:
+    First: Jane
+    Last: Worthington
+  iid: contrib8
+- Person:
+    First: Steve
+    Last: Eyre
+  iid: contrib9
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL16791
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2013-03-14'
+    Submission-Date: '2013-03-14'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2500 (Homo sapiens)
+  iid: GPL16791
+Series:
+  Accession: GSE69600
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib1
+  - position: '2'
+    ref: contrib3
+  - position: '3'
+    ref: contrib4
+  - position: '4'
+    ref: contrib5
+  - position: '5'
+    ref: contrib6
+  - position: '6'
+    ref: contrib7
+  - position: '7'
+    ref: contrib8
+  - position: '8'
+    ref: contrib9
+  Overall-Design: 'Capture Hi-C was carried out to characterise the interactions of
+    confirmed susceptibility loci for four autoimmune diseases: rheumatoid arthritis
+    (RA), type 1 diabetes (T1D), psoriatic arthritis (PsA) and juvenile idiopathic
+    arthritis (JIA) with the aim of linking associated variants with disease-causing
+    genes. We have tested the interactions in two complementary experiments: the first,
+    Region Capture, targets regions associated with disease; the second, Promoter
+    Capture, provides independent validation through capturing all known promoters
+    within 500kb of lead associated disease SNPs. All experiments were performed in
+    human T-cell (Jurkat) and B-cell (GM12878) lines in duplicate.'
+  Pubmed-ID:
+  - '26616563'
+  - '27861577'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA285958
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP059186
+    type: SRA
+  Sample-Ref:
+  - name: Region Capture Hi-C, GM12878 Lymphoblastoid cells, replicate one & two
+    ref: GSM1704493
+  - name: Region Capture Hi-C, Jurkat T lymphocyte cells, replicate one & two
+    ref: GSM1704494
+  - name: Promoter Capture Hi-C, GM12878 Lymphoblastoid cells, replicate one & two
+    ref: GSM1704495
+  - name: Promoter Capture Hi-C, Jurkat T lymphocyte cells, replicate one & two
+    ref: GSM1704496
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2015-11-24'
+    Submission-Date: '2015-06-05'
+    database: GEO
+  Summary: Genome-wide association studies have been tremendously successful in identifying
+    genetic variants associated with complex diseases. The majority of association
+    signals are intergenic and evidence is accumulating that a high proportion of
+    signals lie in enhancer regions.We use Capture Hi-C to investigate, for the first
+    time, the interactions between associated variants for four autoimmune diseases
+    and their functional targets in B- and T-cell lines. Here we report numerous looping
+    interactions and provide evidence that only a minority of interactions are common
+    to both B- and T-cell lines, suggesting interactions may be highly cell-type specific;
+    some disease-associated SNPs do not interact with the nearest gene but with more
+    compelling candidate genes (for example, FOXO1, AZI2) often situated several megabases
+    away; and finally, regions associated with different autoimmune diseases interact
+    with each other and the same promoter suggesting common autoimmune gene targets
+    (for example, PTPRC, DEXI and ZFP36L1).
+  Supplementary-Data:
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69600/GSE69600_RAW.tar
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69600/GSE69600_promoter_capture_bait_coordinates.bed.gz
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69600/GSE69600_region_capture_bait_coordinates.bed.gz
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP059/SRP059186
+  Title: Capture Hi-C reveals novel candidate genes and complex long-range interactions
+    with related autoimmune risk loci
+  Type: Other
+  iid: GSE69600
+id: '200069600'

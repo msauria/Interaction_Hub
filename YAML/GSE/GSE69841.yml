@@ -1,0 +1,97 @@
+Contributor:
+- Address:
+    City: Worcester
+    Country: USA
+    Line: 368 Plantation St.
+    State: MA
+    Zip-Code: '01605'
+  Department: Program in Systems Biology
+  Email: bryan.lajoie@gmail.com
+  Laboratory: Dekker Lab
+  Organization: UMMS
+  Person:
+    First: Bryan
+    Last: Lajoie
+    Middle: R
+  iid: contrib1
+- Address:
+    Country: USA
+  Organization: GEO
+  iid: contrib2
+- Person:
+    First: Bryan
+    Last: Lajoie
+  iid: contrib3
+- Person:
+    First: Ludo
+    Last: Pagie
+  iid: contrib4
+Database:
+  Email: geo@ncbi.nlm.nih.gov
+  Name: Gene Expression Omnibus (GEO)
+  Organization: NCBI NLM NIH
+  Public-ID: GEO
+  Web-Link: http://www.ncbi.nlm.nih.gov/geo
+  iid: GEO
+Platform:
+  Accession: GPL11154
+  Contact-Ref:
+    ref: contrib2
+  Distribution: virtual
+  Organism: Homo sapiens
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2010-11-02'
+    Submission-Date: '2010-11-02'
+    database: GEO
+  Technology: high-throughput sequencing
+  Title: Illumina HiSeq 2000 (Homo sapiens)
+  iid: GPL11154
+Series:
+  Accession: GSE69841
+  Contact-Ref:
+    ref: contrib1
+  Contributor-Ref:
+  - position: '1'
+    ref: contrib3
+  - position: '2'
+    ref: contrib4
+  Overall-Design: Hi-C Data
+  Pubmed-ID: '26365489'
+  Relation:
+  - target: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA286897
+    type: BioProject
+  - target: https://www.ncbi.nlm.nih.gov/sra?term=SRP059447
+    type: SRA
+  Sample-Ref:
+  - name: KBM7 cell line, haploid, biological replicate 1
+    ref: GSM1709920
+  - name: KBM7 cell line, haploid, biological replicate 2
+    ref: GSM1709921
+  Status:
+    Last-Update-Date: '2017-05-03'
+    Release-Date: '2015-09-24'
+    Submission-Date: '2015-06-12'
+    database: GEO
+  Summary: Mammalian interphase chromosomes interact with the nuclear lamina (NL)
+    through hundreds of large Lamina Associated Domains (LADs). We report a method
+    to map NL contacts genome-wide in single human cells. Analysis of ~400 maps reveals
+    a core architecture of gene-poor LADs that contact the NL with high cell-to-cell
+    consistency, interspersed by LADs with more variable NL interactions. The variable
+    contacts are more sensitive to a change in genome ploidy than the consistent contacts.
+    Single-cell maps indicate that NL contacts involve multivalent interactions over
+    hundreds of kilobases. Moreover, we observe extensive intra-chromosomal coordination
+    of NL contacts, even over tens of megabases. Such coordinated loci exhibit preferential
+    interactions as detected by Hi-C. Finally, single-cell gene expression and chromatin
+    accessibility analysis shows that loci with consistent NL contacts are expressed
+    at lower levels and are more consistently inaccessible than loci with lower contact
+    frequencies. These results highlight fundamental principles of single cell chromatin
+    organization.
+  Supplementary-Data:
+  - ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP059/SRP059447
+  - ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/series/GSE69841/GSE69841_RAW.tar
+  Title: Genome-wide maps of nuclear lamina interactions in single human cells. (Hi-C,
+    KBM7 haploid)
+  Type: Other
+  iid: GSE69841
+id: '200069841'
