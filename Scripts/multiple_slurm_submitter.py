@@ -362,8 +362,8 @@ def write_script(fname, task, ntasks=1, name='', partition='shared', options=[],
     print >> output, "#SBATCH"
     print >> output, "#SBATCH --job-name=%s" % name
     print >> output, "#SBATCH --time=%s" % time
-    print >> output, "#SBATCH --error=/home-3/msauria1@jhu.edu/scratch/slurm_out/%s" % name
-    print >> output, "#SBATCH --output=/home-3/msauria1@jhu.edu/scratch/slurm_out/%s" % name
+    print >> output, "#SBATCH --error=/scratch/groups/jtayl139/users/msauria1/HiC_Database/Log/%s" % name
+    print >> output, "#SBATCH --output=/scratch/groups/jtayl139/users/msauria1/HiC_Database/Log/%s" % name
     print >> output, "#SBATCH --nodes=1"
     print >> output, "#SBATCH --ntasks-per-node=%i" % ntasks
     print >> output, "#SBATCH --partition=%s" % partition

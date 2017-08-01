@@ -3,33 +3,42 @@
 import sys
 import os
 import subprocess
+import glob
 from math import ceil
 
 import yaml
 
 bwa_dir = "/scratch/groups/jtayl139/cache/bwa_indices"
+storage_dir = "/work-zfs/jtayl139/msauria1/HiC"
 working_dir = "/scratch/groups/jtayl139/users/msauria1/HiC_Database/Data"
 scripts_dir = "/scratch/groups/jtayl139/users/msauria1/HiC_Database/Scripts"
 tmp_dir = "/scratch/groups/jtayl139/users/msauria1/HiC_Database/tmp"
 
+
 def main():
-    in_fname = sys.argv[1]
-    if len(sys.argv) > 2 and sys.argv[2] == '-s':
-        status = True
-    else:
-        status = False
-    data = load_yaml_file(in_fname)
-    if len(data) == 0:
-        print "Skipping %s, no data loaded" % in_fname.split('/')[-1]
-        return None
-    workflow = create_workflow_yaml(data)
-    if workflow is None:
-        print "Skipping %s, no workflow created" % in_fname.split('/')[-1]
-        return None
-    log = {}
-    for job in workflow:
-        log = submit_job(job, log, status)
-    write_yaml(log)
+    pattern = sys.argv[1]
+    status = True
+    fnames = glob.glob(pattern)
+    fnames.sort()
+    SRAs = []
+    logs = []
+    counter = 0
+    for fname in fnames:
+        #print >> sys.stderr, ("%s\n") % (fname),
+        data = load_yaml_file(fname)
+        if len(data) == 0:
+            continue
+        workflow = create_workflow_yaml(data)
+        if workflow is None:
+            continue
+        log = {'counter': counter}
+        for job in workflow:
+            log, SRAs = submit_job(job, log, status, SRAs)
+        counter = log['counter']
+        del log['counter']
+        resolve_finished_datasets(log, workflow)
+        logs.append(log)
+    #write_yaml(logs)
 
 def create_workflow_yaml(data):
     genomes = {
@@ -67,7 +76,9 @@ def create_workflow_yaml(data):
         'MNase': 250,
         'DNase': 1000,
     }
-    if data['Partition'] not in minbins:
+    if ('Partition' not in data or data['Partition'] not in minbins or 'Channel' not in data or
+        'Organism' not in data['Channel'] or not isinstance(data['Channel']['Organism'], str) or
+        data['Channel']['Organism'] not in genomes):
         return None
     data['genome'] = genomes[data['Channel']['Organism']]
     data['chroms'] = chroms[data['genome']]
@@ -259,13 +270,13 @@ def create_sra_job(data, SRRid):
     outputs = ['%s/%s.sra' % (working_dir, SRRid)]
     return {'job': job, 'prereqs': prereqs, 'outputs': outputs}
 
-def submit_job(job, log={}, status=False):
+def submit_job(job, log={}, status=True, SRAs=[]):
     name = job['job']['name']
     dependencies = []
     errorstate = False
     for prereq in job['prereqs']:
         if not isinstance(prereq, str):
-            log = submit_job(prereq, log, status)
+            log, SRAs = submit_job(prereq, log, status, SRAs)
             prereq_id = prereq['job']['name']
         else:
             prereq_id = prereq
@@ -278,25 +289,40 @@ def submit_job(job, log={}, status=False):
             errorstate = True
     if errorstate:
         log[name] = None
-        return log
-    if len(dependencies) == 0:
+        return log, SRAs
+    if name.split('-')[-1] != 'sra':
+        if len(dependencies) == 0:
+            outputs_fulfilled = True
+            for output in job['outputs']:
+                if not os.path.exists(output):
+                    outputs_fulfilled = False
+            if outputs_fulfilled:
+                log[name] = 'Done'
+                return log, SRAs
+        else:
+            job['job']['options'].append('--dependency=afterok:%s' % ':'.join(dependencies))
+        log[name] = log['counter']
+        log['counter'] += 1
+        return log, SRAs
+    else:
         outputs_fulfilled = True
         for output in job['outputs']:
             if not os.path.exists(output):
                 outputs_fulfilled = False
         if outputs_fulfilled:
             log[name] = 'Done'
-            return log
-    else:
-        job['job']['options'].append('--dependency=afterok:%s' % ':'.join(dependencies))
-    if status:
-        log[name] = 1
-    else:
-        log[name] = submit_sbatch(job['job'])
-    return log
+            return log, SRAs
+        elif len(SRAs) == 5:
+            ID = SRAs.pop(0)
+            job['job']['options'].append('--dependency=afterok:%s' % ID)
+        log[name] = log['counter']
+        log['counter'] += 1
+        SRAs.append(log[name])
+    return log, SRAs
 
 def submit_sbatch(job):
     print >> sys.stderr, ("Submitting %s\n") % (job['name']),
+
     script_name = job['fname']
     write_script(**job)
     temp = subprocess.Popen(["sbatch", script_name], stdout=subprocess.PIPE)
@@ -320,8 +346,8 @@ def write_script(fname, task, ntasks=1, name='', partition='shared', options=[],
     print >> output, "#SBATCH"
     print >> output, "#SBATCH --job-name=%s" % name
     print >> output, "#SBATCH --time=%s" % time
-    print >> output, "#SBATCH --error=/scratch/groups/jtayl139/users/msauria1/HiC_Database/Log/%s" % name
-    print >> output, "#SBATCH --output=/scratch/groups/jtayl139/users/msauria1/HiC_Database/Log/%s" % name
+    print >> output, "#SBATCH --error=/home-3/msauria1@jhu.edu/scratch/slurm_out/%s" % name
+    print >> output, "#SBATCH --output=/home-3/msauria1@jhu.edu/scratch/slurm_out/%s" % name
     print >> output, "#SBATCH --nodes=1"
     print >> output, "#SBATCH --ntasks-per-node=%i" % ntasks
     print >> output, "#SBATCH --partition=%s" % partition
@@ -331,6 +357,38 @@ def write_script(fname, task, ntasks=1, name='', partition='shared', options=[],
         print >> output, "module load %s" % mod
     print >> output, task
     output.close()
+
+def resolve_finished_datasets(log, workflow):
+    finished = True
+    for key, status in log.iteritems():
+        if status != 'Done':
+            finished = False
+    if not finished:
+        return None
+    files = []
+    for job in workflow:
+        files += get_outputs(job)
+    for fname in files:
+        dtype = fname.split('.')[-1]
+        if dtype in ['bam', 'paired', 'stats', 'singletons', 'polychimeric']:
+            command = "mv %s %s/Mapping/" % (fname, storage_dir)
+            subprocess.call(command, shell=True)
+        elif dtype in ['hcd', 'hcp']:
+            command = "mv %s %s/HiFive/" % (fname, storage_dir)
+            subprocess.call(command, shell=True)
+        else:
+            command = "rm %s" % fname
+            print command
+
+
+def get_outputs(job):
+    outputs = []
+    for prereq in job['prereqs']:
+        if not isinstance(prereq, str):
+            outputs += get_outputs(prereq)
+    outputs += job['outputs']
+    return outputs
+
 
 
 if __name__ == "__main__":
