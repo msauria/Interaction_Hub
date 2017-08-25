@@ -16,13 +16,26 @@ blacklist_fname = "/scratch/groups/jtayl139/users/msauria1/HiC_Database/finished
 
 
 def main():
-    pattern = sys.argv[1]
-    if len(sys.argv) > 2 and sys.argv[2] == '-s':
-        status = True
-    else:
-        status = False
-    fnames = glob.glob(pattern)
-    blacklist = {}
+	pattern = sys.argv[1]
+	fnames = []
+	status = ''
+
+	if pattern == 'inventory':
+		if sys.argv[2] == '-s':
+			status = True
+		else:
+			status = False
+		with open('Inventory.txt') as file:
+			for line in file:
+				fnames.append(line + '.yml')
+	else:
+		if len(sys.argv) > 2 and sys.argv[2] == '-s':
+			status = True
+		else:
+			status = False
+		fnames = glob.glob(pattern)
+	
+	blacklist = {}
     for line in open(blacklist_fname):
         blacklist[line.rstrip('\n')] = None
     N = len(fnames)
